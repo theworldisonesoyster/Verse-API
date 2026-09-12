@@ -13,7 +13,7 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD_DIRS = ("00_语言基础", "01_Verse.org", "02_UnrealEngine.com", "03_Fortnite.com", "90_分级索引")
 GRADE_NAMES = {"S": "核心", "A": "常用", "B": "进阶", "C": "参考"}
-TOP_TITLES = {"00_语言基础": "语言基础（补充）", "01_Verse.org": "Verse.org",
+TOP_TITLES = {"00_语言基础": "语言基础", "01_Verse.org": "Verse.org",
               "02_UnrealEngine.com": "UnrealEngine.com", "03_Fortnite.com": "Fortnite.com",
               "90_分级索引": "分级索引"}
 APPENDIX = [("MANIFEST.md", "MANIFEST 全量清单"), ("STYLE_GUIDE.md", "写作规范 STYLE_GUIDE"), ("PROGRESS.md", "生成进度 PROGRESS"), ("_Specifiers与Effects.md", "Specifiers 与 Effects 对照")]

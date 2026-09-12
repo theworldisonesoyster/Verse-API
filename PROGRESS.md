@@ -38,6 +38,14 @@
 - ☐ 03_Fortnite.com/130_Characters（约3页）
 - ☐ 03_Fortnite.com/180_Vehicles（约3页）
 
+## v2 改版（2026-09-13，用户验收反馈）
+
+- [x] 全站官网对齐：H1/侧栏用官网正式标题（component class 等）；页面结构=官网段落顺序+完整成员表；追加内容（示例/补充说明）置于官网内容之后
+- [x] 主题色 #422439 / 正文背景 #1c1c1c；侧栏树可折叠（默认全展开）；标题 Verse API Reference
+- [x] 去除全部〔补充·非官网镜像〕标注；"语言基础（补充）"→"语言基础"
+- [x] 新增 tools/extract_page.py（官网页→结构化MD，831页已提取至 tools/_extracted/，阶段2主素材）与《Specifiers 与 Effects 对照》附录
+- [x] 样板模块 20 页 + 旗舰页 19 页已按 v2 重写（fort_character 28 函数、component 10 函数等完整表格）
+
 ## 阶段1产出
 
 - [x] 抓取与解析（sources/ + manifest.json）
