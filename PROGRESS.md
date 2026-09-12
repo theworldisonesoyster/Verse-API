@@ -42,6 +42,6 @@
 
 - [x] 抓取与解析（sources/ + manifest.json）
 - [x] STYLE_GUIDE.md / MANIFEST.md / PROGRESS.md / 目录骨架
-- [ ] 样板模块：01_Verse.org/100_Simulation
-- [ ] S级旗舰页（见 MANIFEST 中 S 级核心条目）
-- [ ] 仓库脚手架（.gitbook.yaml/Intro/README/.nojekyll）与 build_site.py
+- [x] 样板模块：01_Verse.org/100_Simulation（20页全注解）
+- [x] S级旗舰页 24 页（语言基础8 + Verse核心9 + SceneGraph3 + SpatialMath2 + UI3 + fort_character + creative_device，含 00_语言基础 总览）
+- [x] 仓库脚手架（.gitbook.yaml/Intro/README/.nojekyll）与 build_site.py（SUMMARY 859行 + index.html 755KB，浏览器实测过滤/搜索/树/上下页通过）
