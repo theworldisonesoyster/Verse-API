@@ -1,0 +1,605 @@
+<!DOCTYPE html><html lang="en-US"><head><base href="/documentation/assets/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+      <title>Verse API reference page for the vehicle_mod_box_spawner_device class | Fortnite Documentation | Epic Developer Community</title>
+
+  <meta name="description" content="Learn technical details about the API for the vehicle_mod_box_spawner_device class in Verse." />
+  <meta property="og:site_name" content="Epic Games Developer" />
+  <meta property="og:description" content="Learn technical details about the API for the vehicle_mod_box_spawner_device class in Verse." />
+  <meta property="og:title" content="Verse API reference page for the vehicle_mod_box_spawner_device class | Fortnite Documentation | Epic Developer Community" />
+  <meta property="og:image" content="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device&amp;application_version=1.0" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website"  />
+  <meta property="og:url" content="https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Verse API reference page for the vehicle_mod_box_spawner_device class | Fortnite Documentation | Epic Developer Community" />
+  <meta name="twitter:image" content="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device&amp;application_version=1.0" />
+  <meta name="twitter:description" content="Learn technical details about the API for the vehicle_mod_box_spawner_device class in Verse." />
+  <meta name="twitter:site" content="@UnrealEngine" />
+
+  <link rel="canonical" href="https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device?lang=en-US" />
+  <link rel="alternate" href="https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device?lang=en-US" hreflang="en-US" />
+  <link rel="alternate" href="https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device" hreflang="x-default" />
+
+    
+
+    <link rel="icon" media="(prefers-color-scheme:light)" type="image/png" href="https://edc-cdn.net/assets/images/favicon-light.png">
+    <link rel="icon" media="(prefers-color-scheme:dark)" type="image/png" href="https://edc-cdn.net/assets/images/favicon-dark.png">
+
+    
+  <link rel="stylesheet" href="styles.02215fff5f26a30c.css"><style ng-app-id="serverApp">[_nghost-serverApp-c1581645311]{--_scrollbar-track-thickness-px: var(--scrollbar-track-thickness, 7px);--_scrollbar-container-offset-px: var(--scrollbar-container-offset, 0px);--_scrollbar-total-thickness-px: calc(var(--_scrollbar-track-thickness-px) + var(--_scrollbar-container-offset-px) * 2);--_scrollbar-thumb-min-size: var(--scrollbar-thumb-min-size, 20);position:relative!important;box-sizing:border-box!important;padding:0!important;-webkit-overflow-scrolling:touch;will-change:scroll-position}[_nghost-serverApp-c1581645311]    >.ng-scroll-spacer{position:absolute;inset-block-start:0;inset-inline-start:0;width:calc(var(--_spacer-width) * 1px);height:calc(var(--_spacer-height) * 1px);min-width:100%;min-height:100%}[_nghost-serverApp-c1581645311]{scrollbar-width:none!important}[_nghost-serverApp-c1581645311]::-webkit-scrollbar{display:none!important}[_nghost-serverApp-c1581645311]{--_viewport-overflow: auto;--_scrollbar-content-width: fit-content;overflow:var(--_viewport-overflow)}[orientation=vertical][_nghost-serverApp-c1581645311]{--_viewport-overflow: hidden auto;--_scrollbar-content-width: unset}[orientation=horizontal][_nghost-serverApp-c1581645311]{--_viewport-overflow: auto hidden}[_nghost-serverApp-c1581645311]{--_vertical-inset-block-start: var(--_scrollbar-container-offset-px);--_vertical-inset-block-end: var(--_scrollbar-container-offset-px);--_horizontal-inline-start: var(--_scrollbar-container-offset-px);--_horizontal-inline-end: var(--_scrollbar-container-offset-px);--_scrollbar-grid-template: ". scrollbar-y" 1fr "scrollbar-x ." auto / 1fr auto;--_scrollbar-wrapper-y-start: initial;--_scrollbar-wrapper-y-end: 0;--_scrollbar-wrapper-x-top: initial;--_scrollbar-wrapper-x-bottom: 0}[position=invertY][_nghost-serverApp-c1581645311]{--_scrollbar-grid-template: "scrollbar-y ." 1fr ". scrollbar-x" auto / auto 1fr}[position=invertX][_nghost-serverApp-c1581645311]{--_scrollbar-grid-template: "scrollbar-x ." auto ". scrollbar-y" 1fr / 1fr auto}[position=invertAll][_nghost-serverApp-c1581645311]{--_scrollbar-grid-template: ". scrollbar-x" auto "scrollbar-y ." 1fr / auto 1fr }[_nghost-serverApp-c1581645311]{--_horizontal-block-start: initial;--_horizontal-block-end: var(--_scrollbar-container-offset-px)}[_nghost-serverApp-c1581645311]:is([position=invertX],[position=invertAll]){--_horizontal-block-start: var(--_scrollbar-container-offset-px);--_horizontal-block-end: initial;--_scrollbar-wrapper-x-top: 0;--_scrollbar-wrapper-x-bottom: initial}[_nghost-serverApp-c1581645311]{--_vertical-inset-inline-end: var(--_scrollbar-container-offset-px);--_vertical-inset-inline-start: initial}[_nghost-serverApp-c1581645311]:is([position=invertY],[position=invertAll]){--_vertical-inset-inline-start: var(--_scrollbar-container-offset-px);--_vertical-inset-inline-end: initial;--_scrollbar-wrapper-y-start: 0;--_scrollbar-wrapper-y-end: initial}[verticalUsed=true][horizontalUsed=true][_nghost-serverApp-c1581645311]{--_scrollbar-thickness-margin-px: calc(var(--_scrollbar-track-thickness-px) + var(--_scrollbar-container-offset-px) * 3)}[horizontalUsed=true][_nghost-serverApp-c1581645311]{--_vertical-inset-block-start: var(--_scrollbar-container-offset-px);--_vertical-inset-block-end: var(--_scrollbar-thickness-margin-px)}[horizontalUsed=true][_nghost-serverApp-c1581645311]:is([position=invertX],[position=invertAll]){--_vertical-inset-block-start: var(--_scrollbar-thickness-margin-px);--_vertical-inset-block-end: var(--_scrollbar-container-offset-px)}[verticalUsed=true][_nghost-serverApp-c1581645311]{--_horizontal-inline-start: var(--_scrollbar-container-offset-px);--_horizontal-inline-end: var(--_scrollbar-thickness-margin-px)}[verticalUsed=true][_nghost-serverApp-c1581645311]:is([position=invertY],[position=invertAll]){--_horizontal-inline-start: var(--_scrollbar-thickness-margin-px);--_horizontal-inline-end: var(--_scrollbar-container-offset-px)}[_nghost-serverApp-c1581645311]{--_viewport-padding-block-start: 0;--_viewport-padding-block-end: 0;--_viewport-padding-inline-start: 0;--_viewport-padding-inline-end: 0}[appearance=native][verticalUsed=true][_nghost-serverApp-c1581645311]{--_viewport-padding-inline-start: 0;--_viewport-padding-inline-end: var(--_scrollbar-total-thickness-px)}[appearance=native][verticalUsed=true][_nghost-serverApp-c1581645311]:is([position=invertY],[position=invertAll]){--_viewport-padding-inline-start: var(--_scrollbar-total-thickness-px);--_viewport-padding-inline-end: 0}[appearance=native][horizontalUsed=true][_nghost-serverApp-c1581645311]{--_viewport-padding-block-start: 0;--_viewport-padding-block-end: var(--_scrollbar-total-thickness-px)}[appearance=native][horizontalUsed=true][_nghost-serverApp-c1581645311]:is([position=invertX],[position=invertAll]){--_viewport-padding-block-start: var(--_scrollbar-total-thickness-px);--_viewport-padding-block-end: 0}[_nghost-serverApp-c1581645311]{--_horizontal-thumb-display: block;--_vertical-thumb-display: block}[isVerticallyScrollable=false][_nghost-serverApp-c1581645311]{--_vertical-thumb-display: none}[isHorizontallyScrollable=false][_nghost-serverApp-c1581645311]{--_horizontal-thumb-display: none}[visibility=hover][_nghost-serverApp-c1581645311]{--_scrollbar-hover-opacity: 0;--_scrollbar-opacity-transition: opacity var(--scrollbar-hover-opacity-transition-leave-duration, .4s) var(--scrollbar-hover-opacity-transition-leave-delay, 1s)}[visibility=hover][scrolling=true][_nghost-serverApp-c1581645311], [visibility=hover][_nghost-serverApp-c1581645311]:hover, [visibility=hover][_nghost-serverApp-c1581645311]:active, [visibility=hover][_nghost-serverApp-c1581645311]:focus{--_scrollbar-hover-opacity: 1;--_scrollbar-opacity-transition: opacity var(--scrollbar-hover-opacity-transition-enter-duration, 0)}[_nghost-serverApp-c1581645311]{--_viewport_scroll-timeline: unset;--_animation-timeline-y: unset;--_scrollbar-thumb-transform-from: unset;--_scrollbar-thumb-transform-to: unset}[verticalUsed=true][_nghost-serverApp-c1581645311]{--_timeline-scope: --scrollerY;--_animation-timeline-y: --scrollerY;--_viewport_scroll-timeline: --scrollerY y}[horizontalUsed=true][_nghost-serverApp-c1581645311]{--_timeline-scope: --scrollerX;--_animation-timeline-x: --scrollerX;--_viewport_scroll-timeline: --scrollerX x}[verticalUsed=true][horizontalUsed=true][_nghost-serverApp-c1581645311]{--_timeline-scope: --scrollerX, --scrollerY;--_viewport_scroll-timeline: --scrollerX x, --scrollerY y}[_nghost-serverApp-c1581645311]{scroll-timeline:var(--_viewport_scroll-timeline);--_scrollbar-hover-thickness-px: var(--scrollbar-track-hover-thickness, var(--_scrollbar-track-thickness-px));--_scrollbar-active-thickness-px: var(--scrollbar-track-active-thickness, var(--_scrollbar-hover-thickness-px));--_track-y-thickness-px: var(--_scrollbar-track-thickness-px);--_track-x-thickness-px: var(--_scrollbar-track-thickness-px);-webkit-user-select:var(--_viewport-user-select);user-select:var(--_viewport-user-select)}[dragging=x][_nghost-serverApp-c1581645311], [dragging=y][_nghost-serverApp-c1581645311]{--_viewport-user-select: none}[dragging=x][_nghost-serverApp-c1581645311]{--_track-x-thickness-px: var(--_scrollbar-active-thickness-px)}[dragging=y][_nghost-serverApp-c1581645311]{--_track-y-thickness-px: var(--_scrollbar-active-thickness-px)}[_nghost-serverApp-c1581645311]{overscroll-behavior:var(--scrollbar-overscroll-behavior, initial)}[mobile=true][_nghost-serverApp-c1581645311]{overscroll-behavior:var(--scrollbar-mobile-overscroll-behavior, none)}[_nghost-serverApp-c1581645311]{--_viewport-pointer-events: auto;--_scrollbar-y-pointer-events: auto;--_scrollbar-x-pointer-events: auto;pointer-events:var(--_viewport-pointer-events)}[disableInteraction=true][_nghost-serverApp-c1581645311]{--_viewport-pointer-events: none;--_scrollbar-y-pointer-events: none;--_scrollbar-x-pointer-events: none}[isVerticallyScrollable=false][_nghost-serverApp-c1581645311]{--_scrollbar-y-pointer-events: none}[isHorizontallyScrollable=false][_nghost-serverApp-c1581645311]{--_scrollbar-x-pointer-events: none}[_nghost-serverApp-c1581645311]{--_scrollbar-thumb-color: var(--scrollbar-thumb-color, #1e90ff);--_scrollbar-thumb-hover-color: var(--scrollbar-thumb-hover-color, var(--_scrollbar-thumb-color));--_scrollbar-thumb-active-color: var(--scrollbar-thumb-active-color, var(--_scrollbar-thumb-hover-color));--_scrollbar-button-color: var(--scrollbar-button-color, transparent);--_scrollbar-button-hover-color: var(--scrollbar-button-hover-color, var(--_scrollbar-button-color));--_scrollbar-button-active-color: var(--scrollbar-button-active-color, var(--_scrollbar-button-hover-color));--_scrollbar-button-inactive-color: var(--scrollbar-button-inactive-color, color-mix(in srgb, var(--_scrollbar-button-color), #000 35%));--_scrollbar-button-fill: var(--scrollbar-button-fill, var(--_scrollbar-thumb-color));--_scrollbar-button-hover-fill: var(--scrollbar-button-hover-fill, var(--_scrollbar-thumb-hover-color));--_scrollbar-button-active-fill: var(--scrollbar-button-active-fill, var(--_scrollbar-thumb-active-color));--_scrollbar-button-inactive-fill: var(--scrollbar-button-inactive-fill, color-mix(in srgb, var(--_scrollbar-button-fill), #000 35%))}@layer default{[_nghost-serverApp-c1581645311]{display:block;max-height:100%;max-width:100%}}</style><style ng-app-id="serverApp">[_nghost-serverApp-c2617948613]{box-sizing:border-box;width:var(--_scrollbar-content-width);z-index:1;min-width:100%;min-height:100%;padding-block-start:var(--_viewport-padding-block-start, 0);padding-block-end:var(--_viewport-padding-block-end, 0);padding-inline-start:var(--_viewport-padding-inline-start, 0);padding-inline-end:var(--_viewport-padding-inline-end, 0)}@layer default{[_nghost-serverApp-c2617948613]{position:relative}[_nghost-serverApp-c2617948613]:not(table){display:flow-root}}</style><style ng-app-id="serverApp">[_nghost-serverApp-c4020475482]{pointer-events:none;position:absolute;inset:0;display:grid;grid-template:var(--_scrollbar-grid-template)}</style><script src="https://js.hcaptcha.com/1/api.js?render=explicit&uj=true" async defer></script></head>
+
+  <body class="theme-fortnite"><!--nghm-->
+    <div style="display: none">
+      
+          <script type="text/javascript">
+            window.currentProfile = {};
+          </script>
+        
+      
+          <script type="text/javascript">
+            window.currentPermissions = {"authorizations":{"user_profiles":{"create_profile":true,"hide":false,"manage_badges":false,"manage_organization":false,"manage_profile":false,"read_profile":true,"unhide":false,"update_my_profile":false},"cms":{"edit_roadmap":false,"manage_announcements":false,"manage_roadmap":false,"manage_videos":false,"publish_roadmap":false,"read_announcements":true,"read_video_detail":false,"view_roadmap":false},"snippets":{"bypass_rate_limit":false,"create_snippet_post":false,"hide":false,"manage_snippet_post":false,"publish_snippet_post":false,"read_community_hidden":false,"read_metrics":false,"read_snippet":true,"read_snippet_post":true,"read_unpublished_snippet_post":false,"unhide":false}},"roles":["guest"]};
+          </script>
+        
+    </div>
+
+    <app-root class="app-root" ng-version="21.2.5" ngh="19" ng-server-context="ssr"><div id="top"></div><site-header class="site-header d-print-none" ngh="0"><!----><!----><!----><!----><!----><fortnite-navigation langurlparam="lang" locale="en" isloggedin="false" customaccountlinks="[
+  {
+    &quot;id&quot;: &quot;notifications&quot;,
+    &quot;key&quot;: &quot;notifications&quot;,
+    &quot;label&quot;: &quot;Notifications&quot;,
+    &quot;locale&quot;: &quot;en&quot;,
+    &quot;hrefTemplate&quot;: &quot;https://dev.epicgames.com/community/api/user_profiles/tab-redirect/notifications/undefined&quot;
+  },
+  {
+    &quot;id&quot;: &quot;favorites&quot;,
+    &quot;key&quot;: &quot;favorites&quot;,
+    &quot;label&quot;: &quot;Favorites&quot;,
+    &quot;locale&quot;: &quot;en&quot;,
+    &quot;hrefTemplate&quot;: &quot;/community/profile/undefined/undefined/favorites&quot;
+  },
+  {
+    &quot;id&quot;: &quot;edit-profile&quot;,
+    &quot;key&quot;: &quot;edit-profile&quot;,
+    &quot;label&quot;: &quot;Edit Profile&quot;,
+    &quot;locale&quot;: &quot;en&quot;,
+    &quot;hrefTemplate&quot;: &quot;/community/profile/edit&quot;
+  }
+]" localeoptions="[
+  {
+    &quot;id&quot;: &quot;en&quot;,
+    &quot;locale&quot;: &quot;en&quot;,
+    &quot;label&quot;: &quot;English&quot;,
+    &quot;langCode&quot;: &quot;en-US&quot;
+  },
+  {
+    &quot;id&quot;: &quot;fr&quot;,
+    &quot;locale&quot;: &quot;fr&quot;,
+    &quot;label&quot;: &quot;Français&quot;,
+    &quot;langCode&quot;: &quot;fr&quot;
+  },
+  {
+    &quot;id&quot;: &quot;es_ES&quot;,
+    &quot;locale&quot;: &quot;es_ES&quot;,
+    &quot;label&quot;: &quot;Español (España)&quot;,
+    &quot;langCode&quot;: &quot;es-ES&quot;
+  },
+  {
+    &quot;id&quot;: &quot;es_MX&quot;,
+    &quot;locale&quot;: &quot;es_MX&quot;,
+    &quot;label&quot;: &quot;Español (LatAm)&quot;,
+    &quot;langCode&quot;: &quot;es-MX&quot;
+  },
+  {
+    &quot;id&quot;: &quot;de&quot;,
+    &quot;locale&quot;: &quot;de&quot;,
+    &quot;label&quot;: &quot;Deutsch&quot;,
+    &quot;langCode&quot;: &quot;de&quot;
+  },
+  {
+    &quot;id&quot;: &quot;pt_BR&quot;,
+    &quot;locale&quot;: &quot;pt_BR&quot;,
+    &quot;label&quot;: &quot;Português (Brasil)&quot;,
+    &quot;langCode&quot;: &quot;pt-BR&quot;
+  },
+  {
+    &quot;id&quot;: &quot;it&quot;,
+    &quot;locale&quot;: &quot;it&quot;,
+    &quot;label&quot;: &quot;Italiano&quot;,
+    &quot;langCode&quot;: &quot;it&quot;
+  },
+  {
+    &quot;id&quot;: &quot;pl&quot;,
+    &quot;locale&quot;: &quot;pl&quot;,
+    &quot;label&quot;: &quot;Polski&quot;,
+    &quot;langCode&quot;: &quot;pl&quot;
+  },
+  {
+    &quot;id&quot;: &quot;tr&quot;,
+    &quot;locale&quot;: &quot;tr&quot;,
+    &quot;label&quot;: &quot;Türkçe&quot;,
+    &quot;langCode&quot;: &quot;tr&quot;
+  },
+  {
+    &quot;id&quot;: &quot;ru&quot;,
+    &quot;locale&quot;: &quot;ru&quot;,
+    &quot;label&quot;: &quot;Русский&quot;,
+    &quot;langCode&quot;: &quot;ru&quot;
+  },
+  {
+    &quot;id&quot;: &quot;ja&quot;,
+    &quot;locale&quot;: &quot;ja&quot;,
+    &quot;label&quot;: &quot;日本語&quot;,
+    &quot;langCode&quot;: &quot;ja&quot;
+  },
+  {
+    &quot;id&quot;: &quot;ko&quot;,
+    &quot;locale&quot;: &quot;ko&quot;,
+    &quot;label&quot;: &quot;한국어&quot;,
+    &quot;langCode&quot;: &quot;ko&quot;
+  },
+  {
+    &quot;id&quot;: &quot;zh_CN&quot;,
+    &quot;locale&quot;: &quot;zh_CN&quot;,
+    &quot;label&quot;: &quot;简体中文&quot;,
+    &quot;langCode&quot;: &quot;zh-CN&quot;
+  }
+]" signoutlink="{
+  &quot;id&quot;: &quot;logout&quot;,
+  &quot;key&quot;: &quot;logout&quot;,
+  &quot;label&quot;: &quot;Sign out&quot;,
+  &quot;locale&quot;: &quot;en&quot;,
+  &quot;hrefTemplate&quot;: &quot;/community&quot;
+}" signinlink="{
+  &quot;id&quot;: &quot;signin&quot;,
+  &quot;key&quot;: &quot;signin&quot;,
+  &quot;label&quot;: &quot;Sign in&quot;,
+  &quot;locale&quot;: &quot;en&quot;,
+  &quot;hrefTemplate&quot;: &quot;https://dev.epicgames.com/community/api/user_identity/login/start?destination=https%3A%2F%2Fdev.epicgames.com%2Fdocumentation%2Ffortnite%2Fverse-api%2Ffortnitedotcom%2Fdevices%2Fvehicle_mod_box_spawner_device&quot;
+}"></fortnite-navigation><!----><!----><!----><!----><!----><!----></site-header><!----><side-panel ngh="1"><div class="side-panel"><div class="mb-3"><button type="button" class="btn btn-lg is-close" title="Close"><i class="eds-icon icon-x-mark"></i></button></div><!----></div><div tabindex="0" class="side-panel-backdrop"></div></side-panel><div class="site-container"><site-nav class="site-nav d-print-none" ngh="4"><edc-sidebar class="" is-collapsed="false" application-family="fortnite" user-avatar-url="https://edc-cdn.net/assets/images/default-user.svg" app-context="community" can-access-manage="false" locale="en-us" nav-links="[]" category-links="[]" is-show-profile-links="true"><div><table-of-contents class="document-table-of-content-block" ngh="3"><spinner ngh="2"><div class="spinner py-5"><span class="eds-icon icon-epic"></span></div></spinner><!----><!----><!----><div class="documents-tree"><nav><ul class="contents-table"><!----><!----></ul></nav></div><!----><!----><!----><!----></table-of-contents><!----></div><!----></edc-sidebar><!----></site-nav><router-outlet class="page-content"></router-outlet><document ngh="16"><div class="page-document has-theme-bg"><!----><button type="button" class="btn is-active is-table-of-contents d-md-none d-print-none stick-to-top"><span>Table of Contents</span><i class="eds-icon icon-chevron-down icon-pad-left"></i></button><!----><div class="container"><!----><div class="row align-items-start"><main><header class="section-page-header"><div class="row d-flex justify-content-between"><div class="col col-sm-10"><nav ngskiphydration=""><ol class="breadcrumb is-shrinkable"><li class="breadcrumb-item is-root"><span class="icon-pad-right"><img alt="Epic Games" width="20" height="20" class="align-middle" src="https://edc-cdn.net/assets/images/logo-epic.svg"></span><a href="/">Developer</a></li><!----><!----><li class="breadcrumb-item active" aria-current="page"><span class="text-truncate">vehicle_mod_box_spawner_device class</span><!----><!----></li><!----><!----><!----><!----></ol><!----></nav></div><!----></div><!----><h1>vehicle_mod_box_spawner_device class</h1><p class="text-secondary mb-0"> Learn technical details about the vehicle_mod_box_spawner_device class. </p><!----></header><!----><div class="row"><div class="col-lg-9 print-w-100"><!----><!----><!----><header class="document-header mb-3 d-lg-none d-print-none"><content-nav class="content-nav is-collapsible" ngh="5"><!----><button type="button" class="btn btn-md btn-outline"> On this page<i class="eds-icon icon-pad-left icon-chevron-down"></i></button><!----><!----><!----><!----><!----><!----><!----></content-nav></header><!----><article><!----><!----><div document-content-blocks-renderer="" class="d-block" ngh="9"><div id="content-blocks-renderer" class="content-blocks-renderer"><block-switch-control class="block-switch-control" ngh="6"><!----></block-switch-control><block-switch-info class="block-switch-info" ngh="7"><!----></block-switch-info><blocks-renderer id="blocks-renderer" ngh="8"><!----><block-markdown ngh="2"><div class="block-markdown"><div><p>Used to spawn customizable boxes containing vehicle mods. Hit a box with a vehicle to apply the mod.</p>
+</div>
+
+
+
+<div class="table-responsive"><table class="table" style="--columns-count: 2;">
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Verse <code>using</code> statement</td>
+      <td><code>using { /Fortnite.com/Devices }</code></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="inheritancehierarchy">Inheritance Hierarchy</h2>
+
+<p>This class is derived from the following hierarchy, starting with <code>creative_object</code>:</p>
+
+<div class="table-responsive"><table class="table" style="--columns-count: 2;">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object"><code>creative_object</code></a></td>
+      <td><div><p>Base class for creative devices and props.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device_base" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_device_base"><code>creative_device_base</code></a></td>
+      <td><div><p>Base class for creative_device.</p>
+</div></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="exposedinterfaces">Exposed Interfaces</h2>
+
+<p>This class exposes the following interfaces:</p>
+
+<div class="table-responsive"><table class="table" style="--columns-count: 2;">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/versedotorg/verse/enableable" data-pathname="/fortnite/verse-api/versedotorg/verse/enableable"><code>enableable</code></a></td>
+      <td><div><p>Implemented by classes whose instances can be enabled and disabled.</p>
+</div></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="members">Members</h2>
+
+<p>This class has both data members and functions.</p>
+
+<h3 id="data">Data</h3>
+
+<div class="table-responsive"><table class="table" style="--columns-count: 3;">
+  <thead>
+    <tr>
+      <th>Data Member Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>BoxDestroyedEvent</code></td>
+      <td><code>listenable(payload)</code></td>
+      <td><div>
+<p>Triggers whenever the mod box is destroyed regardless of whether a mod was applied.
+Returns tuple:</p>
+<ul>
+  <li>0: The <code>agent</code> that triggered this event, if applicable.</li>
+  <li>1: The index <code>int</code> of the chosen mod in the device's list, starting with <code>0</code> for Custom List Mod 1.
+If <em>Possible Mods</em> is not set to <code>Custom List</code>, <code>int</code> will be <code>-1</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><code>BoxSpawnedEvent</code></td>
+      <td><code>listenable(payload)</code></td>
+      <td><div>
+<p>Triggers whenever the mod box spawns.</p>
+<ul>
+  <li>Returns the index <code>int</code> of the chosen mod in the device's list, starting with <code>0</code> for Custom List Mod 1.
+If <em>Possible Mods</em> is not set to <code>Custom List</code>, <code>int</code> will be <code>-1</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><code>ModAppliedEvent</code></td>
+      <td><code>listenable(payload)</code></td>
+      <td><div>
+<p>Triggers whenever the mod is applied to a vehicle.
+Returns tuple:</p>
+<ul>
+  <li>0: The <code>agent</code> driving the vehicle, if applicable.</li>
+  <li>1: The <code>fort_vehicle</code> the mod applied to.</li>
+  <li>2: The index <code>int</code> of the chosen mod in the device's list, starting with <code>0</code> for Custom List Mod 1.
+If <em>Possible Mods</em> is not set to <code>Custom List</code>, <code>int</code> will be <code>-1</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><code>ModApplyFailedEvent</code></td>
+      <td><code>listenable(payload)</code></td>
+      <td><div>
+<p>Triggers whenever the mod fails to apply to a vehicle.
+Returns tuple:</p>
+<ul>
+  <li>0: The <code>agent</code> driving the vehicle, if applicable.</li>
+  <li>1: The <code>fort_vehicle</code> the mod failed to apply to.</li>
+  <li>2: The index <code>int</code> of the chosen mod in the device's list, starting with <code>0</code> for Custom List Mod 1.
+If <em>Possible Mods</em> is not set to <code>Custom List</code>, <code>int</code> will be <code>-1</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><code>ModApplyOverriddenEvent</code></td>
+      <td><code>listenable(payload)</code></td>
+      <td><div>
+<p>If ModAppliedEvent is overridden (see <code>SetOverrideModApplyEvent</code>), breaking a mod box triggers this instead of <code>ModAppliedEvent</code>, <code>ModApplyFailEvent</code>, or <code>NoModEvent</code>.
+Returns tuple:</p>
+<ul>
+  <li>0: The <code>agent</code> driving the vehicle, if applicable.</li>
+  <li>1: The <code>fort_vehicle</code> the mod would attempt to apply to.</li>
+  <li>2: The index <code>int</code> of the chosen mod in the device's list, starting with <code>0</code> for Custom List Mod 1.
+If <em>Possible Mods</em> is not set to <code>Custom List</code>, <code>int</code> will be <code>-1</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><code>ModBoxCustomListSettings</code></td>
+      <td><code>?[]vehicle_mod_box_settings</code></td>
+      <td><div>
+<p>An array containing the custom settings for each entry in the device's custom list.</p>
+<ul>
+  <li>Index <code>0</code> applies to Custom List Mod 1, index <code>1</code> applies to Custom List Mod 2, and so on.</li>
+  <li>The contents of each entry in the array can be individually set and returned.</li>
+  <li>If <em>Possible Mods</em> is not set to <code>Custom List</code>, this array will be empty.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><code>ModBoxOverallSettings</code></td>
+      <td><code>?vehicle_mod_box_settings</code></td>
+      <td><div>
+<p>Contains the custom settings for <em>Overall Visual Style</em>, which can be individually set and returned.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><code>NoModEvent</code></td>
+      <td><code>listenable(payload)</code></td>
+      <td><div>
+<p>Triggers whenever a <code>No Mod</code> entry from a custom list tries to apply to a vehicle.
+Returns tuple:</p>
+<ul>
+  <li>0: The <code>agent</code> driving the vehicle, if applicable.</li>
+  <li>1: The <code>fort_vehicle</code> that broke the box.</li>
+  <li>2: The index <code>int</code> of the specific <code>No Mod</code> entry in the device's list, starting with <code>0</code> for Custom List Mod 1.</li>
+</ul>
+</div></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h3 id="functions">Functions</h3>
+
+<div class="table-responsive"><table class="table" style="--columns-count: 2;">
+  <thead>
+    <tr>
+      <th>Function Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/cycletonextvalidindex" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/cycletonextvalidindex"><code>CycleToNextValidIndex</code></a></td>
+      <td><div><p>If the mod box is spawned, respawn it as the next valid entry in the list without triggering <code>BoxDestroyEvent</code>.</p>
+<ul>
+  <li>If the mod box is not spawned, that will be the next mod box.</li>
+  <li>The list wraps, which means the first index is considered directly after the last index.</li>
+  <li>Does nothing if this device is disabled or <em>Possible Mods</em> is not set to <code>Custom List</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/cycletopreviousvalidindex" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/cycletopreviousvalidindex"><code>CycleToPreviousValidIndex</code></a></td>
+      <td><div><p>If the mod box is spawned, respawn it as the previous valid entry in the list without triggering <code>BoxDestroyEvent</code>.</p>
+<ul>
+  <li>If the mod box is not spawned, that will be the next mod box.</li>
+  <li>The list wraps, which means the last index is considered directly before the first index.</li>
+  <li>Does nothing if this device is disabled or <em>Possible Mods</em> is not set to <code>Custom List</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/despawnbox" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/despawnbox"><code>DespawnBox</code></a></td>
+      <td><div><p>Despawn the box and clear the spawn timer without triggering <code>BoxDestroyEvent</code>. The respawn hologram will be visible, but will not progress without <code>StartSpawnTimer</code>. The device must be enabled.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/disable" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/disable"><code>Disable</code></a></td>
+      <td><div><p>Disable the device and clear any active spawn timer. While disabled, it will be hidden and vehicle mod boxes will not spawn.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/enable" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/enable"><code>Enable</code></a></td>
+      <td><div><p>Enable the device and start the spawn timer. While enabled, it can spawn vehicle mod boxes, and those boxes can be interacted with.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getactivetimerremaining" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getactivetimerremaining"><code>GetActiveTimerRemaining</code></a></td>
+      <td><div><p>Returns the remaining time (in seconds) of the device's active spawn timer.</p>
+<ul>
+  <li>If there is no active timer, return <code>0.0</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getcurrentindex" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getcurrentindex"><code>GetCurrentIndex</code></a></td>
+      <td><div><p>Returns the current index <code>int</code> in the device's list of mod boxes. This value is set whenever the device spawns a new mod box.</p>
+<ul>
+  <li>The device's list starts with <code>0</code> for Custom List Mod 1.</li>
+  <li>If <em>Possible Mods</em> is not set to <code>Custom List</code> or the device has never spawned a mod box, <code>int</code> will be <code>-1</code>.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/getglobaltransform" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/getglobaltransform"><code>GetGlobalTransform</code></a></td>
+      <td><div><p>Gets the global transform of this object.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getinitialspawntimerlength" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getinitialspawntimerlength"><code>GetInitialSpawnTimerLength</code></a></td>
+      <td><div><p>Returns the total length of the initial spawn timer in seconds, regardless of the timer's current state.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getrespawntimerlength" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getrespawntimerlength"><code>GetRespawnTimerLength</code></a></td>
+      <td><div><p>Returns the total length of the respawn timer in seconds, regardless of the timer's current state.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getspawncount" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getspawncount"><code>GetSpawnCount</code></a></td>
+      <td><div><p>Returns the number of times the device has spawned a mod box.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/gettransform" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/gettransform"><code>GetTransform</code></a></td>
+      <td><div><p>Returns the transform of the <code>creative_object</code> with units in cm. You must check <code>creative_object.IsValid</code> before calling this if there is a possibility the object has been disposed or destroyed by gameplay.
+Otherwise a runtime error will result.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isenabled" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isenabled"><code>IsEnabled</code></a></td>
+      <td><div><p>Succeeds if the object is enabled, fails if it's disabled.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isspawned" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isspawned"><code>IsSpawned</code></a></td>
+      <td><div><p>Check if this device currently has a spawned mod box.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isvalidindex" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isvalidindex"><code>IsValidIndex</code></a></td>
+      <td><div><p>Succeeds if <code>Index</code> is a valid entry in the device's list. Fails if <code>Index</code> is an invalid entry or <em>Possible Mods</em> is not set to <code>Custom List</code>.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto"><code>MoveTo</code></a></td>
+      <td><div><p>Moves the <code>creative_object</code> to the specified <code>Position</code> and <code>Rotation</code> over the specified time, in seconds. If an animation is currently playing on the <code>creative_object</code> it will be stopped and put into the <code>AnimationNotSet</code> state.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto-1" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto-1"><code>MoveTo</code></a></td>
+      <td><div><p>Moves the <code>creative_object</code> to the specified <code>Transform</code> over the specified time, in seconds. If an animation is currently playing on the <code>creative_object</code> it will be stopped and put into the <code>AnimationNotSet</code> state.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto-2" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto-2"><code>MoveTo</code></a></td>
+      <td><div><p>Moves the <code>creative_device</code> to the specified <code>Transform</code> over the specified time, in seconds. If an animation is currently playing on the <code>creative_device</code> it will be stopped and put into the <code>AnimationNotSet</code> state.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/resetmodboxname" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/resetmodboxname"><code>ResetModBoxName</code></a></td>
+      <td><div><p>Reset the names of this device's mod boxes, if the name has been customized.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/resetplayertooltip" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/resetplayertooltip"><code>ResetPlayerTooltip</code></a></td>
+      <td><div><p>Reset the text of the tooltip that appears when a player gets close to the mod box without a vehicle, if it's been customized.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setcustommodboxname" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setcustommodboxname"><code>SetCustomModBoxName</code></a></td>
+      <td><div><p>Set this device's mod boxes to use the name <code>Name</code></p>
+<ul>
+  <li>The displayed name will not exceed 50 characters.</li>
+  <li>The following characters are disallowed: {, }, &lt;, &gt;, \, /, and |.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setcustomplayertooltiptext" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setcustomplayertooltiptext"><code>SetCustomPlayerTooltipText</code></a></td>
+      <td><div><p>Set the <code>Text</code> of the tooltip that appears when a player gets close to the mod box without a vehicle.</p>
+<ul>
+  <li>The displayed text will not exceed 50 characters.</li>
+  <li>The following characters are disallowed: {, }, &lt;, &gt;, \, /, and |.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/setglobaltransform" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/setglobaltransform"><code>SetGlobalTransform</code></a></td>
+      <td><div><p>Sets the global transform of this object.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setinitialspawntimer" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setinitialspawntimer"><code>SetInitialSpawnTimer</code></a></td>
+      <td><div><p>Set the remaining time (in seconds) on the initial spawn timer (clamped to a minimum of <code>0.0</code>). The device must be enabled.</p>
+<ul>
+  <li>Even if the initial spawn timer is not currently active, this sets its length.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setnextmodindex" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setnextmodindex"><code>SetNextModIndex</code></a></td>
+      <td><div><p>Set the next mod box to spawn to be the one at <code>Index</code> in the device's list.</p>
+<ul>
+  <li>The first index in the list is <code>0</code> for Custom List Mod 1.</li>
+  <li>Does nothing if this device is disabled, <em>Possible Mods</em> is not set to <code>Custom List</code>, or <code>Index</code> is invalid.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setoverridemodapplyevent" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setoverridemodapplyevent"><code>SetOverrideModApplyEvent</code></a></td>
+      <td><div><p>If <code>Override</code> is <code>true</code>, destroying the mod box with a vehicle will trigger <code>ModApplyOverriddenEvent</code> and a mod will not be applied.</p>
+<ul>
+  <li>In this case, destroying the mod box will not trigger <code>ModAppliedEvent</code>, <code>ModApplyFailEvent</code>, or <code>NoModEvent</code>.</li>
+  <li>The values returned by <code>ModApplyOverriddenEvent</code> can be used for <code>TryApplyModByAgent</code> and <code>TryApplyModByVehicle</code>, so the event can be handled manually.</li>
+  <li>See <code>ModApplyOverriddenEvent</code> for more information.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setrespawntimer" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setrespawntimer"><code>SetRespawnTimer</code></a></td>
+      <td><div><p>Set the remaining time (in seconds) on the respawn timer (clamped to a minimum of <code>0.0</code>). The device must be enabled.</p>
+<ul>
+  <li>This also sets the length of this device's future respawn timers.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnbox" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnbox"><code>SpawnBox</code></a></td>
+      <td><div><p>Spawn a mod box if the device is enabled. If one is already spawned, spawn a new one without triggering <code>BoxDestroyEvent</code>.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnlastchosenmod" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnlastchosenmod"><code>SpawnLastChosenMod</code></a></td>
+      <td><div><p>Spawn the same mod box this device spawned before the current one. If a mod box is already spawned, despawn that first without triggering <code>BoxDestroyEvent</code>.</p>
+<ul>
+  <li>Does nothing if this device is disabled or has not spawned more than one mod box.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnmodboxbyindex" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnmodboxbyindex"><code>SpawnModBoxByIndex</code></a></td>
+      <td><div><p>Spawn the mod box at <code>Index</code> in the device's list. If a mod box is already spawned, despawn that first without triggering <code>BoxDestroyEvent</code>.</p>
+<ul>
+  <li>The first index in the list is <code>0</code> for Custom List Mod 1.</li>
+  <li>Does nothing if this device is disabled, <em>Possible Mods</em> is not set to <code>Custom List</code>, or <code>Index</code> is invalid.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/startspawntimer" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/startspawntimer"><code>StartSpawnTimer</code></a></td>
+      <td><div><p>Despawn the box if necessary without triggering <code>BoxDestroyEvent</code>, then start the spawn timer. The device must be enabled.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto"><code>TeleportTo</code></a></td>
+      <td><div><p>Teleports the <code>creative_object</code> to the specified <code>Position</code> and <code>Rotation</code>.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto-1" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto-1"><code>TeleportTo</code></a></td>
+      <td><div><p>Teleports the <code>creative_object</code> to the specified location defined by <code>Transform</code>, also applies rotation and scale accordingly.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto-2" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto-2"><code>TeleportTo</code></a></td>
+      <td><div><p>Teleports the <code>creative_device</code> to the specified location defined by <code>Transform</code>, also applies rotation and scale accordingly.</p>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/tryapplymodbyagent" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/tryapplymodbyagent"><code>TryApplyModByAgent</code></a></td>
+      <td><div><p>Apply the mod at <code>Index</code> in the device's list to the vehicle that <code>Agent</code> is riding.</p>
+<ul>
+  <li>The first index in the list is <code>0</code> for Custom List Mod 1.</li>
+  <li>Triggers <code>ModAppliedEvent</code>, <code>ModApplyFailEvent</code>, and <code>NoModEvent</code> as appropriate, regardless of <code>SetOverrideModApplyEvent</code>.</li>
+  <li>Fails if this device is disabled, <em>Possible Mods</em> is not set to <code>Custom List</code>, <code>Index</code> or <code>Agent</code> is invalid, or <code>Agent</code> is not riding a vehicle.</li>
+</ul>
+</div></td>
+    </tr>
+    <tr>
+      <td><a href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/tryapplymodbyvehicle" data-pathname="/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/tryapplymodbyvehicle"><code>TryApplyModByVehicle</code></a></td>
+      <td><div><p>Apply the mod at <code>Index</code> in the device's list to <code>Vehicle</code>.</p>
+<ul>
+  <li>The first index in the list is <code>0</code> for Custom List Mod 1.</li>
+  <li>Triggers <code>ModAppliedEvent</code>, <code>ModApplyFailEvent</code>, and <code>NoModEvent</code> as appropriate, regardless of <code>SetOverrideModApplyEvent</code>.</li>
+  <li>Fails if this device is disabled, <em>Possible Mods</em> is not set to <code>Custom List</code>, or <code>Index</code> or <code>Vehicle</code> is invalid.</li>
+  <li><code>Vehicle</code> must be an actual <code>fort_vehicle</code>. A vehicle spawner device will not be valid.</li>
+  <li><code>ModApplyOverriddenEvent</code>, <code>ModAppliedEvent</code>, <code>ModApplyFailEvent</code>, and <code>NoModEvent</code> are a few ways to get a <code>fort_vehicle</code> value.</li>
+</ul>
+</div></td>
+    </tr>
+  </tbody>
+</table></div>
+
+
+</div></block-markdown><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></blocks-renderer></div><!----></div></article><tags-list class="mt-1 d-print-none" ngh="10"><!----><ul class="labels-list is-links"><li class="labels-item"><!----><a class="labels-link" href="/community/search?query=api"> api</a><!----></li><li class="labels-item"><!----><a class="labels-link" href="/community/search?query=class"> class</a><!----></li><!----></ul><!----></tags-list><!----><div class="explore-more d-print-none"><hr class="hr mt-5"><p class="mb-2"><i class="eds-icon icon-talk-bubble-dots icon-pad-right align-text-bottom"></i>Ask questions and help your peers&nbsp;<a href="https://forums.unrealengine.com/categories?tag=fortnite"><span class="inner">Developer Forums</span></a></p><p><i class="eds-icon icon-file-lines icon-pad-right align-text-bottom"></i>Write your own tutorials or read those from others&nbsp;<a href="/community/fortnite/learning"><span class="inner">Learning Library</span></a></p></div><!----><div class="mb-5 d-print-none"></div></div><div class="col-lg-3 d-none d-lg-block d-print-none"><div class="document-btn-bar"><btn-favorite entitytype="document" ngh="11"><!----></btn-favorite><!----></div><!----><content-sidebar class="sidebar-sticky has-top-offset" ngh="15"><ng-scrollbar _nghost-serverapp-c1581645311="" mobile="false" dir="ltr" dragging="none" position="native" appearance="native" visibility="native" orientation="auto" disableinteraction="false" verticalused="false" horizontalused="false" isverticallyscrollable="false" ishorizontallyscrollable="false" style="--content-height: 0; --content-width: 0; --viewport-height: 0; --viewport-width: 0;" class="ng-scroll-viewport ng-scrollbar" ngh="13"><ng-scroll-content _ngcontent-serverapp-c1581645311="" _nghost-serverapp-c2617948613="" class="ng-scroll-content" ngh="2"><content-nav class="content-nav" ngh="14"><header class="content-nav-header"><div class="title">On this page</div></header><!----><!----><!----><ul class="list"><li class="list-item is-level-1"><a class="list-link" href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device#inheritancehierarchy">Inheritance Hierarchy</a></li><li class="list-item is-level-1"><a class="list-link" href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device#exposedinterfaces">Exposed Interfaces</a></li><li class="list-item is-level-1"><a class="list-link" href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device#members">Members</a></li><li class="list-item is-level-2"><a class="list-link" href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device#data">Data</a></li><li class="list-item is-level-2"><a class="list-link" href="/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device#functions">Functions</a></li><!----></ul><!----><!----><!----><!----><!----></content-nav><!----><!----><scrollbars _ngcontent-serverapp-c1581645311="" _nghost-serverapp-c4020475482="" ngh="12"><!----><!----></scrollbars></ng-scroll-content></ng-scrollbar></content-sidebar></div></div><!----><!----><!----></main></div></div></div><!----></document><!----></div><site-footer class="d-print-none" ngh="17"><!----><!----><!----><!----><fortnite-footer locale="en"></fortnite-footer><!----><!----><!----><!----></site-footer><!----><site-modal ngh="18"><div tabindex="-1" class="modal"><div class="modal-dialog modal-undefined"><div class="modal-content"><button type="button" class="btn-close" title="Close" aria-label="Close"></button><!----></div></div><!----></div></site-modal><notify-component ngh="2"></notify-component></app-root>
+
+    <script>
+      window._epicEnableCookieGuard = true
+    </script>
+    <!-- Tracking script loaded dynamically in app.component.ts with locale parameter -->
+  <script src="runtime.49b0244d621240ef.js" type="module"></script><script src="polyfills.555261395aeafad0.js" type="module"></script><script src="main.3563759949008071.js" type="module"></script>
+
+<script id="serverApp-state" type="application/json">{"1487856180":{"b":"{\n  \"consent_info_modal\": {\n    \"btn\": {\n      \"close\": \"Close\"\n    },\n    \"text\": \"You have successfully consented. You can review your\u003Ca href=\\\"%{ privacyEditPath }\\\" class=\\\"profile-data-info-link\\\"> privacy settings\u003C/a> and revoke consent at any time.\"\n  },\n  \"consent_modal\": {\n    \"btn\": {\n      \"dismiss\": \"Dismiss\",\n      \"save\": \"Save\"\n    },\n    \"checkbox\": \"I consent to creating content on the Epic Developer Community\",\n    \"note\": \"By selecting the checkbox below you consent to participating in the user forums on the Epic Developer Community.\",\n    \"text\": \"The Epic Developer Community is an open platform where users of Epic Games products can learn, share information, and gain inspiration for all of their projects.\u003C/br>\u003C/br> Communicating with others on the User Forums can be a great way to ask questions and learn from the community. Please be aware that anything you post is visible by everyone accessing the Epic Developer Community, whether they're a member or not.\u003C/br>\u003C/br> You may opt out of the user forums at any time. Upon opting out, all of your content will be anonymized, removing your display name and avatar. However, the thread content will still be viewable on the user forums.\",\n    \"title\": \"Communication Consent\"\n  },\n  \"consent_warning_modal\": {\n    \"btn\": {\n      \"close\": \"Close\"\n    },\n    \"text\": \"You have not given your consent. You can review your\u003Ca href=\\\"%{ privacyEditPath }\\\" class=\\\"profile-data-info-link\\\"> privacy settings\u003C/a> and provide consent at any time.\"\n  },\n  \"global\": {\n    \"breadcrumbs\": {\n      \"btn\": {\n        \"expand\": \"Expand breadcrumbs\"\n      },\n      \"context\": {\n        \"community\": \"Community\",\n        \"documentation\": \"Documentation\"\n      },\n      \"developer\": \"Developer\"\n    },\n    \"btn\": {\n      \"add\": {\n        \"link\": \"Add Link\",\n        \"snippet\": \"Add Snippet\",\n        \"step\": \"Add Step\"\n      },\n      \"back_to\": {\n        \"repository\": \"Back to Repository\"\n      },\n      \"clear\": \"Clear\",\n      \"collapse\": \"Collapse\",\n      \"collapse_all\": \"Collapse all\",\n      \"delete\": {\n        \"community_tutorial\": \"Delete Community Tutorial\",\n        \"course\": \"Delete Course\",\n        \"default\": \"Delete\",\n        \"knowledge_base\": \"Delete Knowledge Base\",\n        \"learning_path\": \"Delete Learning Path\",\n        \"livestream\": \"Delete Livestream\",\n        \"recommended_community_tutorial\": \"Delete Recommended Tutorial\",\n        \"snippet\": \"Delete Snippet\",\n        \"talks_and_demos\": \"Delete Talks and Demos\",\n        \"tutorial\": \"Delete Tutorial\"\n      },\n      \"edit\": {\n        \"default\": \"Edit\",\n        \"snippet\": \"Edit snippet\",\n        \"title\": \"Edit Title\"\n      },\n      \"expand\": \"Expand\",\n      \"expand_all\": \"Expand all\",\n      \"go_to\": {\n        \"library\": \"Go to Library\"\n      },\n      \"new\": {\n        \"create\": \"Create new\",\n        \"default\": \"New\",\n        \"snippet\": \"New snippet\"\n      },\n      \"next\": \"Next\",\n      \"prev\": \"Previous\",\n      \"publish\": \"Publish\",\n      \"publishing\": \"Publishing\",\n      \"remove\": {\n        \"link\": \"Remove Link\"\n      },\n      \"report\": {\n        \"default\": \"Report\"\n      },\n      \"save\": \"Save\",\n      \"save_draft\": \"Save draft\",\n      \"saving\": \"Saving\",\n      \"search\": \"Filter by keyword...\",\n      \"unpublish\": \"Unpublish\",\n      \"unpublishing\": \"Unpublishing\",\n      \"view\": {\n        \"community_tutorial\": \"View Community Tutorial\",\n        \"course\": \"View Course\",\n        \"default\": \"View\",\n        \"knowledge_base\": \"View Knowledge Base\",\n        \"learning_path\": \"View Learning Path\",\n        \"livestream\": \"View Livestream\",\n        \"recommended_community_tutorial\": \"View Recommended Tutorial\",\n        \"snippet\": \"View snippet\",\n        \"talks_and_demos\": \"View Talks and Demos\",\n        \"tutorial\": \"View Tutorial\"\n      }\n    },\n    \"data\": {\n      \"all\": \"All\",\n      \"course\": \"course\",\n      \"items\": \"items\",\n      \"learning_path\": \"learning path\",\n      \"link\": \"link\",\n      \"path\": \"path\",\n      \"snippet\": \"snippet\",\n      \"step\": \"step\",\n      \"tutorial\": \"tutorial\"\n    },\n    \"error\": {\n      \"message\": {\n        \"cant_find_any_content\": \"Can't find any content\",\n        \"cant_load_content\": \"Error loading {{ content }}\",\n        \"nothing_found\": \"Nothing found\"\n      }\n    },\n    \"form\": {\n      \"confirm\": {\n        \"delete\": \"Are you sure you want to delete this {{ component }}?\"\n      },\n      \"error\": {\n        \"cannot_be_longer_than\": \"Cannot be longer than\",\n        \"cannot_contain_leading_or_trailing_whitespace\": \"cannot have leading or trailing whitespace\",\n        \"characters\": \"characters\",\n        \"is_invalid\": \"is invalid\",\n        \"is_required\": \"is required\",\n        \"should_contain_at_least\": \"Should contain at least\"\n      },\n      \"fieldset\": {\n        \"categories\": \"Categories\",\n        \"communities\": \"Communities\",\n        \"tags\": \"Tags\"\n      },\n      \"hint\": {\n        \"image_formats\": \"{{ formatsList }} (recommended size: {{ recommendedSize }})\"\n      },\n      \"label\": {\n        \"categories\": \"Categories\",\n        \"category\": \"Category\",\n        \"community\": \"Community\",\n        \"description\": \"Description\",\n        \"filter_by\": \"Filter by\",\n        \"filters\": \"Filters\",\n        \"industries\": \"Industries\",\n        \"locale\": \"Locale\",\n        \"name\": \"Name\",\n        \"published\": \"Published\",\n        \"purpose\": \"Purpose\",\n        \"thumbnail\": \"Thumbnail\",\n        \"title\": \"Title\",\n        \"type\": \"Type\",\n        \"url\": \"URL\"\n      },\n      \"message\": {\n        \"error_deleting\": \"Error deleting {{ component }}\",\n        \"error_publishing\": \"Error publishing {{ component }}\",\n        \"error_saving\": \"Error saving {{ component }}\",\n        \"success_deleting\": \"{{ component }} deleted successfully\",\n        \"success_publishing\": \"{{ component }} published successfully\",\n        \"success_saving\": \"{{ component }} saved successfully\",\n        \"success_unpublished\": \"{{ component }} unpublished successfully\",\n        \"success_updating\": \"Successfully updated {{ component }}\"\n      },\n      \"required\": \"Required\",\n      \"state\": {\n        \"unpublished\": \"Unpublished\"\n      }\n    },\n    \"form_drop\": {\n      \"change\": \"Change {{ label }}\",\n      \"click_to_upload\": \"Click to upload\",\n      \"drop_file\": \"drag & drop file\",\n      \"drop_files\": \"drag & drop files\",\n      \"file_attached\": \"File attached\"\n    },\n    \"general\": {\n      \"application_family\": {\n        \"epic_for_indies\": \"Epic for Indies\",\n        \"epic_games_store\": \"Epic Games Store\",\n        \"epic_online_services\": \"Epic Online Services\",\n        \"fab\": \"Fab\",\n        \"fortnite\": \"Fortnite\",\n        \"metahuman\": \"MetaHuman\",\n        \"online_services\": \"Online Services\",\n        \"realityscan\": \"RealityScan\",\n        \"twinmotion\": \"Twinmotion\",\n        \"unreal_engine\": \"Unreal Engine\"\n      },\n      \"category\": {\n        \"animation_blueprint\": \"Animation Blueprint\",\n        \"asset_creation\": \"Asset Creation\",\n        \"audio\": \"Audio\",\n        \"behavior_tree\": \"Behavior Tree\",\n        \"blueprint\": \"Blueprint\",\n        \"business\": \"Business\",\n        \"c_programming\": \"C\",\n        \"c_sharp\": \"C#\",\n        \"character_and_animation\": \"Character & Animation\",\n        \"cinematics_and_media\": \"Cinematics & Media\",\n        \"command_line\": \"Command Line\",\n        \"config\": \"Config\",\n        \"console_output\": \"Console Output\",\n        \"control_rig\": \"Control Rig\",\n        \"cpp_programming\": \"C++\",\n        \"devices\": \"Devices\",\n        \"distribution_and_marketing\": \"Distribution & Marketing\",\n        \"game_production\": \"Game Production\",\n        \"getting_started_and_setup\": \"Getting Started & Setup\",\n        \"hlsl\": \"HLSL\",\n        \"http\": \"HTTP\",\n        \"java\": \"Java\",\n        \"marketing\": \"Marketing\",\n        \"materials\": \"Materials\",\n        \"metasounds\": \"Metasounds\",\n        \"niagara\": \"Niagara\",\n        \"parser\": \"paRSer\",\n        \"pcg\": \"PCG\",\n        \"pipeline_and_plugins\": \"Pipeline & Plugins\",\n        \"platforms_and_builds\": \"Platforms & Builds\",\n        \"programming_and_scripting\": \"Programming & Scripting\",\n        \"publishing\": \"Publishing\",\n        \"python\": \"Python\",\n        \"rendering\": \"Rendering\",\n        \"shell\": \"Shell\",\n        \"swift\": \"Swift\",\n        \"umg_blueprint\": \"UMG Blueprint\",\n        \"umg_widget\": \"UMG Widget\",\n        \"verse\": \"Verse\",\n        \"world_creation\": \"World Creation\",\n        \"world_geometry\": \"World Geometry\",\n        \"xml\": \"XML\"\n      },\n      \"industry\": {\n        \"architecture\": \"Architecture\",\n        \"film_and_tv\": \"Film & TV\",\n        \"games\": \"Games\",\n        \"virtual_production\": \"Virtual Production\",\n        \"visualization\": \"Visualization\"\n      },\n      \"locale\": {\n        \"ar\": \"Arabic\",\n        \"de\": \"German\",\n        \"en-US\": \"English\",\n        \"es-ES\": \"Spanish\",\n        \"es-MX\": \"Spanish (Mexico)\",\n        \"fr\": \"French\",\n        \"it\": \"Italian\",\n        \"ja\": \"Japanese\",\n        \"ko\": \"Korean\",\n        \"other\": \"Other\",\n        \"pl\": \"Polish\",\n        \"pt-BR\": \"Portuguese\",\n        \"ru\": \"Russian\",\n        \"tr\": \"Turkish\",\n        \"zh-CN\": \"Chinese\"\n      },\n      \"sort_by\": {\n        \"answer_count\": \"Answer count\",\n        \"created_at\": \"Created At\",\n        \"first_published_at\": \"Published on\",\n        \"member_count\": \"Member count\",\n        \"member_since\": \"Member since\",\n        \"name\": \"Name\",\n        \"post_count\": \"Post count\",\n        \"published_at\": \"Published on\",\n        \"relevancy\": \"Relevancy\",\n        \"trending_rank\": \"Trending\",\n        \"tutorial_count\": \"Tutorial count\",\n        \"updated_at\": \"Updated At\",\n        \"username\": \"Username\",\n        \"views_count\": \"Views\"\n      },\n      \"badge\": {\n        \"title\": {\n          \"community_hero\": \"Hero\",\n          \"staff\": \"Staff\",\n          \"partner\": \"Partner\",\n          \"unreal_meetup_lead\": \"Unreal Meetup Lead\",\n          \"forum_veteran\": \"Forum Veteran\",\n          \"q_and_a_sage\": \"Q&A Sage\",\n          \"fab_publisher\": \"Fab Publisher\",\n          \"engine_contributor\": \"Engine Contributor\",\n          \"rocket_beta_participant\": \"Rocket Beta Participant\",\n          \"megagrant_recipient\": \"MegaGrant Recipient\",\n          \"instructor\": \"Instructor\",\n          \"snippet_guru\": \"Snippet Guru\",\n          \"tutorial_guru\": \"Tutorial Guru\",\n          \"uefn_alpha_participant\": \"UEFN Alpha Participant\",\n          \"challenge_winner\": \"Challenge Winner\",\n          \"megajam_winner\": \"MegaJam Winner\",\n          \"training_center\": \"Training Center\",\n          \"founding_hero\": \"Founding Hero\",\n          \"alumni_hero\": \"Alumni Hero\",\n          \"epic_alumni\": \"Epic Alumni\"\n        }\n      }\n    },\n    \"learning\": {\n      \"block\": {\n        \"attachment\": \"Attachment\",\n        \"code_snippet\": \"Code\",\n        \"external_video\": \"External Video\",\n        \"image\": \"Image\",\n        \"link_group\": \"Resources\",\n        \"markdown\": \"Markdown\",\n        \"rich_text\": \"Rich Text\",\n        \"video\": \"Video\"\n      },\n      \"entity\": {\n        \"community_tutorial\": \"Community Tutorial\",\n        \"course\": \"Course\",\n        \"knowledge_base\": \"Knowledge Base\",\n        \"learning_path\": \"Learning Path\",\n        \"livestream\": \"Livestream\",\n        \"recommended_community_tutorial\": \"Recommended Community Tutorial\",\n        \"talks_and_demos\": \"Talks and Demos\",\n        \"tutorial\": \"Tutorial\"\n      },\n      \"entity_group\": {\n        \"community\": \"Community\",\n        \"epic\": \"Epic Games\"\n      },\n      \"entity_manage\": {\n        \"academic_resources\": \"Academic Resources\",\n        \"community_tutorial\": \"Community Tutorial\",\n        \"course\": \"Course\",\n        \"course_module\": \"Course Module\",\n        \"knowledge_base\": \"Knowledge Base\",\n        \"learning_path\": \"Learning Path\",\n        \"livestream\": \"Livestream\",\n        \"recommended_community_tutorial\": \"Recommended Community Tutorial\",\n        \"sample_projects\": \"Sample Projects\",\n        \"talks_and_demos\": \"Talks and Demos\",\n        \"tutorial\": \"Tutorial\"\n      },\n      \"entity_plural\": {\n        \"academic_resources\": \"Academic Resources\",\n        \"community_tutorial\": \"Community Tutorials\",\n        \"course\": \"Courses\",\n        \"knowledge_base\": \"Knowledge Base\",\n        \"learning_path\": \"Learning Paths\",\n        \"livestream\": \"Livestreams\",\n        \"recommended_community_tutorial\": \"Recommended Tutorials\",\n        \"sample_projects\": \"Sample Projects\",\n        \"talks_and_demos\": \"Talks & Demos\",\n        \"tutorial\": \"Tutorials\"\n      },\n      \"module\": \"Module\",\n      \"modules\": \"Modules\"\n    },\n    \"nav\": {\n      \"learning\": \"Learning\",\n      \"snippets\": \"Snippets\"\n    },\n    \"preposition\": {\n      \"for\": \"for\",\n      \"of\": \"of\",\n      \"or\": \"or\"\n    },\n    \"search\": {\n      \"form\": {\n        \"label\": {\n          \"forum\": {\n            \"discussion\": \"Discussion\",\n            \"question\": \"Question\"\n          },\n          \"type\": {\n            \"api_document\": \"API Documentation\",\n            \"document\": \"Documentation\",\n            \"forum\": \"Forum\",\n            \"learning\": \"Learning\",\n            \"snippets\": \"Snippets\",\n            \"user_profiles\": \"Profiles\"\n          }\n        }\n      },\n      \"result\": \"result\",\n      \"results\": \"results\"\n    },\n    \"snippets\": {\n      \"purpose\": {\n        \"building_block\": \"Building Block\",\n        \"experimental\": \"Experimental\",\n        \"learning_example\": \"Learning Example\",\n        \"tool_and_pipeline\": \"Tool and Pipeline\"\n      }\n    },\n    \"static\": {\n      \"page_subtitle\": {\n        \"epic_for_indies\": \"Epic for Indies\",\n        \"epic_games_store\": \"For Epic Games Store & Publishing\",\n        \"fab\": \"For Fab\",\n        \"fortnite\": \"For Fortnite Creative & Unreal Editor for Fortnite\",\n        \"metahuman\": \"For MetaHuman Animator & Creator\",\n        \"online_services\": \"For Account Services & Game Services\",\n        \"realityscan\": \"For RealityScan & RealityScan Mobile\",\n        \"twinmotion\": \"For Twinmotion\",\n        \"unreal_engine\": \"For Unreal Engine\"\n      }\n    },\n    \"stats\": {\n      \"post\": \"post\",\n      \"posts\": \"Posts\",\n      \"answer\": \"Answer\",\n      \"answers\": \"Answers\",\n      \"tutorial\": \"tutorial\",\n      \"tutorials\": \"Tutorials\",\n      \"members\": \"members\"\n    }\n  },\n  \"learning\": {\n    \"subtitle\": {\n      \"eos\": \"Build multiplayer experiences with Epic Online Services\",\n      \"epic-for-indies\": \"Resources and tutorials for indie game developers\",\n      \"epic-games-store\": \"Learn how to publish and manage your games on the Epic Games Store\",\n      \"fab\": \"Discover and learn about assets on Fab\",\n      \"fortnite\": \"From your first island to advanced game design, master Fortnite creative development\",\n      \"metahuman\": \"Create stunning digital humans with MetaHuman\",\n      \"online-services\": \"Build multiplayer experiences with Epic Online Services\",\n      \"realityscan\": \"Capture reality with RealityScan\",\n      \"twinmotion\": \"Create stunning visualizations with Twinmotion\",\n      \"unreal-engine\": \"From your first steps to complete mastery of Unreal Engine, we've got you covered.\"\n    },\n    \"title\": \"Learn \"\n  },\n  \"warning\": {\n    \"consent\": {\n      \"text\": \"Review your \u003Ca href=\\\"%{ privacyEditPath }\\\" class=\\\"profile-data-info-link\\\">communication consent\u003C/a> to create posts on the learning library and snippets repository\",\n      \"title\": \"Communication Consent\"\n    }\n  }\n}\n","h":{},"s":200,"st":"OK","u":"/documentation/assets/i18n/en-US.json","rt":"text"},"2354460367":{"b":"{\n  \"ai_answers\": \"AI Answers\",\n  \"form\": {\n    \"expand\": {\n      \"show_less\": \"Show less\",\n      \"show_more\": \"Show more\"\n    },\n    \"label\": {\n      \"date_range\": {\n        \"any_time\": \"Any Time\",\n        \"last_30_days\": \"Last 30 days\",\n        \"last_week\": \"Last Week\",\n        \"last_year\": \"Last Year\"\n      }\n    },\n    \"toggle_filters\": \"Filters\"\n  },\n  \"go_to_search_page\": \"Go to Search page\",\n  \"info_better_results\": \"Want better results? Refine your search with more details. Use \u003Cmark>\\\" \\\"\u003C/mark> for exact match, \u003Cmark>AND\u003C/mark> and \u003Cmark>OR\u003C/mark> for multiple terms, \u003Cmark>-\u003C/mark> to exclude.\",\n  \"no_result\": \"Sorry, we couldn’t find any results for this search.\",\n  \"no_results\": \"No results\",\n  \"nothing_found\": \"Nothing found\",\n  \"page_title\": \"Search\",\n  \"search_across\": \"Search the Epic Developer Community\",\n  \"search_across_description\": \"Find the resources you need throughout documentation, tutorials, forum posts, and much more.\",\n  \"search_in_types\": {\n    \"assistant\": \"Ask the Developer Assistant for help with\",\n    \"documentation\": \"Documentation\",\n    \"forums\": \"Forums\",\n    \"learning\": \"Learning\",\n    \"snippets\": \"Snippets\",\n    \"support\": \"Support\"\n  },\n  \"search_results\": \"search results\",\n  \"show_other_results\": \"Show other Results\",\n  \"showing_results_less_limit\": \"Showing {{ count }} results\",\n  \"showing_results_more_limit\": \"Showing first {{ count }} results\",\n  \"start_typing\": \"Start typing your search request\",\n  \"suggestions_title\": \"Did you mean...\",\n  \"title_search_in\": \"Search In\",\n  \"title_search_results\": \"Search Results\"\n}\n","h":{},"s":200,"st":"OK","u":"/documentation/assets/i18n/global/search/en-US.json","rt":"text"},"4195668439":{"b":{"id":4782502,"hash_id":"WdnkVb","revision_hash_id":"a7MMQP","revision_id":4795131,"updated_at":"2026-09-08T07:13:45.906Z","slug":"verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device","title":"vehicle_mod_box_spawner_device class","description":"Learn technical details about the vehicle_mod_box_spawner_device class.","source":"verse_api_external","locale":"en-us","document_type":null,"seo_title":"Verse API reference page for the vehicle_mod_box_spawner_device class","seo_description":"Learn technical details about the API for the vehicle_mod_box_spawner_device class in Verse.","seo_slug":"verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device","readiness":"production","entitlement":"none","views_count":258,"application_families":["fortnite"],"blocks":[{"type":"markdown","content_html":"\u003Cdiv>\u003Cp>Used to spawn customizable boxes containing vehicle mods. Hit a box with a vehicle to apply the mod.\u003C/p>\n\u003C/div>\n\n\n\n\u003Ctable>\n  \u003Cthead>\n    \u003Ctr>\n      \u003Cth> \u003C/th>\n      \u003Cth> \u003C/th>\n    \u003C/tr>\n  \u003C/thead>\n  \u003Ctbody>\n    \u003Ctr>\n      \u003Ctd>Verse \u003Ccode>using\u003C/code> statement\u003C/td>\n      \u003Ctd>\u003Ccode>using { /Fortnite.com/Devices }\u003C/code>\u003C/td>\n    \u003C/tr>\n  \u003C/tbody>\n\u003C/table>\n\n\u003Ch2>Inheritance Hierarchy\u003C/h2>\n\n\u003Cp>This class is derived from the following hierarchy, starting with \u003Ccode>creative_object\u003C/code>:\u003C/p>\n\n\u003Ctable>\n  \u003Cthead>\n    \u003Ctr>\n      \u003Cth>Name\u003C/th>\n      \u003Cth>Description\u003C/th>\n    \u003C/tr>\n  \u003C/thead>\n  \u003Ctbody>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object\">\u003Ccode>creative_object\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Base class for creative devices and props.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device_base\">\u003Ccode>creative_device_base\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Base class for creative_device.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n  \u003C/tbody>\n\u003C/table>\n\n\u003Ch2>Exposed Interfaces\u003C/h2>\n\n\u003Cp>This class exposes the following interfaces:\u003C/p>\n\n\u003Ctable>\n  \u003Cthead>\n    \u003Ctr>\n      \u003Cth>Name\u003C/th>\n      \u003Cth>Description\u003C/th>\n    \u003C/tr>\n  \u003C/thead>\n  \u003Ctbody>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/enableable\">\u003Ccode>enableable\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Implemented by classes whose instances can be enabled and disabled.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n  \u003C/tbody>\n\u003C/table>\n\n\u003Ch2>Members\u003C/h2>\n\n\u003Cp>This class has both data members and functions.\u003C/p>\n\n\u003Ch3>Data\u003C/h3>\n\n\u003Ctable>\n  \u003Cthead>\n    \u003Ctr>\n      \u003Cth>Data Member Name\u003C/th>\n      \u003Cth>Type\u003C/th>\n      \u003Cth>Description\u003C/th>\n    \u003C/tr>\n  \u003C/thead>\n  \u003Ctbody>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>BoxDestroyedEvent\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>listenable(payload)\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>Triggers whenever the mod box is destroyed regardless of whether a mod was applied.\nReturns tuple:\u003C/p>\n\u003Cul>\n  \u003Cli>0: The \u003Ccode>agent\u003C/code> that triggered this event, if applicable.\u003C/li>\n  \u003Cli>1: The index \u003Ccode>int\u003C/code> of the chosen mod in the device's list, starting with \u003Ccode>0\u003C/code> for Custom List Mod 1.\nIf \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, \u003Ccode>int\u003C/code> will be \u003Ccode>-1\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>BoxSpawnedEvent\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>listenable(payload)\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>Triggers whenever the mod box spawns.\u003C/p>\n\u003Cul>\n  \u003Cli>Returns the index \u003Ccode>int\u003C/code> of the chosen mod in the device's list, starting with \u003Ccode>0\u003C/code> for Custom List Mod 1.\nIf \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, \u003Ccode>int\u003C/code> will be \u003Ccode>-1\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>ModAppliedEvent\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>listenable(payload)\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>Triggers whenever the mod is applied to a vehicle.\nReturns tuple:\u003C/p>\n\u003Cul>\n  \u003Cli>0: The \u003Ccode>agent\u003C/code> driving the vehicle, if applicable.\u003C/li>\n  \u003Cli>1: The \u003Ccode>fort_vehicle\u003C/code> the mod applied to.\u003C/li>\n  \u003Cli>2: The index \u003Ccode>int\u003C/code> of the chosen mod in the device's list, starting with \u003Ccode>0\u003C/code> for Custom List Mod 1.\nIf \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, \u003Ccode>int\u003C/code> will be \u003Ccode>-1\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>ModApplyFailedEvent\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>listenable(payload)\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>Triggers whenever the mod fails to apply to a vehicle.\nReturns tuple:\u003C/p>\n\u003Cul>\n  \u003Cli>0: The \u003Ccode>agent\u003C/code> driving the vehicle, if applicable.\u003C/li>\n  \u003Cli>1: The \u003Ccode>fort_vehicle\u003C/code> the mod failed to apply to.\u003C/li>\n  \u003Cli>2: The index \u003Ccode>int\u003C/code> of the chosen mod in the device's list, starting with \u003Ccode>0\u003C/code> for Custom List Mod 1.\nIf \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, \u003Ccode>int\u003C/code> will be \u003Ccode>-1\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>ModApplyOverriddenEvent\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>listenable(payload)\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>If ModAppliedEvent is overridden (see \u003Ccode>SetOverrideModApplyEvent\u003C/code>), breaking a mod box triggers this instead of \u003Ccode>ModAppliedEvent\u003C/code>, \u003Ccode>ModApplyFailEvent\u003C/code>, or \u003Ccode>NoModEvent\u003C/code>.\nReturns tuple:\u003C/p>\n\u003Cul>\n  \u003Cli>0: The \u003Ccode>agent\u003C/code> driving the vehicle, if applicable.\u003C/li>\n  \u003Cli>1: The \u003Ccode>fort_vehicle\u003C/code> the mod would attempt to apply to.\u003C/li>\n  \u003Cli>2: The index \u003Ccode>int\u003C/code> of the chosen mod in the device's list, starting with \u003Ccode>0\u003C/code> for Custom List Mod 1.\nIf \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, \u003Ccode>int\u003C/code> will be \u003Ccode>-1\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>ModBoxCustomListSettings\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>?[]vehicle_mod_box_settings\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>An array containing the custom settings for each entry in the device's custom list.\u003C/p>\n\u003Cul>\n  \u003Cli>Index \u003Ccode>0\u003C/code> applies to Custom List Mod 1, index \u003Ccode>1\u003C/code> applies to Custom List Mod 2, and so on.\u003C/li>\n  \u003Cli>The contents of each entry in the array can be individually set and returned.\u003C/li>\n  \u003Cli>If \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, this array will be empty.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>ModBoxOverallSettings\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>?vehicle_mod_box_settings\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>Contains the custom settings for \u003Cem>Overall Visual Style\u003C/em>, which can be individually set and returned.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ccode>NoModEvent\u003C/code>\u003C/td>\n      \u003Ctd>\u003Ccode>listenable(payload)\u003C/code>\u003C/td>\n      \u003Ctd>\u003Cdiv>\n\u003Cp>Triggers whenever a \u003Ccode>No Mod\u003C/code> entry from a custom list tries to apply to a vehicle.\nReturns tuple:\u003C/p>\n\u003Cul>\n  \u003Cli>0: The \u003Ccode>agent\u003C/code> driving the vehicle, if applicable.\u003C/li>\n  \u003Cli>1: The \u003Ccode>fort_vehicle\u003C/code> that broke the box.\u003C/li>\n  \u003Cli>2: The index \u003Ccode>int\u003C/code> of the specific \u003Ccode>No Mod\u003C/code> entry in the device's list, starting with \u003Ccode>0\u003C/code> for Custom List Mod 1.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n  \u003C/tbody>\n\u003C/table>\n\n\u003Ch3>Functions\u003C/h3>\n\n\u003Ctable>\n  \u003Cthead>\n    \u003Ctr>\n      \u003Cth>Function Name\u003C/th>\n      \u003Cth>Description\u003C/th>\n    \u003C/tr>\n  \u003C/thead>\n  \u003Ctbody>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/cycletonextvalidindex\">\u003Ccode>CycleToNextValidIndex\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>If the mod box is spawned, respawn it as the next valid entry in the list without triggering \u003Ccode>BoxDestroyEvent\u003C/code>.\u003C/p>\n\u003Cul>\n  \u003Cli>If the mod box is not spawned, that will be the next mod box.\u003C/li>\n  \u003Cli>The list wraps, which means the first index is considered directly after the last index.\u003C/li>\n  \u003Cli>Does nothing if this device is disabled or \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/cycletopreviousvalidindex\">\u003Ccode>CycleToPreviousValidIndex\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>If the mod box is spawned, respawn it as the previous valid entry in the list without triggering \u003Ccode>BoxDestroyEvent\u003C/code>.\u003C/p>\n\u003Cul>\n  \u003Cli>If the mod box is not spawned, that will be the next mod box.\u003C/li>\n  \u003Cli>The list wraps, which means the last index is considered directly before the first index.\u003C/li>\n  \u003Cli>Does nothing if this device is disabled or \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/despawnbox\">\u003Ccode>DespawnBox\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Despawn the box and clear the spawn timer without triggering \u003Ccode>BoxDestroyEvent\u003C/code>. The respawn hologram will be visible, but will not progress without \u003Ccode>StartSpawnTimer\u003C/code>. The device must be enabled.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/disable\">\u003Ccode>Disable\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Disable the device and clear any active spawn timer. While disabled, it will be hidden and vehicle mod boxes will not spawn.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/enable\">\u003Ccode>Enable\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Enable the device and start the spawn timer. While enabled, it can spawn vehicle mod boxes, and those boxes can be interacted with.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getactivetimerremaining\">\u003Ccode>GetActiveTimerRemaining\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Returns the remaining time (in seconds) of the device's active spawn timer.\u003C/p>\n\u003Cul>\n  \u003Cli>If there is no active timer, return \u003Ccode>0.0\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getcurrentindex\">\u003Ccode>GetCurrentIndex\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Returns the current index \u003Ccode>int\u003C/code> in the device's list of mod boxes. This value is set whenever the device spawns a new mod box.\u003C/p>\n\u003Cul>\n  \u003Cli>The device's list starts with \u003Ccode>0\u003C/code> for Custom List Mod 1.\u003C/li>\n  \u003Cli>If \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code> or the device has never spawned a mod box, \u003Ccode>int\u003C/code> will be \u003Ccode>-1\u003C/code>.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/getglobaltransform\">\u003Ccode>GetGlobalTransform\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Gets the global transform of this object.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getinitialspawntimerlength\">\u003Ccode>GetInitialSpawnTimerLength\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Returns the total length of the initial spawn timer in seconds, regardless of the timer's current state.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getrespawntimerlength\">\u003Ccode>GetRespawnTimerLength\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Returns the total length of the respawn timer in seconds, regardless of the timer's current state.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/getspawncount\">\u003Ccode>GetSpawnCount\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Returns the number of times the device has spawned a mod box.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/gettransform\">\u003Ccode>GetTransform\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Returns the transform of the \u003Ccode>creative_object\u003C/code> with units in cm. You must check \u003Ccode>creative_object.IsValid\u003C/code> before calling this if there is a possibility the object has been disposed or destroyed by gameplay.\nOtherwise a runtime error will result.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isenabled\">\u003Ccode>IsEnabled\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Succeeds if the object is enabled, fails if it's disabled.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isspawned\">\u003Ccode>IsSpawned\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Check if this device currently has a spawned mod box.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/isvalidindex\">\u003Ccode>IsValidIndex\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Succeeds if \u003Ccode>Index\u003C/code> is a valid entry in the device's list. Fails if \u003Ccode>Index\u003C/code> is an invalid entry or \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto\">\u003Ccode>MoveTo\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Moves the \u003Ccode>creative_object\u003C/code> to the specified \u003Ccode>Position\u003C/code> and \u003Ccode>Rotation\u003C/code> over the specified time, in seconds. If an animation is currently playing on the \u003Ccode>creative_object\u003C/code> it will be stopped and put into the \u003Ccode>AnimationNotSet\u003C/code> state.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto-1\">\u003Ccode>MoveTo\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Moves the \u003Ccode>creative_object\u003C/code> to the specified \u003Ccode>Transform\u003C/code> over the specified time, in seconds. If an animation is currently playing on the \u003Ccode>creative_object\u003C/code> it will be stopped and put into the \u003Ccode>AnimationNotSet\u003C/code> state.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/moveto-2\">\u003Ccode>MoveTo\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Moves the \u003Ccode>creative_device\u003C/code> to the specified \u003Ccode>Transform\u003C/code> over the specified time, in seconds. If an animation is currently playing on the \u003Ccode>creative_device\u003C/code> it will be stopped and put into the \u003Ccode>AnimationNotSet\u003C/code> state.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/resetmodboxname\">\u003Ccode>ResetModBoxName\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Reset the names of this device's mod boxes, if the name has been customized.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/resetplayertooltip\">\u003Ccode>ResetPlayerTooltip\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Reset the text of the tooltip that appears when a player gets close to the mod box without a vehicle, if it's been customized.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setcustommodboxname\">\u003Ccode>SetCustomModBoxName\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Set this device's mod boxes to use the name \u003Ccode>Name\u003C/code>\u003C/p>\n\u003Cul>\n  \u003Cli>The displayed name will not exceed 50 characters.\u003C/li>\n  \u003Cli>The following characters are disallowed: {, }, \u003C, >, \\, /, and |.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setcustomplayertooltiptext\">\u003Ccode>SetCustomPlayerTooltipText\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Set the \u003Ccode>Text\u003C/code> of the tooltip that appears when a player gets close to the mod box without a vehicle.\u003C/p>\n\u003Cul>\n  \u003Cli>The displayed text will not exceed 50 characters.\u003C/li>\n  \u003Cli>The following characters are disallowed: {, }, \u003C, >, \\, /, and |.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/setglobaltransform\">\u003Ccode>SetGlobalTransform\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Sets the global transform of this object.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setinitialspawntimer\">\u003Ccode>SetInitialSpawnTimer\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Set the remaining time (in seconds) on the initial spawn timer (clamped to a minimum of \u003Ccode>0.0\u003C/code>). The device must be enabled.\u003C/p>\n\u003Cul>\n  \u003Cli>Even if the initial spawn timer is not currently active, this sets its length.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setnextmodindex\">\u003Ccode>SetNextModIndex\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Set the next mod box to spawn to be the one at \u003Ccode>Index\u003C/code> in the device's list.\u003C/p>\n\u003Cul>\n  \u003Cli>The first index in the list is \u003Ccode>0\u003C/code> for Custom List Mod 1.\u003C/li>\n  \u003Cli>Does nothing if this device is disabled, \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, or \u003Ccode>Index\u003C/code> is invalid.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setoverridemodapplyevent\">\u003Ccode>SetOverrideModApplyEvent\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>If \u003Ccode>Override\u003C/code> is \u003Ccode>true\u003C/code>, destroying the mod box with a vehicle will trigger \u003Ccode>ModApplyOverriddenEvent\u003C/code> and a mod will not be applied.\u003C/p>\n\u003Cul>\n  \u003Cli>In this case, destroying the mod box will not trigger \u003Ccode>ModAppliedEvent\u003C/code>, \u003Ccode>ModApplyFailEvent\u003C/code>, or \u003Ccode>NoModEvent\u003C/code>.\u003C/li>\n  \u003Cli>The values returned by \u003Ccode>ModApplyOverriddenEvent\u003C/code> can be used for \u003Ccode>TryApplyModByAgent\u003C/code> and \u003Ccode>TryApplyModByVehicle\u003C/code>, so the event can be handled manually.\u003C/li>\n  \u003Cli>See \u003Ccode>ModApplyOverriddenEvent\u003C/code> for more information.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/setrespawntimer\">\u003Ccode>SetRespawnTimer\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Set the remaining time (in seconds) on the respawn timer (clamped to a minimum of \u003Ccode>0.0\u003C/code>). The device must be enabled.\u003C/p>\n\u003Cul>\n  \u003Cli>This also sets the length of this device's future respawn timers.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnbox\">\u003Ccode>SpawnBox\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Spawn a mod box if the device is enabled. If one is already spawned, spawn a new one without triggering \u003Ccode>BoxDestroyEvent\u003C/code>.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnlastchosenmod\">\u003Ccode>SpawnLastChosenMod\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Spawn the same mod box this device spawned before the current one. If a mod box is already spawned, despawn that first without triggering \u003Ccode>BoxDestroyEvent\u003C/code>.\u003C/p>\n\u003Cul>\n  \u003Cli>Does nothing if this device is disabled or has not spawned more than one mod box.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/spawnmodboxbyindex\">\u003Ccode>SpawnModBoxByIndex\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Spawn the mod box at \u003Ccode>Index\u003C/code> in the device's list. If a mod box is already spawned, despawn that first without triggering \u003Ccode>BoxDestroyEvent\u003C/code>.\u003C/p>\n\u003Cul>\n  \u003Cli>The first index in the list is \u003Ccode>0\u003C/code> for Custom List Mod 1.\u003C/li>\n  \u003Cli>Does nothing if this device is disabled, \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, or \u003Ccode>Index\u003C/code> is invalid.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/startspawntimer\">\u003Ccode>StartSpawnTimer\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Despawn the box if necessary without triggering \u003Ccode>BoxDestroyEvent\u003C/code>, then start the spawn timer. The device must be enabled.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto\">\u003Ccode>TeleportTo\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Teleports the \u003Ccode>creative_object\u003C/code> to the specified \u003Ccode>Position\u003C/code> and \u003Ccode>Rotation\u003C/code>.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto-1\">\u003Ccode>TeleportTo\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Teleports the \u003Ccode>creative_object\u003C/code> to the specified location defined by \u003Ccode>Transform\u003C/code>, also applies rotation and scale accordingly.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object/teleportto-2\">\u003Ccode>TeleportTo\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Teleports the \u003Ccode>creative_device\u003C/code> to the specified location defined by \u003Ccode>Transform\u003C/code>, also applies rotation and scale accordingly.\u003C/p>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/tryapplymodbyagent\">\u003Ccode>TryApplyModByAgent\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Apply the mod at \u003Ccode>Index\u003C/code> in the device's list to the vehicle that \u003Ccode>Agent\u003C/code> is riding.\u003C/p>\n\u003Cul>\n  \u003Cli>The first index in the list is \u003Ccode>0\u003C/code> for Custom List Mod 1.\u003C/li>\n  \u003Cli>Triggers \u003Ccode>ModAppliedEvent\u003C/code>, \u003Ccode>ModApplyFailEvent\u003C/code>, and \u003Ccode>NoModEvent\u003C/code> as appropriate, regardless of \u003Ccode>SetOverrideModApplyEvent\u003C/code>.\u003C/li>\n  \u003Cli>Fails if this device is disabled, \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, \u003Ccode>Index\u003C/code> or \u003Ccode>Agent\u003C/code> is invalid, or \u003Ccode>Agent\u003C/code> is not riding a vehicle.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n    \u003Ctr>\n      \u003Ctd>\u003Ca href=\"https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_spawner_device/tryapplymodbyvehicle\">\u003Ccode>TryApplyModByVehicle\u003C/code>\u003C/a>\u003C/td>\n      \u003Ctd>\u003Cdiv>\u003Cp>Apply the mod at \u003Ccode>Index\u003C/code> in the device's list to \u003Ccode>Vehicle\u003C/code>.\u003C/p>\n\u003Cul>\n  \u003Cli>The first index in the list is \u003Ccode>0\u003C/code> for Custom List Mod 1.\u003C/li>\n  \u003Cli>Triggers \u003Ccode>ModAppliedEvent\u003C/code>, \u003Ccode>ModApplyFailEvent\u003C/code>, and \u003Ccode>NoModEvent\u003C/code> as appropriate, regardless of \u003Ccode>SetOverrideModApplyEvent\u003C/code>.\u003C/li>\n  \u003Cli>Fails if this device is disabled, \u003Cem>Possible Mods\u003C/em> is not set to \u003Ccode>Custom List\u003C/code>, or \u003Ccode>Index\u003C/code> or \u003Ccode>Vehicle\u003C/code> is invalid.\u003C/li>\n  \u003Cli>\u003Ccode>Vehicle\u003C/code> must be an actual \u003Ccode>fort_vehicle\u003C/code>. A vehicle spawner device will not be valid.\u003C/li>\n  \u003Cli>\u003Ccode>ModApplyOverriddenEvent\u003C/code>, \u003Ccode>ModAppliedEvent\u003C/code>, \u003Ccode>ModApplyFailEvent\u003C/code>, and \u003Ccode>NoModEvent\u003C/code> are a few ways to get a \u003Ccode>fort_vehicle\u003C/code> value.\u003C/li>\n\u003C/ul>\n\u003C/div>\u003C/td>\n    \u003C/tr>\n  \u003C/tbody>\n\u003C/table>\n\n\n","settings":{"is_hidden":false}}],"applications":[{"id":4279148,"type":"fortnite","version":"1.0","major_version":"1"}],"tags":["api","class"],"prereq_documents":[],"related_documents":[]},"h":{},"s":200,"st":"OK","u":"http://documentation-app/community/api/documentation/document.json","rt":"json"},"__nghData__":[{"t":{"0":"t1","1":"t11"},"c":{"0":[{"i":"t1","r":10,"t":{"0":"t2","1":"t3","2":"t4","3":"t5","4":"t6","5":"t7","6":"t8","7":"t9","8":"t10"},"c":{"0":[],"1":[],"2":[],"3":[],"4":[],"5":[{"i":"t7","r":1}],"6":[],"7":[],"8":[]}}],"1":[]}},{"c":{"4":[]}},{},{"t":{"0":"t16","1":"t17","2":"t18","3":"t19","5":"t23","7":"t21","9":"t24"},"c":{"0":[{"i":"t16","r":1}],"1":[],"2":[],"3":[{"i":"t19","r":1,"t":{"4":"t20"},"c":{"4":[{"i":"t21","r":1,"t":{"1":"t22"},"c":{"1":[]}}]}}],"5":[],"7":[],"9":[]}},{"t":{"0":"t12"},"c":{"0":[{"i":"t12","r":1,"t":{"5":"t13"},"c":{"5":[{"i":"t13","r":1,"t":{"1":"t14"},"c":{"1":[{"i":"t15","r":1}]}}]}}]}},{"t":{"0":"t36","1":"t42"},"c":{"0":[{"i":"t36","r":7,"t":{"0":"t37","1":"t38","2":"t39","3":"t40"},"c":{"0":[],"1":[{"i":"t38","r":1}],"2":[],"3":[{"i":"t40","r":2,"t":{"0":"t41"},"c":{"0":[{"i":"t42","r":1,"t":{"0":"t43"},"c":{"0":[]}}]}}]}}],"1":[]}},{"t":{"0":"t48"},"c":{"0":[]}},{"t":{"0":"t49"},"c":{"0":[]}},{"t":{"1":"t50","2":"t72","4":"t52","6":"t73"},"c":{"1":[{"i":"t50","r":21,"t":{"0":"t51"},"c":{"0":[{"i":"t52","r":20,"t":{"0":"t53","1":"t54","2":"t55","3":"t56","4":"t57","5":"t58","6":"t59","7":"t60","8":"t61","9":"t62","10":"t63","11":"t64","12":"t65","13":"t66","14":"t67","15":"t68","16":"t69","17":"t70","18":"t71"},"c":{"0":[],"1":[{"i":"t54","r":1}],"2":[],"3":[],"4":[],"5":[],"6":[],"7":[],"8":[],"9":[],"10":[],"11":[],"12":[],"13":[],"14":[],"15":[],"16":[],"17":[],"18":[]}}]}}],"2":[],"4":[],"6":[]}},{"t":{"0":"t47"},"c":{"0":[{"i":"t47","r":1}]}},{"t":{"0":"t131"},"c":{"0":[{"i":"t131","r":2,"t":{"0":"t132","3":"t133"},"c":{"0":[],"3":[{"i":"t133","r":1,"t":{"1":"t134","2":"t135"},"c":{"1":[],"2":[{"i":"t135","r":1}]},"x":2}]}}]}},{"t":{"0":"t77"},"c":{"0":[]}},{"t":{"0":"t79","1":"t80"},"c":{"0":[],"1":[]}},{"n":{"2":"0fn3"}},{"t":{"0":"t36","1":"t42"},"c":{"0":[{"i":"t36","r":8,"t":{"0":"t37","1":"t38","2":"t39","3":"t40"},"c":{"0":[{"i":"t37","r":1}],"1":[],"2":[],"3":[{"i":"t40","r":3,"t":{"0":"t41"},"c":{"0":[{"i":"t42","r":2,"t":{"0":"t43"},"c":{"0":[{"i":"t43","r":1,"t":{"2":"t82"},"c":{"2":[{"i":"t82","r":1,"x":5}]}}]}}]}}]}}],"1":[]}},{"n":{"1":"0f2"},"t":{"1":"t81","2":"t83"},"c":{"1":[{"i":"t81","r":1}],"2":[]}},{"t":{"1":"t25","2":"t26","4":"t27","8":"t28","12":"t30","13":"t31","14":"t32","15":"t84","16":"t85","17":"t15"},"c":{"1":[],"2":[{"i":"t26","r":1}],"4":[],"8":[{"i":"t28","r":1,"t":{"4":"t29"},"c":{"4":[]}}],"12":[{"i":"t30","r":1}],"13":[],"14":[{"i":"t32","r":1,"t":{"2":"t33","3":"t34","4":"t35","7":"t44","9":"t45","10":"t46","13":"t74","14":"t75","17":"t76"},"c":{"2":[],"3":[],"4":[],"7":[],"9":[],"10":[],"13":[{"i":"t74","r":1}],"14":[{"i":"t75","r":1}],"17":[{"i":"t76","r":1,"t":{"2":"t78"},"c":{"2":[]}}]}}],"15":[],"16":[],"17":[]}},{"t":{"0":"t87","1":"t88","2":"t89","3":"t90","4":"t91","5":"t92","6":"t93","7":"t94"},"c":{"0":[],"1":[],"2":[],"3":[],"4":[{"i":"t91","r":1}],"5":[],"6":[],"7":[]}},{"c":{"4":[],"6":[]},"t":{"6":"t95"}},{"t":{"1":"t0","6":"t86"},"c":{"1":[{"i":"t0","r":1}],"5":[{"i":"c2156471539","r":1}],"6":[{"i":"t86","r":1}]}}]}</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3a2613b98ca5719',t:'MTc4OTI1MjQ2OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
