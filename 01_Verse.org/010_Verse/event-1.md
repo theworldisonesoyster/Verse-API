@@ -1,29 +1,38 @@
 ---
-name: event() 构造函数（无载荷）
+name: event
 slug: versedotorg/verse/event-1
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/event-1
 kind: function
 module: /Verse.org/Verse
 grade: S
-depth: brief
+depth: full
 status: done
 ---
 
-# event() 构造函数（无载荷）🟦【S级·核心】
+# event function（无载荷）🟦【S级·核心】
 
-> event<public>():event(t) —— 不指定载荷类型的构造重载，由上下文推断 t。
-> 无载荷事件只关心"发生了"这个事实，`Await()` 返回值忽略即可。
+> A recurring, successively signaled event allowing a simple mechanism to coordinate between concurrent tasks.
+> 可重复、按次序触发的事件，为并发任务之间的协调提供简单机制（本重载不带构造参数，载荷类型由上下文推断）。
 
-## 签名
+`using { /Verse.org/Verse }`
 
 ```verse
 event<public>():event(t)
 ```
 
-## 最小示例
+## Parameters
+
+event does not take any parameters.（event 不接受任何参数。）
+
+## Attributes, Specifiers, and Effects
+
+`event<public>():event(t)` —— 标签：public，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Verse }
+using { /Verse.org/Simulation }
 
 Kickoff:event() = event(){}
 
@@ -32,7 +41,6 @@ WaitAndGo()<suspends>:void =
     Print("GO!")
 ```
 
-## 相关页面
+## 补充说明
 
-- [event(t) 类](event_t.md)
-- [event 构造函数](event.md)
+- Signal/Await 的行为见 [event(t) class](event_t.md)；带载荷的构造见 [event function](event.md)。

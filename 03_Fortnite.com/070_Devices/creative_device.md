@@ -9,34 +9,44 @@ depth: full
 status: done
 ---
 
-# creative_device 🟦【S级·核心】
+# creative_device class 🟦【S级·核心】
 
-> The base class for every Verse-authored script you place on the island.
-> 所有自制脚本设备的基类——你在 UEFN 里写的每个 `@editable` 脚本都继承它。
+> Inherit from this to create a custom creative device. Inherited classes will appear in the UEFN content browser the next time Verse compiles. Instances of your derived creative_device can then be placed in the island by dragging them from the content browser into the scene.
+> 继承此类来创建自定义创意设备。Verse 下次编译后，派生类会出现在 UEFN 内容浏览器中；把派生的 creative_device 实例从内容浏览器拖入场景，即可摆放到岛屿上。
 
-## 这是什么
+`using { /Fortnite.com/Devices }`
 
-Verse 脚本要以"设备"形态放进岛屿，类必须继承 `creative_device`。它提供：
+## Exposed Interfaces
 
-- **入口生命周期**：`OnBegin`（体验开始时调用，可挂起，初始化/订阅/启动循环都写这里）、`OnEnd`（体验结束时；官方特别注明：**在 OnEnd 里 spawn 的协程可能永远不会执行**）。
-- **空间操作**：`GetTransform`（设备摆放位置，单位厘米）、`TeleportTo`（瞬移，两个重载）、`MoveTo`（在指定秒数内平滑移动）。
-- 实现了 `creative_object_interface`（作为创意对象的通用能力）。
+This class exposes the following interfaces:（此类暴露以下接口：）
 
-与其他设备（button_device 等）的区别：creative_device 是**你自己的代码的容器**，其它设备是系统提供的功能件，两者通过 `@editable` 引用互相连线。
+| Name | Description |
+|---|---|
+| creative_object_interface | （官网无描述。） |
 
-## 签名
+## Members
 
-```verse
-creative_device<public> := class<concrete>(creative_device_base):
-    OnBegin<public>()<suspends>:void          # override 入口
-    OnEnd<public>():void                      # override 出口
-    GetTransform<public>():transform          # 摆放变换（cm 单位）
-    TeleportTo<public>(Position:vector3, Rotation:rotation):void
-    TeleportTo<public>(Transform:transform):void
-    MoveTo<public>(Position:vector3, Rotation:rotation, Time:float):void
-```
+This class has functions, but no data members.（此类只有函数，没有数据成员。）
 
-## 最小示例
+### Functions
+
+| Function Name | Description |
+|---|---|
+| OnBegin | 重写以在游戏体验开始时添加自定义逻辑。 |
+| OnEnd | 重写以在游戏体验结束时添加自定义逻辑。在 OnEnd 内 spawn 的协程可能永远不会执行。 |
+| GetTransform | 返回 creative_device 的变换，单位为厘米（cm）。 |
+| TeleportTo | 将 creative_device 瞬移到指定的 Position 与 Rotation。 |
+| TeleportTo | 将 creative_device 瞬移到 Transform 指定的位置，同时相应地应用旋转与缩放。 |
+| MoveTo | 在指定的秒数内把 creative_device 移动到指定的 Position 与 Rotation。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
+| MoveTo | 在指定的秒数内把 creative_device 移动到指定的 Transform。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
+| GetGlobalTransform | 获取此设备的全局变换。 |
+| SetGlobalTransform | 设置此设备的全局变换。 |
+| TeleportTo | 将 creative_device 瞬移到 Transform 指定的位置，同时相应地应用旋转与缩放。 |
+| MoveTo | 在指定的秒数内把 creative_device 移动到指定的 Transform。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
+| Show | 在世界中显示此设备。 |
+| Hide | 在世界中隐藏此设备。 |
+
+## 示例
 
 ```verse
 using { /Fortnite.com/Devices }
@@ -46,7 +56,7 @@ using { /Verse.org/Simulation }
 hello_device := class(creative_device):
 
     @editable
-    MyButton : button_device = button_device{}    # 在编辑器里连线
+    MyButton : button_device = button_device{}
 
     OnBegin<override>()<suspends>:void =
         Print("设备已启动")
@@ -56,28 +66,9 @@ hello_device := class(creative_device):
         Print("按钮被按下")
 ```
 
-## 常用成员
+## 补充说明
 
-| 成员 | 说明 | 级别 |
-|---|---|---|
-| `OnBegin<override>()<suspends>` | 一切的入口 | 🟦 S |
-| `OnEnd<override>()` | 收尾（协程可能不执行！） | 🟩 A |
-| `TeleportTo` / `MoveTo` | 移动设备本体 | 🟨 B |
-| `GetTransform` | 读摆放位置 | 🟨 B |
-
-## 何时用 / 何时不用
-
-- 用：任何自定义逻辑的第一个类。
-- 不用：一个设备能干的就别拆五个——设备数量有上限，但逻辑内聚优先。
-
-## 常见坑
-
-- 忘写 `OnBegin<override>()` 里的 `<suspends>` 会无法 Sleep/订阅异步流程。
-- 类里 `@editable` 的字段必须是 devices 模块的具体类型（或 editable_\*），写成泛型/接口面板不显示。
-- OnEnd 中 spawn 的协程官方明言可能不执行——收尾逻辑要同步完成。
-
-## 相关页面
-
-- [editable_number](../../01_Verse.org/100_Simulation/editable_number.md) —— 参数暴露
-- [listenable](../../01_Verse.org/010_Verse/listenable.md) —— 订阅设备事件
-- [Sleep](../../01_Verse.org/100_Simulation/sleep.md)
+- 每个自制脚本的第一个类：继承 creative_device 后，Verse 编译即出现在内容浏览器，拖入场景生效。
+- `OnBegin<override>()<suspends>` 是一切入口；OnEnd 里 spawn 的协程官方明示可能不执行，收尾逻辑要同步完成。
+- `@editable` 字段用于在详情面板连线其他设备/控件（控件类型族见 [editable_number function](../../01_Verse.org/100_Simulation/editable_number.md)）。
+- 表中 TeleportTo/MoveTo 各出现多次，是官网对不同参数形态分别建页所致（对应多份成员页）。

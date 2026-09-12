@@ -3,55 +3,51 @@ name: Simulation
 slug: versedotorg/simulation
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/simulation
 kind: module
-module: /Verse.org/Simulation
+module: /Verse.org
 grade: S
 depth: brief
 status: done
 ---
 
-# Simulation 🟦【S级·核心】
+# Simulation module 🟦【S级·核心】
 
-> 官网对本模块无单独描述；本页为模块总览。
-> Simulation 模块提供"对局世界"的基本概念：谁在对局里（agent/player）、怎么分组（team）、这是哪一局（session），以及控制执行节奏的 Sleep 等函数。
+> Verse path: `/Verse.org` · Module import path: `/Verse.org/Simulation`
+> 对局世界的基本概念模块：谁在对局里（agent/player）、怎么分组（team）、这是哪一局（session），以及 Sleep、editable_\* 等基础函数。
 
-## 这是什么
+`using { /Verse.org/Simulation }`
 
-写任何 Verse 玩法逻辑都绕不开这个模块：
+- Verse.org
+- Simulation [Tags](010_Tags/_overview.md)
 
-- **[agent](agent.md)**（S）——"参与者"的抽象：可能是真人玩家，也可能是 AI 单位。大多数设备事件回传的是 agent，先判别再转成 player。
-- **[player](player.md)**（S）——真人玩家，继承自 agent；查状态、给道具最终都要落到具体 player 上。
-- **[team](team.md)**（A）——队伍，对局中的分组单位。
-- **[session](session.md)**（A）——每回合一个实例的全局对象，常配合 `weak_map` 实现"全局变量"。
-- **[Sleep](sleep.md)**（S）——暂停当前协程若干秒，几乎每个异步玩法都要用。
-- **[editable_\*](editable_number.md)**（S/A）——把脚本参数暴露到 UEFN 详情面板的数字/滑条控件，写自定义设备必备。
+## Classes and Structs
 
-子模块 [Tags](010_Tags/_overview.md) 提供通用标签系统（打标、查询、过滤）。
+| Name | Description |
+|---|---|
+| [agent](agent.md) | 对局参与者的抽象（真人玩家或 AI 单位）。 |
+| [player](player.md) | 对局中的真人玩家，agent 的子类。 |
+| [session](session.md) | 每回合一个实例的类型；用 GetSession 获取当前实例，可配合 weak_map 实现全局变量。注意：未来可能改为每局一个实例，勿依赖回合级行为。 |
+| [team](team.md) | 表示对局中的一支队伍。 |
 
-## 使用前提
+## Functions
 
-```verse
-using { /Verse.org/Simulation }
-```
+| Name | Description |
+|---|---|
+| [editable_slider](editable_slider.md) | 参数化类型构造器：生成详情面板滑条类。 |
+| [editable_number](editable_number.md) | 参数化类型构造器：生成详情面板数字输入类。 |
+| [editable_vector_slider](editable_vector_slider.md) | 参数化类型构造器：生成详情面板三维向量滑条类。 |
+| [editable_vector_number](editable_vector_number.md) | 参数化类型构造器：生成详情面板三维向量数字输入类。 |
+| [GetSession](getsession.md) | 返回当前回合对应的 session 实例；可配合 weak_map 实现全局变量。 |
+| [Sleep](sleep.md) | 暂停指定秒数后恢复；0 等下一帧、Inf 永久等待（仅取消时返回）、负值立即完成不让出。 |
+| [GetSimulationElapsedTime](getsimulationelapsedtime.md) | 获取世界开始模拟以来经过的秒数。 |
 
-## 成员一览
+## Enumerations
 
-| 成员 | 类型 | 一句话 | 级别 |
-|---|---|---|---|
-| [agent](agent.md) | 类 | 参与者的抽象基类（玩家或 AI） | 🟦 S |
-| [player](player.md) | 类 | 真人玩家，继承 agent | 🟦 S |
-| [team](team.md) | 类 | 队伍 | 🟩 A |
-| [session](session.md) | 类 | 每回合一个实例的全局对象 | 🟩 A |
-| [Sleep](sleep.md) | 函数 | 暂停当前协程若干秒 | 🟦 S |
-| [GetSession](getsession.md) | 函数 | 取当前回合的 session | 🟩 A |
-| [GetSimulationElapsedTime](getsimulationelapsedtime.md) | 函数 | 世界开始模拟以来经过的秒数 | 🟩 A |
-| [editable_slider](editable_slider.md) | 参数化类 | 详情面板滑条 | 🟦 S |
-| [editable_number](editable_number.md) | 参数化类 | 详情面板数字输入 | 🟦 S |
-| [editable_vector_slider](editable_vector_slider.md) | 参数化类 | 三维向量滑条 | 🟩 A |
-| [editable_vector_number](editable_vector_number.md) | 参数化类 | 三维向量数字输入 | 🟩 A |
-| [session_environment](session_environment.md) | 枚举 | 对局环境：编辑/私人/线上 | 🟨 B |
+| Name | Description |
+|---|---|
+| [session_environment](session_environment.md) | 指明当前对局环境类型（Edit / Private / Live）。 |
 
-## 相关页面
+## 补充说明
 
-- [Verse.org 总览](../_overview.md) —— 语言核心与模块地图
-- [entity](../040_SceneGraph/entity.md) —— agent/player 的 SceneGraph 基类
-- [Tags 子模块](010_Tags/_overview.md)
+- 写任何 Verse 玩法逻辑几乎都要 `using { /Verse.org/Simulation }`——它提供参与者、队伍、时间与编辑器控件的基本类型。
+- agent/player 继承自 SceneGraph 的 entity，因此也拥有实体与标签两族函数（详见各自页面）。
+- 相关页面：[Verse.org module](../_overview.md)、[entity class](../040_SceneGraph/entity.md)。

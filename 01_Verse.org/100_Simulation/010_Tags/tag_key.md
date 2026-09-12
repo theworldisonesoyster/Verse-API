@@ -2,51 +2,35 @@
 name: tag_key
 slug: versedotorg/simulation/tags/tag_key
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/simulation/tags/tag_key
-kind: class
+kind: struct
 module: /Verse.org/Simulation/Tags
 grade: A
 depth: full
 status: done
 ---
 
-# tag_key 🟩【A级·常用】
+# tag_key struct 🟩【A级·常用】
 
-> A key returned by AddTag that uniquely identifies one added tag instance.
-> AddTag 返回的句柄，唯一标识"某一次打的标签"，用于精确移除。
+> A tag_key is the return value from adding a tag to a container implementing the has_tags interface, and is used to selectively remove such an instance from the same container.
+> tag_key 是向实现了 has_tags 接口的容器添加标签后的返回值，用于从同一容器中**选择性地移除**那一个标签实例。
 
-## 这是什么
+`using { /Verse.org/Simulation/Tags }`
 
-每次调用 `AddTag` 都会返回一个 `tag_key`。同一对象打了三个同类型标签就有三个不同的 key。想摘掉**其中某一个**（而不是按类型全清）时，把对应的 key 传给 `RemoveTag`。它本身没有成员，是一个"取牌凭证"。
+## Members
 
-## 签名
+This struct has no members.（此结构体没有成员。）
 
-```verse
-tag_key<public><native> := class<native>:
-    # 无自有成员
-```
-
-## 最小示例
+## 示例
 
 ```verse
 using { /Verse.org/Simulation/Tags }
 
-var MyKeys:[]tag_key = array{}
-
-Stamp(Obj:has_tags):void =
-    Key := Obj.AddTag(TempTag)
-    set MyKeys += array{Key}     # 留着 key，之后可精确撤销
-
-Unstamp(Obj:has_tags):void =
-    for (K : MyKeys):
-        Obj.RemoveTag(K)
+# 保存 AddTag 返回的 key，之后精确撤销那一次打标
+Stamp(Obj:has_tags):tag_key =
+    Obj.AddTag(TempTag)
 ```
 
-## 何时用 / 何时不用
+## 补充说明
 
-- 用：需要"撤销某一次打标"的场合（临时状态标记）。
-- 不用：只想按类型整体清空时直接 `RemoveAllTags[TagType]`，不必保存 key。
-
-## 相关页面
-
-- [has_tags](has_tags.md) —— AddTag/RemoveTag
-- [tag](tag.md)
+- 同一对象打了三个同类型标签就有三个不同的 tag_key；按类型整体清除用 [has_tags interface](has_tags.md) 的 RemoveAllTags 即可，无需保存 key。
+- 相关页面：[tag class](tag.md)。

@@ -9,53 +9,36 @@ depth: full
 status: done
 ---
 
-# team 🟩【A级·常用】
+# team class 🟩【A级·常用】
 
 > team represents a team in the experience.
 > team 表示对局中的一支队伍。
 
-## 这是什么
+`using { /Verse.org/Simulation }`
 
-`team` 是"队伍"的抽象标识。它自身没有成员，作用是作为身份被其他 API 接收/返回：拿某玩家所在队伍、比较两个玩家是否同队、按队伍分组处理。队伍的实际划分与设置通常由对局设置/设备完成，Verse 里只做查询与判断。
+## Members
 
-## 签名
+This class has no members.（此类没有成员。）
 
-```verse
-team<public><epic_internal> := class<epic_internal>:
-    # 无自有成员
-```
+## Attributes, Specifiers, and Effects
 
-## 最小示例
+`team<public><epic_internal> := class<epic_internal>` —— 标签：public / epic_internal，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Simulation }
 using { /Fortnite.com/Game }   # GetPlayspace / GetTeams 所在
 
-# 两名玩家是否同队
+# 两名参与者是否同队（取队伍是可失败操作）
 SameTeam(A:agent, B:agent):logic =
-    TA := A.GetTeam[]   # 可失败：取不到则失败
+    TA := A.GetTeam[]
     TB := B.GetTeam[]
-    TA = TB             # 队伍实例相等比较
+    TA = TB
 ```
 
-## 常用成员
+## 补充说明
 
-| 名称 | 形式 | 说明 | 级别 |
-|---|---|---|---|
-| `Agent.GetTeam[]` | 可失败扩展 | 取参与者所在队伍 | 🟩 A |
-| `GetPlayspace().GetTeams()` | 常配 | 对局全部队伍 | 🟩 A |
-
-## 何时用 / 何时不用
-
-- 用：分队玩法、队伍计分、判断敌我。
-- 不用：想"创建/解散队伍"——队伍结构由对局设置决定，Verse 只读。
-
-## 常见坑
-
-- 取队伍一律是可失败操作（`GetTeam[]`），要写在失败上下文里。
-- 队伍数量因对局设置而异，别假设只有两队。
-
-## 相关页面
-
-- [agent](agent.md) / [player](player.md) —— 队伍的成员
-- [session](session.md) —— 按队伍存全局数据
+- `team` 自身零成员，价值在于作为"队伍身份"被其他 API 接收/返回（如 `GetTeam[]`、`GetPlayspace().GetTeams()`）。
+- 队伍的划分由对局设置决定，Verse 侧只读：没有"创建/解散队伍"的 API。
+- 相关页面：[agent class](agent.md)、[player class](player.md)。

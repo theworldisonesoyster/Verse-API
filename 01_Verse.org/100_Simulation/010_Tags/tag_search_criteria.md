@@ -9,22 +9,26 @@ depth: brief
 status: done
 ---
 
-# tag_search_criteria 🟨【B级·进阶】
+# tag_search_criteria class 🟨【B级·进阶】
 
-> Describes the criteria used when searching for tagged objects.
-> 描述"按标签搜索对象"时的条件（搜什么、怎么匹配）。
+> Advanced tag search criteria
+> 高级标签搜索条件。
 
-## 这是什么
+`using { /Verse.org/Simulation/Tags }`
 
-配合标签搜索接口使用：声明要找的标签、匹配方式（层级/精确）等条件，交给搜索调用返回符合的对象集合。一般与 [tag_search_sort_type](tag_search_sort_type.md) 一起构成一次完整搜索请求。
+## Members
 
-## 签名
+This class has data members, but no functions.（此类只有数据成员，没有函数。）
 
-```verse
-tag_search_criteria<public><native> := class<native>:
-```
+### Data
 
-## 相关页面
+| Data Member Name | Type | Description |
+|---|---|---|
+| RequiredTags | []tag | 对象必须携带的标签。 |
+| PreferredTags | []tag | 未指定必须标签时才使用的标签；它们被视为"任一满足即可"。 |
+| ExclusionTags | []tag | 对象**不得**携带的标签；带这些标签的条目都会被搜索排除。 |
+| SortType | tag_search_sort_type | 请求按标签排序结果的开关。 |
 
-- [tag](tag.md)
-- [has_tags](has_tags.md)
+## 补充说明
+
+- 排序方式枚举见 [tag_search_sort_type enumeration](tag_search_sort_type.md)。

@@ -7,10 +7,9 @@ module: /语言基础
 grade: B
 depth: brief
 status: done
-supplement: true
 ---
 
-# 元组与子类型 🟨【B级·进阶】〔补充·非官网镜像〕
+# 元组与子类型 🟨【B级·进阶】
 
 > 元组把几个值打包成一个；子类型 `subtype` 描述"某类型的子集"。官网 API Reference 无单设页面。
 

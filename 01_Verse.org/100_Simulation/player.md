@@ -9,62 +9,67 @@ depth: full
 status: done
 ---
 
-# player 🟦【S级·核心】
+# player class 🟦【S级·核心】
 
-> A human participant in an experience. This class is derived from agent.
-> 对局里的真人玩家，是 agent 的子类。
+（本页官网无导语描述；player 表示对局中的真人玩家，是 agent 的子类。）
 
-## 这是什么
+`using { /Verse.org/Simulation }`
 
-`player` 代表一个坐在屏幕前的真人。凡是"针对这个人"的操作——查分数、发道具、开 UI、传送、绑定角色——最终都要落到 player 上。从设备事件拿到的 [agent](agent.md) 用可失败转换 `player[Agent]` 变成 player；反过来 player 可以隐式当 agent 用。
+## Inheritance Hierarchy
 
-它继承自 [entity](../040_SceneGraph/entity.md)（SceneGraph），所以也带实体层函数，但玩法代码里最常用的还是"作为玩家身份"参与各类 API。与 player 强相关的进阶能力（角色、背包、进度）分布在其他模块：fort_character（角色身体）、inventory_component（物品栏）、quest（任务）。
+This class is derived from the following hierarchy, starting with `entity`:（本类派生自以下层级，起点为 entity：）
 
-## 签名
+| Name | Description |
+|---|---|
+| entity | 实体是 SceneGraph 的基础对象。体验中的对象由一个或多个实体构成。实体是有层级的：可用 `GetParent` 查询父实体、用 `AddEntities` 添加子实体。行为通过组件（component）添加：用 `AddComponents` 添加新组件。实体的结构和内容是动态的，可在体验运行中的任意时刻改变。 **派生自 entity** 在 SceneGraph 体系中，派生自 entity 的类也被称为预制体（prefab）。当你想在游戏中多次生成/复用一组实体和组件时，预制体非常有用。预制体主要在编辑器中创作，其 Verse 类会在构建时生成到项目的 Assets.digest.verse 文件里。虽然你可以为载具、角色等常见对象类型创建基础预制体，但官方强烈建议**不要直接在 entity 类里写代码**，而是把逻辑放在组件里。把逻辑和数据放进组件，你在体验制作全程中重构预制体时，就不必大改类结构。 |
+| agent | （agent 的官方页面无描述。） |
 
-```verse
-player<public><epic_internal> := class<epic_internal>(agent):
-    # 官方未公开自有数据成员；作为"真人玩家"标识与各类 API 的入口类型
-```
+## Members
 
-## 最小示例
+This class has functions, but no data members.（此类只有函数，没有数据成员。）
+
+### Functions
+
+| Function Name | Description |
+|---|---|
+| AddComponents | 把给定的组件添加到实体。若某组件不允许加到该实体，则跳过。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保被加组件已达到对应阶段。组件按以下规则添加：所有组件加入实体的子列表；若该实体在场景中，所有组件的 OnAddedToScene 被调用；若该实体正在模拟，所有组件的 OnBeginSimulation 被调用。 |
+| AddEntities | 把给定的实体添加为子实体。若子实体已有父实体，会先从原父实体移除再加入新父。加入的子实体会沿各自的生命周期方法推进，直到与新父实体的状态一致。 |
+| AddTag | 向此实体添加一个标签实例，返回与该实例唯一关联的 tag_key。 |
+| ContainsAllTags | 若 tag_types 中有任一类型在容器中找不到则失败，否则成功。注意 tag_types 为空时此调用成功。 |
+| ContainsAnyTag | 若 tag_types 中至少一个类型在容器中找到则成功，否则失败。注意 tag_types 为空时此调用失败。 |
+| ContainsTag | 若容器中找到至少一个 tag_type 类型的标签则成功，否则失败。 |
+| GetComponent | 若 component_type 类型的子组件存在且可从调用方上下文访问，则成功并返回该组件。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保返回的组件已达到对应阶段。若不存在或不可访问则失败。 |
+| GetComponents | 返回此实体下属、可从调用方上下文访问的子组件。 |
+| GetEntities | 返回此实体下属、可从调用方上下文访问的子实体。只取直接子实体；要跨多层查询请改用 Find* 系列查询方法。 |
+| GetParent | 返回此实体的父实体。父实体掌控其子实体与组件的生命周期——实体从场景移除时，其所有子实体和组件也会一并移除。当前没有父实体时此方法失败。 |
+| IsActive | 当此 player 可以用作模块级 `var` `weak_map` 的键时成功。这对应相应玩家已加入游戏且尚未离开。当此方法失败时，把该 player 用作模块级 var weak_map 的键会导致运行时错误。 |
+| RemoveAllTags | 移除 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveAllTagsExcept | 移除不属于 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveAllTagsExcept | 移除不属于 tag_types 中任何类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveFromParent | 把此实体从父实体移除，用于将实体移出场景。该实体及其子级上的组件会依次走 OnEndSimulation → OnRemovingFromScene。之后可用 NewParent.AddEntities 再加回。 |
+| RemoveTag | 移除与 tag_key 关联的标签实例；移除成功则成功，否则失败。 |
+| SendDown | 向此实体发送场景事件并沿层级向下传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对每个子实体调用 SendDown。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
+| SendUp | 向此实体发送场景事件并沿层级向上传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对父实体调用 SendUp。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
+
+## 示例
 
 ```verse
 using { /Verse.org/Simulation }
 
-# 对局开始：给每个玩家发一次欢迎（遍历所有玩家）
+# 对局开始：遍历全部玩家打招呼；从 agent 安全转 player
 OnBegin<override>()<suspends>:void =
     for (P : GetPlayspace().GetPlayers()):
-        Print("欢迎，玩家！")
+        Print("欢迎！")
         Sleep(0.2)
 
-# 从 agent 安全转 player
 HandleAgent(A:agent):void =
     if (P := player[A]):
-        Print("是真人玩家")
+        Print("真人玩家")
 ```
 
-## 常用成员
+## 补充说明
 
-| 名称 | 形式 | 说明 | 级别 |
-|---|---|---|---|
-| `player[Agent]` | 可失败转换 | agent → player | 🟦 S |
-| `GetPlayspace().GetPlayers()` | 常配 | 当前全部玩家列表 | 🟩 A |
-| `P.GetPlayerUI()` | 常配 | 拿玩家 UI 入口（Temporary/UI） | 🟦 S |
-| 继承自 entity | `AddEntities` 等 | SceneGraph 实体操作 | 🟨 B |
-
-## 何时用 / 何时不用
-
-- 用：需要"这个人"的场合——计分、奖励、UI、按玩家存状态（weak_map[player]）。
-- 不用：AI 单位也要参与的同一段逻辑，请把参数写成 agent，内部再分流。
-
-## 常见坑
-
-- 玩家中途退出后，player 引用失效；跨回合长期持有的逻辑要做有效性判断。
-- `player[X]` 是可失败转换，必须写在失败上下文（`if`/`for`）里，不能裸调用。
-
-## 相关页面
-
-- [agent](agent.md) —— 父类，参数尽量用宽类型
-- [session](session.md) —— 配合 weak_map 按玩家存"全局变量"
-- [fort_character](../../../03_Fortnite.com/050_Characters/fort_character.md) —— 玩家在世界中的角色身体
+- `player[Agent]` 是可失败转换，必须写在失败上下文里；AI 参与者转换会失败。
+- **IsActive[] 是 player 相对 agent 唯一新增的函数**：把 player 存进模块级 weak_map 前先判断它，可避免"玩家已退出仍作键"的运行时错误。
+- 玩家专属能力分布在其他模块：角色身体 fort_character（Characters）、玩家 UI player_ui（Temporary/UI）等。
+- 相关页面：[agent class](agent.md)、[session class](session.md)、[fort_character interface](../../../03_Fortnite.com/130_Characters/fort_character.md)。

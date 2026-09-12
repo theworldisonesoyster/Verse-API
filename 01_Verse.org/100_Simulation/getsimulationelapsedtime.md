@@ -9,27 +9,31 @@ depth: full
 status: done
 ---
 
-# GetSimulationElapsedTime 🟩【A级·常用】
+# GetSimulationElapsedTime function 🟩【A级·常用】
 
-> Get the seconds that have elapsed since the world began simulating.
-> 获取世界开始模拟以来经过的秒数（世界时间）。
+> Get the seconds that have elapsed since the world began simulating
+> 获取世界开始模拟以来经过的秒数。
 
-## 签名
+`using { /Verse.org/Simulation }`
 
 ```verse
-GetSimulationElapsedTime<public><native>():float<transacts>
+GetSimulationElapsedTime<public><native>()<transacts>:float
 ```
 
-## 这是什么
+## Parameters
 
-返回一个不断增长的秒数（世界时钟）。和 `Sleep(t)` 配合可以做"每次循环剩余多少秒"的节流，和上一帧时间差分可以算帧间隔——做音乐同步、按时间驱动的玩法（比如节拍调度）时它是你的基准钟。
+GetSimulationElapsedTime does not take any parameters.（GetSimulationElapsedTime 不接受任何参数。）
 
-## 最小示例
+## Attributes, Specifiers, and Effects
+
+`GetSimulationElapsedTime<public><native>()<transacts>:float` —— 标签：public / native / transacts，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Simulation }
 
-# 按 0.5 秒一拍调度，不受循环体耗时影响（时钟驱动而非"睡够"驱动）
+# 时钟驱动的节拍调度：每 0.5 秒一拍，不受循环体耗时影响
 var NextBeat:float = 0.0
 BeatLoop()<suspends>:void =
     loop:
@@ -37,19 +41,11 @@ BeatLoop()<suspends>:void =
         if (Now >= NextBeat):
             PlayBeat()
             set NextBeat += 0.5
-        Sleep(0.0)   # 下一帧再来
+        Sleep(0.0)
 ```
 
-## 何时用 / 何时不用
+## 补充说明
 
-- 用：计时基准、帧间隔计算、时间驱动的调度器。
-- 不用：想"等一段时间"直接用 [Sleep](sleep.md)，不要写 `loop + 比较` 模拟 Sleep。
-
-## 常见坑
-
-- 它是"世界模拟时间"，不是现实墙钟；对局暂停/未开始时的行为以实际表现为准，别拿它当 UTC 时间（那是 [GetSecondsSinceEpoch](../010_Verse/getsecondssinceepoch.md)）。
-
-## 相关页面
-
-- [Sleep](sleep.md)
-- [GetSession](getsession.md)
+- 这是"世界模拟时间"（单调增长的秒数），不是现实墙钟；UTC 时间戳请用 [GetSecondsSinceEpoch function](../010_Verse/getsecondssinceepoch.md)。
+- 做"到点做事"的调度器时，比较世界时间比 `Sleep(固定值)` 更抗抖动（循环体耗时不影响节拍间隔）。
+- 相关页面：[Sleep function](sleep.md)。

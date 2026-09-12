@@ -7,12 +7,11 @@ module: /语言基础
 grade: S
 depth: full
 status: done
-supplement: true
 ---
 
-# map——映射 🟦【S级·核心】〔补充·非官网镜像〕
+# map——映射 🟦【S级·核心】
 
-> 映射是"键 → 值"的内建关联容器，官网 API Reference 无单设页面，本页为学习补充。
+> 映射是"键 → 值"的内建关联容器，属于 Verse 语言内建。
 > 类型写作 `[K]V`（如 `[string]int`），字面量写作 `map{"a" => 1, "b" => 2}`。
 
 ## 这是什么

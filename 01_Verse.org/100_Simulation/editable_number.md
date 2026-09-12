@@ -2,68 +2,58 @@
 name: editable_number
 slug: versedotorg/simulation/editable_number
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/simulation/editable_number
-kind: class
+kind: function
 module: /Verse.org/Simulation
 grade: S
 depth: full
 status: done
 ---
 
-# editable_number 🟦【S级·核心】
+# editable_number function 🟦【S级·核心】
 
-> Parametric type that exposes a numeric field in the editor's Details panel.
-> 参数化类型：在 UEFN 详情面板上暴露一个可编辑的数字输入框。
+> （本页官网无导语描述。）
+> editable_number 是参数化类型构造器：按给定的数字类型 t 生成一个"编辑器详情面板数字输入"类。
 
-## 签名
+`using { /Verse.org/Simulation }`
 
 ```verse
-editable_number<public>(t:any) := class<concrete>(editable_object):
-    # 参数 t 决定数字类型，常用 int 或 float
+editable_number<public>(t:any):
 ```
 
-## 这是什么
+This function is a parametric type, meaning it returns a class or interface rather than a value or object instance.
+（此函数是参数化类型：它返回的是类或接口，而不是值或对象实例。）
 
-写"自定义设备"的核心模式：把类成员声明成 `@editable` 的 `editable_number`，编辑器右侧详情面板就会出现一个数字框，关卡作者不写代码就能调这个值。`t` 填 `int` 就是整数框，填 `float` 就是小数框。
+## Parameters
 
-配套读取函数 `GetCurrentValue()`（返回 t 类型）取用户填的值。同一族的还有 [editable_slider](editable_slider.md)（滑条）、[editable_vector_number](editable_vector_number.md)/[editable_vector_slider](editable_vector_slider.md)（三维向量）。
+editable_number takes the following parameters:（editable_number 接受以下参数：）
 
-## 最小示例
+| Name | Type | Description |
+|---|---|---|
+| t | any | 输入框的数字类型，常用 `int` 或 `float`。 |
+
+## Attributes, Specifiers, and Effects
+
+`editable_number<public>(t:any)` —— 标签：public，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Simulation }
 using { /Fortnite.com/Devices }
 
-# 一个可调"节拍间隔"的自定义设备
+# 可调"节拍间隔"的自定义设备：详情面板出现数字输入框
 beat_device := class(creative_device):
 
     @editable
     Interval : editable_number = editable_number{Default := 0.5, Min := 0.1, Max := 5.0}
 
-    var BeatClock : beat_clock = beat_clock{}
-
     OnBegin<override>()<suspends>:void =
-        IntervalNumber := Interval.GetCurrentValue()   # float
-        Print("节拍间隔 = {IntervalNumber}")
+        N := Interval.GetCurrentValue()   # 取面板当前值（float）
+        Print("节拍间隔 = {N}")
 ```
 
-## 常用成员
+## 补充说明
 
-| 成员 | 签名 | 说明 | 级别 |
-|---|---|---|---|
-| `GetCurrentValue` | `():t` | 取详情面板当前值 | 🟦 S |
-| `Default` / `Min` / `Max` | 属性 | 声明处设置默认值与范围 | 🟦 S |
-
-## 何时用 / 何时不用
-
-- 用：任何想让别人"不写代码就能调"的参数：数量、间隔、概率、阈值。
-- 不用：运行中要变的值——editable 是"关卡作者在编辑器里调"的入口，运行时请用 `var`。
-
-## 常见坑
-
-- 忘写 `@editable` 特性，面板上就不会出现这个字段。
-- `Min/Max` 只约束面板输入，代码里仍要防范越界值。
-
-## 相关页面
-
-- [editable_slider](editable_slider.md) —— 同族滑条版
-- [creative_device](../../../03_Fortnite.com/070_Devices/creative_device.md) —— editable 的宿主基类
+- API Reference 本页只定义构造器本身；返回的类暴露的成员（如 `GetCurrentValue()`、`Default/Min/Max` 属性）以 UEFN 编辑器内提示与官方创作文档为准，本页不罗列。
+- 必须在类成员上添加 `@editable` 特性，详情面板才会显示该控件。
+- 同族：[editable_slider function](editable_slider.md)（滑条）、[editable_vector_number function](editable_vector_number.md)、[editable_vector_slider function](editable_vector_slider.md)。

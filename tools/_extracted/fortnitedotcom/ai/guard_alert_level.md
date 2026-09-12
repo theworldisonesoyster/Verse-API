@@ -1,0 +1,11 @@
+The different alert levels of a Fortnite Guard.
+|  |  |
+| Verse using statement | using { /Fortnite.com/AI } |
+
+## Enumerators
+The guard_alert_level enumeration includes the following enumerators:
+| Name | Description |
+| Unaware | The guard has not detected any hostile target. |
+| Suspicious | The guard has seen a hostile target but hasn't identified it yet. |
+| LostTarget | The guard has identified a hostile target but can't see it any more. |
+| Alerted | The guard has identified a hostile target. |

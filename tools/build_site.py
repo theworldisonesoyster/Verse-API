@@ -16,7 +16,7 @@ GRADE_NAMES = {"S": "核心", "A": "常用", "B": "进阶", "C": "参考"}
 TOP_TITLES = {"00_语言基础": "语言基础（补充）", "01_Verse.org": "Verse.org",
               "02_UnrealEngine.com": "UnrealEngine.com", "03_Fortnite.com": "Fortnite.com",
               "90_分级索引": "分级索引"}
-APPENDIX = [("MANIFEST.md", "MANIFEST 全量清单"), ("STYLE_GUIDE.md", "写作规范 STYLE_GUIDE"), ("PROGRESS.md", "生成进度 PROGRESS")]
+APPENDIX = [("MANIFEST.md", "MANIFEST 全量清单"), ("STYLE_GUIDE.md", "写作规范 STYLE_GUIDE"), ("PROGRESS.md", "生成进度 PROGRESS"), ("_Specifiers与Effects.md", "Specifiers 与 Effects 对照")]
 
 
 def frontmatter(path):
@@ -33,6 +33,28 @@ def frontmatter(path):
             k, _, v = line.partition(":")
             out[k.strip()] = v.strip()
     return out
+
+
+def title_map():
+    """slug → 官网正式标题（H1）"""
+    tm = {}
+    try:
+        forest = json.load(open(os.path.join(ROOT, "manifest.json"), encoding="utf-8"))
+    except OSError:
+        return tm
+
+    def walk(n):
+        if n.get("title"):
+            tm[n["slug"]] = n["title"]
+        for c in n.get("children", []):
+            walk(c)
+
+    for t in forest:
+        walk(t)
+    return tm
+
+
+TITLES = title_map()
 
 
 def order_map():
@@ -64,10 +86,14 @@ def load_node(dirpath, title, rel_dir):
         p = os.path.join(dirpath, name)
         rel = f"{rel_dir}/{name}".replace("\\", "/")
         if os.path.isdir(p) and re.match(r"^\d{3}_", name):
-            entries.append((int(name[:3]) * 100000, load_node(p, re.sub(r"^\d{3}_", "", name).replace(".", ""), rel)))
+            node = load_node(p, re.sub(r"^\d{3}_", "", name).replace(".", ""), rel)
+            ov_slug = frontmatter(os.path.join(p, "_overview.md")).get("slug", "")
+            node["title"] = TITLES.get(ov_slug, node["title"])
+            entries.append((int(name[:3]) * 100000, node))
         elif name.endswith(".md") and name != "SUMMARY.md":
             fm = frontmatter(p)
-            disp = fm.get("name") or os.path.splitext(name)[0]
+            slug = fm.get("slug", "")
+            disp = TITLES.get(slug) or fm.get("name") or os.path.splitext(name)[0]
             if name == "_overview.md":
                 continue
             # 用 frontmatter 的 slug 反查官网顺序；无则排最后（按名称）
@@ -128,10 +154,10 @@ PAGE_HTML = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Verse API 中文注解</title>
+<title>Verse API Reference</title>
 <style>
-:root{--bg:#0f1117;--panel:#171a23;--panel2:#1d2130;--fg:#dfe3ee;--dim:#8b91a7;--acc:#4da3ff;--line:#262b3a;
---s:#4da3ff;--a:#37c98b;--b:#e8c34a;--c:#6b7280}
+:root{--bg:#1c1c1c;--panel:#212121;--panel2:#282828;--fg:#e2e2e2;--dim:#96989e;--acc:#422439;--acc2:#c795b3;--line:#3a3a3a;
+--s:#422439;--a:#37c98b;--b:#e8c34a;--c:#6b7280}
 *{box-sizing:border-box}body{margin:0;font:15px/1.65 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--fg)}
 #app{display:grid;grid-template-columns:330px 1fr;height:100vh}
 #side{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column}
@@ -140,15 +166,19 @@ PAGE_HTML = """<!DOCTYPE html>
 #search{width:100%;padding:7px 10px;background:var(--panel2);border:1px solid var(--line);color:var(--fg);border-radius:8px;outline:none}
 #grades{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .gbtn{cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--fg);padding:4px 10px;border-radius:20px;font-size:12.5px;user-select:none}
-.gbtn.on{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}
+.gbtn.on{background:var(--acc);border-color:#7a4a67;color:#fff}
 #tree{flex:1;overflow:auto;padding:8px 6px 30px}
 #tree ul{list-style:none;margin:0;padding-left:14px}
 #tree>ul{padding-left:6px}
 #tree li{margin:1px 0}
-#tree .d>span.t{font-weight:600}
+#tree li.d>span.t{font-weight:600;cursor:pointer;display:block;padding:3px 8px;border-radius:6px}
+#tree li.d>span.t::before{content:"▾ ";color:var(--dim)}
+#tree li.d.closed>span.t::before{content:"▸ "}
+#tree li.d.closed>ul{display:none}
+#tree li.d>span.t:hover{background:var(--panel2)}
 #tree a{color:var(--fg);text-decoration:none;display:block;padding:3px 8px;border-radius:6px;cursor:pointer}
 #tree a:hover{background:var(--panel2)}
-#tree a.cur{background:#24304a;color:#fff}
+#tree a.cur{background:var(--acc);color:#fff}
 #tree a .g{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:1px}
 .gS{background:var(--s)}.gA{background:var(--a)}.gB{background:var(--b)}.gC{background:var(--c)}
 .pend{color:var(--dim);font-size:11px;margin-left:5px}
@@ -162,11 +192,11 @@ PAGE_HTML = """<!DOCTYPE html>
 #content blockquote{margin:0;padding:6px 14px;border-left:3px solid var(--acc);color:var(--dim);background:var(--panel2);border-radius:0 8px 8px 0}
 #content table{border-collapse:collapse;margin:14px 0;width:100%}
 #content th,#content td{border:1px solid var(--line);padding:6px 10px;text-align:left;font-size:14px}
-#content th{background:var(--panel2)}
-#content a{color:var(--acc);text-decoration:none}
+#content th{background:var(--acc);color:#f2e7ee;border-color:var(--line)}
+#content a{color:var(--acc2);text-decoration:none}
 #content a:hover{text-decoration:underline}
 #nav{position:fixed;bottom:0;left:330px;right:0;display:flex;justify-content:space-between;padding:10px 40px;background:linear-gradient(transparent,var(--bg) 40%)}
-#nav a{color:var(--acc);cursor:pointer;background:var(--panel2);border:1px solid var(--line);padding:6px 14px;border-radius:8px}
+#nav a{color:var(--acc2);cursor:pointer;background:var(--panel2);border:1px solid #5a3a4e;padding:6px 14px;border-radius:8px}
 .pending-box{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--dim);margin:20px 0;text-align:center}
 @media(max-width:900px){#app{grid-template-columns:1fr}#side{display:none}#nav{left:0}}
 </style>
@@ -174,7 +204,7 @@ PAGE_HTML = """<!DOCTYPE html>
 <body>
 <div id="app">
   <div id="side">
-    <header><h1>Verse API 中文注解</h1><input id="search" placeholder="搜索 API 名称…"></header>
+    <header><h1>Verse API Reference</h1><input id="search" placeholder="搜索 API 名称…"></header>
     <div id="grades"></div>
     <nav id="tree"></nav>
   </div>
@@ -227,6 +257,7 @@ function nodeHtml(n){
 function renderTree(){
   const kids=(TREE.children||[]).filter(match);
   $('#tree').innerHTML='<ul>'+kids.map(nodeHtml).join('')+'</ul>';
+  $('#tree').querySelectorAll('li.d>span.t').forEach(sp=>sp.onclick=()=>sp.parentElement.classList.toggle('closed'));
   $('#tree').querySelectorAll('a').forEach(a=>a.onclick=()=>show(a.dataset.p));
 }
 function renderAll(){renderGrades();renderTree()}

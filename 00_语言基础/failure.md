@@ -7,13 +7,12 @@ module: /语言基础
 grade: S
 depth: full
 status: done
-supplement: true
 ---
 
-# 可失败表达式与 failure 🟦【S级·核心】〔补充·非官网镜像〕
+# 可失败表达式与 failure 🟦【S级·核心】
 
 > Verse 用"失败"代替"异常/空指针"：任何操作都可能成功或失败，失败不崩溃，只是"这条路不通"。
-> 本页为语言机制补充，官网 API Reference 无对应单页（各 API 页标注 `<decides>` 即为可失败）。
+> 官网各 API 页签名中的 `<decides>` 即为此机制。
 
 ## 这是什么
 

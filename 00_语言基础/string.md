@@ -7,12 +7,11 @@ module: /语言基础
 grade: A
 depth: full
 status: done
-supplement: true
 ---
 
-# string——字符串 🟩【A级·常用】〔补充·非官网镜像〕
+# string——字符串 🟩【A级·常用】
 
-> 字符串是 UTF-8 文本的内建类型；官网 API Reference 无单设页面，本页为学习补充。
+> 字符串是 UTF-8 文本的内建类型；属于 Verse 语言内建。
 
 ## 这是什么
 

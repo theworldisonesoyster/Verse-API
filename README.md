@@ -1,4 +1,4 @@
-# verse-api-zh
+# Verse API Reference (verse-api-zh)
 
 基于 [Epic 官方 Verse API Reference](https://dev.epicgames.com/documentation/fortnite/verse-api)（快照 42.10 / 2026-09-13）生成的**中文注解资料库**：保留官网模块层级与页面顺序，增加中文说明、代码示例与 S/A/B/C 重要程度分级。
 

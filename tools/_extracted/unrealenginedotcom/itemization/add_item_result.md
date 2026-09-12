@@ -1,0 +1,10 @@
+|  |  |
+| Verse using statement | using { /UnrealEngine.com/Itemization } |
+
+## Members
+This class has data members, but no functions.
+
+### Data
+| Data Member Name | Type | Description |
+| AddedItems | []entity | Items that were newly added to this inventory as a result of the transaction. |
+| ModifiedItems | [](entity, int) | Items whose stack size changed as a result of the transaction, and the previous stack size value. |

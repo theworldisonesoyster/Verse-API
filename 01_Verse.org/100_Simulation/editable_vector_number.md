@@ -2,30 +2,40 @@
 name: editable_vector_number
 slug: versedotorg/simulation/editable_vector_number
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/simulation/editable_vector_number
-kind: class
+kind: function
 module: /Verse.org/Simulation
 grade: A
 depth: full
 status: done
 ---
 
-# editable_vector_number 🟩【A级·常用】
+# editable_vector_number function 🟩【A级·常用】
 
-> Parametric type that exposes a 3-component vector field in the Details panel.
-> 参数化类型：在详情面板暴露一个三维向量输入（X/Y/Z 三个数字框）。
+> （本页官网无导语描述。）
+> editable_vector_number 是参数化类型构造器：按给定数字类型 t 生成一个"编辑器详情面板三维向量数字输入"类（X/Y/Z 三个输入框）。
 
-## 签名
+`using { /Verse.org/Simulation }`
 
 ```verse
-editable_vector_number<public>(t:any) := class<concrete>(editable_object):
-    # 参数 t 常用 int 或 float
+editable_vector_number<public>(t:any):
 ```
 
-## 这是什么
+This function is a parametric type, meaning it returns a class or interface rather than a value or object instance.
+（此函数是参数化类型：它返回的是类或接口，而不是值或对象实例。）
 
-[editable_number](editable_number.md) 的三维版：一次编辑三个分量，常用于"偏移量""缩放""速度方向"这类向量参数。读取 `GetCurrentValue()` 返回 [vector3](../130_SpatialMath/vector3.md)（t 为 float 时）。
+## Parameters
 
-## 最小示例
+editable_vector_number takes the following parameters:（editable_vector_number 接受以下参数：）
+
+| Name | Type | Description |
+|---|---|---|
+| t | any | 各分量的数字类型，常用 `int` 或 `float`。 |
+
+## Attributes, Specifiers, and Effects
+
+`editable_vector_number<public>(t:any)` —— 标签：public，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Simulation }
@@ -37,27 +47,11 @@ mover := class(creative_device):
     Offset : editable_vector_number = editable_vector_number{Default := vector3{Up := 100.0}}
 
     OnBegin<override>()<suspends>:void =
-        V := Offset.GetCurrentValue()
+        V := Offset.GetCurrentValue()   # t=float 时返回 vector3
         Print("向上偏移 {V.Up}")
 ```
 
-## 常用成员
+## 补充说明
 
-| 成员 | 签名 | 说明 | 级别 |
-|---|---|---|---|
-| `GetCurrentValue` | `():vector3` | 取当前向量（t=float 时） | 🟩 A |
-| `Default` / `Min` / `Max` | 属性 | 默认值与范围（按分量生效） | 🟩 A |
-
-## 何时用 / 何时不用
-
-- 用：位置偏移、方向、比例等成组出现的三个数。
-- 不用：三个数含义独立（比如"血量/护盾/能量"）——拆成三个 editable_number 语义更清楚。
-
-## 常见坑
-
-- `t=int` 时各分量取整，做精确位移请用 float。
-
-## 相关页面
-
-- [editable_vector_slider](editable_vector_slider.md)
-- [vector3](../130_SpatialMath/vector3.md)
+- 取值返回 [vector3 struct](../130_SpatialMath/vector3.md)（注意其分量名为 Left/Up/Forward）。
+- 三个数含义独立时（如"血量/护盾/能量"）拆成多个 [editable_number function](editable_number.md) 更清晰。

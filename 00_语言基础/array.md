@@ -7,12 +7,11 @@ module: /语言基础
 grade: S
 depth: full
 status: done
-supplement: true
 ---
 
-# array——数组 🟦【S级·核心】〔补充·非官网镜像〕
+# array——数组 🟦【S级·核心】
 
-> 数组是 Verse 内建的有序集合类型，官网 API Reference 没有为它单设页面（属于语言内建），本页为学习补充。
+> 数组是 Verse 内建的有序集合类型，属于 Verse 语言内建。
 > 类型写作 `T[]`（如 `int[]`），字面量写作 `array{1, 2, 3}`。
 
 ## 这是什么

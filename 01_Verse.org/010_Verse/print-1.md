@@ -9,22 +9,32 @@ depth: full
 status: done
 ---
 
-# Print (message 重载) 🟦【S级·核心】
+# Print function（message 重载）🟦【S级·核心】
 
-> Writes Message to a dedicated Print log while displaying it in Color.
-> Print 的 message 版本：可打印**可本地化**的 message 对象。
+> Writes Message to a dedicated Print log while displaying it in Color on the client screen for Duration seconds. By default, Color is NamedColors.White and Duration is 2.0 seconds.
+> 把 Message 写入专用的 Print 日志，同时在客户端屏幕上以 Color 颜色显示 Duration 秒。默认 Color 为 NamedColors.White，Duration 为 2.0 秒。本重载的 Message 为 message（可本地化文本）类型。
 
-## 签名
+`using { /Verse.org/Verse }`
 
 ```verse
 Print<public><native>(Message:message, Duration:float, Color:color)<transacts>:void
 ```
 
-## 这是什么
+## Parameters
 
-与 [print](print.md) 行为一致，区别是参数类型为 [message](message.md)——本地化文本对象（`Localize` 构造）。当你想调试"玩家实际看到的本地化文本"时用它。
+Print takes the following parameters:（Print 接受以下参数：）
 
-## 最小示例
+| Name | Type | Description |
+|---|---|---|
+| Message | message | 要输出的可本地化文本。 |
+| Duration | float | 在屏幕上显示的秒数。 |
+| Color | color | 显示颜色，默认 NamedColors.White。 |
+
+## Attributes, Specifiers, and Effects
+
+`Print<public><native>(Message:message, Duration:float, Color:color)<transacts>` —— 标签：public / native / transacts，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Verse }
@@ -33,7 +43,6 @@ Greeting:message = Localize("hello.key", ["Name"], array["World"])
 Print(Greeting)
 ```
 
-## 相关页面
+## 补充说明
 
-- [Print](print.md) —— 主版本
-- [message](message.md)
+- 与 [Print function](print.md) 行为一致，区别是接受 message 对象；相关类型见 [message class](message.md)。

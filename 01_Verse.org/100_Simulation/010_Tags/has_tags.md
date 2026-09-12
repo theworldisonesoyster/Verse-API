@@ -9,34 +9,31 @@ depth: full
 status: done
 ---
 
-# has_tags 🟩【A级·常用】
+# has_tags interface 🟩【A级·常用】
 
-> Interface for containers that can hold tag instances.
-> "可持有标签"的接口：实现了它的对象就能打标、查标、摘标。
+> An interface representing a mutable collection of tags.
+> 表示"可变标签集合"的接口：实现了它的对象即可打标、查标、摘标。
 
-## 这是什么
+`using { /Verse.org/Simulation/Tags }`
 
-这是标签系统的能力契约：只要对象实现了 `has_tags`，就能对它调用下面这组函数。SceneGraph 的实体/组件体系中的可标签对象都实现了它。`AddTag` 返回 [tag_key](tag_key.md)，想精确摘掉某一次打的标就留着这个 key。
+## Members
 
-## 签名
+This interface has functions, but no data members.（此接口只有函数，没有数据成员。）
 
-```verse
-has_tags<public><native> := interface<native>:
-```
+### Functions
 
-## 常用成员（函数）
+| Function Name | Description |
+|---|---|
+| AddTag | 向此容器添加一个标签实例，返回与该实例唯一关联的 tag_key。 |
+| RemoveTag | 移除与 tag_key 关联的标签实例；移除了实例则成功，否则失败。 |
+| RemoveAllTags | 移除 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveAllTagsExcept | 移除不属于 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveAllTagsExcept | 移除不属于 tag_types 中任何类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| ContainsTag | 若容器中找到至少一个 tag_type 类型的标签则成功，否则失败。 |
+| ContainsAllTags | 若 tag_types 中有任一类型在容器中找不到则失败，否则成功。注意 tag_types 为空时此调用成功。 |
+| ContainsAnyTag | 若 tag_types 中至少一个类型在容器中找到则成功，否则失败。注意 tag_types 为空时此调用失败。 |
 
-| 函数 | 说明（官方描述编译） | 级别 |
-|---|---|---|
-| `AddTag(Tag)` | 加一个标签实例，返回唯一 tag_key | 🟩 A |
-| `RemoveTag(Key)` | 按 tag_key 摘标；摘掉成功否则失败 | 🟩 A |
-| `RemoveAllTags[TagType]` | 摘掉该类型的全部标签 | 🟩 A |
-| `RemoveAllTagsExcept[TagType]` | 摘掉除指定类型外的全部标签（有两个重载：单类型/类型数组） | 🟨 B |
-| `ContainsTag[TagType]` | 是否含至少一个该类型标签（可失败） | 🟩 A |
-| `ContainsAllTags[TagTypes]` | 是否全部包含（空数组视为成功） | 🟩 A |
-| `ContainsAnyTag[TagTypes]` | 是否包含任一（空数组视为失败） | 🟩 A |
-
-## 最小示例
+## 示例
 
 ```verse
 using { /Verse.org/Simulation/Tags }
@@ -46,12 +43,8 @@ Unlock(Obj:has_tags):void =
         Obj.RemoveAllTags[LockTag]   # 摘掉"上锁"标签
 ```
 
-## 常见坑
+## 补充说明
 
-- `Contains*` 是可失败查询，要写在 `if` 等失败上下文里。
-- 精确移除某次打标用 `RemoveTag(AddTag 返回的 key)`；按类型清用 `RemoveAllTags`。
-
-## 相关页面
-
-- [tag](tag.md) / [tag_key](tag_key.md)
-- [tag_view](tag_view.md) —— 只读查询视图
+- `Contains*` 是可失败查询（`<decides>`），必须写在失败上下文里。
+- 精确移除某一次打标：用 AddTag 返回的 [tag_key struct](tag_key.md) 调 RemoveTag。
+- 相关页面：[tag class](tag.md)、[tag_view interface](tag_view.md)。

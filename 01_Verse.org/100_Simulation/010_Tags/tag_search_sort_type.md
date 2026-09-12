@@ -9,7 +9,13 @@ depth: oneliner
 status: done
 ---
 
-# tag_search_sort_type ⬜【C级·参考】
+# tag_search_sort_type enumeration ⬜【C级·参考】
 
-> Specifies how tag search results are ordered.
-> 指定标签搜索结果的排序方式；配合 [tag_search_criteria](tag_search_criteria.md) 使用。
+`using { /Verse.org/Simulation/Tags }`
+
+## Enumerators
+
+| Name | Description |
+|---|---|
+| Unsorted | （官网无描述。） |
+| Sorted | （官网无描述。） |

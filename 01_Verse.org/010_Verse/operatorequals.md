@@ -9,53 +9,43 @@ depth: full
 status: done
 ---
 
-# operator'='（相等比较）🟦【S级·核心】
+# operator'=' function 🟦【S级·核心】
 
-> 比较 Lhs 与 Rhs 是否相等；相等则成功（返回 Lhs），不相等则失败。
-> 这是把"相等性"接入 Verse 失败机制的运算符——签名里的 `<decides>` 是关键。
+（本页官网无导语描述；`=` 是可失败的相等比较运算符——相等则成功并返回左值，不相等则失败。）
 
-## 签名
+`using { /Verse.org/Verse }`
 
 ```verse
-operator'='(Lhs:t, Rhs:comparable)<decides>:t where t:comparable
+operator'='(Lhs:t, Rhs:comparable where t:comparable)<decides>:t
 ```
 
-对应的不等运算符 [operator'&lt;&gt;](operatorlessgreater.md) 语义相反。
+## Parameters
 
-## 这是什么
+operator'=' takes the following parameters:（operator'=' 接受以下参数：）
 
-`A = B` 在 Verse 里不是"赋值"而是**可失败的相等判断**（赋值是 `set`）。它可以：
+| Name | Type | Description |
+|---|---|---|
+| Lhs | t | 左操作数。 |
+| Rhs | comparable | 右操作数。 |
+| t | comparable | 操作数的公共类型，须满足 comparable 约束。 |
 
-1. 出现在失败上下文的条件位：`if (X = 5) {…}` 等价于传统 `if (X == 5)`。
-2. **兼作取值**：`if (Y := X = 5)`——相等时 Y 被绑定为 X，一条语句完成判断＋取值。
+## Attributes, Specifiers, and Effects
 
-## 最小示例
+`operator'='(Lhs:t, Rhs:comparable where t:comparable)<decides>:t` —— 标签：decides，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Verse }
 
 Check(HP:int):void =
-    if (HP = 0):
+    if (HP = 0):                 # 相等判断接入失败上下文
         Print("角色倒下")
-    if (Best := HP = 100):      # 相等时 Best = 100
+    if (Best := HP = 100):       # 相等时 Best 被绑定为 HP 的值
         Print("满血 {Best}")
-
-Unequal(HP:int):void =
-    if (HP <> 0):               # 不等：不相等则成功
-        Print("还活着")
 ```
 
-## 何时用 / 何时不用
+## 补充说明
 
-- 用：一切相等/不等判断；想在判断的同时拿值时用 `:= X = Rhs` 形式。
-- 不用：赋值请用 `set X = V`（语句，不是可失败表达式）。
-
-## 常见坑
-
-- 来自其他语言的肌肉记忆：`=` 判断、`:=` 定义、`set … =` 赋值，三者各司其职，写错位置直接编译错误。
-- 参与比较的类型需满足 `comparable`；自定义 class 要可比较需满足相应接口。
-
-## 相关页面
-
-- [可失败表达式与failure](../../00_语言基础/failure.md)
-- [operator'&lt;&gt;](operatorlessgreater.md)
+- Verse 中 `=` 判断、`:=` 定义、`set X =` 赋值三者各司其职；`<decides>` 使比较可失败——这是它与多数语言 `==` 的本质差异。
+- 不等比较见 [operator'&lt;&gt; function](operatorlessgreater.md)；失败机制见 [可失败表达式与failure](../../00_语言基础/failure.md)。

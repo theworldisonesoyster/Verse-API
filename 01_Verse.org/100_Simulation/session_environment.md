@@ -9,31 +9,23 @@ depth: brief
 status: done
 ---
 
-# session_environment 🟨【B级·进阶】
+# session_environment enumeration 🟨【B级·进阶】
 
 > Specifies what type of environment the current session is in.
-> 指明当前对局处于什么环境（编辑 / 私人 / 线上）。
+> 指明当前对局处于什么类型的环境。
 
-## 这是什么
+`using { /Verse.org/Simulation }`
 
-配合 [session](session.md) 判断"现在这段代码跑在哪"：编辑器里试玩、私人测试局、正式上线局，可以走不同逻辑（比如只在正式局里上报数据）。
+## Enumerators
 
-## 签名
+The session_environment enumeration includes the following enumerators:（session_environment 枚举包含以下枚举值：）
 
-```verse
-session_environment<public><native> := enum:
-    Edit     # 编辑环境（如 UEFN 内启动的会话）
-    Private  # 私人环境（如试玩测试局）
-    Live     # 线上正式环境
-```
+| Name | Description |
+|---|---|
+| Edit | 当前对局处于体验的 Edit（编辑）环境，例如在 UEFN 内启动的会话。 |
+| Private | 当前对局处于体验的 Private（私人）环境，例如试玩测试局。 |
+| Live | 当前对局处于体验的 Live（线上）环境。 |
 
-## 最小示例
+## 补充说明
 
-```verse
-if (SessionInfo := GetSession().GetSessionEnvironment?):
-    Print("当前环境: {SessionInfo}")
-```
-
-## 相关页面
-
-- [session](session.md)
+- 与 [session class](session.md) 配合判断"代码正跑在哪种环境"，可对编辑测试与正式上线走不同逻辑。

@@ -7,12 +7,11 @@ module: /语言基础
 grade: A
 depth: brief
 status: done
-supplement: true
 ---
 
-# 数值类型 int / float / rational 🟩【A级·常用】〔补充·非官网镜像〕
+# 数值类型 int / float / rational 🟩【A级·常用】
 
-> Verse 的三种数值类型；官网 API Reference 无单设页面，本页为学习补充。
+> Verse 的三种数值类型；属于 Verse 语言内建。
 
 ## 这是什么
 

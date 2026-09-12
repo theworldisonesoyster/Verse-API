@@ -9,59 +9,61 @@ depth: full
 status: done
 ---
 
-# agent 🟦【S级·核心】
+# agent class 🟦【S级·核心】
 
-> Agent is the abstract representation of a participant in an experience: a player or an AI agent.
-> agent 是"对局参与者"的抽象表示——可以是真人玩家，也可以是 AI 单位。
+（本页官网无导语描述；agent 是"对局参与者"的抽象——真人玩家或 AI 单位。）
 
-## 这是什么
+`using { /Verse.org/Simulation }`
 
-设备事件回传的"是谁触发了按钮"、排行榜里的"是谁"、物品栏的"是谁的"——这些"谁"的类型都是 `agent`。它是**抽象基类**：真人玩家是它的子类 [player](player.md)，AI 单位同样继承它。你的函数通常**接收 agent**（宽进），内部再判断/转换成 player 或做 agent 级操作（严用）。
+## Inheritance Hierarchy
 
-在当前版本的 SceneGraph 体系里，agent 继承自 [entity](../040_SceneGraph/entity.md)，因此也拥有实体层的组件管理函数（AddComponents 等），但多数玩法代码只用"它代表一个参与者"这一身份。
+This class is derived from `entity`.（本类派生自 entity。）
 
-## 签名
+| Name | Description |
+|---|---|
+| entity | 实体是 SceneGraph 的基础对象。体验中的对象由一个或多个实体构成。实体是有层级的：可用 `GetParent` 查询父实体、用 `AddEntities` 添加子实体。行为通过组件（component）添加：用 `AddComponents` 添加新组件。实体的结构和内容是动态的，可在体验运行中的任意时刻改变。 **派生自 entity** 在 SceneGraph 体系中，派生自 entity 的类也被称为预制体（prefab）。当你想在游戏中多次生成/复用一组实体和组件时，预制体非常有用。预制体主要在编辑器中创作，其 Verse 类会在构建时生成到项目的 Assets.digest.verse 文件里。虽然你可以为载具、角色等常见对象类型创建基础预制体，但官方强烈建议**不要直接在 entity 类里写代码**，而是把逻辑放在组件里。把逻辑和数据放进组件，你在体验制作全程中重构预制体时，就不必大改类结构。 |
 
-```verse
-agent<public><epic_internal> := class<epic_internal>(entity):
-    # 官方未公开任何自有成员；作为类型标识使用
-```
+## Members
 
-## 最小示例
+This class has functions, but no data members.（此类只有函数，没有数据成员。）
+
+### Functions
+
+| Function Name | Description |
+|---|---|
+| AddComponents | 把给定的组件添加到实体。若某组件不允许加到该实体，则跳过。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保被加组件已达到对应阶段。组件按以下规则添加：所有组件加入实体的子列表；若该实体在场景中，所有组件的 OnAddedToScene 被调用；若该实体正在模拟，所有组件的 OnBeginSimulation 被调用。 |
+| AddEntities | 把给定的实体添加为子实体。若子实体已有父实体，会先从原父实体移除再加入新父。加入的子实体会沿各自的生命周期方法推进，直到与新父实体的状态一致。 |
+| AddTag | 向此实体添加一个标签实例，返回与该实例唯一关联的 tag_key。 |
+| ContainsAllTags | 若 tag_types 中有任一类型在容器中找不到则失败，否则成功。注意 tag_types 为空时此调用成功。 |
+| ContainsAnyTag | 若 tag_types 中至少一个类型在容器中找到则成功，否则失败。注意 tag_types 为空时此调用失败。 |
+| ContainsTag | 若容器中找到至少一个 tag_type 类型的标签则成功，否则失败。 |
+| GetComponent | 若 component_type 类型的子组件存在且可从调用方上下文访问，则成功并返回该组件。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保返回的组件已达到对应阶段。若不存在或不可访问则失败。 |
+| GetComponents | 返回此实体下属、可从调用方上下文访问的子组件。 |
+| GetEntities | 返回此实体下属、可从调用方上下文访问的子实体。只取直接子实体；要跨多层查询请改用 Find* 系列查询方法。 |
+| GetParent | 返回此实体的父实体。父实体掌控其子实体与组件的生命周期——实体从场景移除时，其所有子实体和组件也会一并移除。当前没有父实体时此方法失败。 |
+| RemoveAllTags | 移除 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveAllTagsExcept | 移除不属于 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveAllTagsExcept | 移除不属于 tag_types 中任何类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| RemoveFromParent | 把此实体从父实体移除，用于将实体移出场景。该实体及其子级上的组件会依次走 OnEndSimulation → OnRemovingFromScene。之后可用 NewParent.AddEntities 再加回。 |
+| RemoveTag | 移除与 tag_key 关联的标签实例；移除成功则成功，否则失败。 |
+| SendDown | 向此实体发送场景事件并沿层级向下传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对每个子实体调用 SendDown。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
+| SendUp | 向此实体发送场景事件并沿层级向上传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对父实体调用 SendUp。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
+
+## 示例
 
 ```verse
 using { /Verse.org/Simulation }
 
 # 设备事件拿到 agent 后，识别出真人玩家
-OnAgentJoined(Agent:agent):void =
-    if (P := player[Agent]):
-        Print("玩家 {P.GetPlayerUI? } 加入")   # player 才有玩家级操作
+HandleAgent(A:agent):void =
+    if (P := player[A]):        # 可失败转换：agent → player
+        Print("是真人玩家")
     else:
-        Print("AI 参与者加入")
+        Print("AI 参与者")
 ```
 
-## 常用成员
+## 补充说明
 
-agent 自身几乎无成员，价值在"作为参与者的通行证"被各类 API 接收。常用配套函数（模块级）：
-
-| 函数 | 形式 | 说明 | 级别 |
-|---|---|---|---|
-| `player[Agent]` | 可失败转换 | 把 agent 尝试转为 player，失败则走失败分支 | 🟦 S |
-| `GetPlayspace().GetPlayers()` | 常配 | 取全部玩家（Fortnite.com/Game） | 🟩 A |
-| 继承自 entity | `AddEntities` / `AddComponents` / `GetParent` | SceneGraph 实体操作 | 🟨 B |
-
-## 何时用 / 何时不用
-
-- 用：任何"对每个参与者做事"的场合——发奖励、记分、事件回调参数类型。
-- 不用：需要真人专属信息（角色血量、UI）时直接转成 player；不要把 agent 当成具体角色对象用。
-
-## 常见坑
-
-- `agent` ≠ 角色（character）：agent 是"参与者"，角色是 player 在世界里的身体（如 fort_character）。两者要分清。
-- 从设备事件拿到的 agent 未必是真人，转 player 必须走失败分支（`if (P := player[Agent])`）。
-
-## 相关页面
-
-- [player](player.md) —— 唯一的常用子类
-- [entity](../040_SceneGraph/entity.md) —— SceneGraph 基类
-- [team](team.md) —— 参与者的分组
+- agent 本页无自有成员——它全部继承自 entity（场景操作＋标签操作两族）。日常玩法代码通常只把 agent 当"参与者通行证"用。
+- `agent` ≠ 角色身体：世界里的身体是 fort_character（见 Fortnite.com/Characters），两者要分清。
+- 相关页面：[player class](player.md)、[entity class](../040_SceneGraph/entity.md)、[team class](team.md)。

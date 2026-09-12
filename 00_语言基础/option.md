@@ -7,12 +7,11 @@ module: /语言基础
 grade: S
 depth: full
 status: done
-supplement: true
 ---
 
-# option——可选值 🟦【S级·核心】〔补充·非官网镜像〕
+# option——可选值 🟦【S级·核心】
 
-> option 表示"可能有一个值，也可能没有"，官网 API Reference 无单设页面，本页为学习补充。
+> option 表示"可能有一个值，也可能没有"，属于 Verse 语言内建。
 > 类型写作 `?T`（如 `?int`），有值字面量 `option{7}`，空值 `false`。
 
 ## 这是什么

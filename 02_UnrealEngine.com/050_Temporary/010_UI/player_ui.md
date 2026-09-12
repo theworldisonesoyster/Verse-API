@@ -9,63 +9,42 @@ depth: full
 status: done
 ---
 
-# player_ui 🟦【S级·核心】
+# player_ui class 🟦【S级·核心】
 
-> Per-player UI root: add/remove widgets on a specific player's screen.
-> 每个玩家一块的 UI 根画布：往指定玩家的屏幕上加控件、拆控件。
+（本页官网无导语描述；player_ui 是每个玩家一块的 UI 根画布——往指定玩家屏幕上加/拆控件。通过 [GetPlayerUI function](getplayerui.md) 获取。）
 
-## 这是什么
+`using { /UnrealEngine.com/Temporary/UI }`
 
- Temporary/UI 的入口类。每个 [player](../../../01_Verse.org/100_Simulation/player.md) 对应一个 `player_ui` 实例，通过 [GetPlayerUI](getplayerui.md) 获取。它管理两件事：
+## Members
 
-- **挂载**：`AddWidget(控件)` 把 [widget](widget.md)（canvas/stack_box/button/text…）摆上屏，可选 [player_ui_slot](player_ui_slot.md) 配置；`RemoveWidget` 摘下。
-- **焦点**：`SetFocus` 把键盘/手柄焦点交给某控件（需 focusable）。
+This class has functions, but no data members.（此类只有函数，没有数据成员。）
 
-注意模块前缀 `Temporary`：这是"过渡期 UI"，官方已在 Verse.org 侧推进 Presentation/SceneGraph 体系；但当前版本它仍是写 UI 的主力 API。
+### Functions
 
-## 签名
+| Function Name | Description |
+|---|---|
+| AddWidget | 使用默认 player_ui_slot 配置，把 Widget 添加到此 player_ui。 |
+| AddWidget | 使用 Slot 配置，把 Widget 添加到此 player_ui。 |
+| RemoveWidget | 把 Widget 从此 player_ui 移除。 |
+| SetFocus | 把使用者的焦点设置到该 Widget。目标 Widget 必须可聚焦（focusable），否则无效果。若在 AddWidget 之前调用 SetFocus，则 AddWidget 之后该控件会获得焦点——除非在那之前又有别的 SetFocus 调用。 |
 
-```verse
-player_ui<public><native> := class<native>:
-    AddWidget<public>(Widget:widget)<transacts>:void
-    AddWidget<public>(Widget:widget, Slot:player_ui_slot)<transacts>:void
-    RemoveWidget<public>(Widget:widget)<transacts>:void
-    SetFocus<public>(Widget:widget)<transacts>:void
-```
+## Attributes, Specifiers, and Effects
 
-## 最小示例
+（类成员函数各自的签名与效果见官网对应成员页；本页无统一标注。）
+
+## 示例
 
 ```verse
 using { /UnrealEngine.com/Temporary/UI }
 using { /Verse.org/Simulation }
 
-# 玩家加入时给他屏幕上挂一个文本控件
-Greet(P:player):void =
-    UI := GetPlayerUI[P]           # 可失败：取玩家 UI
-    NewWidget := widget{}
-    UI.AddWidget(NewWidget)
+# 给玩家屏幕挂一个控件
+Greet(P:player, W:widget):void =
+    if (UI := GetPlayerUI[P]):
+        UI.AddWidget(W)
 ```
 
-## 常用成员
+## 补充说明
 
-| 成员 | 说明 | 级别 |
-|---|---|---|
-| `AddWidget` | 上屏（默认 slot 或自定义 slot 两个重载） | 🟦 S |
-| `RemoveWidget` | 下屏 | 🟦 S |
-| `SetFocus` | 交焦点给控件 | 🟨 B |
-
-## 何时用 / 何时不用
-
-- 用：记分板、倒计时、商店面板——一切"画在玩家屏幕上"的东西。
-- 不用：HUD 提示文字这类简单场景可直接用 hud_message_device；Temporary/UI 控件间搭配见 widget 族。
-
-## 常见坑
-
-- `GetPlayerUI` 是可失败调用（玩家可能还没就绪），务必写失败分支。
-- AddWidget 前构造好的控件树要在**添加前**配置好层级；对已上屏控件的父子改动行为以实测为准。
-
-## 相关页面
-
-- [GetPlayerUI](getplayerui.md) —— 获取实例
-- [widget](widget.md) —— 控件基类
-- [canvas](canvas.md) / [stack_box](stack_box.md) —— 布局容器
+- `GetPlayerUI` 是可失败调用（玩家 UI 未必就绪），务必写在失败上下文里。
+- 控件树与布局容器见 [widget class](widget.md)、[canvas class](canvas.md)、[stack_box class](stack_box.md)、[overlay class](overlay.md)。

@@ -9,22 +9,26 @@ depth: full
 status: done
 ---
 
-# GetSession 🟩【A级·常用】
+# GetSession function 🟩【A级·常用】
 
-> Returns the session corresponding to the current round.
-> 返回当前回合对应的 session 实例。
+> Returns the session corresponding to the current round. The result can be used with `weak_map` to implement global variables. Note: may be changed in a future release to return a single instance per game. Round-local behavior should not be relied upon.
+> 返回当前回合对应的 session 实例。结果可配合 `weak_map` 实现全局变量。注意：未来版本可能改为"每局游戏返回一个实例"，请勿依赖其回合级行为。
 
-## 签名
+`using { /Verse.org/Simulation }`
 
 ```verse
-GetSession<public><native>():session<transacts>
+GetSession<public><native>():session
 ```
 
-## 这是什么
+## Parameters
 
-`session` 类没有公开构造方式，全局唯一的实例就靠这个函数拿。它最重要的用法不是"用 session 做什么"，而是"**用 session 当 key**"：配合 `weak_map[session, T]` 实现跨脚本的全局状态。
+GetSession does not take any parameters.（GetSession 不接受任何参数。）
 
-## 最小示例
+## Attributes, Specifiers, and Effects
+
+`GetSession<public><native>():session` —— 标签：public / native，语义见 [Specifiers 与 Effects 对照](../../_Specifiers与Effects.md)。
+
+## 示例
 
 ```verse
 using { /Verse.org/Simulation }
@@ -38,16 +42,7 @@ WasVisited():logic =
     Visited[GetSession()] or false
 ```
 
-## 何时用 / 何时不用
+## 补充说明
 
-- 用：需要全局单例 key 的每一处；判断"这局"级别的状态。
-- 不用：它不提供回合信息本身（如剩余时间），那是 round 设置/设备的事。
-
-## 常见坑
-
-- 官方注明未来可能变为"每局一个实例"，不要依赖"每回合换实例"来自动清状态。
-
-## 相关页面
-
-- [session](session.md) —— 类型本体与标准用法
-- [GetSimulationElapsedTime](getsimulationelapsedtime.md)
+- `session` 类没有公开构造方式，全局唯一实例只能从这里拿；它最重要的用法是当 `weak_map` 的 key 存"整局共享"的状态。
+- 相关页面：[session class](session.md)。

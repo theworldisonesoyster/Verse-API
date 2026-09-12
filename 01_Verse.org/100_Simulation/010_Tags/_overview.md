@@ -3,38 +3,45 @@ name: Tags
 slug: versedotorg/simulation/tags
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/simulation/tags
 kind: module
-module: /Verse.org/Simulation/Tags
+module: /Verse.org/Simulation
 grade: A
 depth: brief
 status: done
 ---
 
-# Tags（标签系统）🟩【A级·常用】
+# Tags module 🟩【A级·常用】
 
-> 官网对本子模块无单独描述；本页为模块总览。
-> Tags 提供一个通用"标签"系统：给对象打上字符串层级标签（如 `Door.Locked`），之后按标签查询、过滤、分组。
+> Verse path: `/Verse.org/Simulation` · Module import path: `/Verse.org/Simulation/Tags`
+> 通用标签系统：给对象打上层级标签（如 `A.1` 属于 `A`），按标签查询、过滤、分组。
 
-## 这是什么
+`using { /Verse.org/Simulation/Tags }`
 
-标签是层级式的：`"A.1"` 被视为 `"A"` 的子标签，查询父标签会命中子标签（`{"A.1"}.Has("A")` 为真，反之不然）。给实体/组件实现 [has_tags](has_tags.md) 接口后即可打标与查询；[tag_view](tag_view.md) 提供只读查询视图；[tag_search_criteria](tag_search_criteria.md) 描述"按什么条件搜"。
+- Verse.org
+- Simulation
+- Tags
 
-## 使用前提
+## Classes and Structs
 
-```verse
-using { /Verse.org/Simulation/Tags }
-```
+| Name | Description |
+|---|---|
+| [tag](tag.md) | 用于给对象打标签的基础类型，以便按层级评估对象的分类。 |
+| [tag_key](tag_key.md) | 向实现了 has_tags 接口的容器添加标签的返回值，用于从同一容器中选择性移除该实例。 |
+| [tag_search_criteria](tag_search_criteria.md) | 高级标签搜索条件。 |
 
-## 成员一览
+## Interfaces
 
-| 成员 | 类型 | 一句话 | 级别 |
-|---|---|---|---|
-| [tag](tag.md) | 类 | 标签类型本体 | 🟩 A |
-| [tag_key](tag_key.md) | 类 | 一次打标返回的句柄，用于精确移除 | 🟩 A |
-| [has_tags](has_tags.md) | 接口 | "可以打标"的能力契约 | 🟩 A |
-| [tag_view](tag_view.md) | 类 | 只读查询视图（Has/HasAny/HasAll） | 🟩 A |
-| [tag_search_criteria](tag_search_criteria.md) | 类 | 搜索条件描述 | 🟨 B |
-| [tag_search_sort_type](tag_search_sort_type.md) | 枚举 | 搜索结果排序方式 | ⬜ C |
+| Name | Description |
+|---|---|
+| [has_tags](has_tags.md) | 表示"可变标签集合"的接口。 |
+| [tag_view](tag_view.md) | 表示"可查询标签集合"的接口。 |
 
-## 相关页面
+## Enumerations
 
-- [Simulation 总览](../_overview.md)
+| Name | Description |
+|---|---|
+| [tag_search_sort_type](tag_search_sort_type.md) | （官网无描述。） |
+
+## 补充说明
+
+- 标签匹配是**层级向下**的：查询父标签会命中子标签（`{"A.1"}.Has("A")` 为真，反之不然），规则见 [tag_view interface](tag_view.md)。
+- 实现了 [has_tags interface](has_tags.md) 的对象才能打标；entity/agent/player 等已自带整套标签函数。

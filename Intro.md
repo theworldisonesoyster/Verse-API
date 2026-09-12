@@ -1,6 +1,6 @@
-# Verse API 中文注解资料库
+# Verse API Reference
 
-> **本资料库基于 [Epic 官方 Verse API Reference](https://dev.epicgames.com/documentation/fortnite/verse-api) 生成**（快照版本：API 42.10，抓取日期 2026-09-13），在官网结构之上增加了中文注解、示例代码与 S/A/B/C 重要程度分级。
+> **本资料库（Verse API Reference）基于 [Epic 官方 Verse API Reference](https://dev.epicgames.com/documentation/fortnite/verse-api) 生成**（快照版本：API 42.10，抓取日期 2026-09-13），在官网结构之上增加了中文注解、示例代码与 S/A/B/C 重要程度分级。
 
 ## 这是什么
 
