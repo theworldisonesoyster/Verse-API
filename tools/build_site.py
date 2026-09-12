@@ -285,13 +285,14 @@ function md2html(md){
       if(inCode){out.push('<pre><code>'+code.join('\\n')+'</code></pre>');code=[];inCode=false}
       else inCode=true;continue}
     if(inCode){code.push(L);continue}
-    if(/^\s*$/.test(L)){flushList();flushTbl();flushQ();continue}
+    if(!L.trim()){flushList();flushTbl();flushQ();continue}
     if(L.startsWith('|')){const cells=L.split('|').slice(1,-1).map(x=>x.trim());
       if(cells.every(c=>/^-+$/.test(c)))continue;flushList();flushQ();tbl=tbl||[];tbl.push(cells);continue}
     if(L.startsWith('# ')){flushList();flushTbl();flushQ();out.push('<h1>'+inline(L.slice(2))+'</h1>');continue}
     if(L.startsWith('## ')){flushList();flushTbl();flushQ();out.push('<h2>'+inline(L.slice(3))+'</h2>');continue}
     if(L.startsWith('### ')){flushList();flushTbl();flushQ();out.push('<h3>'+inline(L.slice(4))+'</h3>');continue}
-    if(L.startsWith('> ')){flushList();flushTbl();quote=quote||[];quote.push(L.slice(2));continue}
+    if(/^>\s*$/.test(L)){flushList();flushTbl();flushQ();continue}
+    if(L.startsWith('> ')){flushList();flushTbl();quote=quote||[];quote.push(L.slice(2).replace(/^- /,'• '));continue}
     if(/^[-*] /.test(L)){flushTbl();flushQ();list=list||[];list.push(inline(L.slice(2)));continue}
     if(/^\d+\. /.test(L)){flushTbl();flushQ();list=list||[];list.push(inline(L.replace(/^\\d+\\. /,'')));continue}
     if(L.startsWith('---')){flushList();flushTbl();flushQ();out.push('<hr>');continue}
