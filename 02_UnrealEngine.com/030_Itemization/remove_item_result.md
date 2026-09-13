@@ -3,12 +3,12 @@ name: remove_item_result
 slug: unrealenginedotcom/itemization/remove_item_result
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/itemization/remove_item_result
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/itemization
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# remove_item_result <C>
+# remove_item_result class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/remove_item_result.html -->
+移除物品的结果。

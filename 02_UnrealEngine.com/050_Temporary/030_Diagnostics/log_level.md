@@ -3,12 +3,12 @@ name: log_level
 slug: unrealenginedotcom/temporary/diagnostics/log_level
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/diagnostics/log_level
 kind: enum
-module: /UnrealEngine.com
+module: /Verse.org/temporary/diagnostics
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# log_level <C>
+# log_level enumeration <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/diagnostics/log_level.html -->
+各日志命令可用的日志级别。

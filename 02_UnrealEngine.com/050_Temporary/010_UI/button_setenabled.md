@@ -1,0 +1,17 @@
+---
+name: SetEnabled function
+slug: unrealenginedotcom/temporary/ui/button/setenabled
+url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/button
+kind: function
+module: /Verse.org/temporary/ui
+grade: A
+depth: oneliner
+status: done
+order: 8
+parent: unrealenginedotcom/temporary/ui/button
+---
+
+#
+# SetEnabled function <A>
+
+启用或禁用玩家与此 widget 的交互。

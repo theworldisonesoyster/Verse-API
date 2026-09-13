@@ -3,12 +3,18 @@ name: response
 slug: unrealenginedotcom/webapi/response
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/webapi/response
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/webapi
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# response <B>
+# response class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/webapi/response.html -->
+WebAPI 响应。
+
+`using { /UnrealEngine.com/WebAPI }`
+
+## Members
+
+没有成员。

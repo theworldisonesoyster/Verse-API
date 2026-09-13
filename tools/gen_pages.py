@@ -100,6 +100,14 @@ KNOWN_PREFIX = [
      "在 SceneGraph 中编写逻辑与数据的基类。通过组件可创作可复用的逻辑与数据构件并添加到场景中的实体上。组件是非常底层的构件：可暴露网格/声音等引擎概念、添加伤害/交互等玩法能力、存储物品栏；用一个大组件还是拆成多个小组件由体验需求决定。派生自 component 的类必须指定 <final_super> 才能添加到实体；同一子类组在同一实体上只能有一个实例。生命周期：OnAddedToScene → OnBeginSimulation → OnSimulate → OnEndSimulation → OnRemovingFromScene。"),
 ]
 
+import sys as _sys2
+_sys2.path.insert(0, os.path.join(ROOT, 'tools', 'content'))
+try:
+    from common_cells import COMMON_CELLS
+    KNOWN_CELL.update(COMMON_CELLS)
+except ImportError:
+    pass
+
 def load_pack(path):
     spec = importlib.util.spec_from_file_location("pack", path)
     mod = importlib.util.module_from_spec(spec)
@@ -310,7 +318,7 @@ def emit_page(member, pack_entry, extract, outdir):
                 L.append("")
     page = "\n".join(L).rstrip() + "\n"
     front = (f"---\nname: {member['name']}\nslug: {member['slug']}\nurl: {member.get('url') or ''}\n"
-             f"kind: {member['kind']}\nmodule: /Verse.org{'/' + '/'.join(member['slug'].split('/')[1:-1])}\ngrade: {g}\ndepth: {depth}\n"
+             f"kind: {member['kind']}\nmodule: {'/' + member['slug'].split('/')[0].replace('versedotorg','Verse.org').replace('unrealenginedotcom','UnrealEngine.com').replace('fortnitedotcom','Fortnite.com') + '/' + '/'.join(member['slug'].split('/')[1:-1])}\ngrade: {g}\ndepth: {depth}\n"
              f"status: done\n---\n\n")
     open(os.path.join(rel, fname), "w", encoding="utf-8").write(front + page)
     return True, page_rel, None

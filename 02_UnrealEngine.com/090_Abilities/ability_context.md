@@ -3,12 +3,25 @@ name: ability_context
 slug: unrealenginedotcom/abilities/ability_context
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/abilities/ability_context
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/abilities
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# ability_context <B>
+# ability_context class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/abilities/ability_context.html -->
+> Data passed on activation of an ability. Holds who fired, who helped, and what got hit. Subclass to provide specific context for custom ability effects
+> 技能激活时传入的数据：谁发起、谁协助、击中了什么。子类化它可为自定义技能效果提供上下文。
+
+`using { /UnrealEngine.com/Abilities }`
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| Instigator | ??agent |  |
+| Participants | ?[]entity |  |
+| Targets | ?[]entity |  |

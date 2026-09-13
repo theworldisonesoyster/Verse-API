@@ -3,12 +3,12 @@ name: ability_removed_from_scene
 slug: unrealenginedotcom/abilities/ability_removed_from_scene
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/abilities/ability_removed_from_scene
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/abilities
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# ability_removed_from_scene <C>
+# ability_removed_from_scene class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/abilities/ability_removed_from_scene.html -->
+技能被移出场景相关。

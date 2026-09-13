@@ -3,12 +3,12 @@ name: sphere
 slug: unrealenginedotcom/basicshapes/sphere
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/basicshapes/sphere
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/basicshapes
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# sphere <C>
+# sphere class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/basicshapes/sphere.html -->
+基础形状：球体。

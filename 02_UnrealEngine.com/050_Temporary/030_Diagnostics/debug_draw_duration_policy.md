@@ -3,12 +3,12 @@ name: debug_draw_duration_policy
 slug: unrealenginedotcom/temporary/diagnostics/debug_draw_duration_policy
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/diagnostics/debug_draw_duration_policy
 kind: enum
-module: /UnrealEngine.com
+module: /UnrealEngine.com/temporary/diagnostics
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# debug_draw_duration_policy <C>
+# debug_draw_duration_policy enumeration <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/diagnostics/debug_draw_duration_policy.html -->
+描述绘制时长的预设策略枚举。

@@ -3,12 +3,22 @@ name: client
 slug: unrealenginedotcom/webapi/client
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/webapi/client
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/webapi
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# client <B>
+# client class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/webapi/client.html -->
+WebAPI 客户端。
+
+`using { /UnrealEngine.com/WebAPI }`
+
+## Members
+
+只有函数，没有数据成员。
+
+### Functions
+| Function Name | Description |
+| Get |  |

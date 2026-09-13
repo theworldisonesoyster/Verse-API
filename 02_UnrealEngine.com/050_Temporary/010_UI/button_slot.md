@@ -1,14 +1,17 @@
 ---
-name: button_slot
-slug: unrealenginedotcom/temporary/ui/button_slot
-url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/button_slot
-kind: class
-module: /UnrealEngine.com
+name: Slot data
+slug: unrealenginedotcom/temporary/ui/button/slot
+url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/button
+kind: data
+module: /Verse.org/temporary/ui
 grade: A
-depth: full
-status: placeholder
+depth: oneliner
+status: done
+order: 1
+parent: unrealenginedotcom/temporary/ui/button
 ---
 
-# button_slot <A>
+#
+# Slot data <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/button_slot.html -->
+按钮的子控件；仅在控件初始化时使用，SetSlot 不会修改它。

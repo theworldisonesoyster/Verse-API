@@ -3,12 +3,12 @@ name: party_member_info
 slug: unrealenginedotcom/social/party_member_info
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/social/party_member_info
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/social
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# party_member_info <C>
+# party_member_info class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/social/party_member_info.html -->
+派对成员的信息；未来版本可能扩展更多字段。

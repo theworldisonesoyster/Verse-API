@@ -3,12 +3,12 @@ name: remove_item_error
 slug: unrealenginedotcom/itemization/remove_item_error
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/itemization/remove_item_error
 kind: class
-module: /UnrealEngine.com
+module: /Verse.org/itemization
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# remove_item_error <C>
+# remove_item_error class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/remove_item_error.html -->
+移除物品失败时返回的错误。
