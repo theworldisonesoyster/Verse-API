@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# weak_map 🟨【B级·进阶】
+# weak_map <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/weak_map.html -->

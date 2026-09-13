@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# ReflectVector 🟨【B级·进阶】
+# ReflectVector <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/reflectvector.html -->

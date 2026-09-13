@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# color_alpha 🟩【A级·常用】
+# color_alpha <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/colors/color_alpha.html -->

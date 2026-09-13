@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# widget class 🟦【S级·核心】
+# widget class <S>
 
 （本页官网无导语描述；widget 是一切 UI 控件的基类——canvas、按钮、文本等都派生自它。）
 

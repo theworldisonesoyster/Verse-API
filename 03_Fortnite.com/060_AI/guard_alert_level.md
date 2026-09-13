@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# guard_alert_level ⬜【C级·参考】
+# guard_alert_level <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/guard_alert_level.html -->

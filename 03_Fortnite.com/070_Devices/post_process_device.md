@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# post_process_device ⬜【C级·参考】
+# post_process_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/post_process_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Localize 🟨【B级·进阶】
+# Localize <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/localize.html -->

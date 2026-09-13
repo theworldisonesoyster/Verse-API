@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# ArcTan 🟨【B级·进阶】
+# ArcTan <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/arctan.html -->

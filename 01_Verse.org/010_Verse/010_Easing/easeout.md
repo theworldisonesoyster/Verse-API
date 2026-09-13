@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# EaseOut 🟨【B级·进阶】
+# EaseOut <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/easing/easeout.html -->

@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# component class 🟦【S级·核心】
+# component class <S>
 
 > Base class for authoring logic and data in the SceneGraph. Using components you can author re-usable building blocks of logic and data which can then be added to entities in the scene.
 > 在 SceneGraph 中编写逻辑与数据的基类。通过组件，你可以创作可复用的逻辑与数据构件，然后把它们添加到场景中的实体上。

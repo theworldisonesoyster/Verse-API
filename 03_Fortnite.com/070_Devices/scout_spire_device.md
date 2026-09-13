@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# scout_spire_device ⬜【C级·参考】
+# scout_spire_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/scout_spire_device.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# GetRandomInt 🟦【S级·核心】
+# GetRandomInt <S>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/random/getrandomint.html -->

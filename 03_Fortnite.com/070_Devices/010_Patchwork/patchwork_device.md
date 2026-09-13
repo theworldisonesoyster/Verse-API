@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# patchwork_device ⬜【C级·参考】
+# patchwork_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/patchwork_device.html -->

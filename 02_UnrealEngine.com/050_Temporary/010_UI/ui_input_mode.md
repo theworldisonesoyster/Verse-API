@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# ui_input_mode 🟨【B级·进阶】
+# ui_input_mode <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/ui_input_mode.html -->

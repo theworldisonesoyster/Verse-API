@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# unequip_item_error ⬜【C级·参考】
+# unequip_item_error <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/unequip_item_error.html -->

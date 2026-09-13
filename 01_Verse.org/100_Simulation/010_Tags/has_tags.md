@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# has_tags interface 🟩【A级·常用】
+# has_tags interface <A>
 
 > An interface representing a mutable collection of tags.
 > 表示"可变标签集合"的接口：实现了它的对象即可打标、查标、摘标。

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# skilled_interaction_device ⬜【C级·参考】
+# skilled_interaction_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/skilled_interaction_device.html -->

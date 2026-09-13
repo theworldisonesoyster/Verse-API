@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# material 🟩【A级·常用】
+# material <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/material.html -->

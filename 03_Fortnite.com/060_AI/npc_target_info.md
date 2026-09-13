@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# npc_target_info 🟨【B级·进阶】
+# npc_target_info <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/npc_target_info.html -->

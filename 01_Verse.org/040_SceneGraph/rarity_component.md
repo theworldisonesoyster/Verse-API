@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# rarity_component 🟨【B级·进阶】
+# rarity_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/rarity_component.html -->

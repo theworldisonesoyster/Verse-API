@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# omega_synthesizer_device ⬜【C级·参考】
+# omega_synthesizer_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/omega_synthesizer_device.html -->

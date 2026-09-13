@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# editable_curve 🟨【B级·进阶】
+# editable_curve <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/curves/editable_curve.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# keyframed_movement_delta 🟨【B级·进阶】
+# keyframed_movement_delta <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/keyframedmovement/keyframed_movement_delta.html -->

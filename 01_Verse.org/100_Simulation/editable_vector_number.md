@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# editable_vector_number function 🟩【A级·常用】
+# editable_vector_number function <A>
 
 > （本页官网无导语描述。）
 > editable_vector_number 是参数化类型构造器：按给定数字类型 t 生成一个"编辑器详情面板三维向量数字输入"类（X/Y/Z 三个输入框）。

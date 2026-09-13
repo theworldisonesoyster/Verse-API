@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# text_button_base 🟩【A级·常用】
+# text_button_base <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/text_button_base.html -->

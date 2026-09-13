@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# 可失败表达式与 failure 🟦【S级·核心】
+# 可失败表达式与 failure <S>
 
 > Verse 用"失败"代替"异常/空指针"：任何操作都可能成功或失败，失败不崩溃，只是"这条路不通"。
 > 官网各 API 页签名中的 `<decides>` 即为此机制。

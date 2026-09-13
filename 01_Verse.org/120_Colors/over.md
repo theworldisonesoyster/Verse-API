@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Over 🟨【B级·进阶】
+# Over <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/colors/over.html -->

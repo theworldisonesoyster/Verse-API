@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# texture 🟩【A级·常用】
+# texture <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/texture.html -->

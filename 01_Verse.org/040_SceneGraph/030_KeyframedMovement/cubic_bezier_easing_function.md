@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# cubic_bezier_easing_function 🟨【B级·进阶】
+# cubic_bezier_easing_function <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/keyframedmovement/cubic_bezier_easing_function.html -->

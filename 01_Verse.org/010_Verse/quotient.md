@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Quotient 🟨【B级·进阶】
+# Quotient <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/quotient.html -->

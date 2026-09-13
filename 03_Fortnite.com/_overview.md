@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Fortnite.com 🟨【B级·进阶】
+# Fortnite.com <B>
 
 <!-- 待生成 -->

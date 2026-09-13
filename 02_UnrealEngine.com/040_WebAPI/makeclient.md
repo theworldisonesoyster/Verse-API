@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# MakeClient 🟨【B级·进阶】
+# MakeClient <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/webapi/makeclient.html -->

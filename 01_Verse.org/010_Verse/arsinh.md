@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# ArSinh 🟨【B级·进阶】
+# ArSinh <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/arsinh.html -->

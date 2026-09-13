@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# listenable function 🟦【S级·核心】
+# listenable function <S>
 
 > A parametric interface combining awaitable and subscribable.
 > 参数化**接口**：组合了 awaitable（可等待）与 subscribable（可订阅）。

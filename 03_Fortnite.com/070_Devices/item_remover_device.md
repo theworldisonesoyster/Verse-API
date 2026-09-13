@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# item_remover_device ⬜【C级·参考】
+# item_remover_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/item_remover_device.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# IdentityRotation 🟩【A级·常用】
+# IdentityRotation <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/identityrotation.html -->

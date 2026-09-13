@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Colors 🟩【A级·常用】
+# Colors <A>
 
 <!-- 模块总览，待生成（阶段2） -->

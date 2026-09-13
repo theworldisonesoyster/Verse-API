@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# interactable_cooldown 🟨【B级·进阶】
+# interactable_cooldown <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/interactable_cooldown.html -->

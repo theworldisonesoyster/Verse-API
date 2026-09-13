@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Chat 🟨【B级·进阶】
+# Chat <B>
 
 <!-- 模块总览，待生成（阶段2） -->

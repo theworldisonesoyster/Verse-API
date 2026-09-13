@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# volume_device ⬜【C级·参考】
+# volume_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/volume_device.html -->

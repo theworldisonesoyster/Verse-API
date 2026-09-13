@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# camera_mode_blend_smootherstep 🟨【B级·进阶】
+# camera_mode_blend_smootherstep <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_mode_blend_smootherstep.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Ln 🟨【B级·进阶】
+# Ln <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/ln.html -->

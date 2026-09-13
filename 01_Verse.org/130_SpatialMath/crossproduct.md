@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# CrossProduct 🟩【A级·常用】
+# CrossProduct <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/crossproduct.html -->

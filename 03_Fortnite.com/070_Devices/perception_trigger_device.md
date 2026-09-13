@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# perception_trigger_device ⬜【C级·参考】
+# perception_trigger_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/perception_trigger_device.html -->

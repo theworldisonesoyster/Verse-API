@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# skydome_device ⬜【C级·参考】
+# skydome_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/skydome_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# interactable_duration 🟨【B级·进阶】
+# interactable_duration <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/interactable_duration.html -->

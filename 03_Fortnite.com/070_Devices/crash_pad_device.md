@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# crash_pad_device ⬜【C级·参考】
+# crash_pad_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/crash_pad_device.html -->

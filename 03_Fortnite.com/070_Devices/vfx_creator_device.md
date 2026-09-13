@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# vfx_creator_device ⬜【C级·参考】
+# vfx_creator_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vfx_creator_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# oneshot_keyframed_movement_playback_mode 🟨【B级·进阶】
+# oneshot_keyframed_movement_playback_mode <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/keyframedmovement/oneshot_keyframed_movement_playback_mode.html -->

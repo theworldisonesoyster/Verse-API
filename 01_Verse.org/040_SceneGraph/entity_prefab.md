@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# entity_prefab 🟩【A级·常用】
+# entity_prefab <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/entity_prefab.html -->

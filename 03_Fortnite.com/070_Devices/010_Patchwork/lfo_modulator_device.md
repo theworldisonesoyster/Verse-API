@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# lfo_modulator_device ⬜【C级·参考】
+# lfo_modulator_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/lfo_modulator_device.html -->

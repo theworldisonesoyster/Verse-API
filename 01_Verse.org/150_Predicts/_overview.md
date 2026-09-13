@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Predicts ⬜【C级·参考】
+# Predicts <C>
 
 <!-- 模块总览，待生成（阶段2）；官方标注此模块为空 -->

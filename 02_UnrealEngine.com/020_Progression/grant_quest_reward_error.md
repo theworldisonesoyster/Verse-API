@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# grant_quest_reward_error ⬜【C级·参考】
+# grant_quest_reward_error <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/progression/grant_quest_reward_error.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# join_quest_error ⬜【C级·参考】
+# join_quest_error <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/progression/join_quest_error.html -->

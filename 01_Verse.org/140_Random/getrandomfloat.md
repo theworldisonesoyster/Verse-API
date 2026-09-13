@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# GetRandomFloat 🟦【S级·核心】
+# GetRandomFloat <S>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/random/getrandomfloat.html -->

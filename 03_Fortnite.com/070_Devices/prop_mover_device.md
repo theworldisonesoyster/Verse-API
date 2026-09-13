@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# prop_mover_device ⬜【C级·参考】
+# prop_mover_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/prop_mover_device.html -->

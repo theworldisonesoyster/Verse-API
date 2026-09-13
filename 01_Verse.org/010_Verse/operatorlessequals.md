@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# operator'<=' 🟨【B级·进阶】
+# operator'<=' <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/operatorlessequals.html -->

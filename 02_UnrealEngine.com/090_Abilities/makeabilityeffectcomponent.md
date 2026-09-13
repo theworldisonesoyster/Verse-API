@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# MakeAbilityEffectComponent 🟨【B级·进阶】
+# MakeAbilityEffectComponent <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/abilities/makeabilityeffectcomponent.html -->

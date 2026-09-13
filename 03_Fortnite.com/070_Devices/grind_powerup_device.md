@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# grind_powerup_device ⬜【C级·参考】
+# grind_powerup_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/grind_powerup_device.html -->

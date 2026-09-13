@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# hiding_prop_device ⬜【C级·参考】
+# hiding_prop_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/hiding_prop_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# MakeNavigationTarget 🟨【B级·进阶】
+# MakeNavigationTarget <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/makenavigationtarget-1.html -->

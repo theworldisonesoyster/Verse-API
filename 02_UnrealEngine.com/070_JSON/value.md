@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# value 🟩【A级·常用】
+# value <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/json/value.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# spawn_on_enable_behavior ⬜【C级·参考】
+# spawn_on_enable_behavior <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/spawn_on_enable_behavior.html -->

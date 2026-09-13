@@ -9,7 +9,7 @@ depth: brief
 status: done
 ---
 
-# logic 与 void 🟨【B级·进阶】
+# logic 与 void <B>
 
 > 两个基础类型：logic 是"真/假"，void 是"无返回值"；官网 API Reference 无单设页面。
 

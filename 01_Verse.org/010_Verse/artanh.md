@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# ArTanh 🟨【B级·进阶】
+# ArTanh <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/artanh.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# healing_cactus_device ⬜【C级·参考】
+# healing_cactus_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/healing_cactus_device.html -->

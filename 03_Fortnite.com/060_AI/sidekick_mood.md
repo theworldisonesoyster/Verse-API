@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# sidekick_mood ⬜【C级·参考】
+# sidekick_mood <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/sidekick_mood.html -->

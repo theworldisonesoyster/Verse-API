@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# log_level ⬜【C级·参考】
+# log_level <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/diagnostics/log_level.html -->

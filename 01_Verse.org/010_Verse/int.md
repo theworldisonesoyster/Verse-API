@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# Int 🟩【A级·常用】
+# Int <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/int.html -->

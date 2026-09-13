@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Diagnostics 🟨【B级·进阶】
+# Diagnostics <B>
 
 <!-- 模块总览，待生成（阶段2） -->

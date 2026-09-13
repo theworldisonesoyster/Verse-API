@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# play_skeletal_animation_result ⬜【C级·参考】
+# play_skeletal_animation_result <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/play_skeletal_animation_result.html -->

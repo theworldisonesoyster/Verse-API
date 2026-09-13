@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Cosh 🟨【B级·进阶】
+# Cosh <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/cosh.html -->

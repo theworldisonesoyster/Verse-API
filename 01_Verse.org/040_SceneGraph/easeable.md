@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# easeable ⬜【C级·参考】
+# easeable <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/easeable.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# input_mapping 🟩【A级·常用】
+# input_mapping <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/input_mapping.html -->

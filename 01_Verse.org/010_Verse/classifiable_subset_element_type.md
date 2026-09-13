@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# classifiable_subset(element_type) ⬜【C级·参考】
+# classifiable_subset(element_type) <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/classifiable_subset/classifiable_subset(element_type).html -->

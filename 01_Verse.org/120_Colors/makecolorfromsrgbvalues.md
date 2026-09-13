@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# MakeColorFromSRGBValues 🟩【A级·常用】
+# MakeColorFromSRGBValues <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/colors/makecolorfromsrgbvalues.html -->

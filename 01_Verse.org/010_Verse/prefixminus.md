@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# prefix'-' 🟨【B级·进阶】
+# prefix'-' <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/prefixminus.html -->

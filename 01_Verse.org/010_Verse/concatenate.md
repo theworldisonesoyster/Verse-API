@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# Concatenate 🟩【A级·常用】
+# Concatenate <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/concatenate.html -->

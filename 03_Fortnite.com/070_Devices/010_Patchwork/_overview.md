@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Patchwork ⬜【C级·参考】
+# Patchwork <C>
 
 <!-- 模块总览，待生成（阶段2） -->

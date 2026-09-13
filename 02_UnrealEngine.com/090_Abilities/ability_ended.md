@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# ability_ended 🟨【B级·进阶】
+# ability_ended <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/abilities/ability_ended.html -->

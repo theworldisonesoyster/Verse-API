@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# hud_identifier_world_resource_permanite ⬜【C级·参考】
+# hud_identifier_world_resource_permanite <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/hud_identifier_world_resource_permanite.html -->

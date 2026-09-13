@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# float_range 🟨【B级·进阶】
+# float_range <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/float_range.html -->

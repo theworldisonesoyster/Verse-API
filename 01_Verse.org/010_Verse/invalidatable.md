@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# invalidatable 🟨【B级·进阶】
+# invalidatable <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/invalidatable.html -->

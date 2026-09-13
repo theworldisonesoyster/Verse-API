@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# has_quest_presentation 🟨【B级·进阶】
+# has_quest_presentation <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/progression/has_quest_presentation.html -->

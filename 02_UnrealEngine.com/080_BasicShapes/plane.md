@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# plane ⬜【C级·参考】
+# plane <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/basicshapes/plane.html -->

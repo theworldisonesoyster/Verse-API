@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# button_loud 🟩【A级·常用】
+# button_loud <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/button_loud.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# MakeRotationDegrees 🟩【A级·常用】
+# MakeRotationDegrees <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/makerotationdegrees.html -->

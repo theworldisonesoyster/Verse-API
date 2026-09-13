@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# GetSimulationElapsedTime function 🟩【A级·常用】
+# GetSimulationElapsedTime function <A>
 
 > Get the seconds that have elapsed since the world began simulating
 > 获取世界开始模拟以来经过的秒数。

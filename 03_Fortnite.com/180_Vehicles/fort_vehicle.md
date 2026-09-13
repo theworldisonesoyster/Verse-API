@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# fort_vehicle 🟨【B级·进阶】
+# fort_vehicle <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/vehicles/fort_vehicle.html -->

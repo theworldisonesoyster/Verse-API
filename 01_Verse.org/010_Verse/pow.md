@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Pow 🟨【B级·进阶】
+# Pow <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/pow.html -->

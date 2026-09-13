@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# camera_transition_initial_orientation 🟨【B级·进阶】
+# camera_transition_initial_orientation <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_transition_initial_orientation.html -->

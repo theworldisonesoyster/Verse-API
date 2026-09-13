@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# quest_reward 🟨【B级·进阶】
+# quest_reward <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/progression/quest_reward.html -->

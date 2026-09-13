@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# ControlInput 🟩【A级·常用】
+# ControlInput <A>
 
 <!-- 模块总览，待生成（阶段2） -->

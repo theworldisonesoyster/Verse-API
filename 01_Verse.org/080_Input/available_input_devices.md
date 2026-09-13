@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# available_input_devices 🟨【B级·进阶】
+# available_input_devices <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/input/available_input_devices.html -->

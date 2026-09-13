@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# quest 🟨【B级·进阶】
+# quest <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/progression/quest.html -->

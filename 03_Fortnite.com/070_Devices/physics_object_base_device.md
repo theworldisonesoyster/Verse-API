@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# physics_object_base_device ⬜【C级·参考】
+# physics_object_base_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/physics_object_base_device.html -->

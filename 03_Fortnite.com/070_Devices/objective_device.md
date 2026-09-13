@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# objective_device ⬜【C级·参考】
+# objective_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/objective_device.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# BitOr ⬜【C级·参考】
+# BitOr <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/bitor.html -->

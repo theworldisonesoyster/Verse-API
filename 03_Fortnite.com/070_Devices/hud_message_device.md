@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# hud_message_device ⬜【C级·参考】
+# hud_message_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/hud_message_device.html -->

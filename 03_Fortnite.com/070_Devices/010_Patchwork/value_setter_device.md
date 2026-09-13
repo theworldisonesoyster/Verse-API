@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# value_setter_device ⬜【C级·参考】
+# value_setter_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/value_setter_device.html -->

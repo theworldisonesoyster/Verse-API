@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# support_a_creator_device ⬜【C级·参考】
+# support_a_creator_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/support_a_creator_device.html -->

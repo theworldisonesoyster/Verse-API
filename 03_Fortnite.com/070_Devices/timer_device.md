@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# timer_device ⬜【C级·参考】
+# timer_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/timer_device.html -->

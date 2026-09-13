@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# entity_origin 🟨【B级·进阶】
+# entity_origin <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/entity_origin.html -->

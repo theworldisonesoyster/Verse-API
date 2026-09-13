@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# cancelable 🟨【B级·进阶】
+# cancelable <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/cancelable.html -->

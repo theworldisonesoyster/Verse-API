@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# creative_device_asset ⬜【C级·参考】
+# creative_device_asset <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creative_device_asset.html -->

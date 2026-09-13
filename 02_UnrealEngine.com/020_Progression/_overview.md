@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Progression 🟨【B级·进阶】
+# Progression <B>
 
 <!-- 模块总览，待生成（阶段2） -->

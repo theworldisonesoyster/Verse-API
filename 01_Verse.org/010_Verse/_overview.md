@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Verse 🟨【B级·进阶】
+# Verse <B>
 
 <!-- 模块总览，待生成（阶段2） -->

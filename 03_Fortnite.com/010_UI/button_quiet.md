@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# button_quiet 🟩【A级·常用】
+# button_quiet <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/button_quiet.html -->

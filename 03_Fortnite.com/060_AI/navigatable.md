@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# navigatable 🟩【A级·常用】
+# navigatable <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/navigatable.html -->

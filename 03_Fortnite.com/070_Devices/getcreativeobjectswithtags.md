@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# GetCreativeObjectsWithTags 🟩【A级·常用】
+# GetCreativeObjectsWithTags <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/getcreativeobjectswithtags.html -->

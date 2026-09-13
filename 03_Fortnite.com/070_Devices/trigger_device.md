@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# trigger_device ⬜【C级·参考】
+# trigger_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/trigger_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# camera_modifier_stack 🟨【B级·进阶】
+# camera_modifier_stack <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_modifier_stack.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# operator'<>' 🟦【S级·核心】
+# operator'<>' <S>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/operatorlessgreater.html -->

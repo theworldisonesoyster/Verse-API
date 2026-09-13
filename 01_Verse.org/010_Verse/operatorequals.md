@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# operator'=' function 🟦【S级·核心】
+# operator'=' function <S>
 
 （本页官网无导语描述；`=` 是可失败的相等比较运算符——相等则成功并返回左值，不相等则失败。）
 

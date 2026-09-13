@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Animation 🟩【A级·常用】
+# Animation <A>
 
 <!-- 模块总览，待生成（阶段2）；官方标注此模块为空 -->

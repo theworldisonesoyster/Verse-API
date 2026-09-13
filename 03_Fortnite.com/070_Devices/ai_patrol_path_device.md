@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# ai_patrol_path_device ⬜【C级·参考】
+# ai_patrol_path_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/ai_patrol_path_device.html -->

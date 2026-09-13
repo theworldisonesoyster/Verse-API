@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# GetPlayerInput 🟩【A级·常用】
+# GetPlayerInput <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/input/getplayerinput.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Log 🟨【B级·进阶】
+# Log <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/log.html -->

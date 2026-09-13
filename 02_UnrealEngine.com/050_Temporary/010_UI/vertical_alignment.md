@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# vertical_alignment 🟨【B级·进阶】
+# vertical_alignment <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/vertical_alignment.html -->

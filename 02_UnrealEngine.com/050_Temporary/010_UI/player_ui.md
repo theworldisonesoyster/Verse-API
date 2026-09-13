@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# player_ui class 🟦【S级·核心】
+# player_ui class <S>
 
 （本页官网无导语描述；player_ui 是每个玩家一块的 UI 根画布——往指定玩家屏幕上加/拆控件。通过 [GetPlayerUI function](getplayerui.md) 获取。）
 

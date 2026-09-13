@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Lerp 🟨【B级·进阶】
+# Lerp <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/lerp.html -->

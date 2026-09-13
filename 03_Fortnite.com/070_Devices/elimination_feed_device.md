@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# elimination_feed_device ⬜【C级·参考】
+# elimination_feed_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/elimination_feed_device.html -->

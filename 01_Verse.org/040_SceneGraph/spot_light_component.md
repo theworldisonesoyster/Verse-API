@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# spot_light_component 🟨【B级·进阶】
+# spot_light_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/spot_light_component.html -->

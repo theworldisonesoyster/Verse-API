@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# vector3 struct 🟦【S级·核心】
+# vector3 struct <S>
 
 > 3-dimensional vector with float components.
 > 带浮点分量的三维向量。

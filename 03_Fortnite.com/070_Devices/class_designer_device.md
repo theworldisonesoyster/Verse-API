@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# class_designer_device ⬜【C级·参考】
+# class_designer_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/class_designer_device.html -->

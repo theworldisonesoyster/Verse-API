@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# debug_draw_duration_policy ⬜【C级·参考】
+# debug_draw_duration_policy <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/diagnostics/debug_draw_duration_policy.html -->

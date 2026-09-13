@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# round_settings_device ⬜【C级·参考】
+# round_settings_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/round_settings_device.html -->

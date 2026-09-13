@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# player_hud_identifier_all ⬜【C级·参考】
+# player_hud_identifier_all <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/player_hud_identifier_all.html -->

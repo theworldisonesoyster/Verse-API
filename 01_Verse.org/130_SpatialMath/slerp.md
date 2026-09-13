@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Slerp 🟨【B级·进阶】
+# Slerp <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/slerp.html -->

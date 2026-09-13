@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Presentation ⬜【C级·参考】
+# Presentation <C>
 
 <!-- 模块总览，待生成（阶段2） -->

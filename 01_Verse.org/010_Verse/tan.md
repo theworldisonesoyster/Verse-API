@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Tan 🟨【B级·进阶】
+# Tan <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/tan.html -->

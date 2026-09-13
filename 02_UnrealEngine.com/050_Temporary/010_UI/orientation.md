@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# orientation 🟨【B级·进阶】
+# orientation <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/orientation.html -->

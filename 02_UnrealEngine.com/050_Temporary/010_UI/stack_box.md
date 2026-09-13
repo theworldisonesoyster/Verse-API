@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# stack_box 🟩【A级·常用】
+# stack_box <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/stack_box.html -->

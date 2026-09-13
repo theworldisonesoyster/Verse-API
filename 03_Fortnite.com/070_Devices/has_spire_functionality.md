@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# has_spire_functionality ⬜【C级·参考】
+# has_spire_functionality <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/has_spire_functionality.html -->

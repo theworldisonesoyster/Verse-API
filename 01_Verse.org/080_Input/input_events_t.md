@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# input_events(t) 🟩【A级·常用】
+# input_events(t) <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/input/input_events/input_events(t).html -->

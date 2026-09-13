@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# device_ai_interaction_result ⬜【C级·参考】
+# device_ai_interaction_result <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/device_ai_interaction_result.html -->

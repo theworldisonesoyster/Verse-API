@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# NamedColors ⬜【C级·参考】
+# NamedColors <C>
 
 <!-- 模块总览，待生成（阶段2） -->

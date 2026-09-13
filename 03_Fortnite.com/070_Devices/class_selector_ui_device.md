@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# class_selector_ui_device ⬜【C级·参考】
+# class_selector_ui_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/class_selector_ui_device.html -->

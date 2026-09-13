@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# cubic_bezier_parameters ⬜【C级·参考】
+# cubic_bezier_parameters <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creativeanimation/cubic_bezier_parameters.html -->

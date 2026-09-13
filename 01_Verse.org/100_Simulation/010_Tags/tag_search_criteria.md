@@ -9,7 +9,7 @@ depth: brief
 status: done
 ---
 
-# tag_search_criteria class 🟨【B级·进阶】
+# tag_search_criteria class <B>
 
 > Advanced tag search criteria
 > 高级标签搜索条件。

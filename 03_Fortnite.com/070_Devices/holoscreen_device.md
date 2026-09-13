@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# holoscreen_device ⬜【C级·参考】
+# holoscreen_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/holoscreen_device.html -->

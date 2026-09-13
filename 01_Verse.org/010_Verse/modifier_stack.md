@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# modifier_stack ⬜【C级·参考】
+# modifier_stack <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/modifier_stack.html -->

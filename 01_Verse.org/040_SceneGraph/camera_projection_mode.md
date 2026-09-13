@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# camera_projection_mode 🟨【B级·进阶】
+# camera_projection_mode <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_projection_mode.html -->

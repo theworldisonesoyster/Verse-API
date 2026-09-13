@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# guard_awareness_component 🟨【B级·进阶】
+# guard_awareness_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/guard_awareness_component.html -->

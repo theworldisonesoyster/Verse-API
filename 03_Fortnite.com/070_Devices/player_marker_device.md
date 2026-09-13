@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# player_marker_device ⬜【C级·参考】
+# player_marker_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/player_marker_device.html -->

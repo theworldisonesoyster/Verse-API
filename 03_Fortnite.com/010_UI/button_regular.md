@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# button_regular 🟩【A级·常用】
+# button_regular <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/button_regular.html -->

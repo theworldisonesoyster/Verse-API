@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# slider_regular 🟩【A级·常用】
+# slider_regular <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/slider_regular.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# scene_event ⬜【C级·参考】
+# scene_event <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/scene_event.html -->

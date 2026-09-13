@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# overlord_spire_device ⬜【C级·参考】
+# overlord_spire_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/overlord_spire_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# item_category 🟨【B级·进阶】
+# item_category <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/item_category.html -->

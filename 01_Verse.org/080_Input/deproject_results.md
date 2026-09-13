@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# deproject_results 🟨【B级·进阶】
+# deproject_results <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/input/deproject_results.html -->

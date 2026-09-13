@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# canvas 🟩【A级·常用】
+# canvas <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/canvas.html -->

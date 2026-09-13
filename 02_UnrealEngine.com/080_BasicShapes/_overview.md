@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# BasicShapes ⬜【C级·参考】
+# BasicShapes <C>
 
 <!-- 模块总览，待生成（阶段2） -->

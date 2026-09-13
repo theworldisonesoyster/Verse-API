@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# hud_identifier_world_resource_stone ⬜【C级·参考】
+# hud_identifier_world_resource_stone <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/hud_identifier_world_resource_stone.html -->

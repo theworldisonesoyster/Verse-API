@@ -9,7 +9,7 @@ depth: brief
 status: done
 ---
 
-# 元组与子类型 🟨【B级·进阶】
+# 元组与子类型 <B>
 
 > 元组把几个值打包成一个；子类型 `subtype` 描述"某类型的子集"。官网 API Reference 无单设页面。
 

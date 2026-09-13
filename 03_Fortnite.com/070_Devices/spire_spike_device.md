@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# spire_spike_device ⬜【C级·参考】
+# spire_spike_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/spire_spike_device.html -->

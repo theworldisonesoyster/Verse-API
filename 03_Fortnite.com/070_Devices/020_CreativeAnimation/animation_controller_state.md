@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# animation_controller_state ⬜【C级·参考】
+# animation_controller_state <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creativeanimation/animation_controller_state.html -->

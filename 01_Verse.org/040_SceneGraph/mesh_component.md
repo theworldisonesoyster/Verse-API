@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# mesh_component 🟦【S级·核心】
+# mesh_component <S>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/mesh_component.html -->

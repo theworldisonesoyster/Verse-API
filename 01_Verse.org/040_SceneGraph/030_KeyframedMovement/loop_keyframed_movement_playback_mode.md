@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# loop_keyframed_movement_playback_mode 🟨【B级·进阶】
+# loop_keyframed_movement_playback_mode <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/keyframedmovement/loop_keyframed_movement_playback_mode.html -->

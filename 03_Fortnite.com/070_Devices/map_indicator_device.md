@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# map_indicator_device ⬜【C级·参考】
+# map_indicator_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/map_indicator_device.html -->

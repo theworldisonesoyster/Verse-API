@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# option——可选值 🟦【S级·核心】
+# option——可选值 <S>
 
 > option 表示"可能有一个值，也可能没有"，属于 Verse 语言内建。
 > 类型写作 `?T`（如 `?int`），有值字面量 `option{7}`，空值 `false`。

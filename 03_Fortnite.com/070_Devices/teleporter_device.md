@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# teleporter_device ⬜【C级·参考】
+# teleporter_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/teleporter_device.html -->

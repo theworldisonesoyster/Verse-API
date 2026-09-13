@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# animated_mesh_device ⬜【C级·参考】
+# animated_mesh_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/animated_mesh_device.html -->

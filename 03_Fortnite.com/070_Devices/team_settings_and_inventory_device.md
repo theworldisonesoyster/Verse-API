@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# team_settings_and_inventory_device ⬜【C级·参考】
+# team_settings_and_inventory_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/team_settings_and_inventory_device.html -->

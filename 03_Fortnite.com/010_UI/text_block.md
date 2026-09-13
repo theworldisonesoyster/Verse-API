@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# text_block 🟩【A级·常用】
+# text_block <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/text_block.html -->

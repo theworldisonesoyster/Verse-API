@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# string——字符串 🟩【A级·常用】
+# string——字符串 <A>
 
 > 字符串是 UTF-8 文本的内建类型；属于 Verse 语言内建。
 

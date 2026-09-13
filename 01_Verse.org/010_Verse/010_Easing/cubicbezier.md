@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# CubicBezier 🟨【B级·进阶】
+# CubicBezier <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/easing/cubicbezier.html -->

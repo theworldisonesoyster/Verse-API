@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# pinball_bumper_device ⬜【C级·参考】
+# pinball_bumper_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/pinball_bumper_device.html -->

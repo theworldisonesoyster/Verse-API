@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Gameplay ⬜【C级·参考】
+# Gameplay <C>
 
 <!-- 模块总览，待生成（阶段2） -->

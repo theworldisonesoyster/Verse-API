@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# description_component ⬜【C级·参考】
+# description_component <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/presentation/description_component.html -->

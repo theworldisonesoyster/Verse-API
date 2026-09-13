@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# MakeError 🟩【A级·常用】
+# MakeError <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/makeerror.html -->

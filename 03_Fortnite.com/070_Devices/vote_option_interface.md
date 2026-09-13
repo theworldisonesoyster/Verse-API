@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# vote_option_interface 🟨【B级·进阶】
+# vote_option_interface <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vote_option_interface.html -->

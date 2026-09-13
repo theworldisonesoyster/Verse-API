@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# input_method 🟨【B级·进阶】
+# input_method <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/input/input_method.html -->

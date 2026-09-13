@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# shooting_range_target_device ⬜【C级·参考】
+# shooting_range_target_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/shooting_range_target_device.html -->

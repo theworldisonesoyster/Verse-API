@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# session class 🟩【A级·常用】
+# session class <A>
 
 > Type for which there is a single instance per round. Use `GetSession` to get the current round's session instance. May be used with `weak_map` to implement global variables. Note: may be changed in a future release to a single instance per game. Round-local behavior should not be relied upon.
 > 每一回合只存在一个实例的类型。用 `GetSession` 获取当前回合的 session 实例。可配合 `weak_map` 实现全局变量。注意：未来版本可能改为"每局游戏一个实例"，请勿依赖其回合级行为。

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# item_component 🟩【A级·常用】
+# item_component <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/item_component.html -->

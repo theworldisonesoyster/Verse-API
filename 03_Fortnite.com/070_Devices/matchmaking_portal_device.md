@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# matchmaking_portal_device ⬜【C级·参考】
+# matchmaking_portal_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/matchmaking_portal_device.html -->

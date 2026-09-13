@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# creature_manager_device ⬜【C级·参考】
+# creature_manager_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creature_manager_device.html -->

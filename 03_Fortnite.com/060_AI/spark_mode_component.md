@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# spark_mode_component ⬜【C级·参考】
+# spark_mode_component <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/spark_mode_component.html -->

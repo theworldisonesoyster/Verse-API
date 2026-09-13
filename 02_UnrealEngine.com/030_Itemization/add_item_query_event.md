@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# add_item_query_event 🟨【B级·进阶】
+# add_item_query_event <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/add_item_query_event.html -->

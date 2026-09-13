@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# keyframe_delta ⬜【C级·参考】
+# keyframe_delta <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creativeanimation/keyframe_delta.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# reboot_van_device ⬜【C级·参考】
+# reboot_van_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/reboot_van_device.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# agent_group_interface ⬜【C级·参考】
+# agent_group_interface <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/agentgroup/agent_group_interface.html -->

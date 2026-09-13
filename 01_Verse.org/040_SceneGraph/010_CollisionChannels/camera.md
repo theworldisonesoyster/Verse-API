@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# camera 🟨【B级·进阶】
+# camera <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/collisionchannels/camera.html -->

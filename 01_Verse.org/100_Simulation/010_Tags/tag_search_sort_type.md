@@ -9,7 +9,7 @@ depth: oneliner
 status: done
 ---
 
-# tag_search_sort_type enumeration ⬜【C级·参考】
+# tag_search_sort_type enumeration <C>
 
 `using { /Verse.org/Simulation/Tags }`
 

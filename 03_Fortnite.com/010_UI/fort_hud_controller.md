@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# fort_hud_controller 🟨【B级·进阶】
+# fort_hud_controller <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/fort_hud_controller.html -->

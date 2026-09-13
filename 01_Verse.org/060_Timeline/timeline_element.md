@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# timeline_element 🟨【B级·进阶】
+# timeline_element <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/timeline/timeline_element.html -->

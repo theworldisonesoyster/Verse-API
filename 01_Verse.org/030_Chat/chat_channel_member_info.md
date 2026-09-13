@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# chat_channel(member_info) 🟨【B级·进阶】
+# chat_channel(member_info) <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/chat/chat_channel/chat_channel(member_info).html -->

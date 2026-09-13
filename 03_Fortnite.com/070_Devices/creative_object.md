@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# creative_object 🟩【A级·常用】
+# creative_object <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creative_object.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# disposable 🟨【B级·进阶】
+# disposable <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/disposable.html -->

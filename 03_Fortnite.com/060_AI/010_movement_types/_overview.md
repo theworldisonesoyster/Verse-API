@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# movement_types ⬜【C级·参考】
+# movement_types <C>
 
 <!-- 模块总览，待生成（阶段2） -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# emp_volume_hazard_rocketracing_device ⬜【C级·参考】
+# emp_volume_hazard_rocketracing_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/emp_volume_hazard_rocketracing_device.html -->

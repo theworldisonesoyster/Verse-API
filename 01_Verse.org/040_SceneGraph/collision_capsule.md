@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# collision_capsule 🟨【B级·进阶】
+# collision_capsule <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/collision_capsule.html -->

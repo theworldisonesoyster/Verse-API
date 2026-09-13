@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# agent class 🟦【S级·核心】
+# agent class <S>
 
 （本页官网无导语描述；agent 是"对局参与者"的抽象——真人玩家或 AI 单位。）
 

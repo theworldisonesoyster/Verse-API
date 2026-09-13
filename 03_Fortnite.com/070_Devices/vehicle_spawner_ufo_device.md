@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# vehicle_spawner_ufo_device ⬜【C级·参考】
+# vehicle_spawner_ufo_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vehicle_spawner_ufo_device.html -->

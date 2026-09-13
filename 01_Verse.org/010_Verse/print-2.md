@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# Print function（diagnostic 重载）🟦【S级·核心】
+# Print function（diagnostic 重载）<S>
 
 > Writes Message to a dedicated Print log while displaying it in Color on the client screen for Duration seconds. By default, Color is NamedColors.White and Duration is 2.0 seconds.
 > 把 Message 写入专用的 Print 日志，同时在客户端屏幕上以 Color 颜色显示 Duration 秒。默认 Color 为 NamedColors.White，Duration 为 2.0 秒。本重载的 Message 为 diagnostic（诊断）类型。

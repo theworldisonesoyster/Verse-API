@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Temporary 🟩【A级·常用】
+# Temporary <A>
 
 <!-- 模块总览，待生成（阶段2） -->

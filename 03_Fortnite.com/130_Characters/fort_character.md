@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# fort_character interface 🟦【S级·核心】
+# fort_character interface <S>
 
 > Main API implemented by Fortnite characters.
 > 由堡垒之夜角色实现的主 API——玩家/AI 在世界中的"角色身体"。

@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# array——数组 🟦【S级·核心】
+# array——数组 <S>
 
 > 数组是 Verse 内建的有序集合类型，属于 Verse 语言内建。
 > 类型写作 `T[]`（如 `int[]`），字面量写作 `array{1, 2, 3}`。

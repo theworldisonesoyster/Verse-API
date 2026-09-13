@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# execution_listenable 🟨【B级·进阶】
+# execution_listenable <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/execution_listenable.html -->

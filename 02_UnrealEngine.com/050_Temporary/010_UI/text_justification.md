@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# text_justification 🟨【B级·进阶】
+# text_justification <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/text_justification.html -->

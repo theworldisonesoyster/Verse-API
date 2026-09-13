@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# SortBy 🟩【A级·常用】
+# SortBy <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/sortby.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# equipped_sidekick_component ⬜【C级·参考】
+# equipped_sidekick_component <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/equipped_sidekick_component.html -->

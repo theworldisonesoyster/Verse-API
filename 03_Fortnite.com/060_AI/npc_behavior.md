@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# npc_behavior 🟩【A级·常用】
+# npc_behavior <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/npc_behavior.html -->

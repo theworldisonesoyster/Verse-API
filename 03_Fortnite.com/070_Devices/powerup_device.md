@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# powerup_device ⬜【C级·参考】
+# powerup_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/powerup_device.html -->

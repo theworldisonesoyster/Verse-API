@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# has_description ⬜【C级·参考】
+# has_description <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/presentation/has_description.html -->

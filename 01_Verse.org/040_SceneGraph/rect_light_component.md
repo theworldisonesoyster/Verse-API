@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# rect_light_component 🟨【B级·进阶】
+# rect_light_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/rect_light_component.html -->

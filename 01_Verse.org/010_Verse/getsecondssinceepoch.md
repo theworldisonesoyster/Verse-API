@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# GetSecondsSinceEpoch 🟨【B级·进阶】
+# GetSecondsSinceEpoch <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/getsecondssinceepoch.html -->

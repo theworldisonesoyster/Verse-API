@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# member_info_interface ⬜【C级·参考】
+# member_info_interface <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/agentgroup/member_info_interface.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Random 🟩【A级·常用】
+# Random <A>
 
 <!-- 模块总览，待生成（阶段2） -->

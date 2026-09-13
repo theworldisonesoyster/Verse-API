@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# entitlement_quest_reward 🟨【B级·进阶】
+# entitlement_quest_reward <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/progression/entitlement_quest_reward.html -->

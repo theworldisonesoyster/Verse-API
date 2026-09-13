@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# keyframed_movement_component 🟩【A级·常用】
+# keyframed_movement_component <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/keyframedmovement/keyframed_movement_component.html -->

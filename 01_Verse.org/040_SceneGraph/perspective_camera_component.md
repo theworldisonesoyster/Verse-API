@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# perspective_camera_component 🟨【B级·进阶】
+# perspective_camera_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/perspective_camera_component.html -->

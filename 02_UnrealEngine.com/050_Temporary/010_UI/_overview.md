@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# UI 🟦【S级·核心】
+# UI <S>
 
 <!-- 模块总览，待生成（阶段2） -->

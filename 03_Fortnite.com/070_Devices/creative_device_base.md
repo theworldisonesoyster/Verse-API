@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# creative_device_base 🟩【A级·常用】
+# creative_device_base <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creative_device_base.html -->

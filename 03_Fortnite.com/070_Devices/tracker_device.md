@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# tracker_device ⬜【C级·参考】
+# tracker_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/tracker_device.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# change_stack_size_result ⬜【C级·参考】
+# change_stack_size_result <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/change_stack_size_result.html -->

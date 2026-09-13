@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# find_inventory_event 🟨【B级·进阶】
+# find_inventory_event <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/find_inventory_event.html -->

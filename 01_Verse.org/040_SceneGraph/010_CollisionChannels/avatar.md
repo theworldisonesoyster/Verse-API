@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# avatar 🟨【B级·进阶】
+# avatar <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/collisionchannels/avatar.html -->

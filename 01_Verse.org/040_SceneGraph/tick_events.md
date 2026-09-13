@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# tick_events 🟦【S级·核心】
+# tick_events <S>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/tick_events.html -->

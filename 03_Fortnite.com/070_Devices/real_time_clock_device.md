@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# real_time_clock_device ⬜【C级·参考】
+# real_time_clock_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/real_time_clock_device.html -->

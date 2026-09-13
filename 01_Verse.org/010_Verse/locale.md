@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# locale 🟨【B级·进阶】
+# locale <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/locale.html -->

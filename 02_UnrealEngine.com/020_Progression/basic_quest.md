@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# basic_quest 🟨【B级·进阶】
+# basic_quest <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/progression/basic_quest.html -->

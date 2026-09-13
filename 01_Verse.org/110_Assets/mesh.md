@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# mesh 🟩【A级·常用】
+# mesh <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/mesh.html -->

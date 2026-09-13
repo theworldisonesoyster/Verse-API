@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# sphere ⬜【C级·参考】
+# sphere <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/basicshapes/sphere.html -->

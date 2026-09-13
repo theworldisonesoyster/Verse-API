@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# collision_channel 🟨【B级·进阶】
+# collision_channel <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/collision_channel.html -->

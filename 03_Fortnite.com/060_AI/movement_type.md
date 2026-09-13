@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# movement_type ⬜【C级·参考】
+# movement_type <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/movement_type.html -->

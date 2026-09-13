@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# Abs 🟩【A级·常用】
+# Abs <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/abs.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# BitNot ⬜【C级·参考】
+# BitNot <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/bitnot.html -->

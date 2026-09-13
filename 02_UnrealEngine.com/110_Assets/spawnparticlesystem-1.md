@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# SpawnParticleSystem 🟨【B级·进阶】
+# SpawnParticleSystem <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/assets/spawnparticlesystem-1.html -->

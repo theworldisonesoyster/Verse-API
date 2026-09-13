@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# canvas_slot 🟩【A级·常用】
+# canvas_slot <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/canvas_slot.html -->

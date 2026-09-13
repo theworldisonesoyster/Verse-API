@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# player_ui_slot 🟩【A级·常用】
+# player_ui_slot <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/player_ui_slot.html -->

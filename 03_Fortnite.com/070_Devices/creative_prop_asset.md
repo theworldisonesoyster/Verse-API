@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# creative_prop_asset ⬜【C级·参考】
+# creative_prop_asset <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creative_prop_asset.html -->

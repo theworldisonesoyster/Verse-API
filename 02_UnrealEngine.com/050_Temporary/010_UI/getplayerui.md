@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# GetPlayerUI function 🟦【S级·核心】
+# GetPlayerUI function <S>
 
 （本页官网无导语描述；返回指定玩家的 [player_ui class](player_ui.md) 实例——所有 UI 操作的第一步。）
 

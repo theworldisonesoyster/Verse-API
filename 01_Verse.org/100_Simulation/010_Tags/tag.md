@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# tag class 🟩【A级·常用】
+# tag class <A>
 
 > A base type used for tagging objects in order to hierarchically evaluate an objects classification.
 > 用于给对象打标签的基础类型，以便按层级评估对象的分类。

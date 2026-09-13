@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# event(t) class 🟦【S级·核心】
+# event(t) class <S>
 
 > A recurring, successively signaled parametric event with a payload allowing a simple mechanism to coordinate between concurrent tasks.
 > 可重复、按次序触发的参数化事件，带有载荷，为并发任务之间的协调提供简单机制。

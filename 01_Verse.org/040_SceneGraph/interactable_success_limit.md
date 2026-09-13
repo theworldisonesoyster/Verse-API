@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# interactable_success_limit 🟨【B级·进阶】
+# interactable_success_limit <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/interactable_success_limit.html -->

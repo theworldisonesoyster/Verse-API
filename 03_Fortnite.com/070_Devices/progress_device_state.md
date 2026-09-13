@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# progress_device_state ⬜【C级·参考】
+# progress_device_state <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/progress_device_state.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# task(t) 🟩【A级·常用】
+# task(t) <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/concurrency/task/task(t).html -->

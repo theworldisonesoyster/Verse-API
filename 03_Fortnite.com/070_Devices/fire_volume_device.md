@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# fire_volume_device ⬜【C级·参考】
+# fire_volume_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/fire_volume_device.html -->

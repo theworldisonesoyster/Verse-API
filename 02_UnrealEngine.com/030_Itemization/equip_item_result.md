@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# equip_item_result ⬜【C级·参考】
+# equip_item_result <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/equip_item_result.html -->

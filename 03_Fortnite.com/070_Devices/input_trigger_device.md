@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# input_trigger_device ⬜【C级·参考】
+# input_trigger_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/input_trigger_device.html -->

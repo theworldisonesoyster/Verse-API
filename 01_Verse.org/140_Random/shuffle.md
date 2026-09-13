@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# Shuffle 🟩【A级·常用】
+# Shuffle <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/random/shuffle.html -->

@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# GetSession function 🟩【A级·常用】
+# GetSession function <A>
 
 > Returns the session corresponding to the current round. The result can be used with `weak_map` to implement global variables. Note: may be changed in a future release to return a single instance per game. Round-local behavior should not be relied upon.
 > 返回当前回合对应的 session 实例。结果可配合 `weak_map` 实现全局变量。注意：未来版本可能改为"每局游戏返回一个实例"，请勿依赖其回合级行为。

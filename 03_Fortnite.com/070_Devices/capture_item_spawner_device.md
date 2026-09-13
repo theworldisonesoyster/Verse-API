@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# capture_item_spawner_device ⬜【C级·参考】
+# capture_item_spawner_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/capture_item_spawner_device.html -->

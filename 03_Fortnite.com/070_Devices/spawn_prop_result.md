@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# spawn_prop_result ⬜【C级·参考】
+# spawn_prop_result <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/spawn_prop_result.html -->

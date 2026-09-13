@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# earth_sprite_device ⬜【C级·参考】
+# earth_sprite_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/earth_sprite_device.html -->

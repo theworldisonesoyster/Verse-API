@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# children_streaming_policy 🟨【B级·进阶】
+# children_streaming_policy <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/children_streaming_policy.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# reboot_card_purchase_options ⬜【C级·参考】
+# reboot_card_purchase_options <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/reboot_card_purchase_options.html -->

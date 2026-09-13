@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Sgn 🟨【B级·进阶】
+# Sgn <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/sgn-1.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# RadiansToDegrees 🟩【A级·常用】
+# RadiansToDegrees <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/radianstodegrees.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# easing_window 🟨【B级·进阶】
+# easing_window <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/easing_window.html -->

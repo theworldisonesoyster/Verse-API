@@ -111,7 +111,7 @@ def load_node(dirpath, title, rel_dir):
 
 
 def build_tree():
-    top = {"title": "Verse API 中文注解", "path": "Intro.md", "children": [], "grade": "", "status": "done", "supplement": False}
+    top = {"title": "Verse API Reference", "path": "Intro.md", "children": [], "grade": "", "status": "done", "supplement": False}
     for d in MD_DIRS:
         full = os.path.join(ROOT, d)
         if os.path.isdir(full):
@@ -156,18 +156,19 @@ PAGE_HTML = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Verse API Reference</title>
 <style>
-:root{--bg:#1c1c1c;--panel:#212121;--panel2:#282828;--fg:#e2e2e2;--dim:#96989e;--acc:#422439;--acc2:#c795b3;--line:#3a3a3a;
---s:#422439;--a:#37c98b;--b:#e8c34a;--c:#6b7280}
-*{box-sizing:border-box}body{margin:0;font:15px/1.65 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--fg)}
-#app{display:grid;grid-template-columns:330px 1fr;height:100vh}
+:root{--bg:#1c1c1c;--panel:#212121;--panel2:#282828;--fg:#e2e2e2;--dim:#96989e;--acc:#d6d6d6;--acc2:#cfcfcf;--line:#3a3a3a;
+--s:#a855f7;--a:#ef4444;--b:#f97316;--c:#eab308}
+*{box-sizing:border-box}html,body{height:100%;overflow:hidden}body{margin:0;font:15px/1.65 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--fg)}
+#app{display:grid;grid-template-columns:330px minmax(0,1fr);height:100vh}
+#side,#main{min-height:0}
 #side{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column}
 #side header{padding:14px 14px 10px}
 #side h1{font-size:15px;margin:0 0 10px}
 #search{width:100%;padding:7px 10px;background:var(--panel2);border:1px solid var(--line);color:var(--fg);border-radius:8px;outline:none}
 #grades{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .gbtn{cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--fg);padding:4px 10px;border-radius:20px;font-size:12.5px;user-select:none}
-.gbtn.on{background:var(--acc);border-color:#7a4a67;color:#fff}
-#tree{flex:1;overflow:auto;padding:8px 6px 30px}
+.gbtn.on{background:var(--acc);border-color:#8a8a8a;color:#151515}
+#tree{flex:1 1 0;min-height:0;overflow:auto;overflow-x:hidden;padding:8px 6px 30px}
 #tree ul{list-style:none;margin:0;padding-left:14px}
 #tree>ul{padding-left:6px}
 #tree li{margin:1px 0}
@@ -178,11 +179,11 @@ PAGE_HTML = """<!DOCTYPE html>
 #tree li.d>span.t:hover{background:var(--panel2)}
 #tree a{color:var(--fg);text-decoration:none;display:block;padding:3px 8px;border-radius:6px;cursor:pointer}
 #tree a:hover{background:var(--panel2)}
-#tree a.cur{background:var(--acc);color:#fff}
-#tree a .g{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:1px}
+#tree a.cur{background:#cfcfcf;color:#151515}
+#tree a .g{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:1px}
 .gS{background:var(--s)}.gA{background:var(--a)}.gB{background:var(--b)}.gC{background:var(--c)}
 .pend{color:var(--dim);font-size:11px;margin-left:5px}
-#main{overflow:auto;position:relative}
+#main{overflow:auto;position:relative;min-height:0}
 #content{max-width:900px;margin:0 auto;padding:34px 40px 90px}
 #content h1{font-size:26px;border-bottom:1px solid var(--line);padding-bottom:10px}
 #content h2{font-size:20px;margin-top:34px}
@@ -192,11 +193,13 @@ PAGE_HTML = """<!DOCTYPE html>
 #content blockquote{margin:0;padding:6px 14px;border-left:3px solid var(--acc);color:var(--dim);background:var(--panel2);border-radius:0 8px 8px 0}
 #content table{border-collapse:collapse;margin:14px 0;width:100%}
 #content th,#content td{border:1px solid var(--line);padding:6px 10px;text-align:left;font-size:14px}
-#content th{background:var(--acc);color:#f2e7ee;border-color:var(--line)}
+#content th{background:#d9d9d9;color:#1b1b1b;border-color:var(--line)}
 #content a{color:var(--acc2);text-decoration:none}
 #content a:hover{text-decoration:underline}
 #nav{position:fixed;bottom:0;left:330px;right:0;display:flex;justify-content:space-between;padding:10px 40px;background:linear-gradient(transparent,var(--bg) 40%)}
-#nav a{color:var(--acc2);cursor:pointer;background:var(--panel2);border:1px solid #5a3a4e;padding:6px 14px;border-radius:8px}
+#nav a{color:var(--acc2);cursor:pointer;background:var(--panel2);border:1px solid var(--line);padding:6px 14px;border-radius:8px}
+.gbadge{display:inline-block;padding:0 9px;border-radius:12px;font-size:13px;line-height:20px;color:#fff;vertical-align:3px;margin-left:4px}
+.gbadge.gS{background:var(--s)}.gbadge.gA{background:var(--a)}.gbadge.gB{background:var(--b)}.gbadge.gC{background:var(--c);color:#1b1b1b}
 .pending-box{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--dim);margin:20px 0;text-align:center}
 @media(max-width:900px){#app{grid-template-columns:1fr}#side{display:none}#nav{left:0}}
 </style>
@@ -228,7 +231,7 @@ function renderGrades(){
   const box=$('#grades');box.innerHTML='';
   for(const g of ['S','A','B','C']){
     const b=document.createElement('span');b.className='gbtn'+(state.grades.has(g)?' on':'');
-    b.textContent=g+' '+({S:'核心',A:'常用',B:'进阶',C:'参考'}[g]);
+    b.textContent=g;
     b.onclick=()=>{state.grades.has(g)?state.grades.delete(g):state.grades.add(g);renderAll()};box.appendChild(b);
   }
 }
@@ -314,10 +317,14 @@ function show(path){
   let htmlOut=md2html(body);
   if(isPending)htmlOut+='<div class="pending-box">⏳ 本页在阶段1为占位页，正文将由批量生成阶段填充。<br>官方原文快照已保存在仓库 sources/ 目录。</div>';
   htmlOut=htmlOut.replace(/status: placeholder\\n?/g,'');
+  htmlOut=htmlOut.replace(/&lt;(S|A|B|C)&gt;/g,(m,g)=>'<span class="gbadge g'+g+'">&lt;'+g+'&gt;</span>');
   $('#content').innerHTML=htmlOut;
   $('#content').querySelectorAll('a[data-p]').forEach(a=>a.onclick=()=>show(a.getAttribute('data-p')));
-  $('#content').scrollTop=0;document.querySelector('#main').scrollTop=0;
-  renderTree();
+  document.querySelectorAll('#tree a.cur').forEach(e=>e.classList.remove('cur'));
+  const curLink=document.querySelector('#tree a[data-p="'+path.replace(/"/g,'\\\\\\"')+'"]');
+  if(curLink){curLink.classList.add('cur');curLink.scrollIntoView({block:'nearest'});}
+  const mainEl=document.querySelector('#main'); if(mainEl)mainEl.scrollTop=0;
+  window.scrollTo(0,0);
 }
 $('#prev').onclick=()=>step(-1);$('#next').onclick=()=>step(1);
 function step(d){

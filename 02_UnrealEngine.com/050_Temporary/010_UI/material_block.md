@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# material_block 🟩【A级·常用】
+# material_block <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/material_block.html -->

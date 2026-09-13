@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# client_id ⬜【C级·参考】
+# client_id <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/webapi/client_id.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# MakeRotationRadians 🟩【A级·常用】
+# MakeRotationRadians <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/makerotationradians.html -->

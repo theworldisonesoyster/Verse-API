@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# creative_device class 🟦【S级·核心】
+# creative_device class <S>
 
 > Inherit from this to create a custom creative device. Inherited classes will appear in the UEFN content browser the next time Verse compiles. Instances of your derived creative_device can then be placed in the island by dragging them from the content browser into the scene.
 > 继承此类来创建自定义创意设备。Verse 下次编译后，派生类会出现在 UEFN 内容浏览器中；把派生的 creative_device 实例从内容浏览器拖入场景，即可摆放到岛屿上。

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# hud_element_identifier 🟨【B级·进阶】
+# hud_element_identifier <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/hud_element_identifier.html -->

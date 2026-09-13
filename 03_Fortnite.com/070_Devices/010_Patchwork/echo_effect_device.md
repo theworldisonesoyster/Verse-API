@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# echo_effect_device ⬜【C级·参考】
+# echo_effect_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/echo_effect_device.html -->

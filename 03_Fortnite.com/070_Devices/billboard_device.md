@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# billboard_device ⬜【C级·参考】
+# billboard_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/billboard_device.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# navigation_action_error_type ⬜【C级·参考】
+# navigation_action_error_type <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/navigation_action_error_type.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# attribute_evaluator_device ⬜【C级·参考】
+# attribute_evaluator_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/attribute_evaluator_device.html -->

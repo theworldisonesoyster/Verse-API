@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# SpatialMath ⬜【C级·参考】
+# SpatialMath <C>
 
 <!-- 模块总览，待生成（阶段2） -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# classifiable_subset ⬜【C级·参考】
+# classifiable_subset <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/classifiable_subset.html -->

@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# transform_component class 🟦【S级·核心】
+# transform_component class <S>
 
 > Stores the transforms for an entity, which are used to position the entity.
 > 存储实体的变换（transform），用于确定实体的位置。

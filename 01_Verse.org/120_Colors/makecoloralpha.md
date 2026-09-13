@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# MakeColorAlpha 🟩【A级·常用】
+# MakeColorAlpha <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/colors/makecoloralpha.html -->

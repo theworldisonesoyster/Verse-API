@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# editable_vector_slider function 🟩【A级·常用】
+# editable_vector_slider function <A>
 
 > （本页官网无导语描述。）
 > editable_vector_slider 是参数化类型构造器：按给定数字类型 t 生成一个"编辑器详情面板三维向量滑条"类（X/Y/Z 三条滑条）。

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# add_member_error ⬜【C级·参考】
+# add_member_error <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/agentgroup/add_member_error.html -->

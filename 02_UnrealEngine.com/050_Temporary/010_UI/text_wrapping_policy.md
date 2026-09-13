@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# text_wrapping_policy 🟨【B级·进阶】
+# text_wrapping_policy <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/text_wrapping_policy.html -->

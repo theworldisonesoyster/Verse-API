@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# agent_group(member_info) 🟨【B级·进阶】
+# agent_group(member_info) <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/agentgroup/agent_group/agent_group(member_info).html -->

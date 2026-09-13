@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# overlay 🟩【A级·常用】
+# overlay <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/overlay.html -->

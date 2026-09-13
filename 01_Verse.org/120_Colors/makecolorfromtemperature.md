@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# MakeColorFromTemperature 🟨【B级·进阶】
+# MakeColorFromTemperature <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/colors/makecolorfromtemperature.html -->

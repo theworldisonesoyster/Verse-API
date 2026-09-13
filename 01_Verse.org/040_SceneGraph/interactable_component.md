@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# interactable_component 🟩【A级·常用】
+# interactable_component <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/interactable_component.html -->

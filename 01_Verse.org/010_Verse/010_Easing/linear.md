@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Linear 🟨【B级·进阶】
+# Linear <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/easing/linear.html -->

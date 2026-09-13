@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# vote_group_device ⬜【C级·参考】
+# vote_group_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vote_group_device.html -->

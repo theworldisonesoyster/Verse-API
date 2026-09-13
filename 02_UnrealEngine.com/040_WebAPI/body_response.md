@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# body_response 🟨【B级·进阶】
+# body_response <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/webapi/body_response.html -->

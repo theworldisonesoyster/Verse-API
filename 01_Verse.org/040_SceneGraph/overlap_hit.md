@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# overlap_hit 🟨【B级·进阶】
+# overlap_hit <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/overlap_hit.html -->

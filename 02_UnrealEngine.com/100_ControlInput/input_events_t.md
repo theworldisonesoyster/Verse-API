@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# input_events(t) 🟨【B级·进阶】
+# input_events(t) <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/controlinput/input_events/input_events(t).html -->

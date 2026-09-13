@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Assets 🟨【B级·进阶】
+# Assets <B>
 
 <!-- 模块总览，待生成（阶段2） -->

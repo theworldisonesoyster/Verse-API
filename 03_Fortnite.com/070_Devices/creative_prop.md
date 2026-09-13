@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# creative_prop 🟩【A级·常用】
+# creative_prop <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creative_prop.html -->

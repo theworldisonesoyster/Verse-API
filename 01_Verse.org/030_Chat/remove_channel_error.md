@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# remove_channel_error ⬜【C级·参考】
+# remove_channel_error <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/chat/remove_channel_error.html -->

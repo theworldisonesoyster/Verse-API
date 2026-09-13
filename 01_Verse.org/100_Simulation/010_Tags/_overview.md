@@ -9,7 +9,7 @@ depth: brief
 status: done
 ---
 
-# Tags module 🟩【A级·常用】
+# Tags module <A>
 
 > Verse path: `/Verse.org/Simulation` · Module import path: `/Verse.org/Simulation/Tags`
 > 通用标签系统：给对象打上层级标签（如 `A.1` 属于 `A`），按标签查询、过滤、分组。

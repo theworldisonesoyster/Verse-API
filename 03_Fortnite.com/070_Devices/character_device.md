@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# character_device ⬜【C级·参考】
+# character_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/character_device.html -->

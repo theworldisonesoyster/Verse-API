@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Cos 🟨【B级·进阶】
+# Cos <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/cos.html -->

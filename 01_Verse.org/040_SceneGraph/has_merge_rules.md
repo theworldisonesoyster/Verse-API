@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# has_merge_rules ⬜【C级·参考】
+# has_merge_rules <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/has_merge_rules.html -->

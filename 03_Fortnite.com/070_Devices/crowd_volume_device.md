@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# crowd_volume_device ⬜【C级·参考】
+# crowd_volume_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/crowd_volume_device.html -->

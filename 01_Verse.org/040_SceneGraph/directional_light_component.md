@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# directional_light_component 🟨【B级·进阶】
+# directional_light_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/directional_light_component.html -->

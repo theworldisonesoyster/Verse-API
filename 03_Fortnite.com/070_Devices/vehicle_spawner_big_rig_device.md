@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# vehicle_spawner_big_rig_device ⬜【C级·参考】
+# vehicle_spawner_big_rig_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vehicle_spawner_big_rig_device.html -->

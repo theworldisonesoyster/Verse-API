@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# radio_device ⬜【C级·参考】
+# radio_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/radio_device.html -->

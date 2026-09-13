@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Concurrency 🟩【A级·常用】
+# Concurrency <A>
 
 <!-- 模块总览，待生成（阶段2） -->

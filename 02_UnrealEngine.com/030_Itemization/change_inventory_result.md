@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# change_inventory_result ⬜【C级·参考】
+# change_inventory_result <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/change_inventory_result.html -->

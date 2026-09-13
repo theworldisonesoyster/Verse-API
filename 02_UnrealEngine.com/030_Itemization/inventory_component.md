@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# inventory_component 🟩【A级·常用】
+# inventory_component <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/inventory_component.html -->

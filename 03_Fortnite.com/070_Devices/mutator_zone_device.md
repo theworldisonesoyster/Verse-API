@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# mutator_zone_device ⬜【C级·参考】
+# mutator_zone_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/mutator_zone_device.html -->

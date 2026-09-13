@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# chair_device ⬜【C级·参考】
+# chair_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/chair_device.html -->

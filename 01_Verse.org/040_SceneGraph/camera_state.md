@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# camera_state ⬜【C级·参考】
+# camera_state <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_state.html -->

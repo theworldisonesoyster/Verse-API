@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# easing_function 🟨【B级·进阶】
+# easing_function <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/keyframedmovement/easing_function.html -->

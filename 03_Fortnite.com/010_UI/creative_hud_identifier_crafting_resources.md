@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# creative_hud_identifier_crafting_resources ⬜【C级·参考】
+# creative_hud_identifier_crafting_resources <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ui/creative_hud_identifier_crafting_resources.html -->

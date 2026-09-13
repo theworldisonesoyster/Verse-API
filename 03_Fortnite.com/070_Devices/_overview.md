@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Devices ⬜【C级·参考】
+# Devices <C>
 
 <!-- 模块总览，待生成（阶段2） -->

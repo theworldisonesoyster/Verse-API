@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# Ceil 🟩【A级·常用】
+# Ceil <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/ceil-1.html -->

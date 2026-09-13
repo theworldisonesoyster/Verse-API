@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# hero_chest_rank ⬜【C级·参考】
+# hero_chest_rank <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/hero_chest_rank.html -->

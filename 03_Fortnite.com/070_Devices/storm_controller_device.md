@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# storm_controller_device ⬜【C级·参考】
+# storm_controller_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/storm_controller_device.html -->

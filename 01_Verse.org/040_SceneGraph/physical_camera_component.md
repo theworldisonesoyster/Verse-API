@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# physical_camera_component 🟨【B级·进阶】
+# physical_camera_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/physical_camera_component.html -->

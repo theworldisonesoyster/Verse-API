@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# rotation struct 🟦【S级·核心】
+# rotation struct <S>
 
 > An abstract representation of an orientation change in 3d-space.
 > 三维空间中朝向变化的抽象表示。

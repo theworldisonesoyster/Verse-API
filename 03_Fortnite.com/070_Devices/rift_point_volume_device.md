@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# rift_point_volume_device ⬜【C级·参考】
+# rift_point_volume_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/rift_point_volume_device.html -->

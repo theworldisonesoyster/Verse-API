@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# player_input 🟩【A级·常用】
+# player_input <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/input/player_input.html -->

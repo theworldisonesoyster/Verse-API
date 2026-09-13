@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# uncommon_rarity 🟨【B级·进阶】
+# uncommon_rarity <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/uncommon_rarity.html -->

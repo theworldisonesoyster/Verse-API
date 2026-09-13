@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# navigation_result 🟨【B级·进阶】
+# navigation_result <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/navigation_result.html -->

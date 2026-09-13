@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Verse.org 🟦【S级·核心】
+# Verse.org <S>
 
 <!-- 待生成 -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# SpawnProp 🟩【A级·常用】
+# SpawnProp <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/spawnprop.html -->

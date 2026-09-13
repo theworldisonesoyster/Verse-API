@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# entity class 🟦【S级·核心】
+# entity class <S>
 
 > Entities are the base object in the SceneGraph.
 > 实体是 SceneGraph 的基础对象。

@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# team class 🟩【A级·常用】
+# team class <A>
 
 > team represents a team in the experience.
 > team 表示对局中的一支队伍。

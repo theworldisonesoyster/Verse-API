@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# skeletal_animation 🟩【A级·常用】
+# skeletal_animation <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/skeletal_animation.html -->

@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# tag_view interface 🟩【A级·常用】
+# tag_view interface <A>
 
 > A queryable collection of tags.
 > 表示"可查询标签集合"的接口：提供带层级匹配规则的只读查询。

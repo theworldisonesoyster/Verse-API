@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# animation_controller 🟨【B级·进阶】
+# animation_controller <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creativeanimation/animation_controller.html -->

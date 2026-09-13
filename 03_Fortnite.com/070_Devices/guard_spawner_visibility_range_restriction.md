@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# guard_spawner_visibility_range_restriction ⬜【C级·参考】
+# guard_spawner_visibility_range_restriction <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/guard_spawner_visibility_range_restriction.html -->

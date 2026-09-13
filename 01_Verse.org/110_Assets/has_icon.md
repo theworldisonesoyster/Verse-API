@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# has_icon ⬜【C级·参考】
+# has_icon <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/has_icon.html -->

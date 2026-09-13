@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# hive_stash_style ⬜【C级·参考】
+# hive_stash_style <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/hive_stash_style.html -->

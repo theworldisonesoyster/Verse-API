@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# wilds_plant_device ⬜【C级·参考】
+# wilds_plant_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/wilds_plant_device.html -->

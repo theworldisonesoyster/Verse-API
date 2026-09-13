@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# changing_booth_device ⬜【C级·参考】
+# changing_booth_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/changing_booth_device.html -->

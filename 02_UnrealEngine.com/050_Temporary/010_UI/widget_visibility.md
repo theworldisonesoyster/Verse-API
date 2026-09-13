@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# widget_visibility 🟨【B级·进阶】
+# widget_visibility <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/widget_visibility.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Characters 🟦【S级·核心】
+# Characters <S>
 
 <!-- 模块总览，待生成（阶段2） -->

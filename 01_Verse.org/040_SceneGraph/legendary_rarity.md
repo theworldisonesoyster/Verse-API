@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# legendary_rarity 🟨【B级·进阶】
+# legendary_rarity <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/legendary_rarity.html -->

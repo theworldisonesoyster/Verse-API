@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# play_animation_instance 🟩【A级·常用】
+# play_animation_instance <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/animation/playanimation/play_animation_instance.html -->

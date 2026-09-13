@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# Sleep function 🟦【S级·核心】
+# Sleep function <S>
 
 > Waits specified number of seconds and then resumes. If `Seconds = 0.0` then it waits until next tick/frame/update. If `Seconds = Inf` then it waits forever and only calls back if canceled - such as via `race`. If `Seconds < 0.0` then it completes immediately and does not yield to other async expressions.
 > 暂停指定的秒数后恢复执行。`Seconds = 0.0` 时等到下一帧（tick）才继续；`Seconds = Inf` 时永远等待，只有被取消（例如通过 `race`）才会返回；`Seconds < 0.0` 时立即完成，且不让出执行权给其他异步表达式。

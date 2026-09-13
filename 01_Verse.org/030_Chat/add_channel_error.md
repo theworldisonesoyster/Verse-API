@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# add_channel_error ⬜【C级·参考】
+# add_channel_error <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/chat/add_channel_error.html -->

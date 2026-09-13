@@ -9,7 +9,7 @@ depth: brief
 status: done
 ---
 
-# session_environment enumeration 🟨【B级·进阶】
+# session_environment enumeration <B>
 
 > Specifies what type of environment the current session is in.
 > 指明当前对局处于什么类型的环境。

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# margin 🟨【B级·进阶】
+# margin <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/margin.html -->

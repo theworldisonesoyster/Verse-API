@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# fuel_pump_device ⬜【C级·参考】
+# fuel_pump_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/fuel_pump_device.html -->

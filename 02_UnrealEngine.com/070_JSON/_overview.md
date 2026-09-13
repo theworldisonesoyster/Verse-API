@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# JSON 🟩【A级·常用】
+# JSON <A>
 
 <!-- 模块总览，待生成（阶段2） -->

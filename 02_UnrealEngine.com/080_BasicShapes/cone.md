@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# cone ⬜【C级·参考】
+# cone <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/basicshapes/cone.html -->

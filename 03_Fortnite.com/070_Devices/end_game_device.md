@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# end_game_device ⬜【C级·参考】
+# end_game_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/end_game_device.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# cinematic_sequence_device ⬜【C级·参考】
+# cinematic_sequence_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/cinematic_sequence_device.html -->

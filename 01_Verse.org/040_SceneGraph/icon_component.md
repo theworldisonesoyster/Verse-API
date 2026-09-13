@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# icon_component 🟨【B级·进阶】
+# icon_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/icon_component.html -->

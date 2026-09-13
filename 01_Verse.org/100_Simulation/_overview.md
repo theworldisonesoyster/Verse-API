@@ -9,7 +9,7 @@ depth: brief
 status: done
 ---
 
-# Simulation module 🟦【S级·核心】
+# Simulation module <S>
 
 > Verse path: `/Verse.org` · Module import path: `/Verse.org/Simulation`
 > 对局世界的基本概念模块：谁在对局里（agent/player）、怎么分组（team）、这是哪一局（session），以及 Sleep、editable_\* 等基础函数。

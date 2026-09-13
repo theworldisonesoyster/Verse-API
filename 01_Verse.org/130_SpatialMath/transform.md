@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# transform 🟦【S级·核心】
+# transform <S>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/transform.html -->

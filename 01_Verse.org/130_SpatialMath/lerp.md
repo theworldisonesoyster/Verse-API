@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# Lerp 🟩【A级·常用】
+# Lerp <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/lerp.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# switch_device ⬜【C级·参考】
+# switch_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/switch_device.html -->

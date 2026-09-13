@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# log 🟩【A级·常用】
+# log <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/diagnostics/log.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# customizable_light_device ⬜【C级·参考】
+# customizable_light_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/customizable_light_device.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# input_action(t) 🟩【A级·常用】
+# input_action(t) <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/input_action/input_action(t).html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# supply_drop_spawner_device ⬜【C级·参考】
+# supply_drop_spawner_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/supply_drop_spawner_device.html -->

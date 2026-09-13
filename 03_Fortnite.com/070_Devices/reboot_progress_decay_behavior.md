@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# reboot_progress_decay_behavior ⬜【C级·参考】
+# reboot_progress_decay_behavior <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/reboot_progress_decay_behavior.html -->

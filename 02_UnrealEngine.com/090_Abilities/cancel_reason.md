@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# cancel_reason ⬜【C级·参考】
+# cancel_reason <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/abilities/cancel_reason.html -->

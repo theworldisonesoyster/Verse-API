@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# visual_effect_powerup_device ⬜【C级·参考】
+# visual_effect_powerup_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/visual_effect_powerup_device.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# cylinder ⬜【C级·参考】
+# cylinder <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/basicshapes/cylinder.html -->

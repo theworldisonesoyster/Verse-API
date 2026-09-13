@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# quest_membership 🟨【B级·进阶】
+# quest_membership <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/progression/quest_membership.html -->

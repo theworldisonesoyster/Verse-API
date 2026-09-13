@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# movement_modulator_device ⬜【C级·参考】
+# movement_modulator_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/movement_modulator_device.html -->

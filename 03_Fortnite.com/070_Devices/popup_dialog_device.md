@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# popup_dialog_device ⬜【C级·参考】
+# popup_dialog_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/popup_dialog_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# diagnostic 🟨【B级·进阶】
+# diagnostic <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/diagnostic.html -->

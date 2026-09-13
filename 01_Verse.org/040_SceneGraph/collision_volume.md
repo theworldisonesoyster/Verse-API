@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# collision_volume 🟨【B级·进阶】
+# collision_volume <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/collision_volume.html -->

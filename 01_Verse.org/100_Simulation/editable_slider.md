@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# editable_slider function 🟦【S级·核心】
+# editable_slider function <S>
 
 > （本页官网无导语描述。）
 > editable_slider 是参数化类型构造器：按给定的数字类型 t 生成一个"编辑器详情面板滑条"类。

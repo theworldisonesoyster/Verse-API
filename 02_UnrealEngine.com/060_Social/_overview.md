@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# Social ⬜【C级·参考】
+# Social <C>
 
 <!-- 模块总览，待生成（阶段2） -->

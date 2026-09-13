@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# image_tiling 🟨【B级·进阶】
+# image_tiling <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/image_tiling.html -->

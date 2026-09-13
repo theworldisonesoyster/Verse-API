@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# player class 🟦【S级·核心】
+# player class <S>
 
 （本页官网无导语描述；player 表示对局中的真人玩家，是 agent 的子类。）
 

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# PlayAnimation ⬜【C级·参考】
+# PlayAnimation <C>
 
 <!-- 模块总览，待生成（阶段2） -->

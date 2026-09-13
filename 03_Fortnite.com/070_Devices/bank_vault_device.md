@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# bank_vault_device ⬜【C级·参考】
+# bank_vault_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/bank_vault_device.html -->

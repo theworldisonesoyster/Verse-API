@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# vehicle_mod_box_settings ⬜【C级·参考】
+# vehicle_mod_box_settings <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vehicle_mod_box_settings.html -->

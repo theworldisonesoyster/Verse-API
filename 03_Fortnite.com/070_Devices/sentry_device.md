@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# sentry_device ⬜【C级·参考】
+# sentry_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/sentry_device.html -->

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# fort_leashable 🟨【B级·进阶】
+# fort_leashable <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/fort_leashable.html -->

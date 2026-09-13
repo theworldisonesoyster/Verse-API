@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# camera_component 🟩【A级·常用】
+# camera_component <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_component.html -->

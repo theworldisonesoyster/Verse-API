@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# possessable_component 🟨【B级·进阶】
+# possessable_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/possessable_component.html -->

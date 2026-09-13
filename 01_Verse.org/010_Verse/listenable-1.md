@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# listenable function（无载荷）🟦【S级·核心】
+# listenable function（无载荷）<S>
 
 > A parameterless interface combining awaitable and subscribable.
 > 无参数接口：组合了 awaitable（可等待）与 subscribable（可订阅），载荷类型由上下文推断。

@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# CreativeAnimation ⬜【C级·参考】
+# CreativeAnimation <C>
 
 <!-- 模块总览，待生成（阶段2） -->

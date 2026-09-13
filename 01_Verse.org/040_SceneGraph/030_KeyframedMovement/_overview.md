@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# KeyframedMovement 🟨【B级·进阶】
+# KeyframedMovement <B>
 
 <!-- 模块总览，待生成（阶段2） -->

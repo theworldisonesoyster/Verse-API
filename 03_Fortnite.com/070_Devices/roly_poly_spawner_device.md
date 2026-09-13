@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# roly_poly_spawner_device ⬜【C级·参考】
+# roly_poly_spawner_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/roly_poly_spawner_device.html -->

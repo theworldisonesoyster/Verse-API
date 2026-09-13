@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# text_base 🟩【A级·常用】
+# text_base <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/temporary/ui/text_base.html -->

@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# boost_pad_rocketracing_device ⬜【C级·参考】
+# boost_pad_rocketracing_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/boost_pad_rocketracing_device.html -->

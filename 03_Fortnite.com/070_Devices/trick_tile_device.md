@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# trick_tile_device ⬜【C级·参考】
+# trick_tile_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/trick_tile_device.html -->

@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# MakeShortestRotationBetween 🟩【A级·常用】
+# MakeShortestRotationBetween <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/makeshortestrotationbetween.html -->

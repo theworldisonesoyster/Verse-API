@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# animation_sequence 🟩【A级·常用】
+# animation_sequence <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/animation_sequence.html -->

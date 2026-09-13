@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# collision_element 🟨【B级·进阶】
+# collision_element <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/collision_element.html -->

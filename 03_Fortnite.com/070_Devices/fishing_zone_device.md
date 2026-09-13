@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# fishing_zone_device ⬜【C级·参考】
+# fishing_zone_device <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/fishing_zone_device.html -->

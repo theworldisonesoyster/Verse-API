@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# reboot_van_interface 🟨【B级·进阶】
+# reboot_van_interface <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/reboot_van_interface.html -->

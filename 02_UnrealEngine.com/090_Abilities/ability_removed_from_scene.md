@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# ability_removed_from_scene ⬜【C级·参考】
+# ability_removed_from_scene <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/abilities/ability_removed_from_scene.html -->

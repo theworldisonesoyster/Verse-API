@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# subscribable 🟩【A级·常用】
+# subscribable <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/subscribable-1.html -->

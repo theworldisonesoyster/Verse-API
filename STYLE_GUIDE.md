@@ -34,7 +34,7 @@ verse-api-zh/
 | S 核心 | 🟦 | full | 官网全部段落＋完整表格（Description 全译）＋末尾追加 示例/补充说明 |
 | A 常用 | 🟩 | full | 同 S |
 | B 进阶 | 🟨 | brief | 官网段落结构保留，Description 可摘译压缩；**无追加示例/补充说明**（最多一句提示） |
-| C 参考 | ⬜ | oneliner | 标题＋官网描述一句话中译 |
+| C 参考 | `<C>` | oneliner | 标题＋官网描述一句话中译 |
 
 - Devices 模块约定：全部设备类 C 级（一句话索引）；例外：`creative_device`（S）、`creative_device_base`/`creative_object`/`creative_prop`/`creative_object_interface`（A）。
 - 模块总览页 `_overview.md` 对应官网模块页：官网有的段落/表格全译（成员表完整），可追加一小段"本模块怎么读"。
@@ -91,7 +91,7 @@ This class has both data members and functions.（官网原文＋中译）
 ## 4. brief（B 级）与 oneliner（C 级）模板
 
 - brief：同上结构，但 Description 摘译（保留关键句），无 `## 示例`/`## 补充说明`，结尾最多一行"→ 详见官方页"。
-- oneliner：`# 官网标题 ⬜【C级·参考】` ＋ 官网描述一句话中译。正文 ≤10 行。
+- oneliner：`# 官网标题 `<C>`【C级·参考】` ＋ 官网描述一句话中译。正文 ≤10 行。
 
 ## 5. 术语表（正文必须统一；代码标识符一律不译）
 

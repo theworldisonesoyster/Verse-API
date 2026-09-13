@@ -9,7 +9,7 @@ depth: brief
 status: done
 ---
 
-# 数值类型 int / float / rational 🟩【A级·常用】
+# 数值类型 int / float / rational <A>
 
 > Verse 的三种数值类型；属于 Verse 语言内建。
 

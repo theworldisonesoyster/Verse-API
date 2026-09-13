@@ -9,7 +9,7 @@ depth: full
 status: done
 ---
 
-# tag_key struct 🟩【A级·常用】
+# tag_key struct <A>
 
 > A tag_key is the return value from adding a tag to a container implementing the has_tags interface, and is used to selectively remove such an instance from the same container.
 > tag_key 是向实现了 has_tags 接口的容器添加标签后的返回值，用于从同一容器中**选择性地移除**那一个标签实例。

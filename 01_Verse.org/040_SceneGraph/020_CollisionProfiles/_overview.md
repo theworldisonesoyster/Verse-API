@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# CollisionProfiles ⬜【C级·参考】
+# CollisionProfiles <C>
 
 <!-- 模块总览，待生成（阶段2） -->

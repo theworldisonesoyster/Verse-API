@@ -9,6 +9,6 @@ depth: full
 status: placeholder
 ---
 
-# Clamp 🟩【A级·常用】
+# Clamp <A>
 
 <!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/clamp-1.html -->

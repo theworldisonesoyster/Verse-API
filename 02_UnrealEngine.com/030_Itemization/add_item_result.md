@@ -9,6 +9,6 @@ depth: oneliner
 status: placeholder
 ---
 
-# add_item_result ⬜【C级·参考】
+# add_item_result <C>
 
 <!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/itemization/add_item_result.html -->

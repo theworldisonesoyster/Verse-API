@@ -9,6 +9,6 @@ depth: brief
 status: placeholder
 ---
 
-# npc_sidekick_component 🟨【B级·进阶】
+# npc_sidekick_component <B>
 
 <!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/ai/npc_sidekick_component.html -->
