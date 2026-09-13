@@ -3,12 +3,12 @@ name: score_manager_device
 slug: fortnitedotcom/devices/score_manager_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/score_manager_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# score_manager_device <C>
+# score_manager_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/score_manager_device.html -->
+比分管理设备。

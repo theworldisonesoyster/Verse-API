@@ -3,12 +3,12 @@ name: distortion_effect_device
 slug: fortnitedotcom/devices/patchwork/distortion_effect_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/patchwork/distortion_effect_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices/patchwork
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# distortion_effect_device <C>
+# distortion_effect_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/distortion_effect_device.html -->
+失真效果器：为 Patchwork 音频添加失真。

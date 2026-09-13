@@ -3,12 +3,12 @@ name: mutator_zone_device
 slug: fortnitedotcom/devices/mutator_zone_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/mutator_zone_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# mutator_zone_device <C>
+# mutator_zone_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/mutator_zone_device.html -->
+变异区域设备。

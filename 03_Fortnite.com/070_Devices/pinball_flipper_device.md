@@ -3,12 +3,12 @@ name: pinball_flipper_device
 slug: fortnitedotcom/devices/pinball_flipper_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/pinball_flipper_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# pinball_flipper_device <C>
+# pinball_flipper_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/pinball_flipper_device.html -->
+弹球挡板设备。

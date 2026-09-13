@@ -3,12 +3,12 @@ name: conversation_device
 slug: fortnitedotcom/devices/conversation_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/conversation_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# conversation_device <C>
+# conversation_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/conversation_device.html -->
+对话设备。

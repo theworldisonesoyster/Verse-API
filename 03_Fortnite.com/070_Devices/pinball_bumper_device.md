@@ -3,12 +3,12 @@ name: pinball_bumper_device
 slug: fortnitedotcom/devices/pinball_bumper_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/pinball_bumper_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# pinball_bumper_device <C>
+# pinball_bumper_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/pinball_bumper_device.html -->
+弹球缓冲器设备。

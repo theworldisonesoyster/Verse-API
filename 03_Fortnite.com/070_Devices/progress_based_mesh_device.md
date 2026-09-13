@@ -3,12 +3,12 @@ name: progress_based_mesh_device
 slug: fortnitedotcom/devices/progress_based_mesh_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/progress_based_mesh_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# progress_based_mesh_device <C>
+# progress_based_mesh_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/progress_based_mesh_device.html -->
+进度网格设备：随进度切换网格显示。

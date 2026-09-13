@@ -3,12 +3,12 @@ name: customizable_light_device
 slug: fortnitedotcom/devices/customizable_light_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/customizable_light_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# customizable_light_device <C>
+# customizable_light_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/customizable_light_device.html -->
+可自定义灯光设备。

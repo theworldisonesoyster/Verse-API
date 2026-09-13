@@ -3,12 +3,12 @@ name: note_sequencer_device
 slug: fortnitedotcom/devices/patchwork/note_sequencer_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/patchwork/note_sequencer_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices/patchwork
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# note_sequencer_device <C>
+# note_sequencer_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/note_sequencer_device.html -->
+音符音序器：为 Patchwork 创建旋律音符模式。

@@ -3,12 +3,12 @@ name: guard_spawner_device
 slug: fortnitedotcom/devices/guard_spawner_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/guard_spawner_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# guard_spawner_device <C>
+# guard_spawner_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/guard_spawner_device.html -->
+Guard（守卫）生成器。

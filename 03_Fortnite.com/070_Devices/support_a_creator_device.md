@@ -3,12 +3,12 @@ name: support_a_creator_device
 slug: fortnitedotcom/devices/support_a_creator_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/support_a_creator_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# support_a_creator_device <C>
+# support_a_creator_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/support_a_creator_device.html -->
+支持创作者设备。

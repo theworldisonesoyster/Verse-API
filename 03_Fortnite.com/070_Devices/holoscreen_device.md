@@ -3,12 +3,12 @@ name: holoscreen_device
 slug: fortnitedotcom/devices/holoscreen_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/holoscreen_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# holoscreen_device <C>
+# holoscreen_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/holoscreen_device.html -->
+全息屏设备。

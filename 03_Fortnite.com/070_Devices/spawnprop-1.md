@@ -3,12 +3,12 @@ name: SpawnProp
 slug: fortnitedotcom/devices/spawnprop-1
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/spawnprop-1
 kind: function
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# SpawnProp <C>
+# SpawnProp function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/spawnprop-1.html -->
+创意设备（Devices 索引）。

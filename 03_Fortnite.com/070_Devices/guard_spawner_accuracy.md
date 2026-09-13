@@ -3,12 +3,12 @@ name: guard_spawner_accuracy
 slug: fortnitedotcom/devices/guard_spawner_accuracy
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/guard_spawner_accuracy
 kind: enum
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# guard_spawner_accuracy <C>
+# guard_spawner_accuracy enumeration <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/guard_spawner_accuracy.html -->
+Guard 生成器精度枚举。

@@ -3,12 +3,12 @@ name: chair_device
 slug: fortnitedotcom/devices/chair_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/chair_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# chair_device <C>
+# chair_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/chair_device.html -->
+椅子设备。

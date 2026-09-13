@@ -3,12 +3,12 @@ name: volume_device
 slug: fortnitedotcom/devices/volume_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/volume_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# volume_device <C>
+# volume_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/volume_device.html -->
+体积设备。

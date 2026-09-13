@@ -3,12 +3,12 @@ name: movement_modulator_device
 slug: fortnitedotcom/devices/movement_modulator_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/movement_modulator_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# movement_modulator_device <C>
+# movement_modulator_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/movement_modulator_device.html -->
+移动调制设备。

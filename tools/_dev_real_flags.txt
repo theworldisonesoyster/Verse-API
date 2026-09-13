@@ -1,0 +1,107 @@
+animation_controller|Members|Signaled each time a keyframe is reached. Callback(KeyframeIndex:int, InReverse:logic). Note that the KeyframeIndex in the callback is generally in [1, NumDeltaKeyframes] except that in a PingPong animation the final keyframe played in reverse is identified as index 0. This is because SetAnimation takes delta keyframes whereas this event notifies the listener that a specific keyframe has been reached.
+animation_controller|Members|Signaled when the entire animation is complete. This will only fire for OneShot animations.
+animation_controller|Members|Signaled when the state has changed. Use GetState to get the new state.
+animation_controller|Members|Suspends at the callsite until the next keyframe_delta is finished. This will also return if the animation is aborted or not playing. See await_next_keyframe_result if your code needs to take different paths based on why AwaitNextKeyframe returned.
+animation_controller|Members|Starts or resumes playback of the animation.
+animation_controller|Members|Pauses the animation if it is already playing.
+animation_controller|Members|Stops playback and resets the animation to the first keyframe. Also resets the prop transform. Calling this method is valid while the animation is in the Playing or Paused states.
+animation_controller|Members|Returns the current state of this animation_controller.
+animation_controller|Members|Succeeds if this animation_controllers target is still valid (i.e., the target has not been disposed of either via Dispose or through any external system.)
+animation_controller|Members|Sets the animation for the animation_controller. Animations are processed in the order provided in Keyframes. See notes in keyframe_delta and animation_mode for more details on controlling the animations.
+creative_device|Members|Override to add custom logic when the game experience begins.
+creative_device|Members|Override to add custom logic when the game experience ends. Any coroutines spawned inside OnEnd may never execute.
+creative_device|Members|Returns the transform of the creative_device with units in cm.
+creative_device|Members|Teleports the creative_device to the specified Position and Rotation.
+creative_device|Members|Teleports the creative_device to the specified location defined by Transform, also applies rotation and scale accordingly.
+creative_device|Members|Moves the creative_device to the specified Position and Rotation over the specified time, in seconds. If an animation is currently playing on the creative_device it will be stopped and put into the AnimationNotSet state.
+creative_device|Members|Moves the creative_device to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_device it will be stopped and put into the AnimationNotSet state.
+creative_device|Members|Gets the global transform of this device.
+creative_device|Members|Sets the global transform of this device.
+creative_device|Members|Teleports the creative_device to the specified location defined by Transform, also applies rotation and scale accordingly.
+creative_device|Members|Moves the creative_device to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_device it will be stopped and put into the AnimationNotSet state.
+creative_device|Members|Shows this device in the world.
+creative_device|Members|Hides this device in the world.
+creative_device_base|Members|Gets the global transform of this object.
+creative_device_base|Members|Returns the transform of the creative_object with units in cm. You must check creative_object.IsValid before calling this if there is a possibility the object has been disposed or destroyed by gameplay. Otherwise a runtime error will result.
+creative_device_base|Members|Moves the creative_object to the specified Position and Rotation over the specified time, in seconds. If an animation is currently playing on the creative_object it will be stopped and put into the AnimationNotSet state.
+creative_device_base|Members|Moves the creative_object to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_object it will be stopped and put into the AnimationNotSet state.
+creative_device_base|Members|Moves the creative_device to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_device it will be stopped and put into the AnimationNotSet state.
+creative_device_base|Members|Sets the global transform of this object.
+creative_device_base|Members|Teleports the creative_object to the specified Position and Rotation.
+creative_device_base|Members|Teleports the creative_object to the specified location defined by Transform, also applies rotation and scale accordingly.
+creative_device_base|Members|Teleports the creative_device to the specified location defined by Transform, also applies rotation and scale accordingly.
+creative_object|Members|Returns the transform of the creative_object with units in cm. You must check creative_object.IsValid before calling this if there is a possibility the object has been disposed or destroyed by gameplay. Otherwise a runtime error will result.
+creative_object|Members|Teleports the creative_object to the specified Position and Rotation.
+creative_object|Members|Teleports the creative_object to the specified location defined by Transform, also applies rotation and scale accordingly.
+creative_object|Members|Moves the creative_object to the specified Position and Rotation over the specified time, in seconds. If an animation is currently playing on the creative_object it will be stopped and put into the AnimationNotSet state.
+creative_object|Members|Moves the creative_object to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_object it will be stopped and put into the AnimationNotSet state.
+creative_object|Members|Gets the global transform of this object.
+creative_object|Members|Sets the global transform of this object.
+creative_object|Members|Teleports the creative_device to the specified location defined by Transform, also applies rotation and scale accordingly.
+creative_object|Members|Moves the creative_device to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_device it will be stopped and put into the AnimationNotSet state.
+creative_prop|Exposed Interfaces|Implemented by classes whose instances can become invalid at runtime.
+creative_prop|Members|Enable/disable whether this prop can be damaged. If disabled, the creative prop will not take damage from attacks.
+creative_prop|Members|Apply an angular impulse to a ‘creative_prop’ with units in Newtonmeterseconds. Will not do anything if physics is disabled.
+creative_prop|Members|Apply a force to a ‘creative_prop’ with units in Newtons. Will not do anything if physics is disabled.
+creative_prop|Members|Apply a linear impulse to a ‘creative_prop’ with units in Newton*seconds. Will not do anything if physics is disabled.
+creative_prop|Members|Apply a torque to a ‘creative_prop’ with units in Newton*meters. Will not do anything if physics is disabled.
+creative_prop|Members|Destroys the creative_prop and remove it from the island.
+creative_prop|Members|Returns a ‘creative_prop’s angular velocity in radians/second.
+creative_prop|Members|Get whether a ‘creative_prop’ is dynamic (affected by physics functions).
+creative_prop|Members|Gets the global transform of this object.
+creative_prop|Members|Returns a ‘creative_prop’s linear velocity in meters/second.
+creative_prop|Members|Returns a ‘creative_prop’s mass in kilograms.
+creative_prop|Members|Returns the transform of the creative_object with units in cm. You must check creative_object.IsValid before calling this if there is a possibility the object has been disposed or destroyed by gameplay. Otherwise a runtime error will result.
+creative_prop|Members|Hides the creative_prop in the world and disable collisions.
+creative_prop|Members|Succeeds if this object has been disposed of either via Dispose() or through an external system.
+creative_prop|Members|Succeeds if this object has not been disposed of either via Dispose() or through an external system.
+creative_prop|Members|Moves the creative_object to the specified Position and Rotation over the specified time, in seconds. If an animation is currently playing on the creative_object it will be stopped and put into the AnimationNotSet state.
+creative_prop|Members|Moves the creative_object to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_object it will be stopped and put into the AnimationNotSet state.
+creative_prop|Members|Moves the creative_device to the specified Transform over the specified time, in seconds. If an animation is currently playing on the creative_device it will be stopped and put into the AnimationNotSet state.
+creative_prop|Members|Set a ‘creative_prop’s angular velocity in radians/seconds. Will not do anything if physics is disabled.
+creative_prop|Members|Set whether a ‘creative_prop’ is dynamic (affected by physics functions). Will not do anything if physics is disabled OR the prop does not have a FortPhysicsComponent.
+creative_prop|Members|Sets the global transform of this object.
+creative_prop|Members|Set a ‘creative_prop’s linear velocity in meters/second. Will not do anything if physics is disabled.
+creative_prop|Members|Changes the Material of the Mesh used by this instance. Optionally can specify which Mesh element index to apply the material to, otherwise defaults to the 0 (default) Mesh element
+creative_prop|Members|Changes the Mesh used by this instance.
+creative_prop|Members|Shows the creative_prop in the world and enable collisions.
+creative_prop|Members|Teleports the creative_object to the specified Position and Rotation.
+creative_prop|Members|Teleports the creative_object to the specified location defined by Transform, also applies rotation and scale accordingly.
+creative_prop|Members|Teleports the creative_device to the specified location defined by Transform, also applies rotation and scale accordingly.
+vote_option_interface|Members|Triggered if this option wins the vote.
+vote_option_interface|Members|Attempts to cast a vote for ‘Agent’ If the voting agent has votes remaining and the voting group has started a vote, the vote will be cast successfully. Fails if Agent does not have votes remaining or voting group has not started.
+vote_option_interface|Members|Returns the total votes cast for this option.
+vote_option_interface|Members|Returns the group device this option corresponds to, if any. Fails if the option is not in a group, or there is no corresponding group device with the same ID.
+vote_option_interface|Members|Succeeds if Agent has voted for this option, fails if not.
+vote_option_interface|Members|The string to display to the user when choosing which option to select.
+bank_vault_interface|Members|Triggers when the vault sequence is started by a player or event. Sends the agent that triggered this event, if applicable.
+bank_vault_interface|Members|Triggers when the vault is opened either by the destruction of its weakpoints or by an event. Sends the last agent that damaged a weakpoint or the agent that started the sequence if no external damage was done or none if the sequence was triggered by a function.
+bank_vault_interface|Members|Triggers when a weakpoint is activated. The weakpoint will begin to glow, but does not become vulnerable until a subsequent WeakpointVulnerableEvent. Sends the agent that activated the vault or none if the sequence was triggered by a function, and the int index of the weakpoint from 0-4, in order of activation.
+bank_vault_interface|Members|Triggers when a weakpoint becomes vulnerable. Sends the agent that activated the vault or none if the sequence was triggered by a function, and the int index of the weakpoint from 0-4, in order of activation.
+bank_vault_interface|Members|Triggers when a weakpoint is destroyed. Sends the last agent that damaged the weakpoint or the agent that started the sequence if no external damage was done or none if the sequence was triggered by a function, and the int index of the weakpoint from 0-4, in order of activation.
+bank_vault_interface|Members|Whether the player needs thermite when interacting with the door to start the vault opening sequence.
+bank_vault_interface|Members|Damage dealt to the active weakpoint each second. Negative numbers heal the weakpoint. Weakpoints can only be damaged while the vault sequence is active.
+bank_vault_interface|Members|Whether the weakpoint takes damage from weapons and items while vault sequence is active.
+bank_vault_interface|Members|The max health of this device's weakpoints.
+bank_vault_interface|Members|Destroys the remaining weakpoints and opens the vault door. Requires the device to be enabled.
+bank_vault_interface|Members|Begin the sequence of events to open the vault door without thermite, or unpauses the sequence if it was paused. Requires the device to be enabled. Weakpoints can only be damaged while the vault sequence is active.
+bank_vault_interface|Members|Disable the weakpoint vulnerability and freeze the progress of each one. Weakpoints can only be damaged while the vault sequence is active.
+bank_vault_interface|Members|Restores vault to default state, deactivates the device, and heals all weakpoints to max health. Requires the device to be enabled.
+bank_vault_interface|Members|Whether the vault sequence is currently active and not paused.
+bank_vault_interface|Members|Destroy the active weakpoint. Requires the device to be enabled. Must have active weakpoint.
+bank_vault_interface|Members|Restores the active weakpoint to full health. Requires the device to be enabled. Must have active weakpoint.
+bank_vault_interface|Members|Gets the active weakpoint's index starting at 0, regardless of device's enabled state. Returns false if there is no active weakpoint, such as when the sequence is not active or directly after a weakpoint is destroyed.
+bank_vault_interface|Members|Gets the total number of weakpoints.
+bank_vault_interface|Members|Get active weakpoint's health. If there is no active weakpoint, returns false.
+bank_vault_interface|Members|Set active weakpoint's health. Setting it to 0.0 or false will destroy the weakpoint. Clamps to maximum of WeakpointMaxHealth.
+reboot_van_interface|Members|Triggers when Reboot Van has finished rebooting a set of players. agentis the player that started the reboot.
+reboot_van_interface|Members|The length of the recharge timer in seconds, regardless of the timer's current state. Clamped between 0.0 and 3600.0.
+reboot_van_interface|Members|The remaining time (in seconds) on the recharge timer. Clamped between 0.0 and 3600.0. If there is no active timer, getting returns 0.0. If there is no active timer, setting does nothing.
+reboot_van_interface|Members|How quickly reboot progress decays when nobody is interacting with the Reboot Van. Custom Decay - Set a custom multiplier on the decay rate. Instant Reset - Instantly reset progress to zero. Battle Royale - Use Battle Royale's decay rate.
+reboot_van_interface|Members|Multiplier on the decay rate of reboot progress. Clamped between 0.1 and 2.0. Only used if RebootProgressDecay is set to Custom Decay.
+reboot_van_interface|Members|Triggers when a player purchases a Reboot Card. agent is the player that purchased the Reboot Card.
+reboot_van_interface|Members|Determines if players can purchase an eliminated player's reboot card.
+reboot_van_interface|Members|Purchase reboot card options. Only used if CanPurchaseRebootCard is true.
+reboot_van_interface|Members|Enable the device.
+reboot_van_interface|Members|Disable the device.
+reboot_van_interface|Members|Succeeds if the device is enabled, fails if it's disabled.

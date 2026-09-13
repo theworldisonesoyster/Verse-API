@@ -3,12 +3,12 @@ name: fuel_pump_device
 slug: fortnitedotcom/devices/fuel_pump_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/fuel_pump_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# fuel_pump_device <C>
+# fuel_pump_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/fuel_pump_device.html -->
+油泵设备。

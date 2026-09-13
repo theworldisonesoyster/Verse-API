@@ -3,12 +3,12 @@ name: progress_device_state
 slug: fortnitedotcom/devices/progress_device_state
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/progress_device_state
 kind: enum
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# progress_device_state <C>
+# progress_device_state enumeration <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/progress_device_state.html -->
+进度设备状态枚举。

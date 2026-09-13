@@ -3,12 +3,43 @@ name: ease_out_cubic_bezier_easing_function
 slug: versedotorg/scenegraph/keyframedmovement/ease_out_cubic_bezier_easing_function
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement/ease_out_cubic_bezier_easing_function
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph/keyframedmovement
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# ease_out_cubic_bezier_easing_function <B>
+# ease_out_cubic_bezier_easing_function class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/keyframedmovement/ease_out_cubic_bezier_easing_function.html -->
+> EaseOut animations start fast, then slow down towards the end.
+> 缓出：起步快，逐渐减速。
+
+`using { /Verse.org/SceneGraph/KeyframedMovement }`
+
+## Inheritance Hierarchy
+
+此类派生自以下层级，起点为 ：
+| Name | Description |
+| easing_function | 动画缓动函数的基类。 |
+| cubic_bezier_easing_function | 三次贝塞尔缓动函数。基础缓动值参见 CubicBezierEasingFunctions。 |
+
+
+## Members
+
+兼有数据成员和函数。
+
+### Data
+| Data Member Name | Type | Description |
+| X0 | float |  |
+| X0 | float |  |
+| X1 | float |  |
+| X1 | float |  |
+| Y0 | float |  |
+| Y0 | float |  |
+| Y1 | float |  |
+| Y1 | float |  |
+
+### Functions
+| Function Name | Description |
+| Evaluate |  |
+| Evaluate |  |

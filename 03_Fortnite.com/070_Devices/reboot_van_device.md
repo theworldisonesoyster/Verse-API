@@ -3,12 +3,12 @@ name: reboot_van_device
 slug: fortnitedotcom/devices/reboot_van_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/reboot_van_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# reboot_van_device <C>
+# reboot_van_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/reboot_van_device.html -->
+重生的士（复活车）。

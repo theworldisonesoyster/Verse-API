@@ -1,14 +1,19 @@
 ---
-name: operator'/'
+name: operatorslash-1
 slug: versedotorg/spatialmath/operatorslash-1
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/spatialmath/operatorslash-1
 kind: function
-module: /Verse.org
-grade: A
-depth: full
-status: placeholder
+module: /Verse.org/spatialmath
+grade: B
+depth: brief
+status: done
 ---
 
-# operator'/' <A>
+> Makes a vector3 by component-wise division of Left by Right.
+> Left 与 Right 逐分量相除，得到新的 vector3（重载）。
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/operatorslash-1.html -->
+`using { /Verse.org/SpatialMath }`
+
+```verse
+operator'/'(Left:vector3, Right:vector3):vector3
+```

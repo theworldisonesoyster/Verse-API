@@ -3,12 +3,12 @@ name: hiding_prop_device
 slug: fortnitedotcom/devices/hiding_prop_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/hiding_prop_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# hiding_prop_device <C>
+# hiding_prop_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/hiding_prop_device.html -->
+隐藏道具设备。

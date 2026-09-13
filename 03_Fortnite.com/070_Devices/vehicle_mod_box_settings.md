@@ -3,12 +3,12 @@ name: vehicle_mod_box_settings
 slug: fortnitedotcom/devices/vehicle_mod_box_settings
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vehicle_mod_box_settings
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# vehicle_mod_box_settings <C>
+# vehicle_mod_box_settings class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vehicle_mod_box_settings.html -->
+载具改装箱设置。

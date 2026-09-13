@@ -3,12 +3,12 @@ name: prop_o_matic_manager_device
 slug: fortnitedotcom/devices/prop_o_matic_manager_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/prop_o_matic_manager_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# prop_o_matic_manager_device <C>
+# prop_o_matic_manager_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/prop_o_matic_manager_device.html -->
+道具伪装管理设备。

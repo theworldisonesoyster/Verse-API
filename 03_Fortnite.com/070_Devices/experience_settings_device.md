@@ -3,12 +3,12 @@ name: experience_settings_device
 slug: fortnitedotcom/devices/experience_settings_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/experience_settings_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# experience_settings_device <C>
+# experience_settings_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/experience_settings_device.html -->
+体验设置设备。

@@ -3,12 +3,12 @@ name: teleporter_device
 slug: fortnitedotcom/devices/teleporter_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/teleporter_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# teleporter_device <C>
+# teleporter_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/teleporter_device.html -->
+传送器设备。

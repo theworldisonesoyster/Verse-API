@@ -3,12 +3,12 @@ name: vote_option_device
 slug: fortnitedotcom/devices/vote_option_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vote_option_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# vote_option_device <C>
+# vote_option_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/vote_option_device.html -->
+投票选项设备。

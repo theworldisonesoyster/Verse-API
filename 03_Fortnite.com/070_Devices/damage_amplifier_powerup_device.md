@@ -3,12 +3,13 @@ name: damage_amplifier_powerup_device
 slug: fortnitedotcom/devices/damage_amplifier_powerup_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/damage_amplifier_powerup_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/Devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
 # damage_amplifier_powerup_device <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/damage_amplifier_powerup_device.html -->
+> （官网页面当前无描述内容。）
+> 伤害放大强化道具——详情以编辑器内设备面板为准。

@@ -1,14 +1,20 @@
 ---
-name: Characters
+name: Characters module
 slug: fortnitedotcom/characters
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/characters
 kind: module
-module: /Fortnite.com
+module: /fortnitedotcom
 grade: S
 depth: brief
-status: placeholder
+status: done
 ---
 
-# Characters <S>
+# Characters module <S>
 
-<!-- 模块总览，待生成（阶段2） -->
+角色（fort_character）：玩家/NPC 在世界中的身体，承担移动、跳跃、淘汰、生命等玩法。
+
+## Classes and Structs
+
+| Name | Description |
+|---|---|
+| [stasis_args](stasis_args.md) | fort_character.PutInStasis 函数的参数（凝固时阻止哪些移动类型）。 |

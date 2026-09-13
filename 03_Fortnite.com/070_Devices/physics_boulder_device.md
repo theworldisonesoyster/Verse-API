@@ -3,12 +3,12 @@ name: physics_boulder_device
 slug: fortnitedotcom/devices/physics_boulder_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/physics_boulder_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# physics_boulder_device <C>
+# physics_boulder_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/physics_boulder_device.html -->
+物理巨石设备。

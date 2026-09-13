@@ -3,12 +3,12 @@ name: prop_manipulator_device
 slug: fortnitedotcom/devices/prop_manipulator_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/prop_manipulator_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# prop_manipulator_device <C>
+# prop_manipulator_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/prop_manipulator_device.html -->
+道具操控设备。

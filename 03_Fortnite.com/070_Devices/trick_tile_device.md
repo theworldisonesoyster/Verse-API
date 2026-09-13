@@ -3,12 +3,12 @@ name: trick_tile_device
 slug: fortnitedotcom/devices/trick_tile_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/trick_tile_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# trick_tile_device <C>
+# trick_tile_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/trick_tile_device.html -->
+特技地砖设备。

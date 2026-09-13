@@ -3,12 +3,12 @@ name: input_trigger_device
 slug: fortnitedotcom/devices/input_trigger_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/input_trigger_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# input_trigger_device <C>
+# input_trigger_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/input_trigger_device.html -->
+输入触发设备。

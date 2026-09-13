@@ -3,12 +3,12 @@ name: audio_mixer_device
 slug: fortnitedotcom/devices/audio_mixer_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/audio_mixer_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# audio_mixer_device <C>
+# audio_mixer_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/audio_mixer_device.html -->
+音频混音设备。

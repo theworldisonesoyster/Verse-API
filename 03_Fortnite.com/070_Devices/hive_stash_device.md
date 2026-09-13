@@ -3,12 +3,12 @@ name: hive_stash_device
 slug: fortnitedotcom/devices/hive_stash_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/hive_stash_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# hive_stash_device <C>
+# hive_stash_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/hive_stash_device.html -->
+蜂巢储藏设备。

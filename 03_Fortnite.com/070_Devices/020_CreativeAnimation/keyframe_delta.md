@@ -3,12 +3,12 @@ name: keyframe_delta
 slug: fortnitedotcom/devices/creativeanimation/keyframe_delta
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creativeanimation/keyframe_delta
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices/creativeanimation
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# keyframe_delta <C>
+# keyframe_delta struct <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creativeanimation/keyframe_delta.html -->
+关键帧增量。

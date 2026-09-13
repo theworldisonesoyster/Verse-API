@@ -3,12 +3,12 @@ name: reboot_card_purchase_options
 slug: fortnitedotcom/devices/reboot_card_purchase_options
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/reboot_card_purchase_options
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# reboot_card_purchase_options <C>
+# reboot_card_purchase_options class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/reboot_card_purchase_options.html -->
+重生的士卡片购买选项。

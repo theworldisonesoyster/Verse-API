@@ -3,12 +3,12 @@ name: capture_area_device
 slug: fortnitedotcom/devices/capture_area_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/capture_area_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# capture_area_device <C>
+# capture_area_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/capture_area_device.html -->
+占领区域设备。

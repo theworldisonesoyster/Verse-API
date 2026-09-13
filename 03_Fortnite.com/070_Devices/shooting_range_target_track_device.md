@@ -3,12 +3,12 @@ name: shooting_range_target_track_device
 slug: fortnitedotcom/devices/shooting_range_target_track_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/shooting_range_target_track_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# shooting_range_target_track_device <C>
+# shooting_range_target_track_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/shooting_range_target_track_device.html -->
+射击场靶轨设备。

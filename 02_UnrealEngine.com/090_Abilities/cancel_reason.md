@@ -2,13 +2,12 @@
 name: cancel_reason
 slug: unrealenginedotcom/abilities/cancel_reason
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/abilities/cancel_reason
-kind: class
-module: /UnrealEngine.com
+kind: enum
+module: /UnrealEngine.com/abilities
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# cancel_reason <C>
-
-<!-- 待生成（阶段2）。官方快照: sources/unrealenginedotcom/abilities/cancel_reason.html -->
+> （官网页面当前无描述内容。）
+> 技能被取消的原因枚举。

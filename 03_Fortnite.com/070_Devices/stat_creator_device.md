@@ -3,12 +3,12 @@ name: stat_creator_device
 slug: fortnitedotcom/devices/stat_creator_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/stat_creator_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# stat_creator_device <C>
+# stat_creator_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/stat_creator_device.html -->
+统计创建器设备。

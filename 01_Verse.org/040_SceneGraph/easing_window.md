@@ -2,13 +2,18 @@
 name: easing_window
 slug: versedotorg/scenegraph/easing_window
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/easing_window
-kind: class
-module: /Verse.org
+kind: struct
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# easing_window <B>
+> An easing function combined with a relative time window
+> 缓动函数与相对时间窗口的组合。
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/easing_window.html -->
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+（成员详见官方页。）

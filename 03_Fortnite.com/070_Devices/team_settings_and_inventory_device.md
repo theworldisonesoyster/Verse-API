@@ -3,12 +3,12 @@ name: team_settings_and_inventory_device
 slug: fortnitedotcom/devices/team_settings_and_inventory_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/team_settings_and_inventory_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# team_settings_and_inventory_device <C>
+# team_settings_and_inventory_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/team_settings_and_inventory_device.html -->
+队伍设置与物品栏设备。

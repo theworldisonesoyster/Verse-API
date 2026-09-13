@@ -1,0 +1,87 @@
+==== UI
+A|fortnitedotcom/ui/text_button_base|Button with text message common base class. Displays a button with a custom message string.
+A|fortnitedotcom/ui/button_loud|Text button with big and loud styling applied.
+A|fortnitedotcom/ui/button_regular|Text button with normal styling applied.
+A|fortnitedotcom/ui/button_quiet|Text button with quiet styling applied.
+C|fortnitedotcom/ui/creative_hud_identifier_all|
+C|fortnitedotcom/ui/creative_hud_identifier_build_menu|
+C|fortnitedotcom/ui/creative_hud_identifier_crafting_resources|
+C|fortnitedotcom/ui/creative_hud_identifier_elimination_counter|
+C|fortnitedotcom/ui/creative_hud_identifier_equipped_item|
+C|fortnitedotcom/ui/creative_hud_identifier_experience_level|
+C|fortnitedotcom/ui/creative_hud_identifier_experience_supercharged|
+C|fortnitedotcom/ui/creative_hud_identifier_experience_ui|
+C|fortnitedotcom/ui/creative_hud_identifier_health|
+C|fortnitedotcom/ui/creative_hud_identifier_health_numbers|
+C|fortnitedotcom/ui/creative_hud_identifier_hud_info|
+C|fortnitedotcom/ui/creative_hud_identifier_interaction_prompts|
+C|fortnitedotcom/ui/creative_hud_identifier_map_prompts|
+C|fortnitedotcom/ui/creative_hud_identifier_mimimap|
+C|fortnitedotcom/ui/creative_hud_identifier_minimap|
+C|fortnitedotcom/ui/creative_hud_identifier_pickup_stream|
+C|fortnitedotcom/ui/creative_hud_identifier_player_count|
+C|fortnitedotcom/ui/creative_hud_identifier_player_inventory|
+C|fortnitedotcom/ui/creative_hud_identifier_round_info|
+C|fortnitedotcom/ui/creative_hud_identifier_round_timer|
+C|fortnitedotcom/ui/creative_hud_identifier_shield_numbers|
+C|fortnitedotcom/ui/creative_hud_identifier_shileds|
+C|fortnitedotcom/ui/creative_hud_identifier_shields|
+C|fortnitedotcom/ui/creative_hud_identifier_storm_notifications|
+C|fortnitedotcom/ui/creative_hud_identifier_storm_timer|
+C|fortnitedotcom/ui/creative_hud_identifier_team_info|
+C|fortnitedotcom/ui/player_hud_identifier_all|
+C|fortnitedotcom/ui/hud_identifier_world_resource_wood|
+C|fortnitedotcom/ui/hud_identifier_world_resource_stone|
+C|fortnitedotcom/ui/hud_identifier_world_resource_metal|
+C|fortnitedotcom/ui/hud_identifier_world_resource_permanite|
+C|fortnitedotcom/ui/hud_identifier_world_resource_gold_currency|
+C|fortnitedotcom/ui/hud_identifier_world_resource_ingredient|
+C|fortnitedotcom/ui/hud_identifier_visual_sound_effect_weapons|
+C|fortnitedotcom/ui/hud_identifier_visual_sound_effect_loot|
+C|fortnitedotcom/ui/hud_identifier_visual_sound_effect_movement|
+C|fortnitedotcom/ui/hud_identifier_visual_sound_effect_vehicle|
+C|fortnitedotcom/ui/hud_identifier_visual_sound_effect_healing|
+C|fortnitedotcom/ui/hud_identifier_visual_sound_effect_all|
+B|fortnitedotcom/ui/hud_element_identifier|Used to identify a HUD element.
+A|fortnitedotcom/ui/slider_regular|Slider with a text value. Displays a slider, its progress bar and value.
+A|fortnitedotcom/ui/text_block|Text block widget. Displays text to the user.
+B|fortnitedotcom/ui/fort_hud_controller|A HUD controller that allows for showing and hiding of HUD elements.
+==== AI
+B|fortnitedotcom/ai/movement_types/walking|NO-EXTRACT
+B|fortnitedotcom/ai/movement_types/running|NO-EXTRACT
+C|fortnitedotcom/ai/equipped_sidekick_component|Component to manage functionality specifically for an agent's equipped Sidekick.
+C|fortnitedotcom/ai/spark_mode_component|component to manage an entity that supports a Spark mode. Spark mode will transform the entity into a floating spark. The entity will enter spark mode whenever 
+B|fortnitedotcom/ai/guard_actions_component|Fortnite Guards AI actions management
+B|fortnitedotcom/ai/guard_awareness_component|Fortnite Guard perception management
+B|fortnitedotcom/ai/navigation_target|
+B|fortnitedotcom/ai/npc_actions_component|Fortnite NPC AI actions management
+B|fortnitedotcom/ai/npc_awareness_component|Fortnite NPC perception management
+A|fortnitedotcom/ai/npc_behavior|Inherit from this to create a custom NPC behavior. The npc_behavior can be defined for a character in a CharacterDefinition asset, or in a npc_spawner_device.
+B|fortnitedotcom/ai/npc_target_info|Information about a perceived target.
+B|fortnitedotcom/ai/sidekick_component|Component to manage functionality shared by all Sidekick types.
+B|fortnitedotcom/ai/npc_sidekick_component|Component to manage functionality specifically for an NPC Sidekick.
+B|fortnitedotcom/ai/focus_interface|
+B|fortnitedotcom/ai/fort_leashable|
+A|fortnitedotcom/ai/navigatable|
+B|fortnitedotcom/ai/makenavigationtarget|Generate a navigation_target from any position.
+B|fortnitedotcom/ai/makenavigationtarget-1|Generate a navigation_target from any position.
+B|fortnitedotcom/ai/makenavigationtarget-2|Generate a navigation_target from an agent.
+C|fortnitedotcom/ai/ai_action_error_type|Result of a failed AI action
+B|fortnitedotcom/ai/navigation_result|Result of a navigation request
+C|fortnitedotcom/ai/navigation_action_error_type|
+C|fortnitedotcom/ai/navigation_action_success_type|
+C|fortnitedotcom/ai/movement_type|
+C|fortnitedotcom/ai/guard_alert_level|The different alert levels of a Fortnite Guard.
+C|fortnitedotcom/ai/sidekick_mood|Sidekicks have a mood that modifies their animations to suit that mood. This is the list of currently supported moods.
+C|fortnitedotcom/ai/sidekick_reaction|The set of available reactions that can be played on the Sidekick
+==== Animation
+A|fortnitedotcom/animation/playanimation/play_animation_instance|An animation instance created from play_animation_controller.Play that can be queried and manipulated.
+A|fortnitedotcom/animation/playanimation/play_animation_controller|An interface for playing an animation on an object.
+A|fortnitedotcom/animation/playanimation/play_animation_result|Result of a PlayAndAwait request.
+A|fortnitedotcom/animation/playanimation/play_animation_state|The potential states of a play animation instance.
+==== Characters
+C|fortnitedotcom/characters/stasis_args|Parameters for fort_character.PutInStasis function.
+S|fortnitedotcom/characters/fort_character|Main API implemented by Fortnite characters.
+==== Vehicles
+B|fortnitedotcom/vehicles/fort_vehicle_seat|Represents a seat in a fort_vehicle.
+B|fortnitedotcom/vehicles/fort_vehicle|Main API implemented by Fortnite vehicles.

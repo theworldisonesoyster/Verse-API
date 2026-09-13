@@ -3,12 +3,12 @@ name: character_device
 slug: fortnitedotcom/devices/character_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/character_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# character_device <C>
+# character_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/character_device.html -->
+角色设备。

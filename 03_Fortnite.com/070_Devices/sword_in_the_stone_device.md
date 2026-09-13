@@ -3,12 +3,12 @@ name: sword_in_the_stone_device
 slug: fortnitedotcom/devices/sword_in_the_stone_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/sword_in_the_stone_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# sword_in_the_stone_device <C>
+# sword_in_the_stone_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/sword_in_the_stone_device.html -->
+石中剑设备。

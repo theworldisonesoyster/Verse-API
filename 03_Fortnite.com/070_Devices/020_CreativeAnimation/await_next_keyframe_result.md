@@ -3,12 +3,12 @@ name: await_next_keyframe_result
 slug: fortnitedotcom/devices/creativeanimation/await_next_keyframe_result
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creativeanimation/await_next_keyframe_result
 kind: enum
-module: /Fortnite.com
+module: /Fortnite.com/devices/creativeanimation
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# await_next_keyframe_result <C>
+# await_next_keyframe_result enumeration <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creativeanimation/await_next_keyframe_result.html -->
+等待下一关键帧的结果枚举。

@@ -3,12 +3,12 @@ name: has_spire_functionality
 slug: fortnitedotcom/devices/has_spire_functionality
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/has_spire_functionality
 kind: interface
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# has_spire_functionality <C>
+# has_spire_functionality interface <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/has_spire_functionality.html -->
+尖塔功能接口。

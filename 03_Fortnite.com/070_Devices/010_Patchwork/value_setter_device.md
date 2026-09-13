@@ -3,12 +3,12 @@ name: value_setter_device
 slug: fortnitedotcom/devices/patchwork/value_setter_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/patchwork/value_setter_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices/patchwork
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# value_setter_device <C>
+# value_setter_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/value_setter_device.html -->
+数值设置器：修改其他 Patchwork 设备的设置。

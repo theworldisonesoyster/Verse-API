@@ -3,12 +3,12 @@ name: creative_device_asset
 slug: fortnitedotcom/devices/creative_device_asset
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device_asset
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# creative_device_asset <C>
+# creative_device_asset class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creative_device_asset.html -->
+创意设备资产。

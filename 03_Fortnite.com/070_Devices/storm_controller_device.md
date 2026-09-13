@@ -3,12 +3,12 @@ name: storm_controller_device
 slug: fortnitedotcom/devices/storm_controller_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/storm_controller_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# storm_controller_device <C>
+# storm_controller_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/storm_controller_device.html -->
+风暴控制器设备。

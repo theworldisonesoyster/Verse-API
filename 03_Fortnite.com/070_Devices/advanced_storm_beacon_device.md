@@ -3,12 +3,12 @@ name: advanced_storm_beacon_device
 slug: fortnitedotcom/devices/advanced_storm_beacon_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/advanced_storm_beacon_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# advanced_storm_beacon_device <C>
+# advanced_storm_beacon_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/advanced_storm_beacon_device.html -->
+高级风暴信标设备。

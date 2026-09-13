@@ -3,12 +3,12 @@ name: fishing_zone_device
 slug: fortnitedotcom/devices/fishing_zone_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/fishing_zone_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# fishing_zone_device <C>
+# fishing_zone_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/fishing_zone_device.html -->
+钓鱼区域设备。

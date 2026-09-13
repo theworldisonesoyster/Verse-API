@@ -3,12 +3,12 @@ name: color_changing_tiles_device
 slug: fortnitedotcom/devices/color_changing_tiles_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/color_changing_tiles_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# color_changing_tiles_device <C>
+# color_changing_tiles_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/color_changing_tiles_device.html -->
+变色地砖设备。

@@ -3,12 +3,12 @@ name: radio_device
 slug: fortnitedotcom/devices/radio_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/radio_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# radio_device <C>
+# radio_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/radio_device.html -->
+广播设备。

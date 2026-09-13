@@ -3,12 +3,12 @@ name: attribute_evaluator_device
 slug: fortnitedotcom/devices/attribute_evaluator_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/attribute_evaluator_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# attribute_evaluator_device <C>
+# attribute_evaluator_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/attribute_evaluator_device.html -->
+属性评估设备。

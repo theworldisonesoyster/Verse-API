@@ -3,12 +3,12 @@ name: bank_vault_device
 slug: fortnitedotcom/devices/bank_vault_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/bank_vault_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# bank_vault_device <C>
+# bank_vault_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/bank_vault_device.html -->
+银行金库设备。

@@ -3,12 +3,12 @@ name: skydive_volume_device
 slug: fortnitedotcom/devices/skydive_volume_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/skydive_volume_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# skydive_volume_device <C>
+# skydive_volume_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/skydive_volume_device.html -->
+跳伞体积设备。

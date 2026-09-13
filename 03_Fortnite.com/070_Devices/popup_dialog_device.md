@@ -3,12 +3,12 @@ name: popup_dialog_device
 slug: fortnitedotcom/devices/popup_dialog_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/popup_dialog_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# popup_dialog_device <C>
+# popup_dialog_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/popup_dialog_device.html -->
+弹出对话框设备。

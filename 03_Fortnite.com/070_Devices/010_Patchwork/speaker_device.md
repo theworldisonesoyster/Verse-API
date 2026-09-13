@@ -3,12 +3,12 @@ name: speaker_device
 slug: fortnitedotcom/devices/patchwork/speaker_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/patchwork/speaker_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices/patchwork
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# speaker_device <C>
+# speaker_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/patchwork/speaker_device.html -->
+扬声器：为玩家输出 Patchwork 音频。

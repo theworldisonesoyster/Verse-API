@@ -3,12 +3,12 @@ name: guard_spawner_visibility_range_restriction
 slug: fortnitedotcom/devices/guard_spawner_visibility_range_restriction
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/guard_spawner_visibility_range_restriction
 kind: enum
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# guard_spawner_visibility_range_restriction <C>
+# guard_spawner_visibility_range_restriction enumeration <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/guard_spawner_visibility_range_restriction.html -->
+Guard 生成器视野范围限制枚举。

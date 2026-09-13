@@ -3,12 +3,12 @@ name: animation_controller_state
 slug: fortnitedotcom/devices/creativeanimation/animation_controller_state
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creativeanimation/animation_controller_state
 kind: enum
-module: /Fortnite.com
+module: /Fortnite.com/devices/creativeanimation
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# animation_controller_state <C>
+# animation_controller_state enumeration <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/creativeanimation/animation_controller_state.html -->
+动画控制器状态枚举。

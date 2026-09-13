@@ -3,12 +3,12 @@ name: accolades_device
 slug: fortnitedotcom/devices/accolades_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/accolades_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# accolades_device <C>
+# accolades_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/accolades_device.html -->
+成就设备。

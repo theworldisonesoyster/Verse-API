@@ -3,12 +3,12 @@ name: barrier_device
 slug: fortnitedotcom/devices/barrier_device
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/barrier_device
 kind: class
-module: /Fortnite.com
+module: /Fortnite.com/devices
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# barrier_device <C>
+# barrier_device class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/fortnitedotcom/devices/barrier_device.html -->
+屏障设备。
