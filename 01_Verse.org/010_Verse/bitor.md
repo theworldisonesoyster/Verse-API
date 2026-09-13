@@ -3,12 +3,12 @@ name: BitOr
 slug: versedotorg/verse/bitor
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/bitor
 kind: function
-module: /Verse.org
+module: /Verse.org/verse
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# BitOr <C>
+# BitOr function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/bitor.html -->
+按位或。

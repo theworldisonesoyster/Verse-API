@@ -3,12 +3,12 @@ name: FitsInPlayerMap
 slug: versedotorg/verse/fitsinplayermap
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/fitsinplayermap
 kind: function
-module: /Verse.org
+module: /Verse.org/verse
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# FitsInPlayerMap <C>
+# FitsInPlayerMap function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/fitsinplayermap.html -->
+判断该类型是否能用作 player 映射的键（涉及持久化限制）。

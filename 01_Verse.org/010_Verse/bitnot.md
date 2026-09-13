@@ -3,12 +3,12 @@ name: BitNot
 slug: versedotorg/verse/bitnot
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/bitnot
 kind: function
-module: /Verse.org
+module: /Verse.org/verse
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# BitNot <C>
+# BitNot function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/bitnot.html -->
+按位取反。

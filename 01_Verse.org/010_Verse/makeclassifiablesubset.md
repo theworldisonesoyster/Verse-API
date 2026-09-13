@@ -3,12 +3,12 @@ name: MakeClassifiableSubset
 slug: versedotorg/verse/makeclassifiablesubset
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/makeclassifiablesubset
 kind: function
-module: /Verse.org
+module: /Verse.org/verse
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# MakeClassifiableSubset <C>
+# MakeClassifiableSubset function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/makeclassifiablesubset.html -->
+构造包含 InElements 的 classifiable_subset。

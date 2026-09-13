@@ -3,12 +3,12 @@ name: classifiable_subset
 slug: versedotorg/verse/classifiable_subset
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/classifiable_subset
 kind: function
-module: /Verse.org
+module: /Verse.org/verse
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# classifiable_subset <C>
+# classifiable_subset function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/classifiable_subset.html -->
+构造可分类子集容器。

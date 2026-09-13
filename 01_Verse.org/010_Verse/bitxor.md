@@ -3,12 +3,12 @@ name: BitXor
 slug: versedotorg/verse/bitxor
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/bitxor
 kind: function
-module: /Verse.org
+module: /Verse.org/verse
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# BitXor <C>
+# BitXor function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/bitxor.html -->
+按位异或。

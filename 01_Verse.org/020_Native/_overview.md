@@ -6,9 +6,10 @@ kind: module
 module: /Verse.org
 grade: C
 depth: brief
-status: placeholder
+status: done
 ---
 
-# Native <C>
+# Native module <C>
 
-<!-- 模块总览，待生成（阶段2）；官方标注此模块为空 -->
+> This module is currently empty; it does not have submodules or content of its own.
+> 官方标注：此模块当前为空，没有子模块或自有内容。

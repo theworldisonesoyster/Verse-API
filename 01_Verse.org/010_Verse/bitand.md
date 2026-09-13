@@ -3,12 +3,12 @@ name: BitAnd
 slug: versedotorg/verse/bitand
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/verse/bitand
 kind: function
-module: /Verse.org
+module: /Verse.org/verse
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# BitAnd <C>
+# BitAnd function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/verse/bitand.html -->
+按位与。
