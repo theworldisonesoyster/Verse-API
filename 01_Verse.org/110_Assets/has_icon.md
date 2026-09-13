@@ -3,12 +3,12 @@ name: has_icon
 slug: versedotorg/assets/has_icon
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/assets/has_icon
 kind: interface
-module: /Verse.org
+module: /Verse.org/assets
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# has_icon <C>
+# has_icon interface <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/has_icon.html -->
+提供图标的接口。

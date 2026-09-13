@@ -3,12 +3,18 @@ name: mesh
 slug: versedotorg/assets/mesh
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/assets/mesh
 kind: class
-module: /Verse.org
+module: /Verse.org/assets
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# mesh <A>
+# mesh class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/mesh.html -->
+网格资产。
+
+`using { /Verse.org/Assets }`
+
+## Members
+
+没有成员。

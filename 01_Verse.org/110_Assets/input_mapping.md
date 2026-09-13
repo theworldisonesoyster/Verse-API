@@ -3,12 +3,18 @@ name: input_mapping
 slug: versedotorg/assets/input_mapping
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/assets/input_mapping
 kind: class
-module: /Verse.org
+module: /Verse.org/assets
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# input_mapping <A>
+# input_mapping class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/input_mapping.html -->
+输入映射：把物理输入绑定到 input_action，交给 player_input 启用/停用。
+
+`using { /Verse.org/Assets }`
+
+## Members
+
+没有成员。

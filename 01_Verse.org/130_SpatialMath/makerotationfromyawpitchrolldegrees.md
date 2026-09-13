@@ -3,12 +3,29 @@ name: MakeRotationFromYawPitchRollDegrees
 slug: versedotorg/spatialmath/makerotationfromyawpitchrolldegrees
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/spatialmath/makerotationfromyawpitchrolldegrees
 kind: function
-module: /Verse.org
+module: /Verse.org/spatialmath
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# MakeRotationFromYawPitchRollDegrees <A>
+# MakeRotationFromYawPitchRollDegrees function <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/makerotationfromyawpitchrolldegrees.html -->
+> Degrees version of MakeRotationFromYawPitchRollRadians
+> 上者的角度版本。
+
+`using { /Verse.org/SpatialMath }`
+
+```verse
+MakeRotationFromYawPitchRollDegrees<public><native>(YawAngle:float, PitchAngle:float, RollAngle:float):rotation
+```
+
+## Parameters
+
+MakeRotationFromYawPitchRollDegrees 接受以下参数：
+| Name | Type | Description |
+| YawAngle | float |  |
+| PitchAngle | float |  |
+| RollAngle | float |  |
+
+_（Attributes/Specifiers/Effects 公共说明见《Specifiers 与 Effects 对照》，此处不重复官网公共表格）_

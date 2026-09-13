@@ -14,9 +14,9 @@
 - ☐ 01_Verse.org/080_Input（约36页）
 - ☑ 01_Verse.org/090_AgentGroup（7页）
 - ☐ 01_Verse.org/100_Simulation（约20页）
-- ☐ 01_Verse.org/110_Assets（约11页）
+- ☑ 01_Verse.org/110_Assets（11页）
 - ☐ 01_Verse.org/120_Colors（约169页）
-- ☐ 01_Verse.org/130_SpatialMath（约42页）
+- ☑ 01_Verse.org/130_SpatialMath（42页）
 - ☑ 01_Verse.org/140_Random（4页）
 - ☑ 01_Verse.org/150_Predicts（空模块）（约1页）
 - ☑ 01_Verse.org/160_Concurrency（5页）

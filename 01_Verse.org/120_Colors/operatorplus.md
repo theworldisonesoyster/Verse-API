@@ -3,12 +3,12 @@ name: operator'+'
 slug: versedotorg/colors/operatorplus
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/colors/operatorplus
 kind: function
-module: /Verse.org
+module: /Verse.org/colors
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# operator'+' <C>
+# operator'+' function <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/colors/operatorplus.html -->
+c0 与 c1 逐分量相加，得到新的 ACES 2065-1 颜色。

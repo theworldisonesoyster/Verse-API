@@ -3,12 +3,18 @@ name: material
 slug: versedotorg/assets/material
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/assets/material
 kind: class
-module: /Verse.org
+module: /Verse.org/assets
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# material <A>
+# material class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/material.html -->
+材质资产。
+
+`using { /Verse.org/Assets }`
+
+## Members
+
+没有成员。

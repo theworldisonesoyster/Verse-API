@@ -3,12 +3,28 @@ name: CrossProductLeftHanded
 slug: versedotorg/spatialmath/crossproductlefthanded
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/spatialmath/crossproductlefthanded
 kind: function
-module: /Verse.org
+module: /Verse.org/spatialmath
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# CrossProductLeftHanded <A>
+# CrossProductLeftHanded function <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/spatialmath/crossproductlefthanded.html -->
+> Returns the left-handed cross product of V1 and V2.
+> 返回 V1 与 V2 的左手叉积。
+
+`using { /Verse.org/SpatialMath }`
+
+```verse
+CrossProductLeftHanded<public>(V1:vector3, V2:vector3):vector3
+```
+
+## Parameters
+
+CrossProductLeftHanded 接受以下参数：
+| Name | Type | Description |
+| V1 | vector3 |  |
+| V2 | vector3 |  |
+
+_（Attributes/Specifiers/Effects 公共说明见《Specifiers 与 Effects 对照》，此处不重复官网公共表格）_

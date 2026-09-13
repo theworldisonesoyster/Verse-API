@@ -3,12 +3,18 @@ name: input_action(t)
 slug: versedotorg/assets/input_action/input_action(t)
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/assets/input_action/input_action(t)
 kind: class
-module: /Verse.org
+module: /Verse.org/assets/input_action
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# input_action(t) <A>
+# input_action(t) class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/input_action/input_action(t).html -->
+参数化的输入动作类。
+
+`using { /Verse.org/Assets }`
+
+## Members
+
+没有成员。

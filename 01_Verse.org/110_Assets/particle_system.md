@@ -3,12 +3,18 @@ name: particle_system
 slug: versedotorg/assets/particle_system
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/assets/particle_system
 kind: class
-module: /Verse.org
+module: /Verse.org/assets
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# particle_system <A>
+# particle_system class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/particle_system.html -->
+粒子系统资产。
+
+`using { /Verse.org/Assets }`
+
+## Members
+
+没有成员。

@@ -3,12 +3,18 @@ name: sound_wave
 slug: versedotorg/assets/sound_wave
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/assets/sound_wave
 kind: class
-module: /Verse.org
+module: /Verse.org/assets
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# sound_wave <A>
+# sound_wave class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/assets/sound_wave.html -->
+声波（音频）资产。
+
+`using { /Verse.org/Assets }`
+
+## Members
+
+没有成员。
