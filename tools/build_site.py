@@ -179,9 +179,7 @@ PAGE_HTML = """<!DOCTYPE html>
 #tree ul{list-style:none;margin:0;padding-left:14px}
 #tree>ul{padding-left:6px}
 #tree li{margin:1px 0}
-#tree li.d>span.caret{display:inline-block;width:16px;cursor:pointer;color:var(--dim)}
-#tree li.d>span.caret::before{content:"▾"}
-#tree li.d.closed>span.caret::before{content:"▸"}
+#tree li.d>span.caret{display:inline-block;width:14px;cursor:pointer;color:var(--dim)}
 #tree li.d>span.t{font-weight:600;cursor:pointer;display:inline-block;padding:3px 8px;border-radius:6px;vertical-align:middle}
 #tree li.d.closed>span.t::before{content:"▸ "}
 #tree li.d.closed>ul{display:none}
@@ -217,7 +215,7 @@ PAGE_HTML = """<!DOCTYPE html>
 <body>
 <div id="app">
   <div id="side">
-    <header><h1>Verse API Reference</h1><input id="search" placeholder="搜索 API 名称…"></header>
+    <header><h1>Verse API Reference <span style="font-size:11px;color:var(--dim);font-weight:400">v2.6</span></h1><input id="search" placeholder="搜索 API 名称…"></header>
     <div id="grades"></div>
     <nav id="tree"></nav>
   </div>
@@ -231,6 +229,7 @@ const TREE=JSON.parse(document.getElementById('tree-data').textContent);
 const MD=JSON.parse(document.getElementById('md-data').textContent);
 const $=s=>document.querySelector(s);
 let active=null, flat=[];
+const collapsedPaths=new Set();
 
 // ---------- 树展开 ----------
 (function flatten(n,depth){n._depth=depth;flat.push(n);(n.children||[]).forEach(c=>flatten(c,depth+1));})(TREE,0);
@@ -260,14 +259,17 @@ function nodeHtml(n){
   let pend=(n.status==='placeholder')?'<span class="pend">待生成</span>':'';
   let inner=g+htmlEsc(n.title)+pend;
   let s=`<li class="${cls}">`;
-  s+=n.children?`<span class="caret"></span><span class="t" data-p="${n.path}">${inner}</span>`:`<a data-p="${n.path}" class="${active===n.path?'cur':''}">${inner}</a>`;
+  s+=n.children?`<span class="caret">${collapsedPaths.has(n.path)?'▸':'▾'}</span><span class="t" data-p="${n.path}">${inner}</span>`:`<a data-p="${n.path}" class="${active===n.path?'cur':''}">${inner}</a>`;
   if(kids.length)s+='<ul>'+kids.map(nodeHtml).join('')+'</ul>';
   return s+'</li>';
 }
 function renderTree(){
   const kids=(TREE.children||[]).filter(match);
   $('#tree').innerHTML='<ul>'+kids.map(nodeHtml).join('')+'</ul>';
-  $('#tree').querySelectorAll('li.d>span.caret').forEach(sp=>sp.onclick=()=>sp.parentElement.classList.toggle('closed'));
+  $('#tree').querySelectorAll('li.d>span.caret').forEach(sp=>sp.onclick=()=>{
+    const li=sp.parentElement; li.classList.toggle('closed');
+    sp.textContent=li.classList.contains('closed')?'▸':'▾';
+  });
   $('#tree').querySelectorAll('li.d>span.t').forEach(sp=>sp.onclick=()=>show(sp.dataset.p));
   $('#tree').querySelectorAll('a').forEach(a=>a.onclick=()=>show(a.dataset.p));
 }
