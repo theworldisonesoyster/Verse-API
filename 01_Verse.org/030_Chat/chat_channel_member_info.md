@@ -3,12 +3,23 @@ name: chat_channel(member_info)
 slug: versedotorg/chat/chat_channel/chat_channel(member_info)
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/chat/chat_channel/chat_channel(member_info)
 kind: class
-module: /Verse.org
+module: /Verse.org/chat/chat_channel
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# chat_channel(member_info) <B>
+# chat_channel(member_info) class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/chat/chat_channel/chat_channel(member_info).html -->
+文本聊天频道：以 member_info 参数化的频道类。
+
+`using { /Verse.org/Chat }`
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| Name | message |  |
+| Group | unknown |  |

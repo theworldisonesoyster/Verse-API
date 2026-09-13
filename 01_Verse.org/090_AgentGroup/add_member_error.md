@@ -3,12 +3,12 @@ name: add_member_error
 slug: versedotorg/agentgroup/add_member_error
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/agentgroup/add_member_error
 kind: class
-module: /Verse.org
+module: /Verse.org/agentgroup
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# add_member_error <C>
+# add_member_error class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/agentgroup/add_member_error.html -->
+agent_group.AddMember 返回的所有错误的基类。

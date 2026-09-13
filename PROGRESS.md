@@ -5,21 +5,21 @@
 
 
 - ☐ 01_Verse.org/010_Verse（约137页）
-- ☐ 01_Verse.org/020_Native（约1页）
-- ☐ 01_Verse.org/030_Chat（约8页）
+- ☑ 01_Verse.org/020_Native（空模块）（约1页）
+- ☑ 01_Verse.org/030_Chat（8页）
 - ☐ 01_Verse.org/040_SceneGraph（约110页）
 - ☐ 01_Verse.org/050_Progression（约9页）
-- ☐ 01_Verse.org/060_Timeline（约4页）
-- ☐ 01_Verse.org/070_Presentation（约3页）
+- ☑ 01_Verse.org/060_Timeline（4页）
+- ☑ 01_Verse.org/070_Presentation（3页）
 - ☐ 01_Verse.org/080_Input（约36页）
-- ☐ 01_Verse.org/090_AgentGroup（约7页）
+- ☑ 01_Verse.org/090_AgentGroup（7页）
 - ☐ 01_Verse.org/100_Simulation（约20页）
 - ☐ 01_Verse.org/110_Assets（约11页）
 - ☐ 01_Verse.org/120_Colors（约169页）
 - ☐ 01_Verse.org/130_SpatialMath（约42页）
-- ☐ 01_Verse.org/140_Random（约4页）
-- ☐ 01_Verse.org/150_Predicts（约1页）
-- ☐ 01_Verse.org/160_Concurrency（约5页）
+- ☑ 01_Verse.org/140_Random（4页）
+- ☑ 01_Verse.org/150_Predicts（空模块）（约1页）
+- ☑ 01_Verse.org/160_Concurrency（5页）
 - ☐ 02_UnrealEngine.com/010_Conversations（约1页）
 - ☐ 02_UnrealEngine.com/020_Progression（约9页）
 - ☐ 02_UnrealEngine.com/030_Itemization（约19页）
@@ -45,6 +45,11 @@
 - [x] 去除全部〔补充·非官网镜像〕标注；"语言基础（补充）"→"语言基础"
 - [x] 新增 tools/extract_page.py（官网页→结构化MD，831页已提取至 tools/_extracted/，阶段2主素材）与《Specifiers 与 Effects 对照》附录
 - [x] 样板模块 20 页 + 旗舰页 19 页已按 v2 重写（fort_character 28 函数、component 10 函数等完整表格）
+
+## 阶段2批次记录
+
+- 批次1（本轮）：010_Verse 全模块 + Native/Predicts/Chat/Timeline/Presentation/AgentGroup/Random/Concurrency —— gen_pages.py + content/{verse_pack,small_pack}.py；正文 198/837
+- 下一批次：040_SceneGraph（86页）→ 050_Progression → 080_Input → 110_Assets → 120_Colors → 130_SpatialMath → 02_UnrealEngine.com → 03_Fortnite.com → 010_Verse 外的 Verse.org 顶层页
 
 ## 阶段1产出
 

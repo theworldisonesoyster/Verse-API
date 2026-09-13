@@ -3,12 +3,12 @@ name: description_component
 slug: versedotorg/presentation/description_component
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/presentation/description_component
 kind: class
-module: /Verse.org
+module: /Verse.org/presentation
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# description_component <C>
+# description_component class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/presentation/description_component.html -->
+保存实体呈现细节（如名称与描述）的组件。

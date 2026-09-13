@@ -3,12 +3,12 @@ name: has_description
 slug: versedotorg/presentation/has_description
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/presentation/has_description
 kind: interface
-module: /Verse.org
+module: /Verse.org/presentation
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# has_description <C>
+# has_description interface <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/presentation/has_description.html -->
+提供描述性名称或文本的接口。

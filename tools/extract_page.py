@@ -18,7 +18,7 @@ OUT = os.path.join(ROOT, "tools", "_extracted")
 def clean(s: str) -> str:
     s = re.sub(r"<br\s*/?>", " ", s)
     s = H.unescape(re.sub(r"<[^>]+>", "", s))
-    return re.sub(r"\s+", " ", s).strip().replace("\xa0", " ")
+    return re.sub(r"\s+", " ", s).strip()[:2000]
 
 
 def conv_table(tbl: str) -> str:

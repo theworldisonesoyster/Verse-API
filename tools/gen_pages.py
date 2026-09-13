@@ -27,6 +27,9 @@ BADGE = {"S": "S", "A": "A", "B": "B", "C": "C"}
 KIND_DIR = {}  # 未用
 
 BOILER = [
+    (re.compile(r"^This class is derived from (.+)\.$"), r"此类派生自 。"),
+    (re.compile(r"^This class is derived from the following hierarchy, starting with (.+):$"), r"此类派生自以下层级，起点为 ："),
+    (re.compile(r"^This (class|interface|struct) exposes the following interfaces:$"), r"此 暴露以下接口："),
     (re.compile(r"^This function is a parametric type, meaning it returns a class or interface rather than a value or object instance\.$"),
      "此函数是参数化类型：它返回的是类或接口，而不是值或对象实例。"),
     (re.compile(r"^(.+?) returns the parametric class (.+)\.$"), r"\1 返回参数化类 \2。"),
@@ -39,6 +42,28 @@ BOILER = [
     (re.compile(r"^(.+?) takes the following parameters:?$"), r"\1 接受以下参数："),
     (re.compile(r"^(.+?) does not take any parameters\.$"), r"\1 不接受任何参数。"),
 ]
+
+KNOWN_CELL = {
+    "Abstract definition of any element that can be added to a timeline.See timeline_element_point and timeline_element_span.":
+        "可加入时间线的元素的抽象定义，见 timeline_element_point 与 timeline_element_span。",
+    "Implemented by classes that allow users to cancel an operation. For example, calling subscribable.Subscribe with a callback returns a cancelable object. Calling Cancel on the return object unsubscribes the callback.":
+        "由「允许用户取消操作」的类实现：调用 subscribable.Subscribe 传回调会返回一个 cancelable 对象，对其调用 Cancel 即可取消订阅。",
+    "Interface that defines a class as being usable as member info in an agent group":
+        "定义「可作为代理组成员信息」的接口。",
+    "Interface that defines a class as providing an agent group.":
+        "定义「提供代理组」能力的接口。",
+    "A parametric interface implemented by events with a payload that can be signaled. Can be used with awaitable, subscribable, or both (see: listenable).":
+        "带载荷、可被触发（signal）的事件实现的参数化接口；可与 awaitable、subscribable 配合使用（参见 listenable）。",
+    "A parametric interface implemented by events with a payload that can be waited on. Matched with signalable.":
+        "带载荷、可被等待（Await）的事件实现的参数化接口；与 signalable 配对。",
+    "A parametric interface implemented by events with a payload that can be subscribed to. Matched with signalable.":
+        "带载荷、可被订阅的事件实现的参数化接口；与 signalable 配对。",
+    "Used to specify permissions and other settings for a voice_channel.":
+        "用于为 voice_channel 指定权限等设置。",
+    "An agent group is defined as a set of agents that share a common ownership.This class stores agents and other data for the group.":
+        "代理组：共享同一所有权的代理集合；此类为该组存储代理与其他数据。",
+}
+
 MEMBERS_HEAD = re.compile(r"^This (class|interface|struct) has")
 
 
@@ -46,7 +71,7 @@ def load_pack(path):
     spec = importlib.util.spec_from_file_location("pack", path)
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
-    return mod.PACK
+    return mod.PACKS if hasattr(mod, "PACKS") else [mod.PACK]
 
 
 def parse_extract(slug):
@@ -113,6 +138,10 @@ def translate_section(title, body):
                 continue
             if cells:
                 last = cells[-1]  # 最后一列 = Description
+                if last in KNOWN_CELL:
+                    cells[-1] = KNOWN_CELL[last]
+                    out.append("| " + " | ".join(cells) + " |")
+                    continue
                 if last and re.search(r"[A-Za-z]{3}", last):
                     return False, title, body  # 描述列仍是英文 → 转手写
             out.append(ln)
@@ -184,7 +213,12 @@ G_BADGE = {"S": "S", "A": "A", "B": "B", "C": "C"}
 
 def main():
     pack_path = sys.argv[1]
-    pack = load_pack(pack_path)
+    for pack in load_pack(pack_path):
+        run_single(pack)
+    run_single(pack)
+
+
+def run_single(pack):
     forest = json.load(open(os.path.join(ROOT, "manifest.json"), encoding="utf-8"))
     members = {}
 
