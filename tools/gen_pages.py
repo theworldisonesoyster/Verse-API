@@ -232,6 +232,8 @@ def emit_children(member, extract, outdir, zh_map=None):
             continue
         if len(cells) < 2:
             continue
+        if cells[0].startswith("-") or cells[0].startswith("—"):
+            continue  # 表格分隔行
         name = cells[0]
         zh = cells[-1]
         if not name or not zh or name.startswith("["):

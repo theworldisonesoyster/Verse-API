@@ -181,7 +181,7 @@ PAGE_HTML = """<!DOCTYPE html>
 #tree li.d>span.caret{display:inline-block;width:16px;cursor:pointer;color:var(--dim)}
 #tree li.d>span.caret::before{content:"▾"}
 #tree li.d.closed>span.caret::before{content:"▸"}
-#tree li.d>span.t{font-weight:600;cursor:pointer;display:block;padding:3px 8px;border-radius:6px}
+#tree li.d>span.t{font-weight:600;cursor:pointer;display:inline-block;padding:3px 8px;border-radius:6px;vertical-align:middle}
 #tree li.d.closed>span.t::before{content:"▸ "}
 #tree li.d.closed>ul{display:none}
 #tree li.d>span.t:hover{background:var(--panel2)}
@@ -202,6 +202,7 @@ PAGE_HTML = """<!DOCTYPE html>
 #content table{border-collapse:collapse;margin:14px 0;width:100%}
 #content th,#content td{border:1px solid var(--line);padding:6px 10px;text-align:left;font-size:14px}
 #content th{background:#3d3d3d;color:#f0f0f0;border-color:var(--line)}
+#content td:first-child code.member{text-decoration:underline;background:none;border:none;padding:0 1px}
 #content a{color:var(--acc2);text-decoration:none}
 #content a:hover{text-decoration:underline}
 #nav{position:fixed;bottom:0;left:330px;right:0;display:flex;justify-content:space-between;padding:10px 40px;background:linear-gradient(transparent,var(--bg) 40%)}
@@ -246,12 +247,9 @@ function renderGrades(){
 const state={q:'',grades:new Set()};
 
 function match(n){
-  if(state.q && !n.title.toLowerCase().includes(state.q))return false;
-  if(state.grades.size===0)return true;
-  if(!state.grades.size)return true;
-  const g=n.grade||'';
-  if(n.children)return n.children.some(match)||state.grades.has(g)&&g!=='';
-  return state.grades.has(g);
+  const selfQ = !state.q || n.title.toLowerCase().includes(state.q);
+  if(!n.children) return selfQ && (state.grades.size===0 || state.grades.has(n.grade||''));
+  return n.children.some(match) || (selfQ && state.grades.size===0);
 }
 function nodeHtml(n){
   const kids=(n.children||[]).filter(match);
@@ -289,7 +287,7 @@ function inline(s){
 function md2html(md){
   const lines=md.split('\\n');let out=[],i=0,inCode=false,code=[],list=null,tbl=null,quote=null;
   const flushList=()=>{if(list){out.push(`<ul>${list.map(x=>'<li>'+x+'</li>').join('')}</ul>`);list=null}};
-  const flushTbl=()=>{if(tbl){let h='';tbl.forEach((r,ri)=>{const t=ri===0?'th':'td';h+='<tr>'+r.map(c=>`<${t}>${inline(c)}</${t}>`).join('')+'</tr>'});out.push(`<table>${h}</table>`);tbl=null}};
+  const flushTbl=()=>{if(tbl){let h='';tbl.forEach((r,ri)=>{const t=ri===0?'th':'td';h+='<tr>'+r.map((c,ci)=>{let v=inline(c);if(t==='td'&&ci===0&&!v.includes('<a '))v='<code class="member">'+v+'</code>';return `<${t}>${v}</${t}>`}).join('')+'</tr>'});out.push(`<table>${h}</table>`);tbl=null}};
   const flushQ=()=>{if(quote){out.push('<blockquote>'+quote.map(x=>inline(x)).join('<br>')+'</blockquote>');quote=null}};
   for(;i<lines.length;i++){
     const L=lines[i];
