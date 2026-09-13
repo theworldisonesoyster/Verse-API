@@ -9,6 +9,8 @@ depth: brief
 status: done
 ---
 
+# showable interface <B>
+
 > Implemented by classes whose instances can change visibility to be shown or hidden.
 > 由「实例可切换显示/隐藏」的类实现。
 

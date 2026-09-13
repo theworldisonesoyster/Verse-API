@@ -9,6 +9,8 @@ depth: brief
 status: done
 ---
 
+# cancelable interface <B>
+
 > Implemented by classes that allow users to cancel an operation. For example, calling subscribable.Subscribe with a callback returns a cancelable object. Calling Cancel on the return object unsubscribes the callback.
 > 由「允许用户取消操作」的类实现。例如调用 subscribable.Subscribe 传回调时会返回一个 cancelable 对象；对该对象调用 Cancel 即可取消订阅回调。
 

@@ -201,6 +201,68 @@ def rel_spec(page_path):
                            os.path.join(ROOT, os.path.dirname(page_path))).replace("\\", "/")
 
 
+
+def emit_children(member, extract, outdir, zh_map=None):
+    """把类/接口页 Members 内的 Data/Functions 表行生成为独立 oneliner 子页。
+    返回 (生成数, 文件名列表[(fname,row,title,zh)])"""
+    import html as _h
+    made = []
+    parent_last = re.sub(r"[^a-z0-9_-]+", "_", member["slug"].rsplit("/", 1)[-1]).strip("_")
+    rel_dir = outdir
+    title = member.get("title") or member["name"]
+    g_ = member["grade"]
+    parent_file = os.path.join(ROOT, rel_dir,
+        re.sub(r"[^a-z0-9_-]+", "_", member["slug"].rsplit("/", 1)[-1]).strip("_") + ".md")
+    if not os.path.exists(parent_file):
+        return 0, []
+    rows = []
+    subkind = None
+    for ln in open(parent_file, encoding="utf-8").read().splitlines():
+        if ln.startswith("### "):
+            t = ln[4:].strip().lower()
+            subkind = "data" if t == "data" else ("function" if t == "functions" else None)
+            continue
+        if ln.startswith("## "):
+            subkind = None
+            continue
+        if not ln.startswith("|") or subkind is None:
+            continue
+        cells = [c.strip() for c in ln.strip("|").split("|")]
+        if cells and cells[0] in ("Name", "Data Member Name", "Function Name"):
+            continue
+        if len(cells) < 2:
+            continue
+        name = cells[0]
+        zh = cells[-1]
+        if not name or not zh or name.startswith("["):
+            continue
+        rows.append((subkind, name, zh))
+    for idx, (kind, name, zh) in enumerate(rows, 1):
+        suffix = "function" if kind == "function" else "data"
+        child_title = f"{name} {suffix}"
+        cslug = member["slug"] + "/" + re.sub(r"[^a-z0-9]+", "", name.lower())
+        fname = f"{parent_last}_{re.sub(r'[^a-z0-9_-]+', '_', name.lower()).strip('_')}.md"
+        mod_disp = "/Verse.org" + ("/" + "/".join(member["slug"].split("/")[1:-1]) if member["slug"].count("/") > 1 else "")
+        NL = chr(10)
+        front = ("---" + NL +
+                 f"name: {child_title}" + NL +
+                 f"slug: {cslug}" + NL +
+                 f"url: {member.get('url') or ''}" + NL +
+                 f"kind: {suffix}" + NL +
+                 f"module: {mod_disp}" + NL +
+                 f"grade: {g_}" + NL +
+                 "depth: oneliner" + NL +
+                 "status: done" + NL +
+                 f"order: {idx}" + NL +
+                 f"parent: {member['slug']}" + NL +
+                 "---" + NL + NL)
+
+        body = ("#" + NL + f"# {child_title} <{G_BADGE[g_]}>" + NL + NL + zh + NL)
+        open(os.path.join(ROOT, rel_dir, fname), "w", encoding="utf-8").write(front + body)
+        made.append(fname)
+    return len(made), made
+
+
 def emit_page(member, pack_entry, extract, outdir):
     title = member.get("title") or member["name"]
     g = member["grade"]
@@ -307,6 +369,23 @@ def run_single(pack):
         else:
             skip_manual += 1
             reports.append(f"MANUAL ({why}): {slug} -> {path}")
+    # 成员子页（类/接口页的 Data/Functions 行 → 独立 oneliner 子页）
+    child_total = 0
+    for slug, entry in pack["entries"].items():
+        mem = members.get(slug)
+        if not mem or mem["depth"] == "oneliner":
+            continue
+        ext = parse_extract(slug)
+        if ext is None:
+            continue
+        outdir2 = pack["outdir"]
+        for prefix, d in pack.get("sub_outdirs", {}).items():
+            if slug.startswith(prefix):
+                outdir2 = d
+        n, _ = emit_children(mem, ext, outdir2)
+        child_total += n
+    if child_total:
+        print(f"  children={child_total}")
     # 模块总览
     if pack.get("overview"):
         emit_overview(pack, members)

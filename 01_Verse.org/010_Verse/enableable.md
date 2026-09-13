@@ -9,6 +9,8 @@ depth: brief
 status: done
 ---
 
+# enableable interface <B>
+
 > Implemented by classes whose instances can be enabled and disabled.
 > 由「实例可被启用/禁用」的类实现。
 

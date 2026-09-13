@@ -9,6 +9,8 @@ depth: brief
 status: done
 ---
 
+# disposable interface <B>
+
 > Implemented by classes whose instances have limited lifetimes.
 > 由「实例生命周期有限」的类实现。
 

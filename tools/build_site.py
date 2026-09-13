@@ -98,8 +98,14 @@ def load_node(dirpath, title, rel_dir):
                 continue
             # 用 frontmatter 的 slug 反查官网顺序；无则排最后（按名称）
             slug = fm.get("slug", "")
-            key = ORDERS.get(slug, 900000 + abs(hash(disp)) % 90000)
-            entries.append((key, {"title": disp, "path": rel, "grade": fm.get("grade", ""),
+            base = ORDERS.get(slug)
+            if base is None:
+                parent = fm.get("parent", "")
+                pbase = ORDERS.get(parent)
+                base = (pbase if pbase is not None else 900000) * 1000 + int(fm.get("order", "0") or 0)
+            elif True:
+                base = base * 1000
+            entries.append((base, {"title": disp, "path": rel, "grade": fm.get("grade", ""),
                                   "supplement": fm.get("supplement", "") == "true",
                                   "status": fm.get("status", "done"), "children": None}))
     entries.sort(key=lambda e: e[0])
@@ -172,8 +178,10 @@ PAGE_HTML = """<!DOCTYPE html>
 #tree ul{list-style:none;margin:0;padding-left:14px}
 #tree>ul{padding-left:6px}
 #tree li{margin:1px 0}
+#tree li.d>span.caret{display:inline-block;width:16px;cursor:pointer;color:var(--dim)}
+#tree li.d>span.caret::before{content:"▾"}
+#tree li.d.closed>span.caret::before{content:"▸"}
 #tree li.d>span.t{font-weight:600;cursor:pointer;display:block;padding:3px 8px;border-radius:6px}
-#tree li.d>span.t::before{content:"▾ ";color:var(--dim)}
 #tree li.d.closed>span.t::before{content:"▸ "}
 #tree li.d.closed>ul{display:none}
 #tree li.d>span.t:hover{background:var(--panel2)}
@@ -253,14 +261,15 @@ function nodeHtml(n){
   let pend=(n.status==='placeholder')?'<span class="pend">待生成</span>':'';
   let inner=g+htmlEsc(n.title)+pend;
   let s=`<li class="${cls}">`;
-  s+=n.children?`<span class="t">${inner}</span>`:`<a data-p="${n.path}" class="${active===n.path?'cur':''}">${inner}</a>`;
+  s+=n.children?`<span class="caret"></span><span class="t" data-p="${n.path}">${inner}</span>`:`<a data-p="${n.path}" class="${active===n.path?'cur':''}">${inner}</a>`;
   if(kids.length)s+='<ul>'+kids.map(nodeHtml).join('')+'</ul>';
   return s+'</li>';
 }
 function renderTree(){
   const kids=(TREE.children||[]).filter(match);
   $('#tree').innerHTML='<ul>'+kids.map(nodeHtml).join('')+'</ul>';
-  $('#tree').querySelectorAll('li.d>span.t').forEach(sp=>sp.onclick=()=>sp.parentElement.classList.toggle('closed'));
+  $('#tree').querySelectorAll('li.d>span.caret').forEach(sp=>sp.onclick=()=>sp.parentElement.classList.toggle('closed'));
+  $('#tree').querySelectorAll('li.d>span.t').forEach(sp=>sp.onclick=()=>show(sp.dataset.p));
   $('#tree').querySelectorAll('a').forEach(a=>a.onclick=()=>show(a.dataset.p));
 }
 function renderAll(){renderGrades();renderTree()}

@@ -9,6 +9,8 @@ depth: brief
 status: done
 ---
 
+# invalidatable interface <B>
+
 > Implemented by classes whose instances can become invalid at runtime.
 > 由「实例可能在运行时失效」的类实现。
 
