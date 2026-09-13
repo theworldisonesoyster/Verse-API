@@ -285,7 +285,7 @@ function md2html(md){
   for(;i<lines.length;i++){
     const L=lines[i];
     if(L.startsWith('```')){flushList();flushTbl();flushQ();
-      if(inCode){out.push('<pre><code>'+code.join('\\n')+'</code></pre>');code=[];inCode=false}
+      if(inCode){out.push('<pre><code>'+code.map(l=>l.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')).join('\\n')+'</code></pre>');code=[];inCode=false}
       else inCode=true;continue}
     if(inCode){code.push(L);continue}
     if(!L.trim()){flushList();flushTbl();flushQ();continue}
@@ -302,7 +302,7 @@ function md2html(md){
     flushList();flushTbl();flushQ();out.push('<p>'+inline(L)+'</p>');
   }
   flushList();flushTbl();flushQ();
-  if(inCode)out.push('<pre><code>'+code.join('\\n')+'</code></pre>');
+  if(inCode)out.push('<pre><code>'+code.map(l=>l.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')).join('\\n')+'</code></pre>');
   return out.join('\\n');
 }
 
