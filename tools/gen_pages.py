@@ -41,9 +41,37 @@ BOILER = [
     (re.compile(r"^Module import path: (.+)$"), r"模块导入路径：\1"),
     (re.compile(r"^(.+?) takes the following parameters:?$"), r"\1 接受以下参数："),
     (re.compile(r"^(.+?) does not take any parameters\.$"), r"\1 不接受任何参数。"),
+    (re.compile(r"^(.+?) enumeration includes the following enumerators:$"), r"\1 枚举包含以下枚举值："),
 ]
 
 KNOWN_CELL = {
+    "Base class for authoring logic and data in the SceneGraph. Using components you can author re-usable building blocks of logic and data which can then be added to entities in the scene.":
+        "在 SceneGraph 中编写逻辑与数据的基类。通过组件，你可以创作可复用的逻辑与数据构件，然后添加到场景中的实体上。",
+    "The parent entity of this component. Components must have a parent entity pointer provided when being constructed. Components cannot be moved between parents.":
+        "此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。",
+    "Set callbacks to TickEvents.PrePhysics and TickEvents.PostPhysics to receive per-frame updates before and after physics is updated on your object.":
+        "设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。",
+    "Succeeds if the component is currently in the scene. After OnAddedToScene is called this call succeeds. After OnRemovingFromScene is called this call fails.":
+        "若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。",
+    "Succeeds if the component is currently simulating. After OnBeginSimulation is called this call succeeds. After OnEndSimulation is called this call fails.":
+        "若组件当前正在模拟则成功。OnBeginSimulation 调用后成功；OnEndSimulation 调用后失败。",
+    "Called when the component is added to the scene by parenting it under the simulation entity or another entity already in the scene. Querying for components in the scene is valid after this phase completes.":
+        "当组件通过挂到 simulation 实体（或已在场景中的其他实体）之下而被加入场景时调用。该阶段完成后，查询场景中的组件才是有效的。",
+    "Called when the component begins simulating within the scene. Use this to set up TickEvent callbacks or other setup that must be guaranteed to complete immediately. OnAddedToScene is guaranteed to run before OnBeginSimulation.":
+        "当组件在场景中开始模拟时调用。用它设置 TickEvent 回调或其他必须保证立即完成的初始化。OnAddedToScene 保证先于 OnBeginSimulation 运行。",
+    "Called when the component ends simulation within the scene. Simulation ends on a component when the experience resets, the parent entity is removed from the scene. Cached TickEvents cancelables should be canceled in OnEndSimulation. OnSimulate task will be canceled before OnEndSimulation is called. OnEndSimulation is only called on components that have already had OnBeginSimulation called.":
+        "当组件在场景中结束模拟时调用。体验重置或父实体被移出场景时组件的模拟即结束。缓存的 TickEvents cancelable 应在 OnEndSimulation 中取消；OnSimulate 任务会在 OnEndSimulation 被调用前取消。只有已调用过 OnBeginSimulation 的组件才会收到 OnEndSimulation。",
+    "Respond to a scene event. Return true to consume the event and halt propagation to the next entity.":
+        "响应场景事件。返回 true 表示消费该事件并阻止向下一个实体继续传播。",
+    "Called when the component is about to be removed from the scene. Components are removed from a scene when the parent entity is removed from the scene. OnRemovingFromScene is only called on components that have already had OnAddedToScene called.":
+        "当组件即将被移出场景时调用。父实体被移出场景时其上的组件随之移除。只有已调用过 OnAddedToScene 的组件才会收到 OnRemovingFromScene。",
+    "Called when the component begins simulating within the scene. Use this to add asynchronous/suspends update logic for a component. OnBeginSimulation is guaranteed to run before OnSimulate. OnSimulate will be cancelled before OnEndSimulation":
+        "当组件在场景中开始模拟时调用。用它为组件添加异步/可挂起的更新逻辑。OnBeginSimulation 保证先于 OnSimulate 运行；OnSimulate 会在 OnEndSimulation 之前被取消。",
+    "Removes the component from the entity. Removed components are removed from the scene and can only be added back to the same entity. Flows through OnEndSimulation-> OnRemovingFromScene.":
+        "把组件从实体上移除。被移除的组件会离开场景，且之后只能加回同一个实体。流程经过 OnEndSimulation → OnRemovingFromScene。",
+    "Send a scene event to this component, invoking OnReceive. Returns true if any participant consumed the event.":
+        "向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。",
+
     "Abstract definition of any element that can be added to a timeline.See timeline_element_point and timeline_element_span.":
         "可加入时间线的元素的抽象定义，见 timeline_element_point 与 timeline_element_span。",
     "Implemented by classes that allow users to cancel an operation. For example, calling subscribable.Subscribe with a callback returns a cancelable object. Calling Cancel on the return object unsubscribes the callback.":
@@ -66,6 +94,11 @@ KNOWN_CELL = {
 
 MEMBERS_HEAD = re.compile(r"^This (class|interface|struct) has")
 
+
+KNOWN_PREFIX = [
+    ("Base class for authoring logic and data in the SceneGraph.",
+     "在 SceneGraph 中编写逻辑与数据的基类。通过组件可创作可复用的逻辑与数据构件并添加到场景中的实体上。组件是非常底层的构件：可暴露网格/声音等引擎概念、添加伤害/交互等玩法能力、存储物品栏；用一个大组件还是拆成多个小组件由体验需求决定。派生自 component 的类必须指定 <final_super> 才能添加到实体；同一子类组在同一实体上只能有一个实例。生命周期：OnAddedToScene → OnBeginSimulation → OnSimulate → OnEndSimulation → OnRemovingFromScene。"),
+]
 
 def load_pack(path):
     spec = importlib.util.spec_from_file_location("pack", path)
@@ -110,7 +143,7 @@ def parse_extract(slug):
             "sections": sections}
 
 
-def translate_section(title, body):
+def translate_section(title, body, member=None):
     """返回 (ok, new_title, new_lines)；发现未翻译英文返回 ok=False"""
     out = []
     for ln in body:
@@ -142,11 +175,22 @@ def translate_section(title, body):
                     cells[-1] = KNOWN_CELL[last]
                     out.append("| " + " | ".join(cells) + " |")
                     continue
+                matched = False
+                for pref, zh2 in KNOWN_PREFIX:
+                    if last.startswith(pref):
+                        cells[-1] = zh2
+                        out.append("| " + " | ".join(cells) + " |")
+                        matched = True
+                        break
+                if matched:
+                    continue
                 if last and re.search(r"[A-Za-z]{3}", last):
+                    print(f"    CELL[{title}] {member['slug'].rsplit('/',1)[-1]}: {last[:130]}")
                     return False, title, body  # 描述列仍是英文 → 转手写
             out.append(ln)
             continue
         if ln.strip():
+            print(f"    LINE[{title}] {member['slug'].rsplit('/',1)[-1]}: {ln[:130]}")
             return False, title, body  # 普通英文句子 → 转手写
         out.append(ln)
     return True, title, out
@@ -186,7 +230,7 @@ def emit_page(member, pack_entry, extract, outdir):
             else:
                 L += ["```verse", s, "```", ""]
         for title_s, body in extract["sections"]:
-            ok, t2, body2 = translate_section(title_s, body)
+            ok, t2, body2 = translate_section(title_s, body, member)
             if not ok:
                 return None, page_rel, f"EN content in section {title_s}"
             L += [f"## {t2}", ""]
@@ -219,6 +263,8 @@ def main():
 
 
 def run_single(pack):
+    KNOWN_CELL.update(pack.get('known_cells', {}))
+    KNOWN_CELL.update(pack.get('known_cells_ORIG', {}))
     forest = json.load(open(os.path.join(ROOT, "manifest.json"), encoding="utf-8"))
     members = {}
 
@@ -302,6 +348,10 @@ def emit_overview(pack, members):
         for mem, fname, zhx in items:
             L.append(f"| [{mem['name']}]({fname}) | {zhx} |")
         L.append("")
+    for name, zhx in pack.get("overview_data_rows", []):
+        L.append(f"| {name} 〔无独立页面〕 | {zhx} |")
+    if pack.get("overview_data_rows"):
+        pass
     subs = pack.get("submodules", [])
     if subs:
         L += ["## Submodules", "", "| Name | Description |", "|---|---|"]

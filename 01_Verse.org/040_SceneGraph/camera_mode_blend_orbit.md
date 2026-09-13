@@ -3,12 +3,30 @@ name: camera_mode_blend_orbit
 slug: versedotorg/scenegraph/camera_mode_blend_orbit
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_mode_blend_orbit
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_mode_blend_orbit <B>
+# camera_mode_blend_orbit class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_mode_blend_orbit.html -->
+> Configurable blend between two camera modes
+> 两种相机模式之间的可配置混合（orbit 轨道变体）。
+
+`using { /Verse.org/SceneGraph }`
+
+## Inheritance Hierarchy
+
+此类派生自 。
+| Name | Description |
+| camera_mode_blend | 两种相机模式之间的可配置混合。 |
+
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| DrivingBlend | camera_mode_blend |  |

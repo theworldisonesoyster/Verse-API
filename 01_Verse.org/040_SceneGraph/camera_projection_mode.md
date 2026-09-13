@@ -3,12 +3,21 @@ name: camera_projection_mode
 slug: versedotorg/scenegraph/camera_projection_mode
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_projection_mode
 kind: enum
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_projection_mode <B>
+# camera_projection_mode enumeration <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_projection_mode.html -->
+相机投影模式（正交/透视等）。
+
+`using { /Verse.org/SceneGraph }`
+
+## Enumerators
+
+The camera_projection_mode 枚举包含以下枚举值：
+| Name | Description |
+| Perspective |  |
+| Orthographic |  |

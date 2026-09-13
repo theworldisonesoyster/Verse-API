@@ -3,12 +3,26 @@ name: camera_lens
 slug: versedotorg/scenegraph/camera_lens
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_lens
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_lens <B>
+# camera_lens class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_lens.html -->
+> Camera lens settings
+> 相机镜头设置。
+
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| FocalLengthMillimeters | float | 镜头焦距（毫米）。 |
+| FStop | float | 镜头光圈（FStop）。 |
+| SqueezeFactor | float | 变形（anamorphic）镜头的挤压系数。 |
+| BladeCount | int | 光圈叶片数。 |

@@ -3,12 +3,19 @@ name: camera_modifier_stack
 slug: versedotorg/scenegraph/camera_modifier_stack
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_modifier_stack
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_modifier_stack <B>
+# camera_modifier_stack class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_modifier_stack.html -->
+> Modifier stack for camera state.
+> 相机状态的修饰符栈。
+
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+没有成员。

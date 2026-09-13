@@ -3,12 +3,19 @@ name: skeleton
 slug: versedotorg/scenegraph/skeleton
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/skeleton
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# skeleton <A>
+# skeleton class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/skeleton.html -->
+> Skeletons are collections of bones & sets/chains
+> 骨架（skeleton）是骨骼与骨骼组/链（sets/chains）的集合。
+
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+没有成员。

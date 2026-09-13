@@ -3,12 +3,37 @@ name: legendary_rarity
 slug: versedotorg/scenegraph/legendary_rarity
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/legendary_rarity
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# legendary_rarity <B>
+# legendary_rarity class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/legendary_rarity.html -->
+稀有度：传说（Legendary）。
+
+`using { /Verse.org/SceneGraph }`
+
+## Inheritance Hierarchy
+
+此类派生自以下层级，起点为 ：
+| Name | Description |
+| rarity | 稀有度：供玩法与表现系统对事物进行分类与分级。 |
+| common_rarity |  |
+| uncommon_rarity |  |
+| rare_rarity |  |
+| epic_rarity |  |
+
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| Color | color |  |
+| Color | color |  |
+| Color | color |  |
+| Color | color |  |
+| Color | color |  |

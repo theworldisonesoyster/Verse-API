@@ -3,12 +3,12 @@ name: change_max_stack_size_result
 slug: versedotorg/scenegraph/change_max_stack_size_result
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/change_max_stack_size_result
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# change_max_stack_size_result <C>
+# change_max_stack_size_result class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/change_max_stack_size_result.html -->
+更改最大堆叠数量的结果。

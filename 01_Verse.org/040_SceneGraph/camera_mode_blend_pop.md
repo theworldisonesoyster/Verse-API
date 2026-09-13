@@ -3,12 +3,26 @@ name: camera_mode_blend_pop
 slug: versedotorg/scenegraph/camera_mode_blend_pop
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_mode_blend_pop
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_mode_blend_pop <B>
+# camera_mode_blend_pop class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_mode_blend_pop.html -->
+> Instantly snap to target mode
+> 瞬间切换（snap）到目标模式。
+
+`using { /Verse.org/SceneGraph }`
+
+## Inheritance Hierarchy
+
+此类派生自 。
+| Name | Description |
+| camera_mode_blend | 两种相机模式之间的可配置混合。 |
+
+
+## Members
+
+没有成员。

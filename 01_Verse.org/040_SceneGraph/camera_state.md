@@ -3,12 +3,12 @@ name: camera_state
 slug: versedotorg/scenegraph/camera_state
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_state
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# camera_state <C>
+# camera_state class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_state.html -->
+相机的当前状态。

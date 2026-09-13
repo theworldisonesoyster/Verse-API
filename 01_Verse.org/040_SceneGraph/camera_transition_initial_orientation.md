@@ -3,12 +3,23 @@ name: camera_transition_initial_orientation
 slug: versedotorg/scenegraph/camera_transition_initial_orientation
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_transition_initial_orientation
 kind: enum
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_transition_initial_orientation <B>
+# camera_transition_initial_orientation enumeration <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_transition_initial_orientation.html -->
+> Controls how a camera mode transitions to another
+> 控制相机模式过渡时的初始朝向。
+
+`using { /Verse.org/SceneGraph }`
+
+## Enumerators
+
+The camera_transition_initial_orientation 枚举包含以下枚举值：
+| Name | Description |
+| PreviousYawPitch |  |
+| PreviousAbsoluteTarget |  |
+| PreviousRelativeTarget |  |

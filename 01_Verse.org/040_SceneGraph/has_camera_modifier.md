@@ -3,12 +3,23 @@ name: has_camera_modifier
 slug: versedotorg/scenegraph/has_camera_modifier
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/has_camera_modifier
 kind: interface
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# has_camera_modifier <B>
+# has_camera_modifier interface <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/has_camera_modifier.html -->
+> Interface for classes that own a camera modifier stack.
+> 拥有相机修饰符栈的类实现的接口。
+
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| CameraModifiers | unknown |  |

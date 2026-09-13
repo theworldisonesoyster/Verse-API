@@ -3,12 +3,19 @@ name: skeletal_animation
 slug: versedotorg/scenegraph/skeletal_animation
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/skeletal_animation
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: A
 depth: full
-status: placeholder
+status: done
 ---
 
-# skeletal_animation <A>
+# skeletal_animation class <A>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/skeletal_animation.html -->
+> A modifier of skeletons, used to animate meshes using skeletal animation
+> 骨架的修饰符：用骨骼动画驱动网格变形。
+
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+没有成员。

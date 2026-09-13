@@ -3,12 +3,19 @@ name: camera_mode_blend
 slug: versedotorg/scenegraph/camera_mode_blend
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_mode_blend
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_mode_blend <B>
+# camera_mode_blend class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_mode_blend.html -->
+> Configurable blend between two camera modes
+> 两种相机模式之间的可配置混合。
+
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+没有成员。

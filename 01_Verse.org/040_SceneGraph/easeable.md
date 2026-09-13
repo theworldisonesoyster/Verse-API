@@ -3,12 +3,12 @@ name: easeable
 slug: versedotorg/scenegraph/easeable
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/easeable
 kind: interface
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# easeable <C>
+# easeable interface <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/easeable.html -->
+用于触发缓动行为的接口。

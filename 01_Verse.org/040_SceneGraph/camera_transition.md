@@ -3,12 +3,24 @@ name: camera_transition
 slug: versedotorg/scenegraph/camera_transition
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/camera_transition
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# camera_transition <B>
+# camera_transition class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/camera_transition.html -->
+> Controls how a camera mode transitions to another
+> 控制相机模式之间如何过渡。
+
+`using { /Verse.org/SceneGraph }`
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| Blend | camera_mode_blend |  |
+| Duration | float | 设置相机过渡的时长。 |

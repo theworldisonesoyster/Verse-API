@@ -3,12 +3,35 @@ name: epic_rarity
 slug: versedotorg/scenegraph/epic_rarity
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/epic_rarity
 kind: class
-module: /Verse.org
+module: /Verse.org/scenegraph
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# epic_rarity <B>
+# epic_rarity class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/scenegraph/epic_rarity.html -->
+稀有度：史诗（Epic）。
+
+`using { /Verse.org/SceneGraph }`
+
+## Inheritance Hierarchy
+
+此类派生自以下层级，起点为 ：
+| Name | Description |
+| rarity | 稀有度：供玩法与表现系统对事物进行分类与分级。 |
+| common_rarity |  |
+| uncommon_rarity |  |
+| rare_rarity |  |
+
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| Color | color |  |
+| Color | color |  |
+| Color | color |  |
+| Color | color |  |
