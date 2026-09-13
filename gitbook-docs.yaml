@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Verse API Reference
+  structure:
+    - type: space
+      key: verse-api-reference
+      title: Verse API Reference
+      default: true
+      content:
+        directory: ./
+        language: zh
