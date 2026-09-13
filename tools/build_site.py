@@ -157,7 +157,7 @@ PAGE_HTML = """<!DOCTYPE html>
 <title>Verse API Reference</title>
 <style>
 :root{--bg:#1c1c1c;--panel:#212121;--panel2:#282828;--fg:#e2e2e2;--dim:#96989e;--acc:#3d3d3d;--acc2:#c9c9c9;--line:#3a3a3a;
---s:#ef4444;--a:#f97316;--b:#eab308;--c:#0a0a0a}
+--s:#ef4444;--a:#f97316;--b:#eab308;--c:#ffffff}
 *{box-sizing:border-box}html,body{height:100%;overflow:hidden}body{margin:0;font:15px/1.65 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--fg)}
 #app{display:grid;grid-template-columns:330px minmax(0,1fr);height:100vh}
 #side,#main{min-height:0}
@@ -167,11 +167,7 @@ PAGE_HTML = """<!DOCTYPE html>
 #search{width:100%;padding:7px 10px;background:var(--panel2);border:1px solid var(--line);color:var(--fg);border-radius:8px;outline:none}
 #grades{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .gbtn{cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--fg);width:34px;height:34px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:13.5px;user-select:none}
-.gbtn.on{border-color:transparent;color:#fff}
-.gbtn.on.gS{background:var(--s)}
-.gbtn.on.gA{background:var(--a)}
-.gbtn.on.gB{background:var(--b);color:#1b1b1b}
-.gbtn.on.gC{background:var(--c);border-color:#666}
+.gbtn.on{background:var(--acc);border-color:#8a8a8a;color:#fff}
 #tree{flex:1 1 0;min-height:0;overflow:auto;overflow-x:hidden;padding:8px 6px 30px}
 #tree ul{list-style:none;margin:0;padding-left:14px}
 #tree>ul{padding-left:6px}
@@ -185,8 +181,7 @@ PAGE_HTML = """<!DOCTYPE html>
 #tree a:hover{background:var(--panel2)}
 #tree a.cur{background:#3d3d3d;color:#fff}
 #tree a .g{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:1px}
-#tree a .g.gC{border:1px solid #666}
-.gS{background:var(--s)}.gA{background:var(--a)}.gB{background:var(--b)}.gC{background:var(--c)}
+#tree a .g.gS{background:var(--s)}#tree a .g.gA{background:var(--a)}#tree a .g.gB{background:var(--b)}#tree a .g.gC{background:var(--c)}
 .pend{color:var(--dim);font-size:11px;margin-left:5px}
 #main{overflow:auto;position:relative;min-height:0}
 #content{max-width:900px;margin:0 auto;padding:34px 40px 90px}
@@ -204,7 +199,7 @@ PAGE_HTML = """<!DOCTYPE html>
 #nav{position:fixed;bottom:0;left:330px;right:0;display:flex;justify-content:space-between;padding:10px 40px;background:linear-gradient(transparent,var(--bg) 40%)}
 #nav a{color:var(--acc2);cursor:pointer;background:var(--panel2);border:1px solid var(--line);padding:6px 14px;border-radius:8px}
 .gbadge{display:inline-block;padding:0 9px;border-radius:12px;font-size:13px;line-height:20px;color:#fff;vertical-align:3px;margin-left:4px}
-.gbadge.gS{background:var(--s)}.gbadge.gA{background:var(--a)}.gbadge.gB{background:var(--b);color:#1b1b1b}.gbadge.gC{background:var(--c);border:1px solid #666}
+.gbadge.gS{background:var(--s)}.gbadge.gA{background:var(--a)}.gbadge.gB{background:var(--b);color:#1b1b1b}.gbadge.gC{background:var(--c);color:#1b1b1b}
 .pending-box{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--dim);margin:20px 0;text-align:center}
 @media(max-width:900px){#app{grid-template-columns:1fr}#side{display:none}#nav{left:0}}
 </style>
