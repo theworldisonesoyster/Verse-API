@@ -22,7 +22,7 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Gamepad | logic |  |
-| Keyboard | logic |  |
-| Mouse | logic |  |
-| Touch | logic |  |
+| Gamepad | logic | 手柄是否可用。 |
+| Keyboard | logic | 键盘是否可用。 |
+| Mouse | logic | 鼠标是否可用。 |
+| Touch | logic | 触摸屏是否可用。 |

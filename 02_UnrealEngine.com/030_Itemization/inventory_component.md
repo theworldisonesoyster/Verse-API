@@ -43,8 +43,7 @@ status: done
 | [FindInventories](inventory_component_findinventories.md) | 返回此物品栏及其后代物品栏中的全部子物品栏。 |
 | [FindItems](inventory_component_finditems.md) | 返回此物品栏及其后代物品栏中的全部物品。 |
 | [FindItems](inventory_component_finditems.md) | 返回此物品栏及其后代物品栏中指定类型的全部物品。 |
-| GetEquippedItems |  |
-| [GetInventories](inventory_component_getinventories.md) | 仅返回此物品栏自身的子物品栏。 |
+| GetEquippedItems |  | 返回当前已装备的物品。 | [GetInventories](inventory_component_getinventories.md) | 仅返回此物品栏自身的子物品栏。 |
 | [GetItems](inventory_component_getitems.md) | 仅返回此物品栏自身的物品。 |
 | [GetItems](inventory_component_getitems.md) | 仅返回此物品栏自身中指定类型的物品。 |
 | [IsInScene](inventory_component_isinscene.md) | 若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。 |

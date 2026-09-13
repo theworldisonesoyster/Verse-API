@@ -32,7 +32,7 @@ status: done
 | Data Member Name | Type | Description |
 | [Collidable](collision_box_collidable.md) | ?logic | 启用/禁用此体积的碰撞。 |
 | [CollisionProfile](collision_box_collisionprofile.md) | ?collision_profile | 此体积的碰撞轮廓。 |
-| Extents | ?vector3 |  |
+| Extents | ?vector3 | 碰撞盒的半尺寸（各轴范围）。 |
 | [Queryable](collision_box_queryable.md) | ?logic | 启用/禁用对此体积的空间查询。 |
 
 ### Functions

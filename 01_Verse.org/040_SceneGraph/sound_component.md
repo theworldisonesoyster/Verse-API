@@ -35,8 +35,8 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| AutoPlay | ?logic |  |
-| Enabled | ?logic |  |
+| AutoPlay | ?logic | 加入场景时是否自动播放。 |
+| Enabled | ?logic | 此组件是否启用。 |
 | [Entity](sound_component_entity.md) | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
 | [TickEvents](sound_component_tickevents.md) | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
 

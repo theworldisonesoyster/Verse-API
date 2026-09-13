@@ -29,8 +29,8 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| ChangeMaxStackSizeEvent | unknown |  |
-| ChangeStackSizeEvent | unknown |  |
+| ChangeMaxStackSizeEvent | unknown | 最大堆叠数变化时触发。 |
+| ChangeStackSizeEvent | unknown | 堆叠数变化时触发。 |
 | [Entity](basic_stackable_component_entity.md) | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
 | [MaxStackSize](basic_stackable_component_maxstacksize.md) | ??int | 此组件可容纳的最大数量；未设置则不限。 |
 | [split_prefab_type](basic_stackable_component_split_prefab_type.md) | concrete_subtype(castable_subtype(entity)) | 此实体与其他实体合并、或被拆分为新实例时使用的预制体。 |
@@ -56,5 +56,4 @@ status: done
 | [SendDown](basic_stackable_component_senddown.md) | 向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。 |
 | [SetMaxStackSize](basic_stackable_component_setmaxstacksize.md) | 设置此组件的最大堆叠数。NewMaxStackSize 为 false 表示不限；ClampStackSize 为 true 时会把当前堆叠数钳制到新上限。 |
 | [SetStackSize](basic_stackable_component_setstacksize.md) | 设置此组件的堆叠数。给定值无效（负数或超过 MaxStackSize）时堆叠数不变。 |
-| Split |  |
-| Split |  |
+| Split |  | 把当前堆叠拆分为两份。 | Split |  |

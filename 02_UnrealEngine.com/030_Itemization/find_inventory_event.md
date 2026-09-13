@@ -29,6 +29,6 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| ItemComponent | item_component |  |
-| ChosenInventory | ??inventory_component |  |
-| ChosenInventoryPriority | ?float |  |
+| ItemComponent | item_component | 候选的物品栏组件。 |
+| ChosenInventory | ??inventory_component | 被选中的物品栏。 |
+| ChosenInventoryPriority | ?float | 被选中物品栏的优先级。 |

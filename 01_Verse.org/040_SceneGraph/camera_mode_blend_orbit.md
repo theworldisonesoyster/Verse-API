@@ -29,4 +29,4 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| DrivingBlend | camera_mode_blend |  |
+| DrivingBlend | camera_mode_blend | 驱动混合（DrivingBlend）的相机模式。 |

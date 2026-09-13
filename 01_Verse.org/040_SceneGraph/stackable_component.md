@@ -29,8 +29,8 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| ChangeMaxStackSizeEvent | unknown |  |
-| ChangeStackSizeEvent | unknown |  |
+| ChangeMaxStackSizeEvent | unknown | 最大堆叠数变化时触发。 |
+| ChangeStackSizeEvent | unknown | 堆叠数变化时触发。 |
 | [Entity](stackable_component_entity.md) | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
 | [MaxStackSize](stackable_component_maxstacksize.md) | ??int | 此组件可容纳的最大数量；未设置则不限。 |
 | [StackSize](stackable_component_stacksize.md) | ?int | 此实体当前堆叠的数量。 |

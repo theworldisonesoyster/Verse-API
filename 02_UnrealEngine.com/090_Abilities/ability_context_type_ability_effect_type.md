@@ -29,14 +29,11 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| BeginUseEvent | listenable(payload) |  |
-| EndUseEvent | listenable(payload) |  |
-| ActiveEffects | ?[] |  |
-| Icon | ?texture |  |
+| BeginUseEvent | listenable(payload) | 开始使用技能时触发。 |
+| EndUseEvent | listenable(payload) | 停止使用技能时触发。 |
+| ActiveEffects | ?[] | 当前生效的效果列表。 |
+| Icon | ?texture | 实体/技能的图标。 |
 
 ### Functions
 | Function Name | Description |
-| Use |  |
-| CanUse |  |
-| MakeContext |  |
-| MakeAbility |  |
+| Use |  | 激活技能。 | CanUse |  | 判断当前能否使用（可失败）。 | MakeContext |  | 构造技能上下文。 | MakeAbility |  |

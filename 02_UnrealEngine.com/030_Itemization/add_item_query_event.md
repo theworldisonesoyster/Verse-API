@@ -29,9 +29,9 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Item | item_component |  |
-| Inventory | inventory_component |  |
-| Errors | ?[]add_item_error |  |
+| Item | item_component | 相关物品实体。 |
+| Inventory | inventory_component | 相关物品栏组件。 |
+| Errors | ?[]add_item_error | 查询后收集到的错误列表。 |
 
 ### Functions
 | Function Name | Description |

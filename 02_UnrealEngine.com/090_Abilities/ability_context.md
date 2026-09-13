@@ -22,6 +22,6 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Instigator | ??agent |  |
-| Participants | ?[]entity |  |
-| Targets | ?[]entity |  |
+| Instigator | ??agent | 发起该技能的代理。 |
+| Participants | ?[]entity | 参与的代理列表。 |
+| Targets | ?[]entity | 技能目标列表。 |

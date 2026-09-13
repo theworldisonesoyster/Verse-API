@@ -22,4 +22,4 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| CameraModifiers | unknown |  |
+| CameraModifiers | unknown | 此组件持有的相机修饰符栈。 |

@@ -29,7 +29,7 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| AbilityComponent | ability_effect_component |  |
+| AbilityComponent | ability_effect_component | 此效果所属的 ability_effect_component。 |
 
 ### Functions
 | Function Name | Description |

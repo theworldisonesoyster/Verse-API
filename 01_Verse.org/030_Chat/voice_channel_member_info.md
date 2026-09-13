@@ -29,5 +29,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Group | unknown |  |
+| Group | unknown | 此成员信息关联的组。 |
 | Name | message |  |

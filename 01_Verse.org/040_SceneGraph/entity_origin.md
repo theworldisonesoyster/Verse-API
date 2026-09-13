@@ -29,7 +29,7 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Entity | entity |  |
+| Entity | entity | 此原点所属的实体。 |
 
 ### Functions
 | Function Name | Description |

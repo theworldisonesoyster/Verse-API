@@ -29,8 +29,8 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Item | item_component |  |
-| Errors | ?[]unequip_item_error |  |
+| Item | item_component | 相关物品实体。 |
+| Errors | ?[]unequip_item_error | 查询后收集到的错误列表。 |
 
 ### Functions
 | Function Name | Description |

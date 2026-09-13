@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Minimum | float |  |
-| Maximum | float |  |
+| Minimum | float | 范围最小值。 |
+| Maximum | float | 范围最大值。 |

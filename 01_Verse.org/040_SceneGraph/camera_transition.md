@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Blend | camera_mode_blend |  |
+| Blend | camera_mode_blend | 过渡所使用的混合模式。 |
 | [Duration](camera_transition_duration.md) | float | 设置相机过渡的时长。 |

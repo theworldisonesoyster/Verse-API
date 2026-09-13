@@ -42,8 +42,7 @@ status: done
 | [IsOnGround](fort_vehicle_isonground.md) | 此 fort_vehicle 在地面上则成功。 |
 | [IsInAir](fort_vehicle_isinair.md) | 此 fort_vehicle 在空中则成功。 |
 | [IsInWater](fort_vehicle_isinwater.md) | 此 fort_vehicle 在水中则成功。 |
-| GetPassengers |  |
-| [GetOccupants](fort_vehicle_getoccupants.md) | 返回当前占据载具的全部代理数组。 |
+| GetPassengers |  | 返回载具上的全部乘客。 | [GetOccupants](fort_vehicle_getoccupants.md) | 返回当前占据载具的全部代理数组。 |
 | [GetDrivers](fort_vehicle_getdrivers.md) | 返回载具当前全部驾驶员的数组（通常只有一个代理）。 |
 | [GetFuelRemaining](fort_vehicle_getfuelremaining.md) | 返回载具油量状态；用油的载具该值在 0.0 与 GetFuelCapacity 之间，否则为 -1.0。 |
 | [GetFuelCapacity](fort_vehicle_getfuelcapacity.md) | 返回载具最大油箱容量；用油的载具该值在 1.0 与 Inf 之间，否则为 -1.0。 |

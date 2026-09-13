@@ -26,4 +26,4 @@ status: done
 | [HasLineOfSight](npc_target_info_haslineofsight.md) | ?logic | 目标可见则为 true。 |
 | [Attitude](npc_target_info_attitude.md) | ?team_attitude | 对此目标的态度。 |
 | [LastKnownPosition](npc_target_info_lastknownposition.md) | ?vector3 | 此目标最后已知位置。 |
-| OnUpdateEvent | listenable(payload) |  |
+| OnUpdateEvent | listenable(payload) | 目标信息更新时触发。 |

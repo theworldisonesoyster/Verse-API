@@ -37,7 +37,7 @@ status: done
 ### Data
 | Data Member Name | Type | Description |
 | [Entity](icon_component_entity.md) | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
-| Icon | ?texture |  |
+| Icon | ?texture | 实体/技能的图标。 |
 | [TickEvents](icon_component_tickevents.md) | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
 
 ### Functions

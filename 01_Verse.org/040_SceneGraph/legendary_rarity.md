@@ -32,8 +32,8 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Color | color |  |
-| Color | color |  |
-| Color | color |  |
-| Color | color |  |
-| Color | color |  |
+| Color | color | 此稀有度的代表颜色。 |
+| Color | color | 此稀有度的代表颜色。 |
+| Color | color | 此稀有度的代表颜色。 |
+| Color | color | 此稀有度的代表颜色。 |
+| Color | color | 此稀有度的代表颜色。 |

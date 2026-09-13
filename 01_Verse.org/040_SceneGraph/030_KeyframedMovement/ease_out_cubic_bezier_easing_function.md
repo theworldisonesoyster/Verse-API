@@ -30,16 +30,15 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| X0 | float |  |
-| X0 | float |  |
-| X1 | float |  |
-| X1 | float |  |
-| Y0 | float |  |
-| Y0 | float |  |
-| Y1 | float |  |
-| Y1 | float |  |
+| X0 | float | P1 控制点的 X 值；须在 0.0~1.0 之间。 |
+| X0 | float | P1 控制点的 X 值；须在 0.0~1.0 之间。 |
+| X1 | float | P2 控制点的 X 值；须在 0.0~1.0 之间。 |
+| X1 | float | P2 控制点的 X 值；须在 0.0~1.0 之间。 |
+| Y0 | float | P1 控制点的 Y 值。 |
+| Y0 | float | P1 控制点的 Y 值。 |
+| Y1 | float | P2 控制点的 Y 值。 |
+| Y1 | float | P2 控制点的 Y 值。 |
 
 ### Functions
 | Function Name | Description |
-| Evaluate |  |
-| Evaluate |  |
+| Evaluate |  | 在指定时间 t 求缓动曲线值并返回。 | Evaluate |  |

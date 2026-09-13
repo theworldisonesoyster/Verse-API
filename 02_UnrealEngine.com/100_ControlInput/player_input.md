@@ -22,6 +22,4 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| AddInputMapping |  |
-| RemoveInputMapping |  |
-| GetInputEvents |  |
+| AddInputMapping |  | 为该玩家添加输入映射。 | RemoveInputMapping |  | 移除该玩家的输入映射。 | GetInputEvents |  |
