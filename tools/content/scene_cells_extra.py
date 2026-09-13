@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # SceneGraph 组件表内描述的补充对照（known_cells 追加）
 EXTRA_CELLS = {
+    "Succeeds if the component is enabled, fails if it’s disabled.": "组件处于启用状态则成功，禁用则失败。",
     "Event fires when an interaction has ended before completing successfully. Sends the formerly interacting agent. interactable_component cannot be canceled, this event is provided for subclasses to fire where appropriate.":
         "交互在成功完成前被中断时触发；载荷为此前交互的代理。interactable_component 本身不可取消，此事件供子类在合适时机触发。",
     "Message shown if CanInteract succeeds.": "CanInteract 成功时显示的消息。",

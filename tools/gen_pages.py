@@ -259,12 +259,12 @@ def main():
     pack_path = sys.argv[1]
     for pack in load_pack(pack_path):
         run_single(pack)
-    run_single(pack)
 
 
 def run_single(pack):
     KNOWN_CELL.update(pack.get('known_cells', {}))
     KNOWN_CELL.update(pack.get('known_cells_ORIG', {}))
+    KNOWN_PREFIX.extend(pack.get('known_prefix', []))
     forest = json.load(open(os.path.join(ROOT, "manifest.json"), encoding="utf-8"))
     members = {}
 
