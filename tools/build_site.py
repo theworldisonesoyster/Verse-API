@@ -181,7 +181,6 @@ PAGE_HTML = """<!DOCTYPE html>
 #tree li{margin:1px 0}
 #tree li.d>span.caret{display:inline-block;width:14px;cursor:pointer;color:var(--dim)}
 #tree li.d>span.t{font-weight:600;cursor:pointer;display:inline-block;padding:3px 8px;border-radius:6px;vertical-align:middle}
-#tree li.d.closed>span.t::before{content:"▸ "}
 #tree li.d.closed>ul{display:none}
 #tree li.d>span.t:hover{background:var(--panel2)}
 #tree a{color:var(--fg);text-decoration:none;display:block;padding:3px 8px;border-radius:6px;cursor:pointer}

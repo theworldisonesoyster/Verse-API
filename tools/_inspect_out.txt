@@ -1,0 +1,7 @@
+'#tree li.d.closed>span.t::before{content:"▸ "}'
+---closed rules---
+'#tree li.d.closed>span.t::before{content:"▸ "}'
+'#tree li.d.closed>ul{display:none}'
+"const li=sp.parentElement; li.classList.toggle('closed');\n    sp.textContent=li.classList.contains('closed')?'▸':'▾';\n  });\n  $('#"
+---template---
+'let s=`<li class="${cls}">`;\n  s+=n.children?`<span class="caret">${collapsedPaths.has(n.path)?\'▸\':\'▾\'}</span><span class="t" data-p="${n.path}">${inner}</span>`:`<a data-p="${n.path}" class="${active===n.path?\'cur\':\'\'}">${inner}</a>`;\n  if(kids.length)s+=\'<ul>\'+kids.map(nodeHtml).join(\'\')+\'</ul>\';\n'
