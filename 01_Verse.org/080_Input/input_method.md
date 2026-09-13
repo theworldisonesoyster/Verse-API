@@ -3,12 +3,23 @@ name: input_method
 slug: versedotorg/input/input_method
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/input/input_method
 kind: enum
-module: /Verse.org
+module: /Verse.org/input
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# input_method <B>
+# input_method enumeration <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/input/input_method.html -->
+> Represents the player's current preferred input method.
+> 表示玩家当前偏好的输入方式（键鼠/手柄/触摸等）。
+
+`using { /Verse.org/Input }`
+
+## Enumerators
+
+The input_method 枚举包含以下枚举值：
+| Name | Description |
+| KeyboardAndMouse |  |
+| Gamepad |  |
+| Touch |  |

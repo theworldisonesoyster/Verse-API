@@ -8,7 +8,7 @@
 - ☑ 01_Verse.org/020_Native（空模块）（约1页）
 - ☑ 01_Verse.org/030_Chat（8页）
 - ☐ 01_Verse.org/040_SceneGraph（约110页）
-- ☐ 01_Verse.org/050_Progression（约9页）
+- ☑ 01_Verse.org/050_Progression（9页）
 - ☑ 01_Verse.org/060_Timeline（4页）
 - ☑ 01_Verse.org/070_Presentation（3页）
 - ☐ 01_Verse.org/080_Input（约36页）
@@ -50,7 +50,7 @@
 
 - 批次1-2（已完成）：010_Verse 全模块 + Chat/Timeline/Presentation/AgentGroup/Random/Concurrency —— gen_pages.py + content/{verse_pack,small_pack}.py
 - 批次3（本轮）：040_SceneGraph 76/91 页（content/scene_pack.py + scene_cells_extra.py）；GitHub 已推送（theworldisonesoyster/Verse-API，main）
-- 批次4：SceneGraph 剩余 19 页完成（KNOWN_PREFIX.extend 缺失修复后全自动）→ 下一批：050_Progression → 080_Input → 110_Assets → 120_Colors → 130_SpatialMath → 02_UnrealEngine.com → 03_Fortnite.com
+- 批次4：SceneGraph 剩余 19 页完成 → 批次5：050_Progression(9) + 080_Input(10) → 下一批：110_Assets → 120_Colors → 130_SpatialMath → 02_UnrealEngine.com → 03_Fortnite.com
 
  + Native/Predicts/Chat/Timeline/Presentation/AgentGroup/Random/Concurrency —— gen_pages.py + content/{verse_pack,small_pack}.py；正文 198/837
 - 下一批次：040_SceneGraph（86页）→ 050_Progression → 080_Input → 110_Assets → 120_Colors → 130_SpatialMath → 02_UnrealEngine.com → 03_Fortnite.com → 010_Verse 外的 Verse.org 顶层页

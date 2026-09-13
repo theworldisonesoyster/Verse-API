@@ -3,12 +3,25 @@ name: quest_membership
 slug: versedotorg/progression/quest_membership
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/progression/quest_membership
 kind: class
-module: /Verse.org
+module: /Verse.org/progression
 grade: B
 depth: brief
-status: placeholder
+status: done
 ---
 
-# quest_membership <B>
+# quest_membership class <B>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/progression/quest_membership.html -->
+> Record binding a quest to a participant with participation info.
+> 把任务与参与者及其参与信息绑定在一起的记录。
+
+`using { /Verse.org/Progression }`
+
+## Members
+
+只有数据成员，没有函数。
+
+### Data
+| Data Member Name | Type | Description |
+| Quest | quest | 此成员关系所属的任务。 |
+| Participant | quest_participant | 此成员关系中的参与者。 |
+| Info | quest_participant_info | 描述此参与者角色的参与信息。 |

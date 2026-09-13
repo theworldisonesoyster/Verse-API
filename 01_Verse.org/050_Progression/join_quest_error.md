@@ -3,12 +3,12 @@ name: join_quest_error
 slug: versedotorg/progression/join_quest_error
 url: https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/progression/join_quest_error
 kind: class
-module: /Verse.org
+module: /Verse.org/progression
 grade: C
 depth: oneliner
-status: placeholder
+status: done
 ---
 
-# join_quest_error <C>
+# join_quest_error class <C>
 
-<!-- 待生成（阶段2）。官方快照: sources/versedotorg/progression/join_quest_error.html -->
+参与者无法加入任务时返回的错误。
