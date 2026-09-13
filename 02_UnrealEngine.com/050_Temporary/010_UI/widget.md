@@ -23,12 +23,12 @@ This class has functions, but no data members.（此类只有函数，没有数�
 
 | Function Name | Description |
 |---|---|
-| SetVisibility | 显示或隐藏该 widget，而不把它从所在 player_ui 中移除。详见 widget_visibility。 |
-| GetVisibility | 返回当前 widget_visibility 状态。 |
-| SetEnabled | 启用或禁用玩家与此 widget 的交互。 |
-| IsEnabled | 若此 widget 可被玩家交互修改则返回 true。 |
-| GetParentWidget | 返回该 widget 的父 widget。若它不在 player_ui 中或自身就是根 widget（无父）则失败。 |
-| GetRootWidget | 返回当初把该 widget 加进 player_ui 的根 widget。根 widget 返回它自己。若该 widget 不在 player_ui 中则失败。 |
+| [SetVisibility](widget_setvisibility.md) | 显示或隐藏该 widget，而不把它从所在 player_ui 中移除。详见 widget_visibility。 |
+| [GetVisibility](widget_getvisibility.md) | 返回当前 widget_visibility 状态。 |
+| [SetEnabled](widget_setenabled.md) | 启用或禁用玩家与此 widget 的交互。 |
+| [IsEnabled](widget_isenabled.md) | 若此 widget 可被玩家交互修改则返回 true。 |
+| [GetParentWidget](widget_getparentwidget.md) | 返回该 widget 的父 widget。若它不在 player_ui 中或自身就是根 widget（无父）则失败。 |
+| [GetRootWidget](widget_getrootwidget.md) | 返回当初把该 widget 加进 player_ui 的根 widget。根 widget 返回它自己。若该 widget 不在 player_ui 中则失败。 |
 
 ## Attributes, Specifiers, and Effects
 

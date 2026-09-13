@@ -7,7 +7,7 @@ module: /Verse.org/verse/event
 grade: S
 depth: oneliner
 status: done
-order: 3
+order: 2
 parent: versedotorg/verse/event/event(t)
 ---
 

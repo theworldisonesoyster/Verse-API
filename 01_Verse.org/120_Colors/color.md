@@ -22,9 +22,9 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| R | float | 此颜色的红色（Red）分量。 |
-| G | float | 此颜色的绿色（Green）分量。 |
-| B | float | 此颜色的蓝色（Blue）分量。 |
+| [R](color_r.md) | float | 此颜色的红色（Red）分量。 |
+| [G](color_g.md) | float | 此颜色的绿色（Green）分量。 |
+| [B](color_b.md) | float | 此颜色的蓝色（Blue）分量。 |
 
 ## 示例
 

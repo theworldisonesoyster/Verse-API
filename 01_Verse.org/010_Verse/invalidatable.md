@@ -32,7 +32,7 @@ This interface has functions, but no data members.（此接口只有函数，没
 
 | Function Name | Description |
 |---|---|
-| IsValid | 若此对象仍然有效则成功。 |
+| [IsValid](invalidatable_isvalid.md) | 若此对象仍然有效则成功。 |
 
 ## 补充说明
 

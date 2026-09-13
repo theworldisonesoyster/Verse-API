@@ -270,6 +270,18 @@ def emit_children(member, extract, outdir, zh_map=None):
         body = ("#" + NL + f"# {child_title} <{G_BADGE[g_]}>" + NL + NL + zh + NL)
         open(os.path.join(ROOT, rel_dir, fname), "w", encoding="utf-8").write(front + body)
         made.append(fname)
+    # 父页成员表首列 → 链接到子页
+    if rows and made:
+        ppath = os.path.join(ROOT, rel_dir,
+            re.sub(r"[^a-z0-9_-]+", "_", member["slug"].rsplit("/", 1)[-1]).strip("_") + ".md")
+        if os.path.exists(ppath):
+            ptxt = open(ppath, encoding="utf-8").read()
+            for kind, name, zh in rows:
+                sfx = "function" if kind == "function" else "data"
+                cfn = (re.sub(r"[^a-z0-9_-]+", "_", member["slug"].rsplit("/", 1)[-1]).strip("_")
+                       + "_" + re.sub(r"[^a-z0-9_-]+", "_", name.lower()).strip("_") + ".md")
+                ptxt = ptxt.replace("| " + name + " |", "| [" + name + "](" + cfn + ") |")
+            open(ppath, "w", encoding="utf-8").write(ptxt)
     return len(made), made
 
 

@@ -29,12 +29,12 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Entitlement | ?concrete_subtype(entitlement) | 要授予的 entitlement 类型。 |
-| GrantEvent | listenable(payload) | 此奖励发放给接收者之后触发。 |
-| Quantity | ?int | 每个参与者的数量。 |
+| [Entitlement](entitlement_quest_reward_entitlement.md) | ?concrete_subtype(entitlement) | 要授予的 entitlement 类型。 |
+| [GrantEvent](entitlement_quest_reward_grantevent.md) | listenable(payload) | 此奖励发放给接收者之后触发。 |
+| [Quantity](entitlement_quest_reward_quantity.md) | ?int | 每个参与者的数量。 |
 
 ### Functions
 | Function Name | Description |
-| GetRecipients | 决定哪些参与者应获得此奖励。可重写以自定义接收者选择。默认：Info.Receives = true 的所有参与者。 |
-| GrantReward | 遍历 EligibleParticipants，把每个参与者的代理解析为玩家，并通过平台授权服务发放 entitlement。 |
-| GrantReward | 把此奖励发放给符合条件的参与者。 |
+| [GetRecipients](entitlement_quest_reward_getrecipients.md) | 决定哪些参与者应获得此奖励。可重写以自定义接收者选择。默认：Info.Receives = true 的所有参与者。 |
+| [GrantReward](entitlement_quest_reward_grantreward.md) | 遍历 EligibleParticipants，把每个参与者的代理解析为玩家，并通过平台授权服务发放 entitlement。 |
+| [GrantReward](entitlement_quest_reward_grantreward.md) | 把此奖励发放给符合条件的参与者。 |

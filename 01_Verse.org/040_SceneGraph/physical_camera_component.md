@@ -30,24 +30,24 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Body | ?camera_body | 相机机身设置：包含传感器设置（胶片或数码传感器）、快门速度等。 |
-| Entity | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
-| FarClippingPlaneDistance | ?float | 可选覆盖远裁剪面距离；值为 Inf 时使用默认设置。 |
-| Lens | ?camera_lens | 相机镜头。 |
-| NearClippingPlaneDistance | ?float | 可选覆盖近裁剪面距离；值 ≤ 0.0 时使用默认设置。 |
-| TickEvents | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
+| [Body](physical_camera_component_body.md) | ?camera_body | 相机机身设置：包含传感器设置（胶片或数码传感器）、快门速度等。 |
+| [Entity](physical_camera_component_entity.md) | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
+| [FarClippingPlaneDistance](physical_camera_component_farclippingplanedistance.md) | ?float | 可选覆盖远裁剪面距离；值为 Inf 时使用默认设置。 |
+| [Lens](physical_camera_component_lens.md) | ?camera_lens | 相机镜头。 |
+| [NearClippingPlaneDistance](physical_camera_component_nearclippingplanedistance.md) | ?float | 可选覆盖近裁剪面距离；值 ≤ 0.0 时使用默认设置。 |
+| [TickEvents](physical_camera_component_tickevents.md) | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
 
 ### Functions
 | Function Name | Description |
-| GetEnterTransition | 获取进入此相机模式、过渡到指定相机模式时所用的过渡。 |
-| GetExitTransition | 获取退出此相机模式、过渡到目标相机模式时所用的过渡。 |
-| IsInScene | 若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。 |
-| IsSimulating | 若组件当前正在模拟则成功。OnBeginSimulation 调用后成功；OnEndSimulation 调用后失败。 |
-| OnAddedToScene | 当组件通过挂到 simulation 实体（或已在场景中的其他实体）之下而被加入场景时调用。该阶段完成后，查询场景中的组件才是有效的。 |
-| OnBeginSimulation | 当组件在场景中开始模拟时调用。用它设置 TickEvent 回调或其他必须保证立即完成的初始化。OnAddedToScene 保证先于 OnBeginSimulation 运行。 |
-| OnEndSimulation | 当组件在场景中结束模拟时调用。体验重置或父实体被移出场景时组件的模拟即结束。缓存的 TickEvents cancelable 应在 OnEndSimulation 中取消；OnSimulate 任务会在 OnEndSimulation 被调用前取消。只有已调用过 OnBeginSimulation 的组件才会收到 OnEndSimulation。 |
-| OnReceive | 响应场景事件。返回 true 表示消费该事件并阻止向下一个实体继续传播。 |
-| OnRemovingFromScene | 当组件即将被移出场景时调用。父实体被移出场景时其上的组件随之移除。只有已调用过 OnAddedToScene 的组件才会收到 OnRemovingFromScene。 |
-| OnSimulate | 当组件在场景中开始模拟时调用。用它为组件添加异步/可挂起的更新逻辑。OnBeginSimulation 保证先于 OnSimulate 运行；OnSimulate 会在 OnEndSimulation 之前被取消。 |
-| RemoveFromEntity | 把组件从实体上移除。被移除的组件会离开场景，且之后只能加回同一个实体。流程经过 OnEndSimulation → OnRemovingFromScene。 |
-| SendDown | 向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。 |
+| [GetEnterTransition](physical_camera_component_getentertransition.md) | 获取进入此相机模式、过渡到指定相机模式时所用的过渡。 |
+| [GetExitTransition](physical_camera_component_getexittransition.md) | 获取退出此相机模式、过渡到目标相机模式时所用的过渡。 |
+| [IsInScene](physical_camera_component_isinscene.md) | 若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。 |
+| [IsSimulating](physical_camera_component_issimulating.md) | 若组件当前正在模拟则成功。OnBeginSimulation 调用后成功；OnEndSimulation 调用后失败。 |
+| [OnAddedToScene](physical_camera_component_onaddedtoscene.md) | 当组件通过挂到 simulation 实体（或已在场景中的其他实体）之下而被加入场景时调用。该阶段完成后，查询场景中的组件才是有效的。 |
+| [OnBeginSimulation](physical_camera_component_onbeginsimulation.md) | 当组件在场景中开始模拟时调用。用它设置 TickEvent 回调或其他必须保证立即完成的初始化。OnAddedToScene 保证先于 OnBeginSimulation 运行。 |
+| [OnEndSimulation](physical_camera_component_onendsimulation.md) | 当组件在场景中结束模拟时调用。体验重置或父实体被移出场景时组件的模拟即结束。缓存的 TickEvents cancelable 应在 OnEndSimulation 中取消；OnSimulate 任务会在 OnEndSimulation 被调用前取消。只有已调用过 OnBeginSimulation 的组件才会收到 OnEndSimulation。 |
+| [OnReceive](physical_camera_component_onreceive.md) | 响应场景事件。返回 true 表示消费该事件并阻止向下一个实体继续传播。 |
+| [OnRemovingFromScene](physical_camera_component_onremovingfromscene.md) | 当组件即将被移出场景时调用。父实体被移出场景时其上的组件随之移除。只有已调用过 OnAddedToScene 的组件才会收到 OnRemovingFromScene。 |
+| [OnSimulate](physical_camera_component_onsimulate.md) | 当组件在场景中开始模拟时调用。用它为组件添加异步/可挂起的更新逻辑。OnBeginSimulation 保证先于 OnSimulate 运行；OnSimulate 会在 OnEndSimulation 之前被取消。 |
+| [RemoveFromEntity](physical_camera_component_removefromentity.md) | 把组件从实体上移除。被移除的组件会离开场景，且之后只能加回同一个实体。流程经过 OnEndSimulation → OnRemovingFromScene。 |
+| [SendDown](physical_camera_component_senddown.md) | 向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。 |

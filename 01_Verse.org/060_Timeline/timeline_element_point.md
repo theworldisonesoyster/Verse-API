@@ -26,13 +26,13 @@ This class has both data members and functions.（此类兼有数据成员和函
 
 | Data Member Name | Type | Description |
 |---|---|---|
-| Time | ?float | 此时间点的时间。可为 ±Inf；NaN 永远不会被更新或查询。 |
+| [Time](timeline_element_point_time.md) | ?float | 此时间点的时间。可为 ±Inf；NaN 永远不会被更新或查询。 |
 
 ### Functions
 
 | Function Name | Description |
 |---|---|
-| SetTime | 设置此时间点的时间。 |
+| [SetTime](timeline_element_point_settime.md) | 设置此时间点的时间。 |
 
 ## 补充说明
 

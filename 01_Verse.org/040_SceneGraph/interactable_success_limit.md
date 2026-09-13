@@ -22,9 +22,9 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| MaxSuccessfulInteractions | ??int | 此组件可被成功交互的次数；false 表示不限。达到 MaxSuccessfulInteractions 后所有活跃交互被取消，组件无法再被交互。 |
-| SuccessfulInteractionCount | ?int | 此组件已成功交互的次数。 |
+| [MaxSuccessfulInteractions](interactable_success_limit_maxsuccessfulinteractions.md) | ??int | 此组件可被成功交互的次数；false 表示不限。达到 MaxSuccessfulInteractions 后所有活跃交互被取消，组件无法再被交互。 |
+| [SuccessfulInteractionCount](interactable_success_limit_successfulinteractioncount.md) | ?int | 此组件已成功交互的次数。 |
 
 ### Functions
 | Function Name | Description |
-| ClearSuccessfulInteractionCount | 重置成功交互次数计数。 |
+| [ClearSuccessfulInteractionCount](interactable_success_limit_clearsuccessfulinteractioncount.md) | 重置成功交互次数计数。 |

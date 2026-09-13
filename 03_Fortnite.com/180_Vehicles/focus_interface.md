@@ -21,5 +21,5 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| MaintainFocus | 看向指定位置；不中断则永不完成。 |
-| MaintainFocus | 看向指定代理；不中断则永不完成。 |
+| [MaintainFocus](focus_interface_maintainfocus.md) | 看向指定位置；不中断则永不完成。 |
+| [MaintainFocus](focus_interface_maintainfocus.md) | 看向指定代理；不中断则永不完成。 |

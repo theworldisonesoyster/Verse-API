@@ -160,6 +160,7 @@ PAGE_HTML = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store">
 <title>Verse API Reference</title>
 <style>
 :root{--bg:#1c1c1c;--panel:#212121;--panel2:#282828;--fg:#e2e2e2;--dim:#96989e;--acc:#3d3d3d;--acc2:#c9c9c9;--line:#3a3a3a;
@@ -287,7 +288,7 @@ function inline(s){
 function md2html(md){
   const lines=md.split('\\n');let out=[],i=0,inCode=false,code=[],list=null,tbl=null,quote=null;
   const flushList=()=>{if(list){out.push(`<ul>${list.map(x=>'<li>'+x+'</li>').join('')}</ul>`);list=null}};
-  const flushTbl=()=>{if(tbl){let h='';tbl.forEach((r,ri)=>{const t=ri===0?'th':'td';h+='<tr>'+r.map((c,ci)=>{let v=inline(c);if(t==='td'&&ci===0&&!v.includes('<a '))v='<code class="member">'+v+'</code>';return `<${t}>${v}</${t}>`}).join('')+'</tr>'});out.push(`<table>${h}</table>`);tbl=null}};
+  const flushTbl=()=>{if(tbl){let h='';tbl.forEach((r,ri)=>{const t=ri===0?'th':'td';h+='<tr>'+r.map((c,ci)=>{let v=inline(c);if(t==='td'&&ci===0)v='<code class="member">'+v+'</code>';return `<${t}>${v}</${t}>`}).join('')+'</tr>'});out.push(`<table>${h}</table>`);tbl=null}};
   const flushQ=()=>{if(quote){out.push('<blockquote>'+quote.map(x=>inline(x)).join('<br>')+'</blockquote>');quote=null}};
   for(;i<lines.length;i++){
     const L=lines[i];

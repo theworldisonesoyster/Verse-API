@@ -22,7 +22,7 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| OnBegin | NPC 被加入模拟时调用此函数。 |
-| OnEnd | NPC 被移出模拟时调用此函数。 |
-| GetAgent | 返回与此行为关联的代理。 |
-| GetEntity | 返回与此行为关联的实体。 |
+| [OnBegin](npc_behavior_onbegin.md) | NPC 被加入模拟时调用此函数。 |
+| [OnEnd](npc_behavior_onend.md) | NPC 被移出模拟时调用此函数。 |
+| [GetAgent](npc_behavior_getagent.md) | 返回与此行为关联的代理。 |
+| [GetEntity](npc_behavior_getentity.md) | 返回与此行为关联的实体。 |

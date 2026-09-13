@@ -47,23 +47,23 @@ This class has functions, but no data members.（此类只有函数，没有数�
 
 | Function Name | Description |
 |---|---|
-| GetParent | 返回此实体的父实体。父实体掌控其子实体与组件的生命周期——实体从场景移除时，其所有子实体和组件也会一并移除。当前没有父实体时此方法失败。 |
-| RemoveFromParent | 把此实体从父实体移除，用于将实体移出场景。该实体及其子级上的组件会依次走 OnEndSimulation → OnRemovingFromScene。之后可用 NewParent.AddEntities 再加回。 |
-| AddEntities | 把给定的实体添加为子实体。若子实体已有父实体，会先从原父实体移除再加入新父。加入的子实体会沿各自的生命周期方法推进，直到与新父实体的状态一致。 |
-| GetEntities | 返回此实体下属、可从调用方上下文访问的子实体。只取直接子实体；要跨多层查询请改用 Find* 系列查询方法。 |
-| GetComponent | 若 component_type 类型的子组件存在且可从调用方上下文访问，则成功并返回该组件。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保返回的组件已达到对应阶段。若不存在或不可访问则失败。 |
-| GetComponents | 返回此实体下属、可从调用方上下文访问的子组件。 |
-| AddComponents | 把给定的组件添加到实体。若某组件不允许加到该实体，则跳过。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保被加组件已达到对应阶段。组件按以下规则添加：所有组件加入实体的子列表；若该实体在场景中，所有组件的 OnAddedToScene 被调用；若该实体正在模拟，所有组件的 OnBeginSimulation 被调用。 |
-| SendUp | 向此实体发送场景事件并沿层级向上传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对父实体调用 SendUp。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
-| SendDown | 向此实体发送场景事件并沿层级向下传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对每个子实体调用 SendDown。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
-| AddTag | 向此实体添加一个标签实例，返回与该实例唯一关联的 tag_key。 |
-| RemoveTag | 移除与 tag_key 关联的标签实例；移除成功则成功，否则失败。 |
-| RemoveAllTags | 移除 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
-| RemoveAllTagsExcept | 移除不属于 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
-| RemoveAllTagsExcept | 移除不属于 tag_types 中任何类型的全部标签实例；至少移除一个则成功，否则失败。 |
-| ContainsTag | 若容器中找到至少一个 tag_type 类型的标签则成功，否则失败。 |
-| ContainsAllTags | 若 tag_types 中有任一类型在容器中找不到则失败，否则成功。注意 tag_types 为空时此调用成功。 |
-| ContainsAnyTag | 若 tag_types 中至少一个类型在容器中找到则成功，否则失败。注意 tag_types 为空时此调用失败。 |
+| [GetParent](entity_getparent.md) | 返回此实体的父实体。父实体掌控其子实体与组件的生命周期——实体从场景移除时，其所有子实体和组件也会一并移除。当前没有父实体时此方法失败。 |
+| [RemoveFromParent](entity_removefromparent.md) | 把此实体从父实体移除，用于将实体移出场景。该实体及其子级上的组件会依次走 OnEndSimulation → OnRemovingFromScene。之后可用 NewParent.AddEntities 再加回。 |
+| [AddEntities](entity_addentities.md) | 把给定的实体添加为子实体。若子实体已有父实体，会先从原父实体移除再加入新父。加入的子实体会沿各自的生命周期方法推进，直到与新父实体的状态一致。 |
+| [GetEntities](entity_getentities.md) | 返回此实体下属、可从调用方上下文访问的子实体。只取直接子实体；要跨多层查询请改用 Find* 系列查询方法。 |
+| [GetComponent](entity_getcomponent.md) | 若 component_type 类型的子组件存在且可从调用方上下文访问，则成功并返回该组件。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保返回的组件已达到对应阶段。若不存在或不可访问则失败。 |
+| [GetComponents](entity_getcomponents.md) | 返回此实体下属、可从调用方上下文访问的子组件。 |
+| [AddComponents](entity_addcomponents.md) | 把给定的组件添加到实体。若某组件不允许加到该实体，则跳过。注意：在 AddedToScene 或 BeginSimulation 阶段调用时，会确保被加组件已达到对应阶段。组件按以下规则添加：所有组件加入实体的子列表；若该实体在场景中，所有组件的 OnAddedToScene 被调用；若该实体正在模拟，所有组件的 OnBeginSimulation 被调用。 |
+| [SendUp](entity_sendup.md) | 向此实体发送场景事件并沿层级向上传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对父实体调用 SendUp。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
+| [SendDown](entity_senddown.md) | 向此实体发送场景事件并沿层级向下传播：先在本实体的每个组件上调用 SendDown/OnReceive，再对每个子实体调用 SendDown。任一环节消费该事件即停止传播。有参与者消费则返回 true。 |
+| [AddTag](entity_addtag.md) | 向此实体添加一个标签实例，返回与该实例唯一关联的 tag_key。 |
+| [RemoveTag](entity_removetag.md) | 移除与 tag_key 关联的标签实例；移除成功则成功，否则失败。 |
+| [RemoveAllTags](entity_removealltags.md) | 移除 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| [RemoveAllTagsExcept](entity_removealltagsexcept.md) | 移除不属于 tag_type 类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| [RemoveAllTagsExcept](entity_removealltagsexcept.md) | 移除不属于 tag_types 中任何类型的全部标签实例；至少移除一个则成功，否则失败。 |
+| [ContainsTag](entity_containstag.md) | 若容器中找到至少一个 tag_type 类型的标签则成功，否则失败。 |
+| [ContainsAllTags](entity_containsalltags.md) | 若 tag_types 中有任一类型在容器中找不到则失败，否则成功。注意 tag_types 为空时此调用成功。 |
+| [ContainsAnyTag](entity_containsanytag.md) | 若 tag_types 中至少一个类型在容器中找到则成功，否则失败。注意 tag_types 为空时此调用失败。 |
 
 ## 示例
 

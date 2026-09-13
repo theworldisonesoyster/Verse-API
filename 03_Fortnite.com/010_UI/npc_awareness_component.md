@@ -29,24 +29,24 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| DetectedTargets | ?[]npc_target_info | 所有已侦测目标的信息。 |
-| DetectTargetEvent | listenable(payload) | 侦测到目标时的事件。 |
-| Entity | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
-| ForgetTargetEvent | listenable(payload) | 目标被遗忘时的事件。 |
-| HearTargetEvent | listenable(payload) | 听到目标时的事件（听觉感知须处于激活状态）。 |
-| SeeTargetEvent | listenable(payload) | 看到目标时的事件（视觉感知须处于激活状态）。 |
-| TickEvents | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
-| TouchTargetEvent | listenable(payload) | 触到目标时的事件（触觉感知须处于激活状态）。 |
+| [DetectedTargets](npc_awareness_component_detectedtargets.md) | ?[]npc_target_info | 所有已侦测目标的信息。 |
+| [DetectTargetEvent](npc_awareness_component_detecttargetevent.md) | listenable(payload) | 侦测到目标时的事件。 |
+| [Entity](npc_awareness_component_entity.md) | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
+| [ForgetTargetEvent](npc_awareness_component_forgettargetevent.md) | listenable(payload) | 目标被遗忘时的事件。 |
+| [HearTargetEvent](npc_awareness_component_heartargetevent.md) | listenable(payload) | 听到目标时的事件（听觉感知须处于激活状态）。 |
+| [SeeTargetEvent](npc_awareness_component_seetargetevent.md) | listenable(payload) | 看到目标时的事件（视觉感知须处于激活状态）。 |
+| [TickEvents](npc_awareness_component_tickevents.md) | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
+| [TouchTargetEvent](npc_awareness_component_touchtargetevent.md) | listenable(payload) | 触到目标时的事件（触觉感知须处于激活状态）。 |
 
 ### Functions
 | Function Name | Description |
-| IsInScene | 若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。 |
-| IsSimulating | 若组件当前正在模拟则成功。OnBeginSimulation 调用后成功；OnEndSimulation 调用后失败。 |
-| OnAddedToScene | 当组件通过挂到 simulation 实体（或已在场景中的其他实体）之下而被加入场景时调用。该阶段完成后，查询场景中的组件才是有效的。 |
-| OnBeginSimulation | 当组件在场景中开始模拟时调用。用它设置 TickEvent 回调或其他必须保证立即完成的初始化。OnAddedToScene 保证先于 OnBeginSimulation 运行。 |
-| OnEndSimulation | 当组件在场景中结束模拟时调用。体验重置或父实体被移出场景时组件的模拟即结束。缓存的 TickEvents cancelable 应在 OnEndSimulation 中取消；OnSimulate 任务会在 OnEndSimulation 被调用前取消。只有已调用过 OnBeginSimulation 的组件才会收到 OnEndSimulation。 |
-| OnReceive | 响应场景事件。返回 true 表示消费该事件并阻止向下一个实体继续传播。 |
-| OnRemovingFromScene | 当组件即将被移出场景时调用。父实体被移出场景时其上的组件随之移除。只有已调用过 OnAddedToScene 的组件才会收到 OnRemovingFromScene。 |
-| OnSimulate | 当组件在场景中开始模拟时调用。用它为组件添加异步/可挂起的更新逻辑。OnBeginSimulation 保证先于 OnSimulate 运行；OnSimulate 会在 OnEndSimulation 之前被取消。 |
-| RemoveFromEntity | 把组件从实体上移除。被移除的组件会离开场景，且之后只能加回同一个实体。流程经过 OnEndSimulation → OnRemovingFromScene。 |
-| SendDown | 向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。 |
+| [IsInScene](npc_awareness_component_isinscene.md) | 若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。 |
+| [IsSimulating](npc_awareness_component_issimulating.md) | 若组件当前正在模拟则成功。OnBeginSimulation 调用后成功；OnEndSimulation 调用后失败。 |
+| [OnAddedToScene](npc_awareness_component_onaddedtoscene.md) | 当组件通过挂到 simulation 实体（或已在场景中的其他实体）之下而被加入场景时调用。该阶段完成后，查询场景中的组件才是有效的。 |
+| [OnBeginSimulation](npc_awareness_component_onbeginsimulation.md) | 当组件在场景中开始模拟时调用。用它设置 TickEvent 回调或其他必须保证立即完成的初始化。OnAddedToScene 保证先于 OnBeginSimulation 运行。 |
+| [OnEndSimulation](npc_awareness_component_onendsimulation.md) | 当组件在场景中结束模拟时调用。体验重置或父实体被移出场景时组件的模拟即结束。缓存的 TickEvents cancelable 应在 OnEndSimulation 中取消；OnSimulate 任务会在 OnEndSimulation 被调用前取消。只有已调用过 OnBeginSimulation 的组件才会收到 OnEndSimulation。 |
+| [OnReceive](npc_awareness_component_onreceive.md) | 响应场景事件。返回 true 表示消费该事件并阻止向下一个实体继续传播。 |
+| [OnRemovingFromScene](npc_awareness_component_onremovingfromscene.md) | 当组件即将被移出场景时调用。父实体被移出场景时其上的组件随之移除。只有已调用过 OnAddedToScene 的组件才会收到 OnRemovingFromScene。 |
+| [OnSimulate](npc_awareness_component_onsimulate.md) | 当组件在场景中开始模拟时调用。用它为组件添加异步/可挂起的更新逻辑。OnBeginSimulation 保证先于 OnSimulate 运行；OnSimulate 会在 OnEndSimulation 之前被取消。 |
+| [RemoveFromEntity](npc_awareness_component_removefromentity.md) | 把组件从实体上移除。被移除的组件会离开场景，且之后只能加回同一个实体。流程经过 OnEndSimulation → OnRemovingFromScene。 |
+| [SendDown](npc_awareness_component_senddown.md) | 向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。 |

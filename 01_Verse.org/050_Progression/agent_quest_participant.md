@@ -29,7 +29,7 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| AbandonEvent | unknown | 此参与者放弃任务时触发。 |
-| Agent | agent | 此参与者所代表的代理。 |
-| CompleteEvent | unknown | 此参与者所在的任务完成时触发。 |
-| JoinEvent | unknown | 此参与者加入任务时触发。 |
+| [AbandonEvent](agent_quest_participant_abandonevent.md) | unknown | 此参与者放弃任务时触发。 |
+| [Agent](agent_quest_participant_agent.md) | agent | 此参与者所代表的代理。 |
+| [CompleteEvent](agent_quest_participant_completeevent.md) | unknown | 此参与者所在的任务完成时触发。 |
+| [JoinEvent](agent_quest_participant_joinevent.md) | unknown | 此参与者加入任务时触发。 |

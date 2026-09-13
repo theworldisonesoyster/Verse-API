@@ -28,12 +28,12 @@ This class exposes the following interfaces:（此类暴露以下接口：）
 
 | Function Name | Description |
 |---|---|
-| AddMember | 尝试把给定代理加入此代理组；返回一个 result——成功或返回错误。 |
-| RemoveMember | 尝试把给定代理移出此代理组；返回一个 result——成功或返回错误。 |
-| GetMembers | 获取此代理组的成员及其成员信息。 |
-| JoinEvent | 每当有代理成功加入此代理组时触发；载荷为加入的代理及其 member_info。 |
-| LeaveEvent | 每当有代理成功离开此代理组时触发；载荷为离开的代理及其 member_info。 |
-| MemberInfoUpdatedEvent | 每当某代理的 MemberInfo 类被重新实例化时触发；载荷为被更新的代理及其新 member_info。 |
+| [AddMember](agent_group_member_info_addmember.md) | 尝试把给定代理加入此代理组；返回一个 result——成功或返回错误。 |
+| [RemoveMember](agent_group_member_info_removemember.md) | 尝试把给定代理移出此代理组；返回一个 result——成功或返回错误。 |
+| [GetMembers](agent_group_member_info_getmembers.md) | 获取此代理组的成员及其成员信息。 |
+| [JoinEvent](agent_group_member_info_joinevent.md) | 每当有代理成功加入此代理组时触发；载荷为加入的代理及其 member_info。 |
+| [LeaveEvent](agent_group_member_info_leaveevent.md) | 每当有代理成功离开此代理组时触发；载荷为离开的代理及其 member_info。 |
+| [MemberInfoUpdatedEvent](agent_group_member_info_memberinfoupdatedevent.md) | 每当某代理的 MemberInfo 类被重新实例化时触发；载荷为被更新的代理及其新 member_info。 |
 
 ## 相关页面
 

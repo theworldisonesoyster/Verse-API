@@ -30,9 +30,9 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| GrantEvent | listenable(payload) | 此奖励发放给接收者之后触发。 |
+| [GrantEvent](quest_reward_grantevent.md) | listenable(payload) | 此奖励发放给接收者之后触发。 |
 
 ### Functions
 | Function Name | Description |
-| GetRecipients | 决定哪些参与者应获得此奖励。可重写以自定义接收者选择。默认：Info.Receives = true 的所有参与者。 |
-| GrantReward | 把此奖励发放给符合条件的参与者。 |
+| [GetRecipients](quest_reward_getrecipients.md) | 决定哪些参与者应获得此奖励。可重写以自定义接收者选择。默认：Info.Receives = true 的所有参与者。 |
+| [GrantReward](quest_reward_grantreward.md) | 把此奖励发放给符合条件的参与者。 |

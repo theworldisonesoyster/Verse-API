@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| ZOrder | int | 控件渲染顺序；值越大越靠前绘制。 |
-| InputMode | ui_input_mode | 控制 widget 对输入事件的消费。 |
+| [ZOrder](player_ui_slot_zorder.md) | int | 控件渲染顺序；值越大越靠前绘制。 |
+| [InputMode](player_ui_slot_inputmode.md) | ui_input_mode | 控制 widget 对输入事件的消费。 |

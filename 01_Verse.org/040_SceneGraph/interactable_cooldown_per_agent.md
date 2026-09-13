@@ -22,6 +22,6 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Duration | ?float | 成功交互后、发起交互的代理可再次发起交互之前所需的秒数。仅在 duration > 0.0 时生效；修改不影响 RemainingPerAgentCooldownDuration。当可同时交互人数有限时，此属性给其他代理留出交互时间。 |
-| RemainingDuration | ?[agent]float | 特定代理在此组件上可再次发起交互前的剩余冷却秒数。 |
-| ExpiredEvent | unknown | 按代理的冷却到期时触发；载荷为此前受冷却影响的代理。 |
+| [Duration](interactable_cooldown_per_agent_duration.md) | ?float | 成功交互后、发起交互的代理可再次发起交互之前所需的秒数。仅在 duration > 0.0 时生效；修改不影响 RemainingPerAgentCooldownDuration。当可同时交互人数有限时，此属性给其他代理留出交互时间。 |
+| [RemainingDuration](interactable_cooldown_per_agent_remainingduration.md) | ?[agent]float | 特定代理在此组件上可再次发起交互前的剩余冷却秒数。 |
+| [ExpiredEvent](interactable_cooldown_per_agent_expiredevent.md) | unknown | 按代理的冷却到期时触发；载荷为此前受冷却影响的代理。 |

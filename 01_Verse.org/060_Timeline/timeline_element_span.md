@@ -26,14 +26,14 @@ This class has both data members and functions.（此类兼有数据成员和函
 
 | Data Member Name | Type | Description |
 |---|---|---|
-| BeginTime | ?float | 区间开始的时间。默认 0.0；须非 NaN 且 ≤ EndTime 才会被更新或查询；可为 ±Inf。 |
-| EndTime | ?float | 区间结束的时间。默认 Inf；须非 NaN 且 ≥ BeginTime 才会被更新或查询；可为 ±Inf。 |
+| [BeginTime](timeline_element_span_begintime.md) | ?float | 区间开始的时间。默认 0.0；须非 NaN 且 ≤ EndTime 才会被更新或查询；可为 ±Inf。 |
+| [EndTime](timeline_element_span_endtime.md) | ?float | 区间结束的时间。默认 Inf；须非 NaN 且 ≥ BeginTime 才会被更新或查询；可为 ±Inf。 |
 
 ### Functions
 
 | Function Name | Description |
 |---|---|
-| SetRange | 通过赋值起止时间来修改时间线的范围。 |
+| [SetRange](timeline_element_span_setrange.md) | 通过赋值起止时间来修改时间线的范围。 |
 
 ## 相关页面
 

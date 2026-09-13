@@ -22,6 +22,6 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Quest | quest | 此成员关系所属的任务。 |
-| Participant | quest_participant | 此成员关系中的参与者。 |
-| Info | quest_participant_info | 描述此参与者角色的参与信息。 |
+| [Quest](quest_membership_quest.md) | quest | 此成员关系所属的任务。 |
+| [Participant](quest_membership_participant.md) | quest_participant | 此成员关系中的参与者。 |
+| [Info](quest_membership_info.md) | quest_participant_info | 描述此参与者角色的参与信息。 |

@@ -22,7 +22,7 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| FocalLengthMillimeters | float | 镜头焦距（毫米）。 |
-| FStop | float | 镜头光圈（FStop）。 |
-| SqueezeFactor | float | 变形（anamorphic）镜头的挤压系数。 |
-| BladeCount | int | 光圈叶片数。 |
+| [FocalLengthMillimeters](camera_lens_focallengthmillimeters.md) | float | 镜头焦距（毫米）。 |
+| [FStop](camera_lens_fstop.md) | float | 镜头光圈（FStop）。 |
+| [SqueezeFactor](camera_lens_squeezefactor.md) | float | 变形（anamorphic）镜头的挤压系数。 |
+| [BladeCount](camera_lens_bladecount.md) | int | 光圈叶片数。 |

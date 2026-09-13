@@ -7,7 +7,7 @@ module: /Verse.org/verse
 grade: B
 depth: oneliner
 status: done
-order: 4
+order: 3
 parent: versedotorg/verse/enableable
 ---
 

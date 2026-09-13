@@ -22,14 +22,14 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| CompletedEvent | listenable(payload) | 动画完成时触发的事件。 |
-| InterruptedEvent | listenable(payload) | 动画被打断时触发的事件。 |
-| BlendedInEvent | listenable(payload) | 动画完成混合淡出（blend out）时触发的事件。 |
-| BlendingOutEvent | listenable(payload) | 动画开始混合淡出时触发的事件。 |
+| [CompletedEvent](play_animation_instance_completedevent.md) | listenable(payload) | 动画完成时触发的事件。 |
+| [InterruptedEvent](play_animation_instance_interruptedevent.md) | listenable(payload) | 动画被打断时触发的事件。 |
+| [BlendedInEvent](play_animation_instance_blendedinevent.md) | listenable(payload) | 动画完成混合淡出（blend out）时触发的事件。 |
+| [BlendingOutEvent](play_animation_instance_blendingoutevent.md) | listenable(payload) | 动画开始混合淡出时触发的事件。 |
 
 ### Functions
 | Function Name | Description |
-| GetState | 返回动画播放状态。 |
-| Stop | 停止动画。 |
-| Await | 辅助函数：等待动画完成或被打断。 |
-| IsPlaying | 辅助函数：状态为 Playing/BlendingIn/BlendingOut 时成功。 |
+| [GetState](play_animation_instance_getstate.md) | 返回动画播放状态。 |
+| [Stop](play_animation_instance_stop.md) | 停止动画。 |
+| [Await](play_animation_instance_await.md) | 辅助函数：等待动画完成或被打断。 |
+| [IsPlaying](play_animation_instance_isplaying.md) | 辅助函数：状态为 Playing/BlendingIn/BlendingOut 时成功。 |

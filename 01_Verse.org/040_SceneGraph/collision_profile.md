@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Channel | collision_channel | 所属对象的碰撞通道。 |
-| GetChannelInteraction | (collision_channel):collision_interaction | 所属对象应如何与其他对象交互。GetChannelInteraction 是把 collision_channel 映射为 collision_interaction 的函数，可用一串 if 实现。例如放行相机通道、阻塞其余：BlockAllIgnoreCamera(Channel:collision_channel):collision_interaction = if (CollisionChannels.camera[Channel]): return collision_interaction.Ignore；return collision_interaction.Block。然后 MyProfile:collision_profile = MakeCollisionProfile(CollisionChannels.dynamic, BlockAllIgnoreCamera)。 |
+| [Channel](collision_profile_channel.md) | collision_channel | 所属对象的碰撞通道。 |
+| [GetChannelInteraction](collision_profile_getchannelinteraction.md) | (collision_channel):collision_interaction | 所属对象应如何与其他对象交互。GetChannelInteraction 是把 collision_channel 映射为 collision_interaction 的函数，可用一串 if 实现。例如放行相机通道、阻塞其余：BlockAllIgnoreCamera(Channel:collision_channel):collision_interaction = if (CollisionChannels.camera[Channel]): return collision_interaction.Ignore；return collision_interaction.Block。然后 MyProfile:collision_profile = MakeCollisionProfile(CollisionChannels.dynamic, BlockAllIgnoreCamera)。 |

@@ -22,6 +22,6 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Translation | vector3 | 此变换的位置（Location）。 |
-| Rotation | rotation | 此变换的旋转（Rotation）。 |
-| Scale | vector3 | 此变换的缩放（Scale）。 |
+| [Translation](transform_translation.md) | vector3 | 此变换的位置（Location）。 |
+| [Rotation](transform_rotation.md) | rotation | 此变换的旋转（Rotation）。 |
+| [Scale](transform_scale.md) | vector3 | 此变换的缩放（Scale）。 |

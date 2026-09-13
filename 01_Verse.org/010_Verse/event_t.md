@@ -33,8 +33,8 @@ This class has functions, but no data members.（此类只有函数，没有数�
 
 | Function Name | Description |
 |---|---|
-| Await | 挂起当前任务，直到另一个任务调用 Signal。若在 Signal 的调用过程中调用 Await，任务仍会挂起，并等到**下一次** Signal 调用时恢复。 |
-| Signal | 并发恢复在此次 Signal 之前被 Await 挂起的任务。任务按挂起的先后顺序恢复；每个任务会尽可能执行直到遇到阻塞调用，随即把控制权交给下一个被挂起的任务。 |
+| [Await](event_t_await.md) | 挂起当前任务，直到另一个任务调用 Signal。若在 Signal 的调用过程中调用 Await，任务仍会挂起，并等到**下一次** Signal 调用时恢复。 |
+| [Signal](event_t_signal.md) | 并发恢复在此次 Signal 之前被 Await 挂起的任务。任务按挂起的先后顺序恢复；每个任务会尽可能执行直到遇到阻塞调用，随即把控制权交给下一个被挂起的任务。 |
 
 ## Attributes, Specifiers, and Effects
 

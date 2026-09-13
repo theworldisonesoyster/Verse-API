@@ -22,13 +22,13 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| JoinEvent | unknown | 有参与者加入此集合中任一任务时触发。 |
-| AbandonEvent | unknown | 有参与者放弃此集合中任一任务时触发。 |
-| CompleteEvent | unknown | 此集合中任一任务完成时触发。 |
-| Quests | ?[quest][]quest_membership | 按任务索引的全部成员关系。 |
-| Participants | ?[quest_participant][]quest_membership | 按参与者索引的全部成员关系。 |
+| [JoinEvent](quest_collection_joinevent.md) | unknown | 有参与者加入此集合中任一任务时触发。 |
+| [AbandonEvent](quest_collection_abandonevent.md) | unknown | 有参与者放弃此集合中任一任务时触发。 |
+| [CompleteEvent](quest_collection_completeevent.md) | unknown | 此集合中任一任务完成时触发。 |
+| [Quests](quest_collection_quests.md) | ?[quest][]quest_membership | 按任务索引的全部成员关系。 |
+| [Participants](quest_collection_participants.md) | ?[quest_participant][]quest_membership | 按参与者索引的全部成员关系。 |
 
 ### Functions
 | Function Name | Description |
-| JoinQuest | 以给定的参与信息把 Participant 加入 Quest。 |
-| AbandonQuest | 把 Participant 从 Quest 中移除。 |
+| [JoinQuest](quest_collection_joinquest.md) | 以给定的参与信息把 Participant 加入 Quest。 |
+| [AbandonQuest](quest_collection_abandonquest.md) | 把 Participant 从 Quest 中移除。 |

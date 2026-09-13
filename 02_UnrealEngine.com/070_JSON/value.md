@@ -22,9 +22,9 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| AsObject | 取出对象值；value 不是 json 对象则失败。 |
-| AsArray | 取出数组值；value 不是 json 数组则失败。 |
-| AsInt | 取出整数值；value 不是 json 数字则失败。 |
-| AsFloat | 取出浮点值；value 不是 json 数字则失败。 |
-| AsString | 取出对象值；value 不是字符串则失败。 |
-| AsNull | 取出对象值；value 不是 null 则失败。 |
+| [AsObject](value_asobject.md) | 取出对象值；value 不是 json 对象则失败。 |
+| [AsArray](value_asarray.md) | 取出数组值；value 不是 json 数组则失败。 |
+| [AsInt](value_asint.md) | 取出整数值；value 不是 json 数字则失败。 |
+| [AsFloat](value_asfloat.md) | 取出浮点值；value 不是 json 数字则失败。 |
+| [AsString](value_asstring.md) | 取出对象值；value 不是字符串则失败。 |
+| [AsNull](value_asnull.md) | 取出对象值；value 不是 null 则失败。 |

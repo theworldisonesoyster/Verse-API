@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Player | player | 触发事件的玩家。 |
-| Source | widget | 触发事件的控件。 |
+| [Player](widget_message_player.md) | player | 触发事件的玩家。 |
+| [Source](widget_message_source.md) | widget | 触发事件的控件。 |

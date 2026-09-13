@@ -23,10 +23,10 @@ This class has functions, but no data members.（此类只有函数，没有数�
 
 | Function Name | Description |
 |---|---|
-| AddWidget | 使用默认 player_ui_slot 配置，把 Widget 添加到此 player_ui。 |
-| AddWidget | 使用 Slot 配置，把 Widget 添加到此 player_ui。 |
-| RemoveWidget | 把 Widget 从此 player_ui 移除。 |
-| SetFocus | 把使用者的焦点设置到该 Widget。目标 Widget 必须可聚焦（focusable），否则无效果。若在 AddWidget 之前调用 SetFocus，则 AddWidget 之后该控件会获得焦点——除非在那之前又有别的 SetFocus 调用。 |
+| [AddWidget](player_ui_addwidget.md) | 使用默认 player_ui_slot 配置，把 Widget 添加到此 player_ui。 |
+| [AddWidget](player_ui_addwidget.md) | 使用 Slot 配置，把 Widget 添加到此 player_ui。 |
+| [RemoveWidget](player_ui_removewidget.md) | 把 Widget 从此 player_ui 移除。 |
+| [SetFocus](player_ui_setfocus.md) | 把使用者的焦点设置到该 Widget。目标 Widget 必须可聚焦（focusable），否则无效果。若在 AddWidget 之前调用 SetFocus，则 AddWidget 之后该控件会获得焦点——除非在那之前又有别的 SetFocus 调用。 |
 
 ## Attributes, Specifiers, and Effects
 

@@ -22,7 +22,7 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Left | float | 左边距。 |
-| Top | float | 上边距。 |
-| Right | float | 右边距。 |
-| Bottom | float | 下边距。 |
+| [Left](margin_left.md) | float | 左边距。 |
+| [Top](margin_top.md) | float | 上边距。 |
+| [Right](margin_right.md) | float | 右边距。 |
+| [Bottom](margin_bottom.md) | float | 下边距。 |

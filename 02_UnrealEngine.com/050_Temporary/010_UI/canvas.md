@@ -29,15 +29,15 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Slots | []canvas_slot | 画布的子控件；仅在控件初始化时使用，Add/RemoveWidget 不会修改它。 |
+| [Slots](canvas_slots.md) | []canvas_slot | 画布的子控件；仅在控件初始化时使用，Add/RemoveWidget 不会修改它。 |
 
 ### Functions
 | Function Name | Description |
-| AddWidget | 向画布添加新的子槽位。 |
-| GetParentWidget | 返回该 widget 的父 widget。若它不在 player_ui 中或自身就是根 widget 则失败。 |
-| GetRootWidget | 返回当初把该 widget 加进 player_ui 的根 widget；根 widget 返回它自己。若该 widget 不在 player_ui 中则失败。 |
-| GetVisibility | 返回当前 widget_visibility 状态。 |
-| IsEnabled | 若此 widget 可被玩家交互修改则返回 true。 |
-| RemoveWidget | 移除包含给定控件的槽位。 |
-| SetEnabled | 启用或禁用玩家与此 widget 的交互。 |
-| SetVisibility | 显示或隐藏该 widget，而不把它从所在 player_ui 中移除。详见 widget_visibility。 |
+| [AddWidget](canvas_addwidget.md) | 向画布添加新的子槽位。 |
+| [GetParentWidget](canvas_getparentwidget.md) | 返回该 widget 的父 widget。若它不在 player_ui 中或自身就是根 widget 则失败。 |
+| [GetRootWidget](canvas_getrootwidget.md) | 返回当初把该 widget 加进 player_ui 的根 widget；根 widget 返回它自己。若该 widget 不在 player_ui 中则失败。 |
+| [GetVisibility](canvas_getvisibility.md) | 返回当前 widget_visibility 状态。 |
+| [IsEnabled](canvas_isenabled.md) | 若此 widget 可被玩家交互修改则返回 true。 |
+| [RemoveWidget](canvas_removewidget.md) | 移除包含给定控件的槽位。 |
+| [SetEnabled](canvas_setenabled.md) | 启用或禁用玩家与此 widget 的交互。 |
+| [SetVisibility](canvas_setvisibility.md) | 显示或隐藏该 widget，而不把它从所在 player_ui 中移除。详见 widget_visibility。 |

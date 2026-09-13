@@ -30,5 +30,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| SortOrder | rational | 在任务 UI 中的相对排序；值越小越靠前。 |
-| Parent | ?quest_category | 此类别被视为嵌套于其下的上级类别。 |
+| [SortOrder](quest_category_sortorder.md) | rational | 在任务 UI 中的相对排序；值越小越靠前。 |
+| [Parent](quest_category_parent.md) | ?quest_category | 此类别被视为嵌套于其下的上级类别。 |

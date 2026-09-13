@@ -29,16 +29,16 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Orientation | orientation | 堆叠容器的方向：水平或垂直排列控件。 |
-| Slots | []stack_box_slot | 堆叠容器的子控件；仅在初始化时使用，Add/RemoveWidget 不会修改它。 |
+| [Orientation](stack_box_orientation.md) | orientation | 堆叠容器的方向：水平或垂直排列控件。 |
+| [Slots](stack_box_slots.md) | []stack_box_slot | 堆叠容器的子控件；仅在初始化时使用，Add/RemoveWidget 不会修改它。 |
 
 ### Functions
 | Function Name | Description |
-| AddWidget | 向堆叠容器添加新的子槽位；新槽位加在末尾。 |
-| GetParentWidget | 返回该 widget 的父 widget。若它不在 player_ui 中或自身就是根 widget 则失败。 |
-| GetRootWidget | 返回当初把该 widget 加进 player_ui 的根 widget；根 widget 返回它自己。若该 widget 不在 player_ui 中则失败。 |
-| GetVisibility | 返回当前 widget_visibility 状态。 |
-| IsEnabled | 若此 widget 可被玩家交互修改则返回 true。 |
-| RemoveWidget | 移除包含给定控件的槽位 |
-| SetEnabled | 启用或禁用玩家与此 widget 的交互。 |
-| SetVisibility | 显示或隐藏该 widget，而不把它从所在 player_ui 中移除。详见 widget_visibility。 |
+| [AddWidget](stack_box_addwidget.md) | 向堆叠容器添加新的子槽位；新槽位加在末尾。 |
+| [GetParentWidget](stack_box_getparentwidget.md) | 返回该 widget 的父 widget。若它不在 player_ui 中或自身就是根 widget 则失败。 |
+| [GetRootWidget](stack_box_getrootwidget.md) | 返回当初把该 widget 加进 player_ui 的根 widget；根 widget 返回它自己。若该 widget 不在 player_ui 中则失败。 |
+| [GetVisibility](stack_box_getvisibility.md) | 返回当前 widget_visibility 状态。 |
+| [IsEnabled](stack_box_isenabled.md) | 若此 widget 可被玩家交互修改则返回 true。 |
+| [RemoveWidget](stack_box_removewidget.md) | 移除包含给定控件的槽位 |
+| [SetEnabled](stack_box_setenabled.md) | 启用或禁用玩家与此 widget 的交互。 |
+| [SetVisibility](stack_box_setvisibility.md) | 显示或隐藏该 widget，而不把它从所在 player_ui 中移除。详见 widget_visibility。 |

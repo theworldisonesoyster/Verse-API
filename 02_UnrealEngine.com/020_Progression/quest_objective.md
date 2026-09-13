@@ -30,12 +30,12 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| CompleteEvent | listenable(payload) | 此目标被判定完成时触发。 |
-| ProgressEvent | listenable(payload) | 此目标的进度变化时触发。载荷：此目标。 |
+| [CompleteEvent](quest_objective_completeevent.md) | listenable(payload) | 此目标被判定完成时触发。 |
+| [ProgressEvent](quest_objective_progressevent.md) | listenable(payload) | 此目标的进度变化时触发。载荷：此目标。 |
 
 ### Functions
 | Function Name | Description |
-| GetProgress | 返回进度消息（如 "3 / 10"）。 |
-| GetContributors | 决定哪些参与者可为此目标做贡献。可重写以自定义贡献者选择。默认：Info.Contributes = true 的所有参与者。 |
-| IsComplete | 此目标当前已完成则成功。 |
-| SignalProgressEvent | 发出 ProgressEvent。在子类中调用以通知进度订阅者。 |
+| [GetProgress](quest_objective_getprogress.md) | 返回进度消息（如 "3 / 10"）。 |
+| [GetContributors](quest_objective_getcontributors.md) | 决定哪些参与者可为此目标做贡献。可重写以自定义贡献者选择。默认：Info.Contributes = true 的所有参与者。 |
+| [IsComplete](quest_objective_iscomplete.md) | 此目标当前已完成则成功。 |
+| [SignalProgressEvent](quest_objective_signalprogressevent.md) | 发出 ProgressEvent。在子类中调用以通知进度订阅者。 |

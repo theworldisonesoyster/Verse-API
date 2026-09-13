@@ -30,42 +30,42 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| CanceledEvent | unknown | 交互在成功完成前被中断时触发；载荷为此前交互的代理。interactable_component 本身不可取消，此事件供子类在合适时机触发。 |
-| CanInteractMessage | ?message | CanInteract 成功时显示的消息。 |
-| CannotInteractMessage | ?message | CanInteract 失败时显示的消息。 |
-| Cooldown | ?interactable_cooldown | 冷却在成功交互后开始计时；作用于该组件上的所有交互尝试（全局冷却）。 |
-| CooldownPerAgent | ?interactable_cooldown_per_agent | 冷却在成功交互后开始计时；仅作用于成功者的后续交互尝试（按代理冷却）。 |
-| Entity | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
-| InteractableDuration | ?interactable_duration | 带时长的交互要等时长走完才算成功；期间可被取消，不保证成功。 |
-| InteractingAgents | ?[]agent | 当前正在与此可交互物交互的代理。 |
-| StartedEvent | unknown | 成功交互开始时触发；载荷为交互代理。InteractDuration ≤ 0 时本事件与 InteractSucceededEvent 相同。 |
-| SucceededEvent | unknown | 交互成功完成时触发；载荷为此前交互的代理。InteractDuration ≤ 0 时本事件与 InteractStartedEvent 相同。 |
-| SuccessLimit | ?interactable_success_limit | 成功次数上限：达到指定成功次数后阻止新的交互。 |
-| TickEvents | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
+| [CanceledEvent](basic_interactable_component_canceledevent.md) | unknown | 交互在成功完成前被中断时触发；载荷为此前交互的代理。interactable_component 本身不可取消，此事件供子类在合适时机触发。 |
+| [CanInteractMessage](basic_interactable_component_caninteractmessage.md) | ?message | CanInteract 成功时显示的消息。 |
+| [CannotInteractMessage](basic_interactable_component_cannotinteractmessage.md) | ?message | CanInteract 失败时显示的消息。 |
+| [Cooldown](basic_interactable_component_cooldown.md) | ?interactable_cooldown | 冷却在成功交互后开始计时；作用于该组件上的所有交互尝试（全局冷却）。 |
+| [CooldownPerAgent](basic_interactable_component_cooldownperagent.md) | ?interactable_cooldown_per_agent | 冷却在成功交互后开始计时；仅作用于成功者的后续交互尝试（按代理冷却）。 |
+| [Entity](basic_interactable_component_entity.md) | entity | 此组件的父实体。组件构造时必须提供父实体指针；组件不能在父实体之间移动。 |
+| [InteractableDuration](basic_interactable_component_interactableduration.md) | ?interactable_duration | 带时长的交互要等时长走完才算成功；期间可被取消，不保证成功。 |
+| [InteractingAgents](basic_interactable_component_interactingagents.md) | ?[]agent | 当前正在与此可交互物交互的代理。 |
+| [StartedEvent](basic_interactable_component_startedevent.md) | unknown | 成功交互开始时触发；载荷为交互代理。InteractDuration ≤ 0 时本事件与 InteractSucceededEvent 相同。 |
+| [SucceededEvent](basic_interactable_component_succeededevent.md) | unknown | 交互成功完成时触发；载荷为此前交互的代理。InteractDuration ≤ 0 时本事件与 InteractStartedEvent 相同。 |
+| [SuccessLimit](basic_interactable_component_successlimit.md) | ?interactable_success_limit | 成功次数上限：达到指定成功次数后阻止新的交互。 |
+| [TickEvents](basic_interactable_component_tickevents.md) | ?tick_events | 设置 TickEvents.PrePhysics 与 TickEvents.PostPhysics 回调，在对象物理更新前/后接收逐帧更新。 |
 
 ### Functions
 | Function Name | Description |
-| Cancel | 尝试取消一次交互；给定代理当前未在交互则失败。 |
-| CanInteract | 返回指定代理当前能否交互。 |
-| Disable | 禁用与该组件的交互。禁用后不显示交互提示。 |
-| Enable | 启用与该组件的交互。 |
-| GetRemainingCooldownDurationAffectingAgent | 获取给定代理的剩余冷却：返回共享冷却与按代理冷却中较大者的剩余秒数；同一事务内多次调用返回相同值。 |
-| InteractMessage |  |
-| InteractMessage | 返回适合展示给玩家、说明当前交互状态的消息。 |
-| IsEnabled | 组件处于启用状态则成功，禁用则失败。 |
-| IsInScene | 若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。 |
-| IsSimulating | 若组件当前正在模拟则成功。OnBeginSimulation 调用后成功；OnEndSimulation 调用后失败。 |
-| OnAddedToScene | 当组件通过挂到 simulation 实体（或已在场景中的其他实体）之下而被加入场景时调用。该阶段完成后，查询场景中的组件才是有效的。 |
-| OnBeginSimulation | 当组件在场景中开始模拟时调用。用它设置 TickEvent 回调或其他必须保证立即完成的初始化。OnAddedToScene 保证先于 OnBeginSimulation 运行。 |
-| OnEndSimulation | 当组件在场景中结束模拟时调用。体验重置或父实体被移出场景时组件的模拟即结束。缓存的 TickEvents cancelable 应在 OnEndSimulation 中取消；OnSimulate 任务会在 OnEndSimulation 被调用前取消。只有已调用过 OnBeginSimulation 的组件才会收到 OnEndSimulation。 |
-| OnReceive | 响应场景事件。返回 true 表示消费该事件并阻止向下一个实体继续传播。 |
-| OnRemovingFromScene | 当组件即将被移出场景时调用。父实体被移出场景时其上的组件随之移除。只有已调用过 OnAddedToScene 的组件才会收到 OnRemovingFromScene。 |
-| OnSimulate | 当组件在场景中开始模拟时调用。用它为组件添加异步/可挂起的更新逻辑。OnBeginSimulation 保证先于 OnSimulate 运行；OnSimulate 会在 OnEndSimulation 之前被取消。 |
-| OnStarted | 当 CanInteract 通过后由 Start 调用以开始交互；重写它可实现自定义交互行为。 |
-| RemoveFromEntity | 把组件从实体上移除。被移除的组件会离开场景，且之后只能加回同一个实体。流程经过 OnEndSimulation → OnRemovingFromScene。 |
-| SendDown | 向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。 |
-| SignalCancelEvent | 触发 CanceledEvent 事件。 |
-| SignalStartEvent | 触发 StartedEvent 事件。 |
-| SignalSucceedEvent | 触发 SucceededEvent 事件。 |
-| Start | 尝试开始交互；代理未通过 CanInteract 则失败。 |
-| Succeed | 尝试使交互成功。开始交互后经过 InteractDuration 也会自动成功；给定代理当前未在交互则失败。 |
+| [Cancel](basic_interactable_component_cancel.md) | 尝试取消一次交互；给定代理当前未在交互则失败。 |
+| [CanInteract](basic_interactable_component_caninteract.md) | 返回指定代理当前能否交互。 |
+| [Disable](basic_interactable_component_disable.md) | 禁用与该组件的交互。禁用后不显示交互提示。 |
+| [Enable](basic_interactable_component_enable.md) | 启用与该组件的交互。 |
+| [GetRemainingCooldownDurationAffectingAgent](basic_interactable_component_getremainingcooldowndurationaffectingagent.md) | 获取给定代理的剩余冷却：返回共享冷却与按代理冷却中较大者的剩余秒数；同一事务内多次调用返回相同值。 |
+| [InteractMessage](basic_interactable_component_interactmessage.md) |  |
+| [InteractMessage](basic_interactable_component_interactmessage.md) | 返回适合展示给玩家、说明当前交互状态的消息。 |
+| [IsEnabled](basic_interactable_component_isenabled.md) | 组件处于启用状态则成功，禁用则失败。 |
+| [IsInScene](basic_interactable_component_isinscene.md) | 若组件当前在场景中则成功。OnAddedToScene 调用后成功；OnRemovingFromScene 调用后失败。 |
+| [IsSimulating](basic_interactable_component_issimulating.md) | 若组件当前正在模拟则成功。OnBeginSimulation 调用后成功；OnEndSimulation 调用后失败。 |
+| [OnAddedToScene](basic_interactable_component_onaddedtoscene.md) | 当组件通过挂到 simulation 实体（或已在场景中的其他实体）之下而被加入场景时调用。该阶段完成后，查询场景中的组件才是有效的。 |
+| [OnBeginSimulation](basic_interactable_component_onbeginsimulation.md) | 当组件在场景中开始模拟时调用。用它设置 TickEvent 回调或其他必须保证立即完成的初始化。OnAddedToScene 保证先于 OnBeginSimulation 运行。 |
+| [OnEndSimulation](basic_interactable_component_onendsimulation.md) | 当组件在场景中结束模拟时调用。体验重置或父实体被移出场景时组件的模拟即结束。缓存的 TickEvents cancelable 应在 OnEndSimulation 中取消；OnSimulate 任务会在 OnEndSimulation 被调用前取消。只有已调用过 OnBeginSimulation 的组件才会收到 OnEndSimulation。 |
+| [OnReceive](basic_interactable_component_onreceive.md) | 响应场景事件。返回 true 表示消费该事件并阻止向下一个实体继续传播。 |
+| [OnRemovingFromScene](basic_interactable_component_onremovingfromscene.md) | 当组件即将被移出场景时调用。父实体被移出场景时其上的组件随之移除。只有已调用过 OnAddedToScene 的组件才会收到 OnRemovingFromScene。 |
+| [OnSimulate](basic_interactable_component_onsimulate.md) | 当组件在场景中开始模拟时调用。用它为组件添加异步/可挂起的更新逻辑。OnBeginSimulation 保证先于 OnSimulate 运行；OnSimulate 会在 OnEndSimulation 之前被取消。 |
+| [OnStarted](basic_interactable_component_onstarted.md) | 当 CanInteract 通过后由 Start 调用以开始交互；重写它可实现自定义交互行为。 |
+| [RemoveFromEntity](basic_interactable_component_removefromentity.md) | 把组件从实体上移除。被移除的组件会离开场景，且之后只能加回同一个实体。流程经过 OnEndSimulation → OnRemovingFromScene。 |
+| [SendDown](basic_interactable_component_senddown.md) | 向此组件发送场景事件，触发 OnReceive。有参与者消费该事件则返回 true。 |
+| [SignalCancelEvent](basic_interactable_component_signalcancelevent.md) | 触发 CanceledEvent 事件。 |
+| [SignalStartEvent](basic_interactable_component_signalstartevent.md) | 触发 StartedEvent 事件。 |
+| [SignalSucceedEvent](basic_interactable_component_signalsucceedevent.md) | 触发 SucceededEvent 事件。 |
+| [Start](basic_interactable_component_start.md) | 尝试开始交互；代理未通过 CanInteract 则失败。 |
+| [Succeed](basic_interactable_component_succeed.md) | 尝试使交互成功。开始交互后经过 InteractDuration 也会自动成功；给定代理当前未在交互则失败。 |

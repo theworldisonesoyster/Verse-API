@@ -21,6 +21,6 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| SetLeashPosition | 设置自定义拴留位置。InnerRadius 范围 0.0~20000.0（厘米）；OuterRadius 范围 0.0~20000.0（厘米）且不小于 InnerRadius。 |
-| SetLeashAgent | 把该代理设为拴留的新中心。InnerRadius 范围 0.0~20000.0（厘米）；OuterRadius 范围 0.0~20000.0（厘米）且不小于 InnerRadius。 |
-| ClearLeash | 解除当前拴留。 |
+| [SetLeashPosition](fort_leashable_setleashposition.md) | 设置自定义拴留位置。InnerRadius 范围 0.0~20000.0（厘米）；OuterRadius 范围 0.0~20000.0（厘米）且不小于 InnerRadius。 |
+| [SetLeashAgent](fort_leashable_setleashagent.md) | 把该代理设为拴留的新中心。InnerRadius 范围 0.0~20000.0（厘米）；OuterRadius 范围 0.0~20000.0（厘米）且不小于 InnerRadius。 |
+| [ClearLeash](fort_leashable_clearleash.md) | 解除当前拴留。 |

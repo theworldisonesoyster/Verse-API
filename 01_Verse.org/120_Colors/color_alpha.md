@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Color | color | 此 color_alpha 的颜色（Color）分量。 |
-| A | float | 此 color_alpha 的透明度（Alpha）分量。 |
+| [Color](color_alpha_color.md) | color | 此 color_alpha 的颜色（Color）分量。 |
+| [A](color_alpha_a.md) | float | 此 color_alpha 的透明度（Alpha）分量。 |

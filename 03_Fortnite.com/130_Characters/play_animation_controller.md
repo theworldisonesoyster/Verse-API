@@ -22,5 +22,5 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| PlayAndAwait | 播放动画序列。 |
-| Play | 开始一个动画序列，并取得可查询与操控的实例。 |
+| [PlayAndAwait](play_animation_controller_playandawait.md) | 播放动画序列。 |
+| [Play](play_animation_controller_play.md) | 开始一个动画序列，并取得可查询与操控的实例。 |

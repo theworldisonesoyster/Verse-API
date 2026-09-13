@@ -7,7 +7,7 @@ module: /Verse.org/agentgroup/agent_group
 grade: B
 depth: oneliner
 status: done
-order: 6
+order: 5
 parent: versedotorg/agentgroup/agent_group/agent_group(member_info)
 ---
 

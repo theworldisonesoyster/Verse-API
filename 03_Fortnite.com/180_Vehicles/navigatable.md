@@ -21,8 +21,8 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| GetCurrentDestination | 返回角色当前的导航目的地。 |
-| NavigateTo | 向指定目标移动。 |
-| StopNavigation | 停止导航。 |
-| Wait | 等待指定时长。 |
-| SetMovementSpeedMultiplier | 对移动速度施加倍率（钳制在 0.5~2）。 |
+| [GetCurrentDestination](navigatable_getcurrentdestination.md) | 返回角色当前的导航目的地。 |
+| [NavigateTo](navigatable_navigateto.md) | 向指定目标移动。 |
+| [StopNavigation](navigatable_stopnavigation.md) | 停止导航。 |
+| [Wait](navigatable_wait.md) | 等待指定时长。 |
+| [SetMovementSpeedMultiplier](navigatable_setmovementspeedmultiplier.md) | 对移动速度施加倍率（钳制在 0.5~2）。 |

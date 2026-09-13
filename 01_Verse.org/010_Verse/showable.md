@@ -24,7 +24,7 @@ This interface has data members, but no functions.（此接口只有数据成员
 
 | Data Member Name | Type | Description |
 |---|---|---|
-| Show | ?logic | 设置此值以隐藏或显示该对象（true 显示 / false 隐藏）。 |
+| [Show](showable_show.md) | ?logic | 设置此值以隐藏或显示该对象（true 显示 / false 隐藏）。 |
 
 ## 补充说明
 

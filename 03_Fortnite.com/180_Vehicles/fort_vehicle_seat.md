@@ -22,10 +22,10 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Occupant | ??agent | 当前占据此座位的代理（如有）。 |
-| Vehicle | ?fort_vehicle | 此座位所属的 fort_vehicle。 |
+| [Occupant](fort_vehicle_seat_occupant.md) | ??agent | 当前占据此座位的代理（如有）。 |
+| [Vehicle](fort_vehicle_seat_vehicle.md) | ?fort_vehicle | 此座位所属的 fort_vehicle。 |
 
 ### Functions
 | Function Name | Description |
-| IsDriverSeat | 这是驾驶座则成功。 |
-| SetOccupant | 尝试让 Agent 坐入此座位；座位被占或无法入座则失败。把占位者设为 false 会移除已入座的代理。 |
+| [IsDriverSeat](fort_vehicle_seat_isdriverseat.md) | 这是驾驶座则成功。 |
+| [SetOccupant](fort_vehicle_seat_setoccupant.md) | 尝试让 Agent 坐入此座位；座位被占或无法入座则失败。把占位者设为 false 会移除已入座的代理。 |

@@ -30,13 +30,13 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Collidable | ?logic | 启用/禁用此体积的碰撞。 |
-| CollisionProfile | ?collision_profile | 此体积的碰撞轮廓。 |
-| Length | ?float | 胶囊圆柱段的长度（两个端帽中心之间的距离）。 |
-| Queryable | ?logic | 启用/禁用对此体积的空间查询。 |
-| Radius | ?float | 胶囊半径。 |
+| [Collidable](collision_capsule_collidable.md) | ?logic | 启用/禁用此体积的碰撞。 |
+| [CollisionProfile](collision_capsule_collisionprofile.md) | ?collision_profile | 此体积的碰撞轮廓。 |
+| [Length](collision_capsule_length.md) | ?float | 胶囊圆柱段的长度（两个端帽中心之间的距离）。 |
+| [Queryable](collision_capsule_queryable.md) | ?logic | 启用/禁用对此体积的空间查询。 |
+| [Radius](collision_capsule_radius.md) | ?float | 胶囊半径。 |
 
 ### Functions
 | Function Name | Description |
-| GetLocalTransform | 获取此体积在所有者空间（通常是实体上的组件）中的变换。 |
-| SetLocalTransform | 设置此体积在所有者空间中的变换。 |
+| [GetLocalTransform](collision_capsule_getlocaltransform.md) | 获取此体积在所有者空间（通常是实体上的组件）中的变换。 |
+| [SetLocalTransform](collision_capsule_setlocaltransform.md) | 设置此体积在所有者空间中的变换。 |

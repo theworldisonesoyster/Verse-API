@@ -30,12 +30,12 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Collidable | ?logic | 启用/禁用此体积的碰撞。 |
-| CollisionProfile | ?collision_profile | 此体积的碰撞轮廓。 |
+| [Collidable](collision_box_collidable.md) | ?logic | 启用/禁用此体积的碰撞。 |
+| [CollisionProfile](collision_box_collisionprofile.md) | ?collision_profile | 此体积的碰撞轮廓。 |
 | Extents | ?vector3 |  |
-| Queryable | ?logic | 启用/禁用对此体积的空间查询。 |
+| [Queryable](collision_box_queryable.md) | ?logic | 启用/禁用对此体积的空间查询。 |
 
 ### Functions
 | Function Name | Description |
-| GetLocalTransform | 获取此体积在所有者空间（通常是实体上的组件）中的变换。 |
-| SetLocalTransform | 设置此体积在所有者空间中的变换。 |
+| [GetLocalTransform](collision_box_getlocaltransform.md) | 获取此体积在所有者空间（通常是实体上的组件）中的变换。 |
+| [SetLocalTransform](collision_box_setlocaltransform.md) | 设置此体积在所有者空间中的变换。 |

@@ -24,9 +24,9 @@ This struct has data members, but no functions.（此结构体只有数据成员
 
 | Data Member Name | Type | Description |
 |---|---|---|
-| Left | float | 此向量的 Left（原 -Y）分量。 |
-| Up | float | 此向量的 Up（原 Z）分量。 |
-| Forward | float | 此向量的 Forward（原 X）分量。 |
+| [Left](vector3_left.md) | float | 此向量的 Left（原 -Y）分量。 |
+| [Up](vector3_up.md) | float | 此向量的 Up（原 Z）分量。 |
+| [Forward](vector3_forward.md) | float | 此向量的 Forward（原 X）分量。 |
 
 ## 示例
 

@@ -29,6 +29,6 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Contributes | ?logic | 该参与者能否在此任务上取得进展。 |
-| Observes | ?logic | 该参与者能否观察任务状态。 |
-| Receives | ?logic | 任务完成时该参与者能否获得奖励。 |
+| [Contributes](quest_participant_info_contributes.md) | ?logic | 该参与者能否在此任务上取得进展。 |
+| [Observes](quest_participant_info_observes.md) | ?logic | 该参与者能否观察任务状态。 |
+| [Receives](quest_participant_info_receives.md) | ?logic | 任务完成时该参与者能否获得奖励。 |

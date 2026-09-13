@@ -30,7 +30,7 @@ This interface has data members, but no functions.（此接口只有数据成员
 
 | Data Member Name | Type | Description |
 |---|---|---|
-| CanBroadcast | ?logic | 决定参与者能否向频道发送语音消息。为 true 时，参与者仍能听到正在发言的成员，并在社交面板中看到相关用户。 |
+| [CanBroadcast](has_voice_member_info_canbroadcast.md) | ?logic | 决定参与者能否向频道发送语音消息。为 true 时，参与者仍能听到正在发言的成员，并在社交面板中看到相关用户。 |
 
 ## 补充说明
 

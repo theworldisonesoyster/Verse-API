@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Origin | vector3 | 相机的世界空间位置（射线起点）。这是相机眼睛点而非近裁剪面——从这里开始的检测可能撞上相机与近裁剪面之间屏幕上不可见的几何体。建议用碰撞过滤忽略玩家角色，或把起点沿 Direction 前移越过近裁剪距离。 |
-| Direction | vector3 | 射线的归一化世界空间方向：从相机穿过给定视口坐标指向场景。 |
+| [Origin](deproject_results_origin.md) | vector3 | 相机的世界空间位置（射线起点）。这是相机眼睛点而非近裁剪面——从这里开始的检测可能撞上相机与近裁剪面之间屏幕上不可见的几何体。建议用碰撞过滤忽略玩家角色，或把起点沿 Direction 前移越过近裁剪距离。 |
+| [Direction](deproject_results_direction.md) | vector3 | 射线的归一化世界空间方向：从相机穿过给定视口坐标指向场景。 |

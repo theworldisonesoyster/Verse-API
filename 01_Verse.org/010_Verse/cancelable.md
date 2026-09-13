@@ -24,7 +24,7 @@ This interface has functions, but no data members.（此接口只有函数，没
 
 | Function Name | Description |
 |---|---|
-| Cancel | 阻止该操作当前或未来的任何工作完成（即取消）。 |
+| [Cancel](cancelable_cancel.md) | 阻止该操作当前或未来的任何工作完成（即取消）。 |
 
 ## 补充说明
 

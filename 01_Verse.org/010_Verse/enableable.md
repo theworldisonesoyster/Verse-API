@@ -24,9 +24,9 @@ This interface has functions, but no data members.（此接口只有函数，没
 
 | Function Name | Description |
 |---|---|
-| Enable | 启用此对象。 |
-| Disable | 禁用此对象。 |
-| IsEnabled | 对象处于启用状态则成功，禁用则失败。 |
+| [Enable](enableable_enable.md) | 启用此对象。 |
+| [Disable](enableable_disable.md) | 禁用此对象。 |
+| [IsEnabled](enableable_isenabled.md) | 对象处于启用状态则成功，禁用则失败。 |
 
 ## 补充说明
 

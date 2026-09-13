@@ -22,13 +22,13 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| CastVoteEvent | listenable(payload) | 「agent」投票时触发。 |
-| WinVoteEvent | listenable(payload) | 此选项赢得投票时触发。 |
+| [CastVoteEvent](vote_option_interface_castvoteevent.md) | listenable(payload) | 「agent」投票时触发。 |
+| [WinVoteEvent](vote_option_interface_winvoteevent.md) | listenable(payload) | 此选项赢得投票时触发。 |
 
 ### Functions
 | Function Name | Description |
-| CastVote | 尝试为 Agent 投票。若投票代理还有剩余票数且投票组已开始投票，则投票成功；代理没有剩余票数或投票未开始则失败。 |
-| GetVoteCount | 返回此选项获得的总票数。 |
-| GetVoteGroup | 返回此选项对应的组设备（如有）；选项不在组中，或没有同 ID 的对应组设备则失败。 |
-| HasAgentVoted | Agent 已为此选项投票则成功，否则失败。 |
-| GetOptionDescription | 玩家选择选项时展示给它的文本。 |
+| [CastVote](vote_option_interface_castvote.md) | 尝试为 Agent 投票。若投票代理还有剩余票数且投票组已开始投票，则投票成功；代理没有剩余票数或投票未开始则失败。 |
+| [GetVoteCount](vote_option_interface_getvotecount.md) | 返回此选项获得的总票数。 |
+| [GetVoteGroup](vote_option_interface_getvotegroup.md) | 返回此选项对应的组设备（如有）；选项不在组中，或没有同 ID 的对应组设备则失败。 |
+| [HasAgentVoted](vote_option_interface_hasagentvoted.md) | Agent 已为此选项投票则成功，否则失败。 |
+| [GetOptionDescription](vote_option_interface_getoptiondescription.md) | 玩家选择选项时展示给它的文本。 |

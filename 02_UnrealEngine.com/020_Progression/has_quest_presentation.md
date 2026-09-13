@@ -22,6 +22,6 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| ShowNotification | ?logic | 此任务的发放/进度/完成时刻是否播放 HUD 通知。 |
-| AllowFavorite | ?logic | 玩家是否可把此任务收藏到 HUD 任务追踪器。 |
-| Categories | ?[]quest_category | 此任务在任务 UI 中归属的类别；空 = 未分类。 |
+| [ShowNotification](has_quest_presentation_shownotification.md) | ?logic | 此任务的发放/进度/完成时刻是否播放 HUD 通知。 |
+| [AllowFavorite](has_quest_presentation_allowfavorite.md) | ?logic | 玩家是否可把此任务收藏到 HUD 任务追踪器。 |
+| [Categories](has_quest_presentation_categories.md) | ?[]quest_category | 此任务在任务 UI 中归属的类别；空 = 未分类。 |

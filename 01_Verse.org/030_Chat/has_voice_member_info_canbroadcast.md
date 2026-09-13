@@ -7,7 +7,7 @@ module: /Verse.org/chat
 grade: B
 depth: oneliner
 status: done
-order: 2
+order: 1
 parent: versedotorg/chat/has_voice_member_info
 ---
 

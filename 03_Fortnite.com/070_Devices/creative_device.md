@@ -32,19 +32,19 @@ This class has functions, but no data members.（此类只有函数，没有数�
 
 | Function Name | Description |
 |---|---|
-| OnBegin | 重写以在游戏体验开始时添加自定义逻辑。 |
-| OnEnd | 重写以在游戏体验结束时添加自定义逻辑。在 OnEnd 内 spawn 的协程可能永远不会执行。 |
-| GetTransform | 返回 creative_device 的变换，单位为厘米（cm）。 |
-| TeleportTo | 将 creative_device 瞬移到指定的 Position 与 Rotation。 |
-| TeleportTo | 将 creative_device 瞬移到 Transform 指定的位置，同时相应地应用旋转与缩放。 |
-| MoveTo | 在指定的秒数内把 creative_device 移动到指定的 Position 与 Rotation。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
-| MoveTo | 在指定的秒数内把 creative_device 移动到指定的 Transform。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
-| GetGlobalTransform | 获取此设备的全局变换。 |
-| SetGlobalTransform | 设置此设备的全局变换。 |
-| TeleportTo | 将 creative_device 瞬移到 Transform 指定的位置，同时相应地应用旋转与缩放。 |
-| MoveTo | 在指定的秒数内把 creative_device 移动到指定的 Transform。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
-| Show | 在世界中显示此设备。 |
-| Hide | 在世界中隐藏此设备。 |
+| [OnBegin](creative_device_onbegin.md) | 重写以在游戏体验开始时添加自定义逻辑。 |
+| [OnEnd](creative_device_onend.md) | 重写以在游戏体验结束时添加自定义逻辑。在 OnEnd 内 spawn 的协程可能永远不会执行。 |
+| [GetTransform](creative_device_gettransform.md) | 返回 creative_device 的变换，单位为厘米（cm）。 |
+| [TeleportTo](creative_device_teleportto.md) | 将 creative_device 瞬移到指定的 Position 与 Rotation。 |
+| [TeleportTo](creative_device_teleportto.md) | 将 creative_device 瞬移到 Transform 指定的位置，同时相应地应用旋转与缩放。 |
+| [MoveTo](creative_device_moveto.md) | 在指定的秒数内把 creative_device 移动到指定的 Position 与 Rotation。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
+| [MoveTo](creative_device_moveto.md) | 在指定的秒数内把 creative_device 移动到指定的 Transform。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
+| [GetGlobalTransform](creative_device_getglobaltransform.md) | 获取此设备的全局变换。 |
+| [SetGlobalTransform](creative_device_setglobaltransform.md) | 设置此设备的全局变换。 |
+| [TeleportTo](creative_device_teleportto.md) | 将 creative_device 瞬移到 Transform 指定的位置，同时相应地应用旋转与缩放。 |
+| [MoveTo](creative_device_moveto.md) | 在指定的秒数内把 creative_device 移动到指定的 Transform。若设备当前正在播放动画，动画会被停止并进入 AnimationNotSet 状态。 |
+| [Show](creative_device_show.md) | 在世界中显示此设备。 |
+| [Hide](creative_device_hide.md) | 在世界中隐藏此设备。 |
 
 ## 示例
 

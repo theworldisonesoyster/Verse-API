@@ -21,4 +21,4 @@ status: done
 
 ### Functions
 | Function Name | Description |
-| Evaluate | 在指定时间求此浮点曲线的值，返回 float 结果。 |
+| [Evaluate](editable_curve_evaluate.md) | 在指定时间求此浮点曲线的值，返回 float 结果。 |

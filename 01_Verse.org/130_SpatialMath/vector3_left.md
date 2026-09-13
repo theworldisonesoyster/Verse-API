@@ -7,7 +7,7 @@ module: /Verse.org/spatialmath
 grade: S
 depth: oneliner
 status: done
-order: 2
+order: 1
 parent: versedotorg/spatialmath/vector3
 ---
 

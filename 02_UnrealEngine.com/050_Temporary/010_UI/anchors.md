@@ -22,5 +22,5 @@ status: done
 
 ### Data
 | Data Member Name | Type | Description |
-| Minimum | vector2 | 最小锚点（left, top）；有效范围 0.0~1.0。 |
-| Maximum | vector2 | 最大锚点（right, bottom）；有效范围 0.0~1.0。 |
+| [Minimum](anchors_minimum.md) | vector2 | 最小锚点（left, top）；有效范围 0.0~1.0。 |
+| [Maximum](anchors_maximum.md) | vector2 | 最大锚点（right, bottom）；有效范围 0.0~1.0。 |

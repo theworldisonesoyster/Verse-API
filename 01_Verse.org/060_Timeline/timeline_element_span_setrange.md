@@ -7,7 +7,7 @@ module: /Verse.org/timeline
 grade: B
 depth: oneliner
 status: done
-order: 5
+order: 3
 parent: versedotorg/timeline/timeline_element_span
 ---
 

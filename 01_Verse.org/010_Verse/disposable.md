@@ -24,7 +24,7 @@ This interface has functions, but no data members.（此接口只有函数，没
 
 | Function Name | Description |
 |---|---|
-| Dispose | 清理并释放此对象。 |
+| [Dispose](disposable_dispose.md) | 清理并释放此对象。 |
 
 ## 补充说明
 
